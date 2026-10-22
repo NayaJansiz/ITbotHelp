@@ -122,39 +122,10 @@ def main():
                 # lecture marker so students see (م#) at the end of the explanation.
                 mk = marker(c, fname)
                 old_e = (q.get('explanation') or '').strip()
-                base_e = re.sub(r'\s*\(م\d+\)\s*
-            elif kind == 'STUDENT': e = fit(it.get('e'), ''); nr = 0      # owner decision: approval = merge, so visible once merged
-            elif kind == 'FIGURE': e = fit(it.get('e'), ''); nr = 1
-            else: e = fit(it.get('e'), '(استنتاج)'); nr = 1
-            img_ok = (not q.get('image')) or os.path.exists(os.path.join(a.root, q['image'])) or os.path.exists(os.path.join(a.root, os.path.basename(q['image'])))
-            vis = img_ok and not (kind == 'INFERRED' and a.hide_inferred)
-            if not img_ok: notes.append(f"{k}: image file missing ({q['image']}) -> answered but stays hidden")
-            res[f'{kind} applied' + ('' if vis else ' (kept hidden)')] += 1
-            q['correct_index'] = idx; q['explanation'] = e; q['needs_review'] = nr; q['excluded'] = 0 if vis else 1
-            prov[k] = {'src': kind, 'ref': it.get('ref') if kind in ('LECTURE', 'FIGURE') else None, 'file': fname, 'quote': it.get('q') if kind == 'LECTURE' else None, 'date': today}
-            if it.get('img') or it.get('uses_image') is not None:   # picture binding PROPOSED by the student/Claude; the single-writer Action applies it after approval (Part 2C)
-                prov[k]['img'] = it.get('img') or None; prov[k]['uses_image'] = it.get('uses_image'); prov[k]['img_edited'] = bool(it.get('img_edited'))
-                if it.get('img_edited'): notes.append(f"{k}: student changed the picture binding (img={it.get('img') or 'removed'}) -> approver please check")
-            if it.get('src') == 'STUDENT' or it.get('e_edited') or it.get('a0'):
-                prov[k].update({'student': True, 'a0': it.get('a0'), 'src0': it.get('src0'), 'e_edited': bool(it.get('e_edited')), 'reason': it.get('reason')})
-                if kind == 'STUDENT': prov[k]['src'] = 'STUDENT'
-                notes.append(f"{k}: STUDENT edit ({'quote verified' if kind == 'LECTURE' else 'no verified quote'}; a0={it.get('a0')}, explanation edited={bool(it.get('e_edited'))}) -> approver please check")
-        print(f"\n=== subject {sid}: replies -> {dict(rep)}\n    merge -> {dict(res)}")
-        for n in notes[:40]: print('    -', n)
-        if len(notes) > 40: print(f'    ... {len(notes)-40} more')
-        if a.apply:
-            save_subject(a.data, sid, rows); os.makedirs(os.path.dirname(prov_path), exist_ok=True)
-            json.dump(prov, open(prov_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True); print('    data/ updated')
-        if a.leftover:
-            left = [r for r in rows if r['correct_index'] is None]
-            if left:
-                od = os.path.join(a.leftover, str(sid)); os.makedirs(od, exist_ok=True)
-                open(os.path.join(od, 'INFERRED.md'), 'w', encoding='utf-8').write(pack_text(INSTR_I, f"SUBJECT {sid} — leftovers (not found in lectures)", left))
-                print(f"    leftover: {len(left)} unresolved -> {od}/INFERRED.md")
-    if not a.apply: print('\n(dry run: nothing written. Add --apply to write data/.)')
-
-if __name__ == '__main__': main()
-, '', old_e).strip()
+                base_e = old_e
+                marker_start = base_e.rfind('(م')
+                if marker_start >= 0 and base_e.endswith(')') and base_e[marker_start + 2:-1].isdigit():
+                    base_e = base_e[:marker_start].rstrip()
                 new_e = fit(base_e, mk)
                 if new_e != old_e:
                     q['explanation'] = new_e
