@@ -506,13 +506,27 @@ function show(res) {
   $('inferredBox').hidden = !unresolved.length;
   $('btnInferred').onclick = function () {
     if (!unresolved.length) return;
-    var text = "# TASK (do not repeat this text)\\nThese questions were NOT answered from the supplied lectures. Solve them from general knowledge of the subject.\\nReply with ONE JSON object per line, one line per question id, same order, nothing else:\\n{\\"id\\":\\"<id>\\",\\"a\\":\\"<letter>\\",\\"src\\":\\"INFERRED\\",\\"e\\":\\"<short Arabic explanation>\\"}\\nRULES\\n1. Use the given options and do not change their order.\\n2. The explanation must be in Arabic and at most 150 characters.\\n3. Mark every answer src=INFERRED; do not claim it came from a lecture.\\n4. If you are not sufficiently sure, reply {\\"id\\":\\"<id>\\",\\"src\\":\\"NOT-FOUND\\"}.\\n\\n# QUESTIONS\\n\\n";
+    var lines = [
+      '# TASK (do not repeat this text)',
+      'These questions were NOT answered from the supplied lectures. Solve them from general knowledge of the subject.',
+      'Reply with ONE JSON object per line, one line per question id, same order, nothing else:',
+      '{"id":"<id>","a":"<letter>","src":"INFERRED","e":"<short Arabic explanation>"}',
+      'RULES',
+      '1. Use the given options and do not change their order.',
+      '2. The explanation must be in Arabic and at most 150 characters.',
+      '3. Mark every answer src=INFERRED; do not claim it came from a lecture.',
+      '4. If you are not sufficiently sure, reply {"id":"<id>","src":"NOT-FOUND"}.',
+      '',
+      '# QUESTIONS',
+      ''
+    ];
+    var text = lines.join('\n') + '\n';
     unresolved.forEach(function (r) {
       var q = siteData.t[r.id] || ['', []], letters = 'ABCDEFGHIJ';
-      text += '### ' + r.id + '\\n' + q[0] + '\\n' + q[1].map(function (o, i) { return letters[i] + ') ' + o; }).join('\\n') + '\\n';
+      text += '### ' + r.id + '\n' + q[0] + '\n' + q[1].map(function (o, i) { return letters[i] + ') ' + o; }).join('\n') + '\n';
       var prop = (siteData.p || {})[r.id], meta = prop && (siteData.m || {})[prop];
-      if (meta) text += 'IMAGE: ' + meta.f + (meta.c ? ' — ' + meta.c : '') + '\\n';
-      text += '\\n';
+      if (meta) text += 'IMAGE: ' + meta.f + (meta.c ? ' — ' + meta.c : '') + '\n';
+      text += '\n';
     });
     save(subj.id + '-INFERRED-followup.md', text, 'text/markdown;charset=utf-8');
   };
@@ -548,16 +562,16 @@ function renderReview(res) {
     var vr = evalItem(o);
     if ((vr.kind === 'ok' || vr.kind === 'fig') && vr.lec != null) {
       var sourceMeta = siteData.lectures[vr.lec];
-      var sourceLabel = 'المحاضرة: ' + vr.lec.replace(/\\.md$/, '') +
+      var sourceLabel = 'المحاضرة: ' + vr.lec.replace(/\.md$/, '') +
         (sourceMeta && sourceMeta.marker ? ' ' + sourceMeta.marker : '');
       var pageNo = null;
       if (o.src === 'FIGURE') {
-        var pm = /^p(\\d+)$/.exec(String(o.ref || ''));
+        var pm = /^p(\d+)$/.exec(String(o.ref || ''));
         if (pm) pageNo = pm[1];
       } else if (o.q) {
         var sourceText = lecCache[subj.id + '/' + vr.lec];
         if (sourceText) {
-          var pageChunks = sourceText.split(/<!-- p(\\d+) -->/);
+          var pageChunks = sourceText.split(/<!-- p(\d+) -->/);
           for (var pgi = 1; pgi < pageChunks.length; pgi += 2) {
             if (flat(pageChunks[pgi + 1]).indexOf(flat(o.q)) >= 0) { pageNo = pageChunks[pgi]; break; }
           }
