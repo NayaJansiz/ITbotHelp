@@ -117,7 +117,31 @@ def main():
             if q['correct_index'] is not None and q['correct_index'] != idx and not a.overwrite:
                 res['CONFLICT-EXISTING (needs review)'] += 1; notes.append(f"{k}: existing answer {LET[q['correct_index']]} but {kind} says {LET[idx]} ({fname or 'general knowledge'}) -> kept existing"); continue
             if kind == 'FIGURE': notes.append(f"{k}: FIGURE answer {LET[idx]} from {fname} {it.get('ref')} (not machine-verified, needs_review=1) -> approver please look at the picture")
-            if q['correct_index'] == idx and not a.overwrite and kind == 'LECTURE' and q.get('needs_review') == 0: res['already same'] += 1; continue
+            if q['correct_index'] == idx and not a.overwrite and kind == 'LECTURE' and q.get('needs_review') == 0:
+                # The answer is already correct, but still record its verified
+                # lecture marker so students see (م#) at the end of the explanation.
+                mk = marker(c, fname)
+                old_e = (q.get('explanation') or '').strip()
+                base_e = old_e
+                marker_start = base_e.rfind('(م')
+                if marker_start >= 0 and base_e.endswith(')') and base_e[marker_start + 2:-1].isdigit():
+                    base_e = base_e[:marker_start].rstrip()
+                new_e = fit(base_e, mk)
+                if new_e != old_e:
+                    q['explanation'] = new_e
+                    res['lecture marker added/updated'] += 1
+                else:
+                    res['already same'] += 1
+                entry = prov.get(k, {})
+                entry.update({
+                    'src': 'LECTURE',
+                    'ref': it.get('ref'),
+                    'file': fname,
+                    'quote': it.get('q'),
+                    'date': today,
+                })
+                prov[k] = entry
+                continue
             if kind == 'LECTURE': e = fit(it.get('e'), marker(c, fname)); nr = 0
             elif kind == 'STUDENT': e = fit(it.get('e'), ''); nr = 0      # owner decision: approval = merge, so visible once merged
             elif kind == 'FIGURE': e = fit(it.get('e'), ''); nr = 1
