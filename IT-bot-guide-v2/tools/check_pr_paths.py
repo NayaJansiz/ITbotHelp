@@ -7,19 +7,28 @@ Git then shows it). Deleting or modifying any other existing file, or touching d
 Approvers' own pull requests are not checked (the workflow skips authors that are owner/member/collaborator).
 """
 import argparse, subprocess, sys
+# This repository stores the application under IT-bot-guide-v2/ rather than at repo root.
+APP_PREFIX = 'IT-bot-guide-v2/'
 ALLOWED_ADD = ('intake/', 'replies/', 'sources/', 'media/', 'inbox/')
 ALLOWED_MODIFY = ('sources/manifest.json',)
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--base', required=True); ap.add_argument('--head', default='HEAD'); a = ap.parse_args()
-    r = subprocess.run(['git', 'diff', '--name-status', '--no-renames', f'{a.base}...{a.head}'], capture_output=True, text=True)
+    top = subprocess.run(['git', 'rev-parse', '--show-toplevel'], capture_output=True, text=True)
+    if top.returncode: sys.exit('git rev-parse failed: ' + top.stderr[-300:])
+    repo_root = top.stdout.strip()
+    # Always compare from the repository root, so names include IT-bot-guide-v2/ even if called from that subfolder.
+    r = subprocess.run(['git', 'diff', '--name-status', '--no-renames', f'{a.base}...{a.head}'], cwd=repo_root, capture_output=True, text=True)
     if r.returncode: sys.exit('git diff failed: ' + r.stderr[-300:])
     bad = []
-    for ln in r.stdout.strip().split('\n'):
+    for ln in r.stdout.strip().split('\\n'):
         if not ln.strip(): continue
-        st, path = ln.split('\t', 1)
-        if st == 'A' and path.startswith(ALLOWED_ADD): continue
-        if st == 'M' and path in ALLOWED_MODIFY: continue
+        st, path = ln.split('\\t', 1)
+        if not path.startswith(APP_PREFIX):
+            bad.append(f'{st}  {path} (outside {APP_PREFIX})'); continue
+        rel = path[len(APP_PREFIX):]
+        if st == 'A' and rel.startswith(ALLOWED_ADD): continue
+        if st == 'M' and rel in ALLOWED_MODIFY: continue
         bad.append(f'{st}  {path}')
     if bad:
         print('This pull request touches files a student PR may not touch (only NEW files under intake/, replies/, sources/, media/, inbox/):')
