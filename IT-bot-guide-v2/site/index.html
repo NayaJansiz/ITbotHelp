@@ -527,6 +527,28 @@ function renderReview(res) {
     t[1].forEach(function (x, i) { opt(cd.sel, LET[i], LET[i]); }); cd.sel.value = origL(o); root.appendChild(cd.sel);
     root.appendChild(mk('label', null, 'الشرح'));
     cd.ta = mk('textarea'); cd.ta.value = o.e || ''; cd.cnt = mk('div', 'cnt'); root.appendChild(cd.ta); root.appendChild(cd.cnt);
+    var vr = evalItem(o);
+    if ((vr.kind === 'ok' || vr.kind === 'fig') && vr.lec != null) {
+      var sourceMeta = siteData.lectures[vr.lec];
+      var sourceLabel = 'المحاضرة: ' + vr.lec.replace(/\\.md$/, '') +
+        (sourceMeta && sourceMeta.marker ? ' ' + sourceMeta.marker : '');
+      var pageNo = null;
+      if (o.src === 'FIGURE') {
+        var pm = /^p(\\d+)$/.exec(String(o.ref || ''));
+        if (pm) pageNo = pm[1];
+      } else if (o.q) {
+        var sourceText = lecCache[subj.id + '/' + vr.lec];
+        if (sourceText) {
+          var pageChunks = sourceText.split(/<!-- p(\\d+) -->/);
+          for (var pgi = 1; pgi < pageChunks.length; pgi += 2) {
+            if (flat(pageChunks[pgi + 1]).indexOf(flat(o.q)) >= 0) { pageNo = pageChunks[pgi]; break; }
+          }
+        }
+      }
+      sourceLabel += pageNo ? ' · الصفحة ' + pageNo : ' · رقم الصفحة غير مؤكّد';
+      root.appendChild(mk('label', null, 'مصدر الشرح'));
+      root.appendChild(mk('div', 'why', sourceLabel));
+    }
     if (o.src === 'LECTURE' && o.q) { root.appendChild(mk('label', null, 'الاقتباس من المحاضرة (للقراءة)')); var ro = mk('div', 'why', o.q); ro.dir = 'auto'; root.appendChild(ro); }
     cd.qlab = mk('label', null, 'اقتباس حرفي من المحاضرة يدعم الجواب (اختياري، يحوّل جوابك إلى موثّق إن وُجد)'); cd.qt = mk('textarea', 'q'); cd.qt.value = o.src === 'STUDENT' ? (o.q || '') : '';
     cd.rlab = mk('label', null, 'سبب التعديل (يُنصح به)'); cd.rs = mk('input'); cd.rs.type = 'text'; cd.rs.value = o.reason || '';
