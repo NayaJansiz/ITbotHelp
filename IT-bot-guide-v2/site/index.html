@@ -147,6 +147,10 @@
       <div id="verdict"></div>
       <table class="res"><tbody id="rows"></tbody></table>
       <div id="missing" class="note--warn" style="margin-top:.75rem" hidden></div>
+      <div id="inferredBox" class="note--warn" style="margin-top:.75rem" hidden>
+        <p id="inferredHelp">بعض الأسئلة لم تجد جواباً في المحاضرات. نزّل ملف الاستنتاجات وأرسله إلى Claude، ثم أضف أسطر INFERRED إلى الرد الأصلي قبل التحقق والتنزيل.</p>
+        <div class="actions"><button class="btn btn--primary" id="btnInferred" type="button">⬇ تنزيل أسئلة بلا جواب كملف INFERRED</button></div>
+      </div>
       <div id="review" hidden>
         <h2 class="card__title" style="margin-top:1rem">مراجعة وتعديل (اختياري)</h2>
         <p class="hint">راجع أولاً ما ليس «موثّقاً». يمكنك تعديل الجواب أو الشرح. تغيير الجواب بدون اقتباس صحيح من المحاضرة يُسجَّل «جواب طالب» ويقرّره المشرفون عند الدمج. تعديلاتك محفوظة في المتصفح.</p>
@@ -498,6 +502,20 @@ function show(res) {
   else if (c.ok + c.inf + c.nf + c.stu + c.fig) { v.className = 'note--ok'; v.textContent = 'كل الأسطر المقروءة سليمة.'; }
   else { v.className = 'note--warn'; v.textContent = 'لم أجد أي سطر JSON في النص الملصوق.'; }
   renderReview(res);
+  var unresolved = res.rows.filter(function (r) { return r.kind === 'nf'; });
+  $('inferredBox').hidden = !unresolved.length;
+  $('btnInferred').onclick = function () {
+    if (!unresolved.length) return;
+    var text = "# TASK (do not repeat this text)\\nThese questions were NOT answered from the supplied lectures. Solve them from general knowledge of the subject.\\nReply with ONE JSON object per line, one line per question id, same order, nothing else:\\n{\\"id\\":\\"<id>\\",\\"a\\":\\"<letter>\\",\\"src\\":\\"INFERRED\\",\\"e\\":\\"<short Arabic explanation>\\"}\\nRULES\\n1. Use the given options and do not change their order.\\n2. The explanation must be in Arabic and at most 150 characters.\\n3. Mark every answer src=INFERRED; do not claim it came from a lecture.\\n4. If you are not sufficiently sure, reply {\\"id\\":\\"<id>\\",\\"src\\":\\"NOT-FOUND\\"}.\\n\\n# QUESTIONS\\n\\n";
+    unresolved.forEach(function (r) {
+      var q = siteData.t[r.id] || ['', []], letters = 'ABCDEFGHIJ';
+      text += '### ' + r.id + '\\n' + q[0] + '\\n' + q[1].map(function (o, i) { return letters[i] + ') ' + o; }).join('\\n') + '\\n';
+      var prop = (siteData.p || {})[r.id], meta = prop && (siteData.m || {})[prop];
+      if (meta) text += 'IMAGE: ' + meta.f + (meta.c ? ' — ' + meta.c : '') + '\\n';
+      text += '\\n';
+    });
+    save(subj.id + '-INFERRED-followup.md', text, 'text/markdown;charset=utf-8');
+  };
   refreshLinks();
 }
 /* ===== Part 2D: review + edit + summary ===== */
