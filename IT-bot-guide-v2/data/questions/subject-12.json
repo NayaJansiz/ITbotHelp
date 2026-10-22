@@ -1,0 +1,782 @@
+[
+ {
+  "id": 338,
+  "key": "y3:p41",
+  "subject_id": 12,
+  "question": "نحصل على حل امثل ل مسالة النقل باستخدام خوارزمية :",
+  "options": [
+   "اقرب جار",
+   "الهنغارية",
+   "الحلقات المغلقة",
+   "فوجال"
+  ],
+  "correct_index": 2,
+  "explanation": "الحلقات المغلقة (stepping-stone/MODI) تعطي حلاً أمثلياً لمسألة النقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 339,
+  "key": "y3:p42",
+  "subject_id": 12,
+  "question": "نحصل على حل لمسألة البائع المتجول باستخدام:",
+  "options": [
+   "فوجال",
+   "الارتال",
+   "الهنغارية",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 3,
+  "explanation": "ليس من الخيارات ما يحل البائع المتجول (يحله الجار الأقرب).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 340,
+  "key": "y3:p43",
+  "subject_id": 12,
+  "question": "في النظام M/M/1/GD/oo/oo احتمال وجود اقل من n شخص في النظام",
+  "options": [
+   "1-Pⁿ",
+   "Pⁿ",
+   "Pⁿ-1",
+   "pⁿ+1"
+  ],
+  "correct_index": 0,
+  "explanation": "احتمال وجود أقل من n زبون في النظام M/M/1 هو 1 - ρⁿ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 341,
+  "key": "y3:p44",
+  "subject_id": 12,
+  "question": "خوارزمية اقرب جار تحل مسألة",
+  "options": [
+   "النقل",
+   "الإسناد",
+   "البائع المتجول",
+   "البيان"
+  ],
+  "correct_index": 2,
+  "explanation": "خوارزمية الجار الأقرب تحل مسألة البائع المتجول.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 342,
+  "key": "y3:p45",
+  "subject_id": 12,
+  "question": "طريقة الزاوية الشمالية الغربية تعطي حلاً أمثلياً ل :",
+  "options": [
+   "النقل",
+   "البائع المتجول",
+   "الرتل",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "الزاوية الشمالية الغربية تعطي حلاً ابتدائياً مقبولاً وليس أمثلياً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 343,
+  "key": "y3:p46",
+  "subject_id": 12,
+  "question": "طريقة الحلقات المغلقة تعطي حل امثلي ل :",
+  "options": [
+   "البائع",
+   "النقل",
+   "التكلفة",
+   "لا شيئ"
+  ],
+  "correct_index": 1,
+  "explanation": "طريقة الحلقات المغلقة تحسّن الحل إلى الأمثل في مسألة النقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 344,
+  "key": "y3:p47",
+  "subject_id": 12,
+  "question": "A / B / C / X / Y / Z\n\nZ يمثل",
+  "options": [
+   "سعة النظام",
+   "مبدأ الخدمة",
+   "سعة المصدر",
+   "كل ما سبق خطا"
+  ],
+  "correct_index": 2,
+  "explanation": "في رمز كاندل A/B/C/X/Y/Z يمثل Z سعة المصدر.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 345,
+  "key": "y3:p48",
+  "subject_id": 12,
+  "question": "خوارزمية اقرب جار تختار اصغر عنصر و تستبدل بأرقام كبيرة جميع عناصر صفوف و عمود  و",
+  "options": [
+   "منقوله",
+   "مقلوبه",
+   "معكوسه",
+   "نظيره"
+  ],
+  "correct_index": 2,
+  "explanation": "الجار الأقرب يضع قيماً كبيرة في صف وعمود العنصر المختار وعنصره المعكوس.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 346,
+  "key": "y3:p49",
+  "subject_id": 12,
+  "question": "A / B / C / X / Y / Z\nX يمثل",
+  "options": [
+   "مبدأ الخدمة",
+   "منبع النظام",
+   "سعة النظام",
+   "كل ما سبق خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "X في رمز كاندل هو مبدأ الخدمة (discipline).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 347,
+  "key": "y3:p50",
+  "subject_id": 12,
+  "question": "نحصل على حل امثل ل مسالة الإسناد باستخدام خوارزمية : \n-",
+  "options": [
+   "اقرب جار",
+   "الهنغارية",
+   "الحلقات المغلقة",
+   "كل ما سبق خاطىء"
+  ],
+  "correct_index": 1,
+  "explanation": "الخوارزمية الهنغارية تعطي الحل الأمثل لمسألة الإسناد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 348,
+  "key": "y3:p51",
+  "subject_id": 12,
+  "question": "في النظام M/M/1/GD/oo/oo احتمال وجود  n شخص على الاقل في النظام",
+  "options": [
+   "1-Pⁿ",
+   "Pⁿ",
+   "Pⁿ-1",
+   "pⁿ+1"
+  ],
+  "correct_index": 1,
+  "explanation": "احتمال وجود n زبون على الأقل في النظام M/M/1 هو ρⁿ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 349,
+  "key": "y3:p52",
+  "subject_id": 12,
+  "question": "النظام الاحتمالي لعدد الزبائن من نظام الصفوف يحسب من",
+  "options": [
+   "1-p^n",
+   "1+p^n",
+   "(1-p)*p^n",
+   "(1+p)*p^n"
+  ],
+  "correct_index": 2,
+  "explanation": "احتمال n زبون في نظام M/M/1 هو (1-ρ)ρⁿ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 350,
+  "key": "y3:p54",
+  "subject_id": 12,
+  "question": "باستخدام خوارزمية اقرب جار اول وصلة نختارها",
+  "options": [
+   "4->2",
+   "2->4",
+   "2->3",
+   "2->5"
+  ],
+  "correct_index": 3,
+  "explanation": "أصغر عنصر بالجدول 23 وهو الانتقال 2→5.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_1_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 351,
+  "key": "y3:p55",
+  "subject_id": 12,
+  "question": "ثاني وصلة نختارها",
+  "options": [
+   "4->3",
+   "2->3",
+   "5->2",
+   "4->2"
+  ],
+  "correct_index": 0,
+  "explanation": "بعد حذف صف 2 وعمود 5 أصغر عنصر 25 وهو 4→3.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_1_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 352,
+  "key": "y3:p56",
+  "subject_id": 12,
+  "question": "ثالث وصلة نختارها",
+  "options": [
+   "4->2",
+   "4->3",
+   "2->3",
+   "5->4"
+  ],
+  "correct_index": 3,
+  "explanation": "بعد حذف صف 4 وعمود 3 (وعكس 3→4) أصغر عنصر 27 وهو 5→4.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_1_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 353,
+  "key": "y3:p57",
+  "subject_id": 12,
+  "question": "رايع وصلة نختارها",
+  "options": [
+   "2->3",
+   "4->3",
+   "4->2",
+   "1->2"
+  ],
+  "correct_index": 3,
+  "explanation": "البديل 3→2 (28) يغلق دورة جزئية فيُستبعد، فالأصغر المسموح 29 وهو 1→2.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_1_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 354,
+  "key": "y3:p58",
+  "subject_id": 12,
+  "question": "خاخس وصلة نختارها",
+  "options": [
+   "4->1",
+   "3->1",
+   "1->3",
+   "1->2"
+  ],
+  "correct_index": 1,
+  "explanation": "الوصلة الأخيرة الوحيدة المتبقية لإغلاق المسار هي 3→1 (كلفتها 30).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_1_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 355,
+  "key": "y3:p59",
+  "subject_id": 12,
+  "question": "تكون قيمة كلفة الانتقال",
+  "options": [
+   "132",
+   "133",
+   "134",
+   "135"
+  ],
+  "correct_index": 2,
+  "explanation": "الكلفة = 23 + 25 + 27 + 29 + 30 = 134.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_1_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 356,
+  "key": "y3:p61",
+  "subject_id": 12,
+  "question": "في تقريب فوجال للمسألة بالصورة: أولاً نهمل:",
+  "options": [
+   "B1",
+   "A1",
+   "B2",
+   "A2"
+  ],
+  "correct_index": 2,
+  "explanation": "عقوبة العمود B2 هي الأكبر (7-5=2)، فنوزع 15 على A1B2 ويكتمل B2 فنهمله.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_2_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 357,
+  "key": "y3:p62",
+  "subject_id": 12,
+  "question": "ثانيا نهمل",
+  "options": [
+   "A1",
+   "A1B3",
+   "B2",
+   "B2A1"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_2_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 358,
+  "key": "y3:p63",
+  "subject_id": 12,
+  "question": "ثالثا نهمل",
+  "options": [
+   "B2",
+   "A1",
+   "B2A1",
+   "B3A2"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_2_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 359,
+  "key": "y3:p64",
+  "subject_id": 12,
+  "question": "رابعا نهمل",
+  "options": [
+   "B3A2",
+   "B3A1",
+   "A2A1",
+   "A3"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_2_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 360,
+  "key": "y3:p65",
+  "subject_id": 12,
+  "question": "خامسا نهمل",
+  "options": [
+   "B2A3",
+   "B4A3",
+   "A3",
+   "B4"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_2_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 361,
+  "key": "y3:p66",
+  "subject_id": 12,
+  "question": "اقل تكلفة هي :",
+  "options": [
+   "338",
+   "339",
+   "340",
+   "341"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_2_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 362,
+  "key": "y3:p67",
+  "subject_id": 12,
+  "question": "A / B / C / X / Y / Z\n\nC",
+  "options": [
+   "منبع النظام",
+   "سعة النظام",
+   "عدد الخوادم",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "في رمز كاندل A/B/C/X/Y/Z الحرف C يمثل عدد الخوادم (المتوازية).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 363,
+  "key": "y3:p69",
+  "subject_id": 12,
+  "question": "عمود البظائل الممكنة في المرحلة الثانية عموظ x2* يأخذ القيم التالية",
+  "options": [
+   "1 1 1 1 0 0",
+   "0 0 0 1 1 1",
+   "1 1 0 0 0 1",
+   "0 0 0 0 1 1"
+  ],
+  "correct_index": 3,
+  "explanation": "في المرحلة 2: القرار الأمثل x2*=1 فقط عند s=4 و5 (جهاز واحد وزنه 4)، وإلا 0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_3_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 364,
+  "key": "y3:p70",
+  "subject_id": 12,
+  "question": "عمود البظائل الممكنة في المرحلة الثالثة العمود x3* يأخذ القيم التالية",
+  "options": [
+   "1 1 1 0 0 0",
+   "0 0 0 1 1 1",
+   "1 1 0 1 1 1",
+   "1 1 0 0 0 1"
+  ],
+  "correct_index": 1,
+  "explanation": "في المرحلة 3 (بسط وزنها 3): x3*=1 عند s=3،4،5 وإلا 0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_3_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 365,
+  "key": "y3:p71",
+  "subject_id": 12,
+  "question": "القرار الامثل لدى ربان الباخرة",
+  "options": [
+   "1 0 1",
+   "0 0 1",
+   "0 1 0",
+   "1 1 0"
+  ],
+  "correct_index": 0,
+  "explanation": "f1(5) الأفضل: خشب ×1 (55) + بسط ×1 (70) = 125، أي القرار (1,0,1).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_3_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 366,
+  "key": "y3:p72",
+  "subject_id": 12,
+  "question": "اجور الشحن هي",
+  "options": [
+   "125",
+   "126",
+   "127",
+   "128"
+  ],
+  "correct_index": 0,
+  "explanation": "أجور الشحن العظمى = 55 + 70 = 125.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_3_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 367,
+  "key": "y3:p73",
+  "subject_id": 12,
+  "question": "-f*3(sj) في المرحلة الثالثة قيمة",
+  "options": [
+   "0,0,0,70,70,70",
+   "0 0 70 70 70 70",
+   "0 70 70 85 85 85",
+   "0 0 0 70 85 70"
+  ],
+  "correct_index": 0,
+  "explanation": "f3(s)=70 إذا s≥3 وإلا 0، أي (0,0,0,70,70,70).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_3_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 368,
+  "key": "y3:p74",
+  "subject_id": 12,
+  "question": "-f*2(sj) في المرحلة الثانية قيمة",
+  "options": [
+   "0,0,0,70,70,70",
+   "0,0,0,70,85,85",
+   "0,0,0,70,85,70",
+   "0,0,70,70,70,70"
+  ],
+  "correct_index": 1,
+  "explanation": "f2(s)=max(f3(s), 85+f3(s-4)) فتكون (0,0,0,70,85,85).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_3_02-10-2026_14-03-03.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 369,
+  "key": "y3:p75",
+  "subject_id": 12,
+  "question": "عند تقريب فوجال فإننا نقوم بتفريغ :",
+  "options": [
+   "حاجة السوق",
+   "سعة المخزن",
+   "سعة المخزن و حاجة السوق",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "في تقريب فوجال نُفرغ سعة المخزن (العرض) وحاجة السوق (الطلب) تدريجياً حتى تنتهي.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 370,
+  "key": "y3:p76",
+  "subject_id": 12,
+  "question": "في الخوارزمية الهنغارية و بعد تمرير خطوط مستقيمة من جميع الاصفار نختار اصغر رقن لا يخترقه خط مستقيم",
+  "options": [
+   "نطرحه من الارقام  التي لا يخترقها مستقيم",
+   "نطرحه من الارقام التي يخترقها مستقيم",
+   "نجمعه الى الارقام التي يخترقها مستقيم",
+   "نجمعه الى الارقام التي لا يخترقها مستقيم"
+  ],
+  "correct_index": 0,
+  "explanation": "في الخوارزمية الهنغارية نطرح أصغر رقم غير مغطى من الأرقام غير المخترقة بخط ونضيفه لنقاط تقاطع الخطوط.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 371,
+  "key": "y3:p77",
+  "subject_id": 12,
+  "question": "طريقة الخلية ذات الكلفة الاقل تعطي حل اولي لمسألة",
+  "options": [
+   "النقل",
+   "الاسناد",
+   "الارتال",
+   "البائع المتجول"
+  ],
+  "correct_index": 0,
+  "explanation": "طريقة الخلية ذات الكلفة الأقل تعطي حلاً ابتدائياً لمسألة النقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 372,
+  "key": "y3:p78",
+  "subject_id": 12,
+  "question": "نحصل على حل اولي لمسألة النقل باستخدام",
+  "options": [
+   "الحلقات المغلقة",
+   "الهنغارية",
+   "اقرب جار",
+   "فوجال"
+  ],
+  "correct_index": 3,
+  "explanation": "تقريب فوجال يعطي حلاً ابتدائياً جيداً لمسألة النقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 373,
+  "key": "y3:p79",
+  "subject_id": 12,
+  "question": "طريقة تقريب فوجال تعطي حل لمسألة",
+  "options": [
+   "الاسناد",
+   "البائع المتجول",
+   "الارتال",
+   "النقل"
+  ],
+  "correct_index": 3,
+  "explanation": "طريقة فوجال تحل (تقريباً) مسألة النقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 374,
+  "key": "y3:p80",
+  "subject_id": 12,
+  "question": "الخوارزمية الهنغارية تعطينا حل امثل لمسألة",
+  "options": [
+   "النقل",
+   "البائع المتجول",
+   "الارتال",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "الخوارزمية الهنغارية تحل مسألة الإسناد (Assignment) وليست من الخيارات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 375,
+  "key": "y3:p81",
+  "subject_id": 12,
+  "question": "في انظمة الصفوف احتمال ان يكون النظام متوقف",
+  "options": [
+   "1-p^n",
+   "1+p^n",
+   "1-p",
+   "1+p"
+  ],
+  "correct_index": 2,
+  "explanation": "احتمال توقف النظام (لا زبائن) في M/M/1 هو P0 = 1 - ρ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 376,
+  "key": "y3:p82",
+  "subject_id": 12,
+  "question": "في نموذج الارتال\nA/B/C/X/Y/Z\nيشير الرمز Y الى",
+  "options": [
+   "سعة النظام",
+   "منبع النظام",
+   "عدد قنوات الخدمة",
+   "مبدأ الخدمة"
+  ],
+  "correct_index": 0,
+  "explanation": "في رمز كاندل A/B/C/X/Y/Z يشير Y إلى سعة النظام.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

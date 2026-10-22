@@ -1,0 +1,660 @@
+[
+ {
+  "id": 377,
+  "key": "y3:p85",
+  "subject_id": 13,
+  "question": "If G(x) = x⁵ + x³ + 1 then the generator is",
+  "options": [
+   "110101",
+   "110010",
+   "101001",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "G(x)=x⁵+x³+1 → المعاملات من x⁵ إلى x⁰: 1 0 1 0 0 1 = 101001.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 378,
+  "key": "y3:p86",
+  "subject_id": 13,
+  "question": "the process of ensuring that all pieces of packets arrive correctly at receiver and reassembles them into the original order is the responsibility of the —- layer",
+  "options": [
+   "network",
+   "transport",
+   "application",
+   "physical"
+  ],
+  "correct_index": 1,
+  "explanation": "طبقة النقل (Transport) مسؤولة عن وصول الحزم بشكل صحيح وإعادة ترتيبها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 379,
+  "key": "y3:p87",
+  "subject_id": 13,
+  "question": "Repeater",
+  "options": [
+   "Receives signal",
+   "regenerates",
+   "sends it",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "المكرر يستقبل الإشارة ويعيد توليدها ويرسلها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 380,
+  "key": "y3:p88",
+  "subject_id": 13,
+  "question": "If the max window length is 1 then the sliding window protocol is",
+  "options": [
+   "unrestricted protocol",
+   "stop and wait protocol",
+   "All of above",
+   "none of above"
+  ],
+  "correct_index": 1,
+  "explanation": "عندما تكون نافذة الإرسال العظمى 1 يصبح البروتوكول Stop-and-Wait.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 381,
+  "key": "y3:p89",
+  "subject_id": 13,
+  "question": "confidentiality means",
+  "options": [
+   "integrity",
+   "availability",
+   "All of above",
+   "none of above"
+  ],
+  "correct_index": 3,
+  "explanation": "السرية (Confidentiality) غير السلامة وغير التوفر، فالخيارات خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 382,
+  "key": "y3:p90",
+  "subject_id": 13,
+  "question": "Restore the original information",
+  "options": [
+   "Encryption",
+   "Decryption",
+   "Plaintext",
+   "Ciphertext"
+  ],
+  "correct_index": 1,
+  "explanation": "فك التشفير (Decryption) يستعيد المعلومات الأصلية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 383,
+  "key": "y3:p91",
+  "subject_id": 13,
+  "question": "Terminator :",
+  "options": [
+   "prevents reflection on fiber optics",
+   "prevents reflection on utp",
+   "prevents reflection on coax",
+   "all of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ Terminator في الكبل المحوري (Coax) يمنع انعكاس الإشارة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 384,
+  "key": "y3:p92",
+  "subject_id": 13,
+  "question": "hamming code is the responsibility of ..... layer",
+  "options": [
+   "presentation",
+   "Network",
+   "application",
+   "None of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "رمز Hamming لتصحيح الأخطاء ينتمي لطبقة ربط البيانات وليس للخيارات المذكورة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 385,
+  "key": "y3:p93",
+  "subject_id": 13,
+  "question": "Requires no obstates bettwen transmitter and receiver :",
+  "options": [
+   "Stp",
+   "fiber optic",
+   "microwave",
+   "none of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "الميكروويف يتطلب خط رؤية بلا عوائق (Line of sight).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 386,
+  "key": "y3:p94",
+  "subject_id": 13,
+  "question": "The type of information over data link",
+  "options": [
+   "frame",
+   "data",
+   "Packet",
+   "none of  the above"
+  ],
+  "correct_index": 0,
+  "explanation": "الوحدة المنقولة في طبقة ربط البيانات هي الإطار (Frame).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 387,
+  "key": "y3:p95",
+  "subject_id": 13,
+  "question": "Provide security services",
+  "options": [
+   "presentation",
+   "transfer",
+   "application",
+   "none of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "طبقة العرض (Presentation) تقدم خدمات الأمان مثل التشفير.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 388,
+  "key": "y3:p96",
+  "subject_id": 13,
+  "question": "Covers a larger area such as a city :",
+  "options": [
+   "MAN",
+   "LAN",
+   "WAN",
+   "none of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "شبكة المدينة (MAN) تغطي مساحة أكبر من LAN كمدينة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 389,
+  "key": "y3:p97",
+  "subject_id": 13,
+  "question": "The bit rate of Telephone is",
+  "options": [
+   "64 Kbps",
+   "64 Mbps",
+   "28 Mbps",
+   "none of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "معدل بت الهاتف (PCM) 64 كيلوبت/ثانية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 390,
+  "key": "y3:p98",
+  "subject_id": 13,
+  "question": "ISO is___",
+  "options": [
+   "Layered protocol",
+   "Each layer have general function",
+   "None all above",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "ISO تعتمد بروتوكولات طبقية، ولكل طبقة وظيفة عامة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 391,
+  "key": "y3:p99",
+  "subject_id": 13,
+  "question": "The capability to detect when transmission has been changed is called",
+  "options": [
+   "Error correction",
+   "Data integrity",
+   "Data security",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "اكتشاف تغيّر الإرسال يسمى سلامة البيانات (Data integrity).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 392,
+  "key": "y3:p100",
+  "subject_id": 13,
+  "question": "Flow control and error control protocols belong to",
+  "options": [
+   "Data Link",
+   "presentation",
+   "Network",
+   "none of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "بروتوكولات التحكم بالتدفق والأخطاء تنتمي إلى طبقة ربط البيانات (Data Link).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 393,
+  "key": "y3:p101",
+  "subject_id": 13,
+  "question": "CSMA",
+  "options": [
+   "Listen to the medium for any activity",
+   "if there is no activity transmit , otherwise wait random time",
+   "All of the above",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "CSMA يستمع للوسط، وإذا كان خالياً يرسل وإلا ينتظر زمناً عشوائياً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 394,
+  "key": "y3:p102",
+  "subject_id": 13,
+  "question": "Defines the way multiple frames are sent and tracked",
+  "options": [
+   "Flow control",
+   "Error control",
+   "All of the above",
+   "None of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "التحكم بالتدفق (Flow control) يحدد كيفية إرسال عدة إطارات وتتبعها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 395,
+  "key": "y3:p103",
+  "subject_id": 13,
+  "question": "uses start and stop bits",
+  "options": [
+   "Asynchronous",
+   "Synchronous",
+   "All of the above",
+   "None of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "النقل اللاتزامني (Asynchronous) يستخدم بتات بدء وإيقاف لكل محرف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 396,
+  "key": "y3:p104",
+  "subject_id": 13,
+  "question": "Using odd parity",
+  "options": [
+   "1010 0",
+   "1100 0",
+   "1000 1",
+   "None of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "الخيارات الثلاثة فيها عدد زوجي من الواحدات (2)، فلا واحد منها يحقق parity فردياً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 397,
+  "key": "y3:p105",
+  "subject_id": 13,
+  "question": "Using even parity",
+  "options": [
+   "1010 0",
+   "1100 1",
+   "1011 0",
+   "None of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "1010 يحوي واحدين، فالبت 0 يجعل العدد زوجياً (even parity).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 398,
+  "key": "y3:p106",
+  "subject_id": 13,
+  "question": "Packet radio protocol in which send a packet if it collides with another it weill send after a random amount of time",
+  "options": [
+   "CSMA",
+   "CSMA/CD",
+   "Token Ring",
+   "None of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "البروتوكول الموصوف هو ALOHA وهو غير موجود بين الخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 399,
+  "key": "y3:p107",
+  "subject_id": 13,
+  "question": "Bi-directional communications, but must Alternate is ------",
+  "options": [
+   "Simplex",
+   "Half-duplex",
+   "Full-duplex",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "الاتصال الثنائي الاتجاه بالتناوب هو نصف مزدوج (Half-duplex).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 400,
+  "key": "y3:p108",
+  "subject_id": 13,
+  "question": "Non contention access---------",
+  "options": [
+   "Dedicated lines",
+   "Multiplexing",
+   "All of the above",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطوط المخصصة والإرسال المتعدد (Multiplexing) كلاهما وصول غير متنازع عليه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 401,
+  "key": "y3:p109",
+  "subject_id": 13,
+  "question": "Encoding -------",
+  "options": [
+   "Number of signal changes per second",
+   "Receive the analog signal",
+   "Assigning a meaning to signals",
+   "Mixture of analog and digital techniques"
+  ],
+  "correct_index": 2,
+  "explanation": "الترميز (Encoding) هو إسناد معنى للإشارات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 402,
+  "key": "y3:p110",
+  "subject_id": 13,
+  "question": "Which of the following statement is true for the Star Topology----",
+  "options": [
+   "bi-directional communication.",
+   "Co-ordination is by passing a token",
+   "Central coordination",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "في طوبولوجيا النجمة يوجد تنسيق مركزي عبر الموزّع/المحوّل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 403,
+  "key": "y3:p111",
+  "subject_id": 13,
+  "question": "Bit-Level Cipher  :",
+  "options": [
+   "XOR Between data and key",
+   "use Public Key is for encryption",
+   "All true",
+   "All False"
+  ],
+  "correct_index": 0,
+  "explanation": "التشفير على مستوى البت يعتمد عمليات مثل XOR بين البيانات والمفتاح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 404,
+  "key": "y3:p112",
+  "subject_id": 13,
+  "question": "Specifying access rights to resources",
+  "options": [
+   "Authentication",
+   "Authorization",
+   "Security",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "التفويض (Authorization) يحدد حقوق الوصول إلى الموارد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 405,
+  "key": "y3:p113",
+  "subject_id": 13,
+  "question": "Exchange of information over long distances",
+  "options": [
+   "Communications",
+   "Data  Communications",
+   "Telecommunication",
+   "non of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "تبادل المعلومات لمسافات بعيدة هو الاتصالات عن بعد (Telecommunication).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 406,
+  "key": "y3:p114",
+  "subject_id": 13,
+  "question": "Through the collision, it waits a random amount of time according to the Binary Exponential Backoff algorithm and then repeats the above steps.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "بعد التصادم ينتظر زمناً عشوائياً وفق خوارزمية Binary Exponential Backoff ثم يعيد المحاولة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 407,
+  "key": "y3:p115",
+  "subject_id": 13,
+  "question": "Parallel transmission :",
+  "options": [
+   "Slower than Serial",
+   "Good for long distances",
+   "Good for short distances",
+   "non of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "النقل المتوازي مناسب للمسافات القصيرة لأن اختلاف زمن البتات يتفاقم على المسافات الطويلة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 408,
+  "key": "y3:p116",
+  "subject_id": 13,
+  "question": "An interface",
+  "options": [
+   "the layer's own business",
+   "defines how the layers above and below interact with it.",
+   "the layer's own business",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "الواجهة (Interface) تحدد كيف تتفاعل الطبقتان العليا والدنيا معها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 409,
+  "key": "y3:p117",
+  "subject_id": 13,
+  "question": "STP",
+  "options": [
+   "low crosstalk",
+   "high crosstalk",
+   "grounding cable",
+   "b  is not correct"
+  ],
+  "correct_index": 0,
+  "explanation": "الكبل STP (المحمي) يقلل التداخل (crosstalk).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

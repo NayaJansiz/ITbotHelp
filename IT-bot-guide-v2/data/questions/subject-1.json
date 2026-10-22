@@ -1,0 +1,700 @@
+[
+ {
+  "id": 1,
+  "key": "y1:p4",
+  "subject_id": 1,
+  "question": "1) تشارك المستثمرين في البرمجيات والأنظمة المتواجدة على أجهزة الشبكة يعني :",
+  "options": [
+   "توفير التحكم والإدارة المركزية للأنظمة الموزعة جغرافيا",
+   "تقاسم البرمجيات",
+   "توسيع قاعدة مستثمري الحواسيب بتكلفة منخفضة",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "مشاركة البرمجيات على الشبكة توفر الإدارة المركزية وتقاسم البرمجيات وتوسّع قاعدة المستفيدين بكلفة منخفضة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 2,
+  "key": "y1:p5",
+  "subject_id": 1,
+  "question": "2) أيا مما يلي ليس وحدة إدخال للحاسب :",
+  "options": [
+   "الطابعة",
+   "الكاميرا الرقمية",
+   "الماسح الضوئي",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الطابعة وحدة إخراج وليست وحدة إدخال.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 3,
+  "key": "y1:p6",
+  "subject_id": 1,
+  "question": "3) ليس من مكونات اللوحة الأم:",
+  "options": [
+   "RAM",
+   "PSU",
+   "ROM",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "مزوّد الطاقة PSU ليس من مكونات اللوحة الأم بل يمدّها بالطاقة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 4,
+  "key": "y1:p7",
+  "subject_id": 1,
+  "question": "4) كل حاسب متصل بشبكة  بعنوان هو :",
+  "options": [
+   "DNS server address",
+   "Mac adress",
+   "IP adress",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "كل حاسب متصل بالشبكة له عنوان IP.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 5,
+  "key": "y1:p8",
+  "subject_id": 1,
+  "question": "5) نظام تشغيل ليس فيه GUI هو :",
+  "options": [
+   "MS-DOS",
+   "Windows",
+   "Linux",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "نظام MS-DOS يعمل بالأوامر النصية ولا يملك واجهة رسومية GUI.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 6,
+  "key": "y1:p9",
+  "subject_id": 1,
+  "question": "6) شركات الند -الند :",
+  "options": [
+   "MAN",
+   "LAN",
+   "WAN",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "شبكات الند للند (Peer-to-Peer) تكون عادة شبكة محلية LAN.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 7,
+  "key": "y1:p10",
+  "subject_id": 1,
+  "question": "7) PPI هي وحدة قياس :",
+  "options": [
+   "دقة الماسح",
+   "دقة الشاشة",
+   "دقة الطابعة",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "PPI (Pixels Per Inch) وحدة لقياس دقة الشاشة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 8,
+  "key": "y1:p11",
+  "subject_id": 1,
+  "question": "8) للحاسب هو جهاز :",
+  "options": [
+   "عام في الاستخدام",
+   "متخصص في الاستخدام",
+   "كل ما سبق صحيح",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الحاسب جهاز عام الاستخدام يُنفّذ مهاماً متعددة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 9,
+  "key": "y1:p12",
+  "subject_id": 1,
+  "question": "9) تقنية المعالجات الدقيقة (microprocessor) ظهرت في الجيل :",
+  "options": [
+   "الثالث",
+   "الخامس",
+   "الرابع",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "المعالجات الدقيقة (microprocessor) ظهرت في الجيل الرابع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 10,
+  "key": "y1:p13",
+  "subject_id": 1,
+  "question": "10) نظام إدارة الملفات تعطي إمكانية :",
+  "options": [
+   "استرجاع البيانات",
+   "للتخزين على شكل مجموعات منطقية منفصلة",
+   "كل ما سبق صحيح",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "نظام إدارة الملفات يسمح بالتخزين بشكل مجموعات منطقية منفصلة واسترجاع البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 11,
+  "key": "y1:p14",
+  "subject_id": 1,
+  "question": "11) تسمى المكونات التي تقوم بالقراءة  و /أو الكتابة على الأقراص اسم :",
+  "options": [
+   "المحركات",
+   "المجلدات",
+   "الملفات",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "المكوّنات التي تقرأ وتكتب على الأقراص تسمى المحركات (Drives).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 12,
+  "key": "y1:p15",
+  "subject_id": 1,
+  "question": "12) (EXE.اسم الملف ) هي من نوع :",
+  "options": [
+   "الدفعي",
+   "الأوامر",
+   "التنفيذي",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "الملف ذو الامتداد EXE ملف تنفيذي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 13,
+  "key": "y1:p16",
+  "subject_id": 1,
+  "question": "13) تقع الذاكرة المخبأية Cache :",
+  "options": [
+   "اللوحة الأم",
+   "المعالج",
+   "كل ما سبق صحيح",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الذاكرة المخبأية (Cache) تقع غالباً ضمن المعالج.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 14,
+  "key": "y1:p17",
+  "subject_id": 1,
+  "question": "14) COMS هي:",
+  "options": [
+   "RAM",
+   "ROM",
+   "كل ما سبق صحيح",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "CMOS نوع من الذاكرة RAM تحفظ إعدادات النظام بفضل بطارية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 15,
+  "key": "y1:p18",
+  "subject_id": 1,
+  "question": "15) العدد 95,25 في نظام العد الثنائي هو :",
+  "options": [
+   "1011111,11",
+   "1011111,01",
+   "1100111,11",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "95.25 = 1011111 للجزء الصحيح و.01 للجزء الكسري: 1011111,01.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 16,
+  "key": "y1:p19",
+  "subject_id": 1,
+  "question": "16- ناتج قسمة 1100100 على العدد 101 باستخدام النظام الثنائي",
+  "options": [
+   "10100",
+   "10000",
+   "11100",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "1100100 (100) ÷ 101 (5) = 20 = 10100.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 17,
+  "key": "y1:p21",
+  "subject_id": 1,
+  "question": "17) الشكل يمثل بوابة :",
+  "options": [
+   "Yes",
+   "Not",
+   "OR",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الرمز المرسوم مثلث ينتهي بدائرة صغيرة، وهو بوابة NOT (العاكس) تقلب قيمة الدخل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_1_02-10-2026_13-23-52.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 18,
+  "key": "y1:p22",
+  "subject_id": 1,
+  "question": "18- العدد 11001100 :",
+  "options": [
+   "203",
+   "204",
+   "202",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "11001100 في النظام العشري = 128+64+8+4 = 204.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 19,
+  "key": "y1:p23",
+  "subject_id": 1,
+  "question": "19- يمثل العدد 160 في نظام العد العد الثماني :",
+  "options": [
+   "(240)8",
+   "(242)8",
+   "(244)8",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "160 = 2×64 + 4×8 + 0 = (240) بالثماني.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 20,
+  "key": "y1:p24",
+  "subject_id": 1,
+  "question": "20- بمثل العدد الست العشري 16(CA) في نظام العد الثماني :",
+  "options": [
+   "(312)8",
+   "(315)8",
+   "(314)8",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "CA16 = 202 عشري = (312) بالثماني.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 21,
+  "key": "y1:p25",
+  "subject_id": 1,
+  "question": "21- العدد (71-) باستخدام المتمم الثنائي",
+  "options": [
+   "10001001",
+   "10111001",
+   "11111001",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "71 = 01000111، المتمم الثنائي لـ -71 = 10111001.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 22,
+  "key": "y1:p26",
+  "subject_id": 1,
+  "question": "22- قيمة المتمم الثنائي 11101100 عشريا :",
+  "options": [
+   "(-23)",
+   "(-22)",
+   "(-20)",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "11101100: نعكس فنحصل 00010011 ونضيف 1 = 00010100 = 20، فالقيمة -20.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 23,
+  "key": "y1:p27",
+  "subject_id": 1,
+  "question": "23- ناتج (10-25) باستخدام المتمم الثنائي هي",
+  "options": [
+   "100001111",
+   "100101111",
+   "100001010",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "25 + المتمم الثنائي لـ 10 = 100001111 (الحمل الأخير يهمل)، أي النتيجة 15.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 24,
+  "key": "y1:p28",
+  "subject_id": 1,
+  "question": "24-الDMA هي من مكونات",
+  "options": [
+   "ROM",
+   "CPU",
+   "اللوحة الأم",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "وحدة DMA من مكونات اللوحة الأم.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 25,
+  "key": "y1:p29",
+  "subject_id": 1,
+  "question": "25- من خواص CISC :",
+  "options": [
+   "تعليماتها تكون غير متساوية",
+   "حواسيب مجموعة التعليمات المعقدة",
+   "كل ماسبق صحيح",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "مجموعة التعليمات المعقدة CISC تعليماتها غير متساوية وهي حواسيب مجموعة التعليمات المعقدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 26,
+  "key": "y1:p30",
+  "subject_id": 1,
+  "question": "26- تقوم الوحدة TU باصدار الاوامر المناسبة لتنفيذ التعليمة في :",
+  "options": [
+   "IU",
+   "ALU",
+   "AU",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "وحدة التوقيت تصدر الأوامر لتنفيذ التعليمة في وحدة الحساب والمنطق ALU.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 27,
+  "key": "y1:p31",
+  "subject_id": 1,
+  "question": "27- ال RDRAM تستخدم",
+  "options": [
+   "DIMMI",
+   "SIMMI",
+   "RIMM",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "ذاكرة RDRAM تستخدم وحدات RIMM.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 28,
+  "key": "y1:p32",
+  "subject_id": 1,
+  "question": "28- من مهام ال Northbridge :",
+  "options": [
+   "إدارة الإتصالات عالية السرعة",
+   "إدارة الإتصال بين الذاكرة والمعالج",
+   "كل ماسبق صحيح",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "الجسر الشمالي يدير الاتصالات عالية السرعة والاتصال بين الذاكرة والمعالج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 29,
+  "key": "y1:p33",
+  "subject_id": 1,
+  "question": "29- ليس من مهام نظام التشغيل",
+  "options": [
+   "كشف الأعطال",
+   "كشف الفيروسات",
+   "التحكم في مسار البيانات",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "كشف الفيروسات ليس من مهام نظام التشغيل الأساسية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 30,
+  "key": "y1:p34",
+  "subject_id": 1,
+  "question": "30- من انواع أنظمة التشغيل Multi- user Single-tasking متميزة ب :",
+  "options": [
+   "يسمح لعدد من المستخدمين بالعمل معا",
+   "PC",
+   "كل ما سبق صحيح",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "نظام متعدد المستخدمين أحادي المهام يسمح بعمل عدة مستخدمين معاً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 31,
+  "key": "y1:p35",
+  "subject_id": 1,
+  "question": "31-من مهام أنظمة تشغيل الشبكات",
+  "options": [
+   "تسمح لأنظمة الحاسب المتصلة بالشبكة بتبادل المعلومات",
+   "المشاركة بالموارد المتوفر",
+   "كل ماسبق صحيح",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "نظام تشغيل الشبكات يتيح تبادل المعلومات ومشاركة الموارد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 32,
+  "key": "y1:p36",
+  "subject_id": 1,
+  "question": "32-نظام تشغيل unixفعال في مجال الشبكات لأن معظم البرمجيات التي تتعامل مع الشبكات وتديرها تعتمد على هذا النظام مثل بروتوكول اتصال",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "نظام Unix فعّال في الشبكات لأن برمجيات الشبكات (مثل TCP/IP) تعتمد عليه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 33,
+  "key": "y1:p37",
+  "subject_id": 1,
+  "question": "33-طريقه اتصال لوحه المفاتيح مع الحاسب تتم باستخدام",
+  "options": [
+   "USB",
+   "PS/2",
+   "كل ماسبق صحيح",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "لوحة المفاتيح تتصل عبر USB أو PS/2.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 34,
+  "key": "y1:p38",
+  "subject_id": 1,
+  "question": "34-اي من التالي ليس من اجهزة الربط الشبكي",
+  "options": [
+   "HUB",
+   "Tcp",
+   "SWITCH",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "Tcp بروتوكول وليس جهاز ربط شبكي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 35,
+  "key": "y1:p39",
+  "subject_id": 1,
+  "question": "35) من وظائف بطاقة الشبكة :",
+  "options": [
+   "التشفير",
+   "تحويل الإشارة من النظام العشري إلى النظام الثنائي",
+   "تحويل الإشارات الرقمية إلى تماثلية و بالعكس",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "بطاقة الشبكة تحوّل بين الإشارات الرقمية والتماثلية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

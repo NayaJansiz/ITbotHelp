@@ -1,0 +1,1155 @@
+[
+ {
+  "id": 749,
+  "key": "y4:p214",
+  "subject_id": 27,
+  "question": "1. Observations and variables forms:",
+  "options": [
+   "Cases",
+   "Features",
+   "Data table",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "الملاحظات (Observations) والمتحولات (Variables) تشكّل جدول البيانات (Data table).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 750,
+  "key": "y4:p215",
+  "subject_id": 27,
+  "question": "2. Observations is:",
+  "options": [
+   "Columns",
+   "Variables",
+   "Raws",
+   "Rows"
+  ],
+  "correct_index": 3,
+  "explanation": "الملاحظات (Observations) هي الصفوف (Rows) في جدول البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 751,
+  "key": "y4:p216",
+  "subject_id": 27,
+  "question": "3. Data could be information collected:",
+  "options": [
+   "At same time",
+   "Many times",
+   "A & B",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "البيانات قد تُجمع في نفس الوقت (cross-section) أو عدة مرات (time series)، أي A وB.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 752,
+  "key": "y4:p217",
+  "subject_id": 27,
+  "question": "4. If some cross-sectional units are observed more times than others:",
+  "options": [
+   "It is balanced data",
+   "It is unbalanced data",
+   "It is not possible to be achieved",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "إذا شوهدت بعض الوحدات أكثر من غيرها فالبيانات غير متوازنة (unbalanced).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 753,
+  "key": "y4:p218",
+  "subject_id": 27,
+  "question": "5. Data quality is more related to data visualization not data analysis:",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "correct_index": 1,
+  "explanation": "جودة البيانات ترتبط بتحليل البيانات وليس بالتصوير فقط، فالعبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 754,
+  "key": "y4:p219",
+  "subject_id": 27,
+  "question": "6. The way of collecting data is not relevant to data quality:",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "correct_index": 1,
+  "explanation": "طريقة جمع البيانات ترتبط بجودتها، فالعبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 755,
+  "key": "y4:p220",
+  "subject_id": 27,
+  "question": "7. Quality of data is related to:",
+  "options": [
+   "Validity",
+   "Reliability",
+   "Coverage",
+   "Content",
+   "All of the above"
+  ],
+  "correct_index": 4,
+  "explanation": "جودة البيانات ترتبط بالصلاحية والموثوقية والتغطية والمحتوى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 756,
+  "key": "y4:p221",
+  "subject_id": 27,
+  "question": "9. Coverage is:",
+  "options": [
+   "what is the substance a variable captures",
+   "how close the actual content of the variable to the intended content",
+   "If we were to measure the same variable multiple times for the same",
+   "What proportion of the observations in focus are in the data"
+  ],
+  "correct_index": 3,
+  "explanation": "التغطية (Coverage) هي نسبة الملاحظات المقصودة الموجودة فعلياً في البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 757,
+  "key": "y4:p222",
+  "subject_id": 27,
+  "question": "8. Content is:",
+  "options": [
+   "what is the substance a variable captures",
+   "how close the actual content of the variable to the intended content",
+   "If we were to measure the same variable multiple times for the same",
+   "What proportion of the observations in focus are in the data"
+  ],
+  "correct_index": 0,
+  "explanation": "المحتوى (Content) هو ما يمثله المتحول (جوهره).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 758,
+  "key": "y4:p223",
+  "subject_id": 27,
+  "question": "10. Validity is:",
+  "options": [
+   "what is the substance a variable captures",
+   "how close the actual content of the variable to the intended content",
+   "If we were to measure the same variable multiple times for the same",
+   "What proportion of the observations in focus are in the data"
+  ],
+  "correct_index": 1,
+  "explanation": "الصلاحية (Validity) هي مدى قرب المحتوى الفعلي للمتحول من المحتوى المقصود.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 759,
+  "key": "y4:p225",
+  "subject_id": 27,
+  "question": "12. Collecting data from existing sources is the best choice:",
+  "options": [
+   "Because it is inexpensive",
+   "Because validity of main variables is high",
+   "it is not the best choice",
+   "Both A & B"
+  ],
+  "correct_index": 2,
+  "explanation": "البيانات من مصادر موجودة رخيصة لكن صلاحية المتحولات الرئيسية غالباً منخفضة، فليست دائماً الخيار الأفضل.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 760,
+  "key": "y4:p226",
+  "subject_id": 27,
+  "question": "13. GDPR stands for:",
+  "options": [
+   "General data production resource",
+   "Genetic data programming responsibility",
+   "General data protection regulation",
+   "Global domain power resources"
+  ],
+  "correct_index": 2,
+  "explanation": "GDPR هي General Data Protection Regulation.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 761,
+  "key": "y4:p227",
+  "subject_id": 27,
+  "question": "14. Data must be processed legally, in a transparent manner:",
+  "options": [
+   "Lawful",
+   "Fair",
+   "Transparent",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "المعالجة القانونية الشفافة تعني Lawful وFair وTransparent معاً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 762,
+  "key": "y4:p228",
+  "subject_id": 27,
+  "question": "15. Data Minimization:",
+  "options": [
+   "Only collect and process the data strictly necessary to achieve the specific purpose.",
+   "Data should only be used for the specific, explicit purpose for which it was collected.",
+   "When personal data is collected directly, it must be based on a clear, freely given",
+   "تتمة الي فوق, and informed affirmative act",
+   "All of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "تقليل البيانات (Data Minimization): جمع ومعالجة البيانات الضرورية للغرض المحدد فقط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 763,
+  "key": "y4:p229",
+  "subject_id": 27,
+  "question": "16. Purpose Limitation:",
+  "options": [
+   "Only collect and process the data strictly necessary to achieve the specific purpose.",
+   "Data should only be used for the specific, explicit purpose for which it was collected.",
+   "When personal data is collected directly, it must be based on a clear, freely given",
+   ", and informed affirmative act.تتمة فوق",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "تحديد الغرض (Purpose Limitation): استخدام البيانات فقط للغرض المحدد المعلن عند جمعها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 764,
+  "key": "y4:p230",
+  "subject_id": 27,
+  "question": "17. Informed Consent:",
+  "options": [
+   "Only collect and process the data strictly necessary to achieve the specific purpose",
+   "Data should only be used for the specific, explicit purpose for which it was collected.",
+   "When personal data is collected directly, it must be based on a clear, freely given,",
+   "and informed affirmative act.",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "الموافقة المستنيرة: يجب أن تكون حرة وواضحة ومبنية على إقرار مُطّلع (تتمة الخيار D).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 765,
+  "key": "y4:p231",
+  "subject_id": 27,
+  "question": "18. Data Subject Rights:",
+  "options": [
+   "Integrate data protection mechanisms into technology and processes from the outset.",
+   "Integrate data protection mechanisms without technology and processes from the outset.",
+   "Subjects have the right to access, rectify, erase (\"right to be forgotten\")",
+   ", and object to the processing of their dataتتمة فوقها",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "حقوق صاحب البيانات: الوصول والتصحيح والمحو (الحق في النسيان) والاعتراض (تتمة الخيار D).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 766,
+  "key": "y4:p232",
+  "subject_id": 27,
+  "question": "19. Discovery:",
+  "options": [
+   "Do I have enough information to draft an analytic plan",
+   "Do I have enough \"good data\" to start building model",
+   "Do I have good idea about the type of model to try?",
+   "Can I refine the analytic plan?"
+  ],
+  "correct_index": 0,
+  "explanation": "مرحلة الاستكشاف (Discovery): هل لدي معلومات كافية لصياغة خطة تحليلية؟",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 767,
+  "key": "y4:p233",
+  "subject_id": 27,
+  "question": "20. Model planning:",
+  "options": [
+   "Do I have enough information to draft an analytic plan",
+   "Do I have enough \"good data\" to start building model",
+   "Do I have good idea about the type of model to try?",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "مرحلة تخطيط النموذج: هل لدي فكرة جيدة عن نوع النموذج الذي سأجرّبه؟",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 768,
+  "key": "y4:p234",
+  "subject_id": 27,
+  "question": "21. Data prep.:",
+  "options": [
+   "Do I have enough information to draft an analytic plan",
+   "Do I have enough \"good data\" to start building model",
+   "Do I have good idea about the type of model to try?",
+   "Can I refine the analytic plan?"
+  ],
+  "correct_index": 1,
+  "explanation": "مرحلة تحضير البيانات: هل لدي بيانات جيدة كافية لبدء بناء النموذج؟",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 769,
+  "key": "y4:p235",
+  "subject_id": 27,
+  "question": "22. Descriptive:",
+  "options": [
+   "Deals with what happened in the past",
+   "Deals with why it did happened in the past",
+   "Deals with what will happen in the future",
+   "How can we make it happen again"
+  ],
+  "correct_index": 0,
+  "explanation": "التحليل الوصفي (Descriptive) يجيب عن ماذا حدث في الماضي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 770,
+  "key": "y4:p236",
+  "subject_id": 27,
+  "question": "23. Predictive:",
+  "options": [
+   "Deals with what happened in the past",
+   "Deals with why it did happened in the past",
+   "Deals with what will happen in the future",
+   "How can we make it happen again"
+  ],
+  "correct_index": 2,
+  "explanation": "التحليل التنبؤي (Predictive) يجيب عن ماذا سيحدث في المستقبل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 771,
+  "key": "y4:p237",
+  "subject_id": 27,
+  "question": "24. Perspective (Prescriptive):",
+  "options": [
+   "Deals with what happened in the past",
+   "Deals with why it did happened in the past",
+   "Deals with what will happen in the future",
+   "How can we make it happen again"
+  ],
+  "correct_index": 3,
+  "explanation": "التحليل الإرشادي (Prescriptive) يجيب عن كيف نجعله يحدث (أو نتعامل معه).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 772,
+  "key": "y4:p238",
+  "subject_id": 27,
+  "question": "25. Diagnostics:",
+  "options": [
+   "Deals with what happened in the past",
+   "Deals with why it did happened in the past",
+   "Deals with what will happen in the future",
+   "How can we make it happen again"
+  ],
+  "correct_index": 1,
+  "explanation": "التحليل التشخيصي (Diagnostic) يجيب عن لماذا حدث ما حدث في الماضي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 773,
+  "key": "y4:p239",
+  "subject_id": 27,
+  "question": "26. Feature engineering:",
+  "options": [
+   "Perform data visualization and summary statistics to gain insights.",
+   "Consider techniques like one-hot encoding, scaling, and dimensionality reduction",
+   "Identify patterns, trends, and anomalies in the data.",
+   "Formulate initial hypotheses"
+  ],
+  "correct_index": 1,
+  "explanation": "هندسة الخصائص تتضمن تقنيات مثل one-hot encoding والتطبيع وتقليل الأبعاد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 774,
+  "key": "y4:p240",
+  "subject_id": 27,
+  "question": "27. Simpson’s Paradox occurs due to the missing of lurking or confounding variables.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "مفارقة سيمبسون تحدث بسبب إغفال متغيرات كامنة أو مربكة (confounding).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 775,
+  "key": "y4:p241",
+  "subject_id": 27,
+  "question": "28. Deals with aggregating larger datasets into smaller ones:",
+  "options": [
+   "Simpson’s Paradox",
+   "Shannon's Paradox",
+   "Chomsky's Paradox",
+   "None of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "مفارقة سيمبسون تظهر عند تجميع بيانات كبيرة في مجموعات أصغر أو العكس، فتنعكس الاتجاهات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 776,
+  "key": "y4:p242",
+  "subject_id": 27,
+  "question": "29. Moving average is only used in finance and technical analysis:",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "المتوسط المتحرك لا يقتصر على المالية، فهو يُستخدم في الإشارات والإحصاء وغيرها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 777,
+  "key": "y4:p243",
+  "subject_id": 27,
+  "question": "30. Moving average is used to filter the noise of long term random price fluctuations:",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "المتوسط المتحرك يرشّح ضوضاء التقلبات العشوائية قصيرة المدى وليس طويلة المدى.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 778,
+  "key": "y4:p244",
+  "subject_id": 27,
+  "question": "31. SMA calculates the arithmetic mean of a set of prices over a specific period:",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "SMA هو المتوسط الحسابي لمجموعة أسعار خلال فترة محددة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 779,
+  "key": "y4:p245",
+  "subject_id": 27,
+  "question": "32. What is the best description of data mining?",
+  "options": [
+   "A method for manually cleaning raw data before analysis",
+   "A database design technique for storing large tables efficiently.",
+   "The automatic extraction of implicit, potentially useful information from data.",
+   "A way of replacing all statistical analysis with visualization."
+  ],
+  "correct_index": 2,
+  "explanation": "تنقيب البيانات هو الاستخراج التلقائي لمعلومات ضمنية ومفيدة محتملة من البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 780,
+  "key": "y4:p246",
+  "subject_id": 27,
+  "question": "33. Which pairing is most accurate for the main early distinction?",
+  "options": [
+   "Labelled data and unlabelled data.",
+   "Structured data and encrypted data",
+   "Training data and test data only.",
+   "Static data and archived data."
+  ],
+  "correct_index": 0,
+  "explanation": "التمييز المبكر الأدق هو بين البيانات الموسومة (labelled) وغير الموسومة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 781,
+  "key": "y4:p247",
+  "subject_id": 27,
+  "question": "34. A dataset contains a designated attribute whose value is categorical, and the goal is to predict that value for unseen cases. What task is this?",
+  "options": [
+   "Clustering",
+   "Regression",
+   "Classification",
+   "Association rule mining."
+  ],
+  "correct_index": 2,
+  "explanation": "التنبؤ بقيمة تصنيفية (categorical) لحالات جديدة هو مهمة تصنيف (Classification).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 782,
+  "key": "y4:p248",
+  "subject_id": 27,
+  "question": "35. Which statement best captures supervised learning?",
+  "options": [
+   "It uses unlabelled data to discover hidden groupings",
+   "It uses labelled data to learn a model for predicting a designated attribute.",
+   "It requires no training examples.",
+   "It only applies to numerical prediction."
+  ],
+  "correct_index": 1,
+  "explanation": "التعلم الخاضع للإشراف يستخدم بيانات موسومة لبناء نموذج يتنبأ بخاصية محددة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 783,
+  "key": "y4:p249",
+  "subject_id": 27,
+  "question": "36. Which of the following is the closest example of unsupervised learning?",
+  "options": [
+   "Predicting a student’s final grade from previous grades.",
+   "Estimating house prices from known house features.",
+   "Classifying emails as spam or not spam using labelled examples.",
+   "Grouping customer records into natural clusters without predefined class labels."
+  ],
+  "correct_index": 3,
+  "explanation": "تجميع سجلات الزبائن لعناقيد طبيعية دون تسميات مسبقة هو تعلم غير خاضع للإشراف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 784,
+  "key": "y4:p250",
+  "subject_id": 27,
+  "question": "37. For data mining applications, which list is the most complete?",
+  "options": [
+   "Classification, numerical prediction, association, and clustering.",
+   "Sorting, indexing, compression, and encryption.",
+   "Search, retrieval, replication, and backup.",
+   "Parsing, compilation, linking, and execution."
+  ],
+  "correct_index": 0,
+  "explanation": "تطبيقات التنقيب: التصنيف والتنبؤ الرقمي والارتباط والتجميع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 785,
+  "key": "y4:p251",
+  "subject_id": 27,
+  "question": "38. What is the role of an \"instance\" as a terminology?",
+  "options": [
+   "A type of algorithm used in classification.",
+   "A set of variable values corresponding to one object or record.",
+   "A special kind of class label.",
+   "A measure of model accuracy."
+  ],
+  "correct_index": 1,
+  "explanation": "الـ instance هي مجموعة قيم متحولات تقابل كائناً أو سجلاً واحداً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 786,
+  "key": "y4:p252",
+  "subject_id": 27,
+  "question": "39. Why data mining is useful across many fields?",
+  "options": [
+   "Because it only works on financial data.",
+   "Because it eliminates the need for domain knowledge.",
+   "Because it helps extract useful knowledge from data in diverse application areas.",
+   "Because it is mainly a database administration tool."
+  ],
+  "correct_index": 2,
+  "explanation": "التنقيب مفيد في مجالات كثيرة لأنه يستخرج معرفة مفيدة من البيانات في تطبيقات متنوعة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 787,
+  "key": "y4:p253",
+  "subject_id": 27,
+  "question": "40. Which example best fits nearest neighbour matching?",
+  "options": [
+   "Building a rule set from frequent itemsets only.",
+   "Splitting data into entropy-balanced subsets.",
+   "Estimating coefficients in a linear equation.",
+   "Assigning a new case based on the labels of its closest examples."
+  ],
+  "correct_index": 3,
+  "explanation": "مطابقة أقرب الجيران تعني إسناد حالة جديدة اعتماداً على تسميات أقرب أمثلتها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 788,
+  "key": "y4:p254",
+  "subject_id": 27,
+  "question": "41. Which statement is most consistent what you learnt?",
+  "options": [
+   "It is aimed only at advanced mathematicians.",
+   "It explains techniques with worked examples and limited mathematical formality.",
+   "It avoids exercises to keep the text concise.",
+   "It focuses mainly on programming implementation details."
+  ],
+  "correct_index": 1,
+  "explanation": "الكتاب يشرح التقنيات بأمثلة محلولة وبصياغة رياضية محدودة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 789,
+  "key": "y4:p255",
+  "subject_id": 27,
+  "question": "42. What is the primary purpose of entropy in decision tree learning?",
+  "options": [
+   "To measure the number of features in a dataset.",
+   "To measure impurity or uncertainty in a class distribution.",
+   "To count the depth of the tree.",
+   "To compute the number of leaves in the tree"
+  ],
+  "correct_index": 1,
+  "explanation": "الإنتروبي تقيس عدم النقاء أو عدم اليقين في توزيع الأصناف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 790,
+  "key": "y4:p256",
+  "subject_id": 27,
+  "question": "43. Which frequency table is typically used to compute entropy for a class attribute in a decision tree?",
+  "options": [
+   "A table showing each class label and its count.",
+   "A table showing only attribute names",
+   "A table listing all test cases in order",
+   "A table of tree branches and pruning levels."
+  ],
+  "correct_index": 0,
+  "explanation": "جدول تكراري يوضح كل صنف وعدده يُستخدم لحساب إنتروبي خاصية الصنف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 791,
+  "key": "y4:p257",
+  "subject_id": 27,
+  "question": "44. If all instances in a node belong to the same class, the entropy of that node is:",
+  "options": [
+   "1",
+   "Undefined",
+   "0",
+   "Maximum"
+  ],
+  "correct_index": 2,
+  "explanation": "إذا انتمت كل حالات العقدة لنفس الصنف تكون الإنتروبي 0 (عقدة نقية).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 792,
+  "key": "y4:p258",
+  "subject_id": 27,
+  "question": "45. Which split criterion is most closely associated with choosing the attribute that reduces uncertainty the most?",
+  "options": [
+   "Accuracy",
+   "Gain ratio",
+   "Information gain",
+   "Recall"
+  ],
+  "correct_index": 2,
+  "explanation": "معيار الانقسام المرتبط بأكبر تقليل لعدم اليقين هو كسب المعلومات (Information gain).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 793,
+  "key": "y4:p259",
+  "subject_id": 27,
+  "question": "46. In decision tree induction, what does a root node usually represent?",
+  "options": [
+   "The final class decision.",
+   "The first attribute test applied to the data.",
+   "The most frequent class only",
+   "A pruned subtree."
+  ],
+  "correct_index": 1,
+  "explanation": "عقدة الجذر تمثل أول اختبار على خاصية يُطبَّق على البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 794,
+  "key": "y4:p260",
+  "subject_id": 27,
+  "question": "47. A frequency table for attribute Outlook in a some dataset would be used mainly to:",
+  "options": [
+   "Estimate tree height",
+   "Compute entropy for each Outlook value and its class distribution.",
+   "Calculate the number of test records.",
+   "Determine the number of class labels in the dataset."
+  ],
+  "correct_index": 1,
+  "explanation": "الجدول التكراري لـ Outlook يُستخدم لحساب إنتروبي كل قيمة وتوزيع أصنافها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 795,
+  "key": "y4:p261",
+  "subject_id": 27,
+  "question": "48. Which of the following is most likely to produce the lowest entropy?",
+  "options": [
+   "A 50/50 class split.",
+   "A highly mixed class distribution.",
+   "A node where one class dominates strongly.",
+   "A node with many different attributes"
+  ],
+  "correct_index": 2,
+  "explanation": "أقل إنتروبي في عقدة يهيمن فيها صنف واحد بقوة (شبه نقية).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 796,
+  "key": "y4:p262",
+  "subject_id": 27,
+  "question": "49. Which situation indicates a classifier with high accuracy but possibly poor class balance handling?",
+  "options": [
+   "It predicts all classes equally well.",
+   "It performs well on the majority class but poorly on a minority class.",
+   "It has zero false positives and zero false negatives",
+   "It never makes any predictions"
+  ],
+  "correct_index": 1,
+  "explanation": "دقة عالية مع ضعف معالجة توازن الأصناف: أداء جيد على الصنف الأغلب وضعيف على الأقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 797,
+  "key": "y4:p263",
+  "subject_id": 27,
+  "question": "50. Why can accuracy be misleading in some classification problems?",
+  "options": [
+   "It ignores all true negatives",
+   "It may look high when one class dominates the dataset.",
+   "It cannot be computed from a confusion matrix.",
+   "It is only used for regression."
+  ],
+  "correct_index": 1,
+  "explanation": "الدقة قد تضلل لأنها تبدو مرتفعة عندما يهيمن صنف واحد على البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 798,
+  "key": "y4:p264",
+  "subject_id": 27,
+  "question": "51. In a binary classification confusion matrix, which outcome is a false positive?",
+  "options": [
+   "Predicted positive, actually negative",
+   "Predicted negative, actually positive.",
+   "Predicted positive, actually positive.",
+   "Predicted negative, actually negative."
+  ],
+  "correct_index": 0,
+  "explanation": "الإيجابي الكاذب (False positive): تنبأ بإيجابي والواقع سلبي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 799,
+  "key": "y4:p265",
+  "subject_id": 27,
+  "question": "52. If a dataset node has class counts 9 positive and 1 negative, the entropy is",
+  "options": [
+   "Close to 0.",
+   "Close to 1.",
+   "Exactly 1.",
+   "Negative"
+  ],
+  "correct_index": 0,
+  "explanation": "عقدة 9 موجب و1 سالب شبه نقية، فإنتروبيتها (≈0.47) أقرب للصفر.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 800,
+  "key": "y4:p266",
+  "subject_id": 27,
+  "question": "53. What does a leaf node in a decision tree usually represent?",
+  "options": [
+   "An attribute test.",
+   "A final class prediction.",
+   "A missing value",
+   "A frequency table."
+  ],
+  "correct_index": 1,
+  "explanation": "ورقة الشجرة تمثل التنبؤ النهائي بالصنف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 801,
+  "key": "y4:p267",
+  "subject_id": 27,
+  "question": "54. When calculating information gain, what is subtracted from the parent entropy?",
+  "options": [
+   "The depth of the tree.",
+   "The weighted entropy of the child subsets",
+   "The number of classes.",
+   "The number of records in the dataset."
+  ],
+  "correct_index": 1,
+  "explanation": "كسب المعلومات = إنتروبي الأب − الإنتروبي الموزونة للمجموعات الفرعية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 802,
+  "key": "y4:p268",
+  "subject_id": 27,
+  "question": "55. Which is the best reason to use a frequency table before computing entropy?",
+  "options": [
+   "It allows direct measurement of class proportions",
+   "It replaces the need for training data.",
+   "It guarantees perfect accuracy.",
+   "It eliminates overfitting."
+  ],
+  "correct_index": 0,
+  "explanation": "الجدول التكراري يتيح قياس نسب الأصناف مباشرة قبل حساب الإنتروبي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 803,
+  "key": "y4:p269",
+  "subject_id": 27,
+  "question": "56. If a classifier predicts 80 instances correctly out of 100 total instances, its accuracy is:",
+  "options": [
+   "20%",
+   "50%",
+   "80%",
+   "90%"
+  ],
+  "correct_index": 2,
+  "explanation": "الدقة = 80/100 = 80%.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 804,
+  "key": "y4:p270",
+  "subject_id": 27,
+  "question": "57. Which property is most desirable for an attribute selected near the top of a decision tree?",
+  "options": [
+   "It has the highest number of distinct values only.",
+   "It produces a strong reduction in class impurity",
+   "It is the least informative attribute",
+   "It appears in the smallest frequency table."
+  ],
+  "correct_index": 1,
+  "explanation": "الخاصية المختارة قرب الجذر هي التي تخفض عدم نقاء الأصناف بشكل كبير.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 805,
+  "key": "y4:p271",
+  "subject_id": 27,
+  "question": "58. What does a decision tree ultimately do after a sequence of attribute tests?",
+  "options": [
+   "Converts the data into a frequency table.",
+   "Assigns a class label at a leaf.",
+   "Computes entropy for the whole dataset only",
+   "Removes all noisy instances automatically."
+  ],
+  "correct_index": 1,
+  "explanation": "شجرة القرار تُسند بعد سلسلة اختبارات الخصائص تسمية صنف عند ورقة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1236,
+  "key": "y4:m224",
+  "subject_id": 27,
+  "question": "11. Unbiased selection:",
+  "options": [
+   "If coverage incomplete the observations that are included in the data should be similar to all observations that were intended to be covered.",
+   "If coverage incomplete the observations that are included in the data must be similar to all observations that were intended to be covered.",
+   "If coverage complete the observations that are included in the data should be similar to all observations that were intended to be covered.",
+   "Not related to coverage"
+  ],
+  "correct_index": 0,
+  "explanation": "الاختيار غير المنحاز: حتى لو التغطية ناقصة، تكون الملاحظات المشمولة مشابهة للمقصودة (should).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

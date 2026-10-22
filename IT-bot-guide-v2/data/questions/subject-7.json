@@ -1,0 +1,1002 @@
+[
+ {
+  "id": 183,
+  "key": "y1:p228",
+  "subject_id": 7,
+  "question": "1. A mind map shows the relationship of ......",
+  "options": [
+   "the story plot and its elements",
+   "the topic, main ideas and the supporting details",
+   "the words in a sentence",
+   "the different parts of speech"
+  ],
+  "correct_index": 1,
+  "explanation": "الخريطة الذهنية تبيّن العلاقة بين الموضوع والأفكار الرئيسية والتفاصيل الداعمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 184,
+  "key": "y1:p229",
+  "subject_id": 7,
+  "question": "2. The topic sentence is the most ....... sentence in the paragraph.",
+  "options": [
+   "difficult",
+   "complex",
+   "specific",
+   "general"
+  ],
+  "correct_index": 3,
+  "explanation": "جملة الموضوع (topic sentence) هي أكثر جمل الفقرة عمومية (general).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 185,
+  "key": "y1:p230",
+  "subject_id": 7,
+  "question": "3. The ......... is the most exciting part of a story.",
+  "options": [
+   "exposition",
+   "rising action",
+   "climax",
+   "resolution"
+  ],
+  "correct_index": 2,
+  "explanation": "الذروة (climax) هي أكثر أجزاء القصة إثارة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 186,
+  "key": "y1:p231",
+  "subject_id": 7,
+  "question": "4. The concluding sentence should......... the ideas mentioned in a paragraph.",
+  "options": [
+   "explain",
+   "summarize",
+   "introduce",
+   "illustrate"
+  ],
+  "correct_index": 1,
+  "explanation": "جملة الخاتمة تلخّص (summarize) الأفكار المذكورة في الفقرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 187,
+  "key": "y1:p232",
+  "subject_id": 7,
+  "question": "5. Movies can be categorized by .........",
+  "options": [
+   "character",
+   "setting",
+   "plot",
+   "genre"
+  ],
+  "correct_index": 3,
+  "explanation": "تُصنَّف الأفلام حسب النوع (genre).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 188,
+  "key": "y1:p233",
+  "subject_id": 7,
+  "question": "6. The achievements of the ancient societies made world civilization possible. The word \"civilization\" means .........",
+  "options": [
+   "technology",
+   "astronomy",
+   "culture",
+   "communities"
+  ],
+  "correct_index": 2,
+  "explanation": "كلمة civilization هنا تعني الثقافة (culture) والحضارة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 189,
+  "key": "y1:p234",
+  "subject_id": 7,
+  "question": "7. Because of the worldwide ........., everybody knows the same information and plays the same music.",
+  "options": [
+   "culture",
+   "media",
+   "food",
+   "literature"
+  ],
+  "correct_index": 1,
+  "explanation": "بفضل وسائل الإعلام العالمية (media) يعرف الجميع المعلومات نفسها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 190,
+  "key": "y1:p235",
+  "subject_id": 7,
+  "question": "8. Daily exercise and a balanced diet contribute to remarkable .........",
+  "options": [
+   "success",
+   "relaxation",
+   "combination",
+   "longevity"
+  ],
+  "correct_index": 3,
+  "explanation": "التمارين اليومية والغذاء المتوازن يسهمان في طول العمر (longevity).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 191,
+  "key": "y1:p236",
+  "subject_id": 7,
+  "question": "9. Vilcabamba, Ecuador, is famous for the long life of its .........",
+  "options": [
+   "learners",
+   "experts",
+   "doctors",
+   "inhabitants"
+  ],
+  "correct_index": 3,
+  "explanation": "فيلكابامبا مشهورة بطول عمر سكانها (inhabitants).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 192,
+  "key": "y1:p237",
+  "subject_id": 7,
+  "question": "10. A healthful environment includes ......... clean water.",
+  "options": [
+   "polluted",
+   "unpolluted",
+   "dirty",
+   "sour"
+  ],
+  "correct_index": 1,
+  "explanation": "البيئة الصحية تتضمن مياهاً نظيفة غير ملوثة (unpolluted).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 193,
+  "key": "y1:p238",
+  "subject_id": 7,
+  "question": "11. Television helps ......... people who can't go out.",
+  "options": [
+   "young",
+   "elderly",
+   "poor",
+   "rich"
+  ],
+  "correct_index": 1,
+  "explanation": "التلفاز يساعد كبار السن (elderly) الذين لا يستطيعون الخروج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 194,
+  "key": "y1:p239",
+  "subject_id": 7,
+  "question": "12. She tried to ......... on her homework despite the noise outside.",
+  "options": [
+   "finish",
+   "practice",
+   "revise",
+   "focus"
+  ],
+  "correct_index": 3,
+  "explanation": "حاولت أن تركّز (focus) على واجبها رغم الضجيج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 195,
+  "key": "y1:p240",
+  "subject_id": 7,
+  "question": "13. The movie was so horrifying that it ......... me for hours afterward.",
+  "options": [
+   "interested",
+   "insulted",
+   "scared",
+   "pleased"
+  ],
+  "correct_index": 2,
+  "explanation": "الفيلم مرعب لدرجة أنه أخافني (scared) لساعات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 196,
+  "key": "y1:p241",
+  "subject_id": 7,
+  "question": "14. ......... is the most negative effect of visual media.",
+  "options": [
+   "Programming",
+   "Communication",
+   "Addiction",
+   "Education"
+  ],
+  "correct_index": 2,
+  "explanation": "الإدمان (Addiction) هو أسوأ التأثيرات السلبية للإعلام المرئي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 197,
+  "key": "y1:p242",
+  "subject_id": 7,
+  "question": "15. Her ......... include reading books, hiking in the mountains and learning new languages.",
+  "options": [
+   "interests",
+   "feelings",
+   "programs",
+   "ages"
+  ],
+  "correct_index": 0,
+  "explanation": "اهتماماتها (interests) تشمل القراءة والتسلق وتعلم اللغات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 198,
+  "key": "y1:p243",
+  "subject_id": 7,
+  "question": "16. The computer can ......... you up with someone of your same intelligence and personality.",
+  "options": [
+   "check",
+   "pick",
+   "miss",
+   "match"
+  ],
+  "correct_index": 3,
+  "explanation": "يستطيع الحاسوب أن يوفّق (match) بينك وبين شخص مشابه لك.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 199,
+  "key": "y1:p244",
+  "subject_id": 7,
+  "question": "17. Meeting people on the Internet has benefits, but it can have ......... too.",
+  "options": [
+   "advantages",
+   "disadvantages",
+   "positive effects",
+   "secrets"
+  ],
+  "correct_index": 1,
+  "explanation": "للتعارف عبر الإنترنت فوائد لكن له أيضاً مساوئ (disadvantages).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 200,
+  "key": "y1:p245",
+  "subject_id": 7,
+  "question": "18. People of the same cultural background don't always ......... on the values of society.",
+  "options": [
+   "to agree",
+   "agree",
+   "agreeable",
+   "agreement"
+  ],
+  "correct_index": 1,
+  "explanation": "بعد don't always نستخدم الفعل المجرد: agree.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 201,
+  "key": "y1:p246",
+  "subject_id": 7,
+  "question": "19.Choose the word that does NOT belong to the group)",
+  "options": [
+   "informal",
+   "unrelated",
+   "illegal",
+   "images"
+  ],
+  "correct_index": 3,
+  "explanation": "informal وunrelated وillegal كلها كلمات بادئات نفي، وimages لا تنتمي للمجموعة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 202,
+  "key": "y1:p247",
+  "subject_id": 7,
+  "question": "20.(Choose the word that does NOT belong to the group)",
+  "options": [
+   "visualize",
+   "beautify",
+   "childhood",
+   "sadden"
+  ],
+  "correct_index": 2,
+  "explanation": "visualize وbeautify وsadden أفعال (لاحقات ize/ify/en)، وchildhood اسم.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 203,
+  "key": "y1:p248",
+  "subject_id": 7,
+  "question": "21.(Choose the word that does NOT belong to the group)",
+  "options": [
+   "patient",
+   "cure",
+   "treatment",
+   "remedy"
+  ],
+  "correct_index": 0,
+  "explanation": "cure وtreatment وremedy مترادفات علاج، وpatient هو المريض.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 204,
+  "key": "y1:p249",
+  "subject_id": 7,
+  "question": "22.(Choose the word that does NOT belong to the group)",
+  "options": [
+   "husband",
+   "daughter",
+   "spouse",
+   "wife"
+  ],
+  "correct_index": 1,
+  "explanation": "husband وwife وspouse متعلقة بالزواج، أما daughter فمختلفة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 205,
+  "key": "y1:p250",
+  "subject_id": 7,
+  "question": "23.(Choose the word that does NOT belong to the group)",
+  "options": [
+   "agreement",
+   "politeness",
+   "prevention",
+   "social"
+  ],
+  "correct_index": 3,
+  "explanation": "agreement وpoliteness وprevention أسماء بلاحقات، وsocial صفة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 206,
+  "key": "y1:p251",
+  "subject_id": 7,
+  "question": "24. The film that we watched take place in the United States.",
+  "options": [
+   "that",
+   "watched",
+   "take",
+   "States"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطأ: take يجب أن تكون took (زمن ماضٍ).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 207,
+  "key": "y1:p252",
+  "subject_id": 7,
+  "question": "25. He felt exciting about the great chance to join the international team.",
+  "options": [
+   "felt",
+   "exciting",
+   "chance",
+   "team"
+  ],
+  "correct_index": 1,
+  "explanation": "الخطأ: exciting يجب أن تكون excited لوصف الشعور.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 208,
+  "key": "y1:p253",
+  "subject_id": 7,
+  "question": "26. She is going to meet her friend next monday.",
+  "options": [
+   "is",
+   "meet",
+   "friend",
+   "monday"
+  ],
+  "correct_index": 3,
+  "explanation": "الخطأ: monday يجب أن تبدأ بحرف كبير Monday.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 209,
+  "key": "y1:p254",
+  "subject_id": 7,
+  "question": "27. You should finishing your report before the end of the week.",
+  "options": [
+   "finishing",
+   "report",
+   "before",
+   "week"
+  ],
+  "correct_index": 0,
+  "explanation": "الخطأ: بعد should نستخدم الفعل المجرد finish.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 210,
+  "key": "y1:p255",
+  "subject_id": 7,
+  "question": "28. Farmers in the countryside usual lead active lives.",
+  "options": [
+   "Farmers",
+   "in",
+   "usual",
+   "lives"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطأ: usual يجب أن تكون usually (ظرف).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 211,
+  "key": "y1:p256",
+  "subject_id": 7,
+  "question": "29. The Godfather is about an evil and loyal man.",
+  "options": [
+   "is",
+   "about",
+   "an",
+   "loyal"
+  ],
+  "correct_index": 3,
+  "explanation": "الخطأ: loyal لا تناسب evil في الوصف بالسياق (تناقض).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 212,
+  "key": "y1:p257",
+  "subject_id": 7,
+  "question": "30. How importance is the environment to human health?",
+  "options": [
+   "How",
+   "importance",
+   "environment",
+   "health"
+  ],
+  "correct_index": 1,
+  "explanation": "الخطأ: importance يجب أن تكون important (صفة).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 213,
+  "key": "y1:p258",
+  "subject_id": 7,
+  "question": "31. Many scientists believe in the valuable of genetic research.",
+  "options": [
+   "scientists",
+   "in",
+   "valuable",
+   "research"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطأ: valuable يجب أن تكون value (اسم).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 214,
+  "key": "y1:p259",
+  "subject_id": 7,
+  "question": "32. Which kinds of shows do you preference?",
+  "options": [
+   "Which",
+   "kinds",
+   "preference",
+   "shows"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطأ: preference يجب أن تكون prefer (فعل).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 215,
+  "key": "y1:p260",
+  "subject_id": 7,
+  "question": "33. There isn't many time before the movie starts.",
+  "options": [
+   "isn't",
+   "many",
+   "before",
+   "starts"
+  ],
+  "correct_index": 1,
+  "explanation": "الخطأ: many يجب أن تكون much لأن time غير معدود.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 216,
+  "key": "y1:p261",
+  "subject_id": 7,
+  "question": "34. It is incommon to see snow in Sydney during winter.",
+  "options": [
+   "incommon",
+   "to see",
+   "during",
+   "winter"
+  ],
+  "correct_index": 0,
+  "explanation": "الخطأ: incommon يجب أن تكون uncommon.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 217,
+  "key": "y1:p262",
+  "subject_id": 7,
+  "question": "35. Mount Everest is the higher mountain in the world.",
+  "options": [
+   "Mount Everest",
+   "is",
+   "higher",
+   "world"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطأ: higher يجب أن تكون highest مع the (صيغة التفضيل).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 218,
+  "key": "y1:p263",
+  "subject_id": 7,
+  "question": "36. It was raining, ......... we stayed inside.",
+  "options": [
+   "therefore",
+   "while",
+   "also",
+   "similarly"
+  ],
+  "correct_index": 0,
+  "explanation": "therefore تعبّر عن النتيجة: كان يمطر لذلك بقينا بالداخل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 219,
+  "key": "y1:p264",
+  "subject_id": 7,
+  "question": "37. He is a traditional healer. ........., he uses some modern techniques.",
+  "options": [
+   "In addition",
+   "For example",
+   "In fact",
+   "However"
+  ],
+  "correct_index": 3,
+  "explanation": "However تعبّر عن التعارض: تقليدي ومع ذلك يستخدم تقنيات حديثة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 220,
+  "key": "y1:p265",
+  "subject_id": 7,
+  "question": "38. She has lived in London ......... 2018.",
+  "options": [
+   "for",
+   "since",
+   "after",
+   "then"
+  ],
+  "correct_index": 1,
+  "explanation": "since تُستخدم مع نقطة زمنية محددة (2018) مع المضارع التام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 221,
+  "key": "y1:p266",
+  "subject_id": 7,
+  "question": "39. He is a kind person; ........., he is helpful.",
+  "options": [
+   "however",
+   "nevertheless",
+   "moreover",
+   "as a result"
+  ],
+  "correct_index": 2,
+  "explanation": "moreover تضيف معلومة: لطيف وكذلك مفيد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 222,
+  "key": "y1:p267",
+  "subject_id": 7,
+  "question": "40. Sami has been doing well in his English class. ........., he went from level two to level four last month.",
+  "options": [
+   "However",
+   "In fact",
+   "Instead",
+   "In contrast"
+  ],
+  "correct_index": 1,
+  "explanation": "In fact تضيف معلومة مؤكدة: تحسّن من مستوى إلى آخر بالفعل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 223,
+  "key": "y1:p268",
+  "subject_id": 7,
+  "question": "41. The topic of the text is about....",
+  "options": [
+   "The development of the media",
+   "The effects of the media on the brain",
+   "Advantages of the media",
+   "Disadvantages of the media"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 224,
+  "key": "y1:p269",
+  "subject_id": 7,
+  "question": "42. According to the text, ......",
+  "options": [
+   "watching TV improves family communication",
+   "watching TV is good for health",
+   "visual media activates the mind",
+   "visual media affects the mind negatively"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 225,
+  "key": "y1:p270",
+  "subject_id": 7,
+  "question": "43. The word \"tube\" means.....",
+  "options": [
+   "movie",
+   "television",
+   "match",
+   "scenes"
+  ],
+  "correct_index": 1,
+  "explanation": "كلمة tube في هذا السياق تعني التلفاز (television).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 226,
+  "key": "y1:p271",
+  "subject_id": 7,
+  "question": "44. The verb \"replace\" means ....",
+  "options": [
+   "strengthen",
+   "take the place of",
+   "place something on",
+   "prevent"
+  ],
+  "correct_index": 1,
+  "explanation": "الفعل replace يعني يأخذ مكان شيء (take the place of).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 227,
+  "key": "y1:p272",
+  "subject_id": 7,
+  "question": "45. The word \"educational\" is a/an ....",
+  "options": [
+   "verb",
+   "noun",
+   "adjective",
+   "adverb"
+  ],
+  "correct_index": 2,
+  "explanation": "educational صفة (adjective).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 228,
+  "key": "y1:p273",
+  "subject_id": 7,
+  "question": "46. The main idea of the text is......",
+  "options": [
+   "Life on the mountainous regions",
+   "Natural diets",
+   "How to cure illnesses and health problems",
+   "Secrets of longevity"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 229,
+  "key": "y1:p274",
+  "subject_id": 7,
+  "question": "47. We can infer from the text that......",
+  "options": [
+   "people in these regions don't need to exercise",
+   "living on the mountains is unhealthy",
+   "these people are always stressed",
+   "they suffer from many health problems"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 230,
+  "key": "y1:p275",
+  "subject_id": 7,
+  "question": "48. Most of the inhabitants of these regions are ....",
+  "options": [
+   "food specialists",
+   "doctors",
+   "farmers",
+   "sportsmen"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 231,
+  "key": "y1:p276",
+  "subject_id": 7,
+  "question": "49. The word \"physically\" is a/an",
+  "options": [
+   "noun",
+   "verb",
+   "adjective",
+   "adverb"
+  ],
+  "correct_index": 3,
+  "explanation": "physically ظرف (adverb).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 232,
+  "key": "y1:p277",
+  "subject_id": 7,
+  "question": "50. The word \"longevity\" means ...",
+  "options": [
+   "long life",
+   "diseases",
+   "life on the mountains",
+   "clean environment"
+  ],
+  "correct_index": 0,
+  "explanation": "longevity تعني طول العمر (long life).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

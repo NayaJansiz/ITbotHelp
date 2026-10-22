@@ -1,0 +1,698 @@
+[
+ {
+  "id": 303,
+  "key": "y3:p4",
+  "subject_id": 11,
+  "question": "التعديل الافضل هو",
+  "options": [
+   "FM",
+   "AM",
+   "كل ما سبق",
+   "ليس اي مما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "لا توجد طريقة تعديل أفضل مطلقاً، فاختيارها يعتمد على التطبيق.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 304,
+  "key": "y3:p5",
+  "subject_id": 11,
+  "question": "تعديل PCM",
+  "options": [
+   "ترميز",
+   "تكميم",
+   "اخذ العينات",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "تعديل PCM يتضمن أخذ العينات والتكميم والترميز.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 305,
+  "key": "y3:p6",
+  "subject_id": 11,
+  "question": "الشروط التي حددتها نظرية شانون",
+  "options": [
+   "التردد الاعظمي",
+   "عدد مرات اخذ العينات",
+   "كل ما سبق",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "نظرية شانون تحدد التردد الأعظمي وعدد مرات أخذ العينات (≥ 2fmax).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 306,
+  "key": "y3:p7",
+  "subject_id": 11,
+  "question": "طول موجة UHF",
+  "options": [
+   "متر",
+   "سنتيمتر",
+   "ميليمتر",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "الموجات UHF طول موجتها بحدود الديسيمتر إلى المتر.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 307,
+  "key": "y3:p8",
+  "subject_id": 11,
+  "question": "في التعديل يتم نقل المعلومات عبر",
+  "options": [
+   "تعديل اشارة الحامل",
+   "تعديل اشارة المعلومات",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "في التعديل تنتقل المعلومات بتعديل إشارة الحامل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 308,
+  "key": "y3:p9",
+  "subject_id": 11,
+  "question": "يعطي التعديل امكانية",
+  "options": [
+   "قطع الاتصال",
+   "زيادة تداخل  القنوات",
+   "تمرير عدة ترددات في القناة",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "التعديل يسمح بتمرير عدة ترددات (قنوات) في القناة الواحدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 309,
+  "key": "y3:p10",
+  "subject_id": 11,
+  "question": "من ميزات الاتصالات الرقمية دمج ....... وإرسالها في وسط واحد",
+  "options": [
+   "بيانات نصية",
+   "بيانات صوتية",
+   "صور فيديو",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "الاتصالات الرقمية تدمج النصوص والصوت والفيديو وترسلها في وسط واحد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 310,
+  "key": "y3:p11",
+  "subject_id": 11,
+  "question": "استقرار عمل أنظمة الاتصالات غير مرتبط ب :",
+  "options": [
+   "العوامل الجوية",
+   "RFI",
+   "كل ما سبق صحيح",
+   "كل ما سبق غلط"
+  ],
+  "correct_index": 3,
+  "explanation": "الطقس وتداخل الترددات RFI كلاهما يؤثر على استقرار العمل، فكل الخيارات السابقة غلط.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 311,
+  "key": "y3:p12",
+  "subject_id": 11,
+  "question": "يكون عرض النبضة متناسبا مع مطال الاشارة التمثيلية",
+  "options": [
+   "PLM",
+   "PCM",
+   "PPM",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "تعديل عرض النبضة (PWM/PLM) يجعل عرض النبضة متناسباً مع مطال الإشارة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 312,
+  "key": "y3:p13",
+  "subject_id": 11,
+  "question": "استخلاص المعلومات من الإشارة المستمرة",
+  "options": [
+   "اخذ العينات",
+   "التكميم",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "أخذ العينات (Sampling) يستخلص المعلومات من الإشارة المستمرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 313,
+  "key": "y3:p14",
+  "subject_id": 11,
+  "question": "لا يحدد البعد بين الاقمار الصناعي عدد الاقمار في الفضاء",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "عدد الأقمار يتحدد بالبعد بينها، فالعبارة خاطئة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 314,
+  "key": "y3:p15",
+  "subject_id": 11,
+  "question": "النمط الوحيد طوله",
+  "options": [
+   "1.6",
+   "1.1",
+   "0.85",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "طول موجة الليف وحيد النمط عادةً 1.3 أو 1.55 ميكرومتر، فلا أحد من الخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 315,
+  "key": "y3:p16",
+  "subject_id": 11,
+  "question": "يعتمد انتشار الشعاع الليزري في الليف الضوئي على مبدأ الانعكاس الكلي الذي يحدث عندما ..",
+  "options": [
+   "n1=n2",
+   "n1>n2",
+   "n1<n2",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الانعكاس الكلي الداخلي يحدث عندما n1 > n2 (القلب أكبر من الغلاف).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 316,
+  "key": "y3:p17",
+  "subject_id": 11,
+  "question": "ليس من مزايا النقل الرقمي",
+  "options": [
+   "عرض مجال ترددي كبير",
+   "الصمود ضد الضجيج",
+   "يتم اخذ العينات من الاشارة",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "النقل الرقمي يحتاج مجالاً ترددياً كبيراً، وهذا ليس من مزاياه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 317,
+  "key": "y3:p18",
+  "subject_id": 11,
+  "question": "من التقنيات السلكية",
+  "options": [
+   "كان الليف الضوئي",
+   "الفراغ",
+   "الهواء",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "الليف الضوئي من تقنيات النقل السلكية، بخلاف الفراغ والهواء.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 318,
+  "key": "y3:p19",
+  "subject_id": 11,
+  "question": "بتحول فورييه المباشر يتم الانتقال :",
+  "options": [
+   "من المجال الترردي إلى الزمني",
+   "من المجال الزمني  إلى الترددي",
+   "أ و ب",
+   "غير ما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "تحويل فورييه المباشر ينقل الإشارة من المجال الزمني إلى الترددي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 319,
+  "key": "y3:p20",
+  "subject_id": 11,
+  "question": "في الترميز غير الخطي يكون sQlللمطلالات الكبيرة",
+  "options": [
+   "اصغر",
+   "اكبر",
+   "متساوي",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "في الترميز غير الخطي خطوة التكميم للمطالات الكبيرة أكبر.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 320,
+  "key": "y3:p21",
+  "subject_id": 11,
+  "question": "التعديل المطالي يعدل",
+  "options": [
+   "تعديل إشارة الحامل",
+   "تعديل مطال إشارة الحامل",
+   "تعديل مطال اشارة المعلومات",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "التعديل المطالي (AM) يغيّر مطال إشارة الحامل بحسب إشارة المعلومات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 321,
+  "key": "y3:p22",
+  "subject_id": 11,
+  "question": "الانتقال من خلية إلى خلية آخرى يسبب",
+  "options": [
+   "Frequency reuse",
+   "Hand of",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الانتقال من خلية لأخرى يسمى التسليم (Hand-off).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 322,
+  "key": "y3:p23",
+  "subject_id": 11,
+  "question": "الفرق في زمن الانتشار لأشعة الضوء التي تسير في مسارات مختلفة في الليف تسبب",
+  "options": [
+   "فقد الإشعاع",
+   "تناثر طول الموجة",
+   "تناثر رايلي",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "فرق زمن الانتشار بين المسارات هو التشتت النمطي (Modal dispersion) وليس من الخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 323,
+  "key": "y3:p24",
+  "subject_id": 11,
+  "question": "من معايير الاتصالات الأساسية",
+  "options": [
+   "كلفة",
+   "موثوقية",
+   "إنتاجية",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "الكلفة والموثوقية والإنتاجية كلها من معايير الاتصالات الأساسية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 324,
+  "key": "y3:p25",
+  "subject_id": 11,
+  "question": "تعتبر الاتصالات المحرك والعامل الأساسي المسبب",
+  "options": [
+   "النمو الاقتصادي",
+   "تطور رقمي",
+   "تميز بين الدول الغنية والفقيرة",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "الاتصالات محرك للنمو الاقتصادي والتطور الرقمي وتفرّق بين الدول الغنية والفقيرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 325,
+  "key": "y3:p26",
+  "subject_id": 11,
+  "question": "ترددات المجموعة الكبيرة الأساسية تحسب ب",
+  "options": [
+   "372-48n",
+   "172-48n",
+   "272-48n",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "ترددات المجموعة الكبيرة الأساسية: 372 - 48n كيلوهرتز.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 326,
+  "key": "y3:p27",
+  "subject_id": 11,
+  "question": "الترددات المستخدمة في الإتصالات الفضائية:",
+  "options": [
+   "12/14 Ghz",
+   "6/4 Ghz",
+   "كل ما سبق صح",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "الاتصالات الفضائية تستخدم النطاقين 6/4 GHz و14/12 GHz.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 327,
+  "key": "y3:p28",
+  "subject_id": 11,
+  "question": "يستخدم الليف البصري ___ للمسافات الطويلة والسرعات العالية",
+  "options": [
+   "multi",
+   "single",
+   "كل ما سبق خاطئ",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "الليف أحادي النمط (single mode) للمسافات الطويلة والسرعات العالية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 328,
+  "key": "y3:p29",
+  "subject_id": 11,
+  "question": "زمن تخزين العينة في مكثف دارة اخذ العينات",
+  "options": [
+   "زمن التحويل",
+   "زمن التحصيل",
+   "زمن الاغلاق",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "زمن التحصيل (Acquisition time) هو زمن شحن المكثف بقيمة العينة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 329,
+  "key": "y3:p30",
+  "subject_id": 11,
+  "question": "Carrier wave",
+  "options": [
+   "تردد عال",
+   "تردد منخفض",
+   "تردد المعلومات",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "إشارة الحامل (Carrier wave) ذات تردد عالٍ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 330,
+  "key": "y3:p31",
+  "subject_id": 11,
+  "question": "منبع الاشارة في الاتصالات الرقمية",
+  "options": [
+   "تماثلي",
+   "رقمي",
+   "تماثلي /رقمي",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 2,
+  "explanation": "منبع الإشارة في الاتصالات الرقمية قد يكون تماثلياً أو رقمياً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 331,
+  "key": "y3:p32",
+  "subject_id": 11,
+  "question": "FPM تقسيم التردد على المجال الترددي نفسه الذي يشكل منابع متعددة الى مجال ترددي نفسه و ترسل في ان واحد على الوسط نفسه",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "تقسيم التردد يوزع المجال الترددي بين عدة منابع تُرسل معاً على الوسط نفسه.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 332,
+  "key": "y3:p33",
+  "subject_id": 11,
+  "question": "التابع الصناعي المتزامن زمن دورانه حول الارض",
+  "options": [
+   "24 س",
+   "12 س",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "دور القمر الصناعي المتزامن حول الأرض 24 ساعة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 333,
+  "key": "y3:p34",
+  "subject_id": 11,
+  "question": "الاشارة الغير محددة خواصها",
+  "options": [
+   "عشوائية",
+   "غيرقابلة للوصف",
+   "كل ماسبق",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 0,
+  "explanation": "الإشارة غير المحددة الخواص إشارة عشوائية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 334,
+  "key": "y3:p35",
+  "subject_id": 11,
+  "question": "في مكونات الليف البصري",
+  "options": [
+   "ثنائي أكسيد السيلكون",
+   "البلاستيك",
+   "الرمل",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "الليف قد يُصنع من السيليكا أو البلاستيك (والرمل مصدر السيليكا).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 335,
+  "key": "y3:p36",
+  "subject_id": 11,
+  "question": "عدد منته من القيم و قيم متماثلة",
+  "options": [
+   "اشارة رقمية",
+   "اشارة تماثلية",
+   "اشارة متقطعة مع الزمن",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "عدد منته من القيم المتمايزة هو إشارة رقمية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 336,
+  "key": "y3:p37",
+  "subject_id": 11,
+  "question": "من التقنيات الللاسلكية",
+  "options": [
+   "الالياف البصرية",
+   "الموجات الراديوية",
+   "الكابلات المحورية",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الموجات الراديوية من التقنيات اللاسلكية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 337,
+  "key": "y3:p38",
+  "subject_id": 11,
+  "question": "من التقنيات الرقمية المستخدمة في الموبايل",
+  "options": [
+   "Cdma",
+   "Tdma",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "CDMA وTDMA تقنيتان رقميتان تُستخدمان في الهاتف المحمول.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

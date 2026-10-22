@@ -1,0 +1,596 @@
+[
+ {
+  "id": 153,
+  "key": "y1:p196",
+  "subject_id": 6,
+  "question": "1) المكونات المادية للحاسوب :",
+  "options": [
+   "وحدة معالجة مركزية و وحدة إدخال و وحدة إخراج",
+   "وحدة معالجة مركزية",
+   "وحدات إدخال و وحدات إخراج",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "المكونات المادية: وحدة معالجة مركزية ووحدات إدخال وإخراج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 154,
+  "key": "y1:p197",
+  "subject_id": 6,
+  "question": "2) يفّضل شراء القرص الصلب (بغض النظر عن سعره):",
+  "options": [
+   "HDD",
+   "SSD",
+   "لا فرق بينهما",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "القرص SSD أسرع وأكثر متانة، فيُفضَّل بغض النظر عن السعر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 155,
+  "key": "y1:p198",
+  "subject_id": 6,
+  "question": "3)منفذ HDMIهو منفذ ل :",
+  "options": [
+   "منفذ بيانات",
+   "منفذ للعرض و الفيديو",
+   "منفذ للشبكة",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "منفذ HDMI للعرض والفيديو (والصوت).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 156,
+  "key": "y1:p199",
+  "subject_id": 6,
+  "question": "4) معظم وحدات المعالجة المركزية الحديثة تتكون من :",
+  "options": [
+   "CU و ALU و Registers",
+   "CU و ALU و Registers وCache L1",
+   "CU و ALU و Registers وCache L2",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "المعالجات الحديثة تتكون من CU وALU وسجلات وذاكرة كاش (L1 وغيرها).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 157,
+  "key": "y1:p200",
+  "subject_id": 6,
+  "question": "5-حاسوب بنظام ٣٢ بت يمكن توسيع الذاكرة RAM ل ١٦ GB و الاستفادة من كامل فضاء العناوين:",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "نظام 32 بت يدعم حتى 4GB من الذاكرة فقط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 158,
+  "key": "y1:p201",
+  "subject_id": 6,
+  "question": "6 -كان اذا القرص HDD بيصدر صوت  اثناء عملية القراءة والكتابة .",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "القرص HDD يصدر صوتاً أثناء القراءة والكتابة لوجود أجزاء ميكانيكية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 159,
+  "key": "y1:p202",
+  "subject_id": 6,
+  "question": "8-ناقل العناوين هو ناقل:",
+  "options": [
+   "باتجاهين",
+   "باتجاه واحد من الذاكرة الى المعالج",
+   "باتجاه واحد من المعالج الى القرص الصلب",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 3,
+  "explanation": "ناقل العناوين أحادي الاتجاه من المعالج إلى الذاكرة، وهذا غير مذكور بالخيارات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 160,
+  "key": "y1:p203",
+  "subject_id": 6,
+  "question": "س9-Multiprocessing تعني :",
+  "options": [
+   "معالجة عدة مهام بنفس الوقت",
+   "وجود اكثر من معالج على نفس الشريحة",
+   "وجود اكثر من شريحة معالج منفصلة",
+   "كل ودما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "Multiprocessing يعني وجود أكثر من شريحة معالج منفصلة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 161,
+  "key": "y1:p204",
+  "subject_id": 6,
+  "question": "10-عندما تكون الprocess في حالة ال ready يمكن ان تنتقل للحالة:",
+  "options": [
+   "Running",
+   "Blocked",
+   "كل من a وb",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "العملية الجاهزة (Ready) تنتقل إلى حالة التنفيذ (Running).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 162,
+  "key": "y1:p205",
+  "subject_id": 6,
+  "question": "11- في العنونة بالمسجل عدد مرات الوصول للذاكرة",
+  "options": [
+   "مرة واحدة",
+   "مرتان",
+   "ثلاث مرات",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 3,
+  "explanation": "العنونة بالمسجل لا تحتاج وصولاً للذاكرة (صفر مرة).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 163,
+  "key": "y1:p206",
+  "subject_id": 6,
+  "question": "12) أي نوع من البرمجيات الخبيثة تحتاج مضيف و تتكاثر :",
+  "options": [
+   "فيروسات",
+   "ديدان",
+   "حصان طروادة",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "الفيروسات تحتاج برنامجاً مضيفاً وتتكاثر، بخلاف الديدان.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 164,
+  "key": "y1:p207",
+  "subject_id": 6,
+  "question": "13.تعد list من:",
+  "options": [
+   "بنى معطيات خطية",
+   "بنى معطيات غير خطية",
+   "aو b",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "القائمة (list) بنية معطيات خطية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 165,
+  "key": "y1:p208",
+  "subject_id": 6,
+  "question": "14.تعد Microsoft Access :",
+  "options": [
+   "قاعدة بيانات",
+   "نظام قاعدة بيانات",
+   "نظام إدارة قاعدة بيانات",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "Microsoft Access نظام إدارة قواعد بيانات (DBMS).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 166,
+  "key": "y1:p209",
+  "subject_id": 6,
+  "question": "15.يعد نظام الهاتف :",
+  "options": [
+   "Simplx",
+   "Half_duplx",
+   "Full_duplx",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "الهاتف نظام اتصال ثنائي الاتجاه في نفس الوقت (Full duplex).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 167,
+  "key": "y1:p210",
+  "subject_id": 6,
+  "question": "16.ماهي الشبكة التي تحقق ادارة مركزية للشبكات:",
+  "options": [
+   "Ring",
+   "Bus",
+   "Mesh",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "الإدارة المركزية تتحقق بشبكة النجمة (Star)، وهي غير مذكورة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 168,
+  "key": "y1:p211",
+  "subject_id": 6,
+  "question": "17) iso مكون من سبع طبقات",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "نموذج OSI مكون من سبع طبقات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 169,
+  "key": "y1:p212",
+  "subject_id": 6,
+  "question": "18) بروتوكول TCP هو",
+  "options": [
+   "غير موثوق",
+   "أسرع من UDP",
+   "أبطأ من UDP",
+   "جميع ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "بروتوكول TCP موثوق لكنه أبطأ من UDP.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 170,
+  "key": "y1:p213",
+  "subject_id": 6,
+  "question": "19)أي من البروتوكولات التالية يعمل في نقل الشبكة",
+  "options": [
+   "ICMP",
+   "Ethrent",
+   "Pop3",
+   "جميع ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "بروتوكول ICMP يعمل في طبقة الشبكة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 171,
+  "key": "y1:p214",
+  "subject_id": 6,
+  "question": "21_ اي من البرمجيات الخبيثة التالية يمكن استخدامه في هجمات الحرمان من الخدمة",
+  "options": [
+   "a_ viruses",
+   "b_ warms",
+   "c_ spyware",
+   "d_ لا شيء مما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "الديدان (worms) تُستخدم في هجمات الحرمان من الخدمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 172,
+  "key": "y1:p215",
+  "subject_id": 6,
+  "question": "22_ التعلم العميق",
+  "options": [
+   "a_ يستخرج بيانات جديدة بواسطة بيانات قديمة",
+   "b_ يتعلم من خلال استخراج عدد مخفي من البيانات",
+   "c_ لا يحتاج لبيانات تدريب",
+   "d_ كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "التعلم العميق شبكات عصبية بطبقات مخفية تتعلم من البيانات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 173,
+  "key": "y1:p216",
+  "subject_id": 6,
+  "question": "23_ أي من بيانات الذكاء التالية تحتاج الى بيانات تدريب",
+  "options": [
+   "a_ التعلم بإشراف",
+   "b_ التعلم بدون إشراف",
+   "c_ التعلم العميق",
+   "d_ جميع ما سبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "التعلم بإشراف يحتاج بيانات تدريب موسومة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 174,
+  "key": "y1:p217",
+  "subject_id": 6,
+  "question": "24_ الذكاء الاصطناعي الرمزي كانت تتم برمجته من خلال",
+  "options": [
+   "a_ مجموعة من القواعد",
+   "b_ بيانات تدريب",
+   "c_   a و b صحيح كل من",
+   "d_ جميع ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الذكاء الاصطناعي الرمزي كان يُبرمج بمجموعة من القواعد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 175,
+  "key": "y1:p218",
+  "subject_id": 6,
+  "question": "26-في نظام الحوسبة المتنقلة احد مما يلي صحيح :",
+  "options": [
+   "تحتاج الى الادارة المركزية",
+   "تقتصر الموارد",
+   "AوB",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الحوسبة المتنقلة محدودة الموارد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 176,
+  "key": "y1:p219",
+  "subject_id": 6,
+  "question": "28-اي من بيانات الحوسبة التالية يملك مخدم مركزي :",
+  "options": [
+   "العميل والمخدم",
+   "الحوسبة السحابية",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "نموذج العميل-المخدم والحوسبة السحابية كلاهما يملك مخدماً مركزياً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 177,
+  "key": "y1:p220",
+  "subject_id": 6,
+  "question": "30-عند تصميم تطبيقات الويب افضل  طريقة لوصول المستخدمين الى قاعدة البيانات",
+  "options": [
+   "طبقة واحدة",
+   "طبقتين",
+   "ثلاث طبقات",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "الأفضل لوصول المستخدمين لقاعدة البيانات تصميم من ثلاث طبقات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 178,
+  "key": "y1:p222",
+  "subject_id": 6,
+  "question": "31) أي خوارزمية تعطي متوسط استجابة أصغري :",
+  "options": [
+   "FCFS",
+   "SJF",
+   "Priority",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "خوارزمية SJF تعطي أصغر متوسط زمن انتظار/استجابة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_25_02-10-2026_13-47-38.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 179,
+  "key": "y1:p223",
+  "subject_id": 6,
+  "question": "32) ترتيب العمليات عند تنفيذ SJF:",
+  "options": [
+   "p1-p2-p3-p4",
+   "p3-p4-p2-p1",
+   "aوc صحيحتان",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "SJF غير مُستبق: تنفذ P1 (0-7) ثم الأقصر P3 ثم P4 ثم P2، فالترتيب P1-P3-P4-P2 وهو غير موجود بالخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_25_02-10-2026_13-47-38.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 180,
+  "key": "y1:p224",
+  "subject_id": 6,
+  "question": "33) عند تطبيق RR و كانت قيمة q=3 فإن ترتيب العمليات هو:",
+  "options": [
+   "p1-p2-p3-p1-p2-p4",
+   "p1-p2-p3-p4-p1-p2",
+   "a و b صحيحتان",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "RR مع q=3: P1 ثم P2 ثم P3 ثم P1 ثم P4 ثم P2...، وهذا لا يطابق A ولا B.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_25_02-10-2026_13-47-38.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 181,
+  "key": "y1:p225",
+  "subject_id": 6,
+  "question": "34) عند تطبيق خوارزمية RR و كانت قيمة q=7 فإنها ستسلك سلوك :",
+  "options": [
+   "FCFS",
+   "SJF",
+   "Priority",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "عندما q أكبر من أزمنة المعالجة تتصرف RR مثل FCFS.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_25_02-10-2026_13-47-38.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 182,
+  "key": "y1:p227",
+  "subject_id": 6,
+  "question": "35) عند تطبيق LOAD   A, 2800 على التعليمية التالية بنمط العنونة غير المباشرة :",
+  "options": [
+   "2807",
+   "2805",
+   "2800",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "عنوان 2800 يحوي 2807، والعنوان 2807 يحوي 2805، فالقيمة المحملة في A بالعنونة غير المباشرة هي 2805.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_26_02-10-2026_13-47-38.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

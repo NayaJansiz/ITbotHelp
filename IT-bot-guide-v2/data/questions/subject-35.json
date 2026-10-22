@@ -1,0 +1,687 @@
+[
+ {
+  "id": 1052,
+  "key": "y5:p177",
+  "subject_id": 35,
+  "question": "الأداة الاحدث من الجيل الجديد المستخدمة في جدار الحماية :",
+  "options": [
+   "ebtable",
+   "arptale",
+   "nftable"
+  ],
+  "correct_index": 2,
+  "explanation": "الأداة الأحدث من الجيل الجديد لجدار الحماية في لينكس هي nftables.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1053,
+  "key": "y5:p178",
+  "subject_id": 35,
+  "question": "ب transport mode \n يكون ال ip",
+  "options": [
+   "مشفر",
+   "يتم حذفه واستبداله",
+   "يبقى كما هو"
+  ],
+  "correct_index": 2,
+  "explanation": "في وضع Transport تبقى ترويسة IP الأصلية كما هي، ويُحمى فقط ما بعدها (الحمولة).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1054,
+  "key": "y5:p179",
+  "subject_id": 35,
+  "question": "تعني السرية المتقدمة (forward secrecy)",
+  "options": [
+   "منع أي عقدة من قراءة أي رسالة بعد مغادرتها للشبكة",
+   "منع أي عقدة جديدة من قراءة رسالة قديمة نقلت قبل انضمامها",
+   "احتفاظ كل عقدة بأهم الأحداث داخل الشبكة",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "السرية المتقدمة (Forward secrecy): لا تستطيع عقدة غادرت الشبكة قراءة الرسائل اللاحقة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1055,
+  "key": "y5:p180",
+  "subject_id": 35,
+  "question": "كيف يجبر المهاجم مستخدم يعمل اعادة اتصال بالواي فاي؟",
+  "options": [
+   "بيبعتله رسائل disauthentication و disaccossiation frames",
+   "كرت شبكة جديد باستخدام monitoring",
+   "منع sta من انه يبعت رسائل probe request",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "المهاجم يرسل إطارات Deauthentication/Disassociation ليجبر المستخدم على إعادة الاتصال.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1056,
+  "key": "y5:p181",
+  "subject_id": 35,
+  "question": "اي نوع هجمات aircrack-ng suite بيوصف حقن للحزم (Packet Injection)",
+  "options": [
+   "Aireplay-ng",
+   "aircrack-ng",
+   "airmon-ng",
+   "airdecap-ng"
+  ],
+  "correct_index": 0,
+  "explanation": "أداة Aireplay-ng من حزمة aircrack-ng مسؤولة عن حقن الحزم (Packet Injection).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1057,
+  "key": "y5:p182",
+  "subject_id": 35,
+  "question": "الفرق بين IPSG, DAI:",
+  "options": [
+   "IPSG بيتعامل مع الip DAI بيتعامل معarp",
+   "العكس"
+  ],
+  "correct_index": 0,
+  "explanation": "IPSG يتحقق من عناوين IP المصدر، وDAI يتحقق من رسائل ARP.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1058,
+  "key": "y5:p183",
+  "subject_id": 35,
+  "question": "خوارزمية التعليم العميق deeplearning تعتبر صناديق سوداء black boxes ليش",
+  "options": [
+   "لان ما منعرف بالضبط شو عم يصير جوا الخوارزمية"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1059,
+  "key": "y5:p184",
+  "subject_id": 35,
+  "question": "مفتاح لكل عقدة وموجود فقط في BS",
+  "options": [
+   "individual",
+   "Global key",
+   "Pre-shared key",
+   "كل ما سبق صحيح مدري خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "المفتاح الفردي (Individual key) لكل عقدة ويشاركه معها محطة القاعدة (BS) فقط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1060,
+  "key": "y5:p185",
+  "subject_id": 35,
+  "question": "تأثير القاعدة input !--syn -j drop",
+  "options": [
+   "يمنع عمل FIN",
+   "يمنع عمل RST",
+   "يمنع عمل ...",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "القاعدة ! --syn تحذف كل الحزم غير SYN، أي تمنع FIN وRST وغيرها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1061,
+  "key": "y5:p186",
+  "subject_id": 35,
+  "question": "الفرق بين اختطاف الجلسة وrougue AP",
+  "options": [
+   "اختطاف الجلسة بعد الاتصال، تزييف نقطة الوصول اثناء الاتصال",
+   "لا يوجد فرق",
+   "اختطاف الجلسة قبل الاتصال او هيك شي"
+  ],
+  "correct_index": 0,
+  "explanation": "اختطاف الجلسة يحدث بعد الاتصال وتسجيل الدخول، أما Rogue AP فنقطة وصول مزيفة يتصل بها الضحية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1062,
+  "key": "y5:p187",
+  "subject_id": 35,
+  "question": "تعليمة فيها Protect\nشو بيصير بالحزمة؟",
+  "options": [
+   "بيمرر الحزمة",
+   "بيرسلها مباشرة لtcp",
+   "بيحذف الحزمة",
+   "بينشئ SA وبعدين بمررها"
+  ],
+  "correct_index": 3,
+  "explanation": "الإجراء Protect يعني تطبيق IPsec على الحزمة: ينشئ SA ثم يمرر الحزمة المحمية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1063,
+  "key": "y5:p188",
+  "subject_id": 35,
+  "question": "acl \nفيها تعليمة، وحاكين انه رح يتم منع الحزمة حتى لو ما انذكر صراحة بالقائمة، ليش؟",
+  "options": [
+   "فيها ضمنياًDeny any",
+   "وجود access class لحالو بيمنع",
+   "Vty. بتدعم جهاز واحد فقط",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "كل قائمة ACL تنتهي بـ deny any ضمني يمنع أي حزمة لم تُذكر صراحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1064,
+  "key": "y5:p189",
+  "subject_id": 35,
+  "question": "لدى شركة اتصال بالانترنت Ip ثابت .. عند الخروج تريد ان تستخدمه. :",
+  "options": [
+   "DNAT",
+   "SNAT",
+   "Rediect"
+  ],
+  "correct_index": 1,
+  "explanation": "ترجمة عناوين الشبكة المحلية عند الخروج بعنوان ثابت تتم بـ SNAT.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1065,
+  "key": "y5:p190",
+  "subject_id": 35,
+  "question": "العناصر التي تحللها خوارزميات الذكاء لاكتشاف الثغرات والاخطاء :",
+  "options": [
+   "system architecture",
+   "code",
+   "network config",
+   "كل ماسبق صح"
+  ],
+  "correct_index": 3,
+  "explanation": "خوارزميات الذكاء تحلل بنية النظام والكود وإعدادات الشبكة لاكتشاف الثغرات والأخطاء.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1066,
+  "key": "y5:p191",
+  "subject_id": 35,
+  "question": "في wsn اظهر تحليل حركة المرور ان العقد تقوم باستمرار بارسال cts responce نتيجة استلام متواصل rts request من عقدة مجاورة بتذكر كان شو الهجمة وبأيا طبقة",
+  "options": [
+   "تصادم بالطبقة الفيزيائية",
+   "تصادم بطبقة data link",
+   "الاستجواب بالطبقة الفيزيائية",
+   "الاستجواب بطبقة  data link"
+  ],
+  "correct_index": 3,
+  "explanation": "إغراق العقدة برسائل RTS لتستجيب بـ CTS باستمرار هو هجوم الاستجواب (Interrogation) في طبقة data link.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1067,
+  "key": "y5:p192",
+  "subject_id": 35,
+  "question": "أعد مهندس نظام حديث لحماية سرية مصدر البيانات بهدف (تسريع نقل البيانات) الاحداث حقيقية بأسرع وقت ممكن بدل تأخيرها وارسال رسائل مزيفة عند غياب الاحداث ما عبارة التوزيع الاحتمالي المناسبة يلي بتوصف اللي صار",
+  "options": [
+   "توزيع احتمالي لارسال رسائل مزيفة هو على غرارالتوزيع الاحتمالي لارسال رسائل حقيقية",
+   "توزيع احتمالي لارسال رسائل وهمية وحقيقية هو على غرارالتوزيع الاحتمالي لارسال رسائل مزيفة فقط",
+   "توزيع احتمالي لارسال رسائل حقيقية هو على غرارالتوزيع الاحتمالي لارسال رسائل وهمية فقط",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "لحماية سرية مصدر البيانات يكون توزيع إرسال الرسائل المزيفة مشابهاً لتوزيع إرسال الرسائل الحقيقية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1068,
+  "key": "y5:p193",
+  "subject_id": 35,
+  "question": "VPN\nبيستعمل خوارزمية chacha-curve25592",
+  "options": [
+   "l2tp/ipsec",
+   "Open vpn",
+   "Wiregaurd"
+  ],
+  "correct_index": 2,
+  "explanation": "بروتوكول WireGuard يستخدم خوارزمية ChaCha20 مع منحنى Curve25519.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1069,
+  "key": "y5:p194",
+  "subject_id": 35,
+  "question": "ما هي خوارزمية التشفير والمكتبة المستخدمة في tinyOs",
+  "options": [
+   "TinyEEC و ECC"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1070,
+  "key": "y5:p195",
+  "subject_id": 35,
+  "question": "شو الي بيمنع هجمة ال double attack",
+  "options": [
+   "جعل ال vlan 1 لا تنقل بيانات",
+   "جعل البورت access يلي بيوصل عvlan1"
+  ],
+  "correct_index": 1,
+  "explanation": "الهجوم المزدوج (Double tagging) يُمنع بإبعاد منافذ access عن الـ VLAN الأصلي (native VLAN 1).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1071,
+  "key": "y5:p196",
+  "subject_id": 35,
+  "question": "يكون الجدار الناري على شكل",
+  "options": [
+   "موجه راوتر",
+   "برنامج على حاسوب شخصي",
+   "جهاز متخصص",
+   "جميع ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "الجدار الناري قد يكون راوتراً أو برنامجاً على حاسوب شخصي أو جهازاً متخصصاً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1072,
+  "key": "y5:p197",
+  "subject_id": 35,
+  "question": "شهادة مخصصة للمدققين والمراقبين لنظم المعلومات لضمان الامتثال للمعاير الأمنية",
+  "options": [
+   "CISA",
+   "CISSP",
+   "CompTIA CySA+",
+   "CompTIA Security+"
+  ],
+  "correct_index": 0,
+  "explanation": "شهادة CISA مخصصة لمدققي ومراقبي نظم المعلومات لضمان الامتثال للمعايير الأمنية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1073,
+  "key": "y5:p198",
+  "subject_id": 35,
+  "question": "عند تطبيق واجهة خارجية من reflective عن طريق reflect ف تكون بالاتجاه",
+  "options": [
+   "Inbounded",
+   "Outbounded"
+  ],
+  "correct_index": 1,
+  "explanation": "عبارة reflect توضع في قائمة الوصول الخارجة (Outbound)، وعبارة evaluate في الداخلة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1074,
+  "key": "y5:p199",
+  "subject_id": 35,
+  "question": "Fortinet",
+  "options": [
+   "بتعمل نفق بين شبكتين",
+   "شي بيخص Ai",
+   "برتوكول"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1075,
+  "key": "y5:p200",
+  "subject_id": 35,
+  "question": "كيف تعمل الهندسة الاجتماعية والتزييف العميق؟",
+  "options": [
+   "بينتحلوا هوية بالشركة وبيحاولوا يقنعوا موظف يعطيهم بيانات سرية"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1076,
+  "key": "y5:p201",
+  "subject_id": 35,
+  "question": "مؤسسة ذات اتصال ip ثابت تريد ترجمة عناوين شبكتها المحلية عند الخروج من الشبكة المحلية :",
+  "options": [
+   "DNAT",
+   "Masqueried",
+   "SNAT",
+   "Redirected"
+  ],
+  "correct_index": 2,
+  "explanation": "ترجمة عناوين الشبكة المحلية عند الخروج عبر IP ثابت تتم بـ SNAT (بينما Masquerade للعنوان الديناميكي).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1077,
+  "key": "y5:p202",
+  "subject_id": 35,
+  "question": "شرط لازم يتحقق في قوائم التحكم بالوصول الديناميكية :",
+  "options": [
+   "تحديد مدة زمنية ذاتية",
+   "عدم تحديد زمنية ذاتية",
+   "وقت الخمول أقل من القيمة المطلقة",
+   "وقت الخمول اكبر من القيمة المطلقة"
+  ],
+  "correct_index": 2,
+  "explanation": "في الـ ACL الديناميكية (lock-and-key) يجب أن تكون مهلة الخمول (idle) أقل من المهلة المطلقة (absolute).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1078,
+  "key": "y5:p203",
+  "subject_id": 35,
+  "question": "عندي SN=800 ونافذة عرضها 4 ومطبقين بروتوكول anti-replay\nاجو تلت حزم:\n798 جديدة الها ماك صحيح 805 جديدة الها ماك صحيح 798 مكررة الها ماك صحيح شو رح يصير بتالت حزمة؟",
+  "options": [
+   "رح تنحذف لان اعتبرها هجوم Replay",
+   "رح تنحذف لانها على يسار النافذة"
+  ],
+  "correct_index": 1,
+  "explanation": "بعد وصول الحزمة 805 تتحرك النافذة، فالحزمة المكررة 798 تقع يسارها وتُحذف.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1079,
+  "key": "y5:p204",
+  "subject_id": 35,
+  "question": "عندي اتصال طبقت فيه AH+ESP معا بالاتجاهين\nكم SA رح يتولد؟",
+  "options": [
+   "١",
+   "٢",
+   "٣",
+   "٤"
+  ],
+  "correct_index": 3,
+  "explanation": "كل بروتوكول (AH وESP) يحتاج SA واحدة لكل اتجاه، أي 2×2 = 4 SAs.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1080,
+  "key": "y5:p205",
+  "subject_id": 35,
+  "question": "الفرق بين CHAP و",
+  "options": [
+   "MS-CHAP تغيير كلمات المرور اثناء المصادقة ...."
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1081,
+  "key": "y5:p206",
+  "subject_id": 35,
+  "question": "التحقق من السلامة ل TKIP وCCMP",
+  "options": [
+   "Tkip --> mic Ccmp -->CBC-MAC"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1082,
+  "key": "y5:p207",
+  "subject_id": 35,
+  "question": "هو صحيح عن بروتوكول Compact Security Protocol (C-Box)؟",
+  "options": [
+   "تقليل استهلاك طاقة",
+   "بيستخدم خوارزمية rsa",
+   "وبينفذ الخوارزميات ع السوفتوير"
+  ],
+  "correct_index": 0,
+  "explanation": "بروتوكول الأمان المدمج (Compact Security Protocol) صُمم لتقليل استهلاك الطاقة بالشبكات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1083,
+  "key": "y5:p208",
+  "subject_id": 35,
+  "question": "حظرنا UDP 500 شو بيصير",
+  "options": [
+   "بينحظر AH فقط",
+   "ESP فقط",
+   "AH+ESP",
+   "فشل فاوضات IKE"
+  ],
+  "correct_index": 3,
+  "explanation": "المنفذ UDP 500 تستخدمه IKE، فحجبه يفشل مفاوضات IKE وإنشاء الـ SA.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1084,
+  "key": "y5:p209",
+  "subject_id": 35,
+  "question": "مسؤول الشبكة أن بعض الاتصالات المسموح بها ترفض، وعند مراجعة قواعد iptables تبين أن السبب هو:",
+  "options": [
+   "لأن قواعد iptables تتطلب أن تكون القاعدة الأولى هي (DROP)",
+   "لأن قاعدة رفض (DROP) سبقت قاعدة السماح (ACCEPT) في القائمة",
+   "لأن iptables ينفذ جميع القواعد الأحدث في الأعلى"
+  ],
+  "correct_index": 1,
+  "explanation": "قواعد iptables تُنفَّذ بالترتيب من الأعلى، فإذا سبقت قاعدة DROP قاعدة ACCEPT فُرفضت الاتصالات المسموحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1085,
+  "key": "y5:p210",
+  "subject_id": 35,
+  "question": "الميزات التي يقدمها MS-CHAP مقارنة ببروتوكول CHAP؟",
+  "options": [
+   "دعم تغيير كلمة المرور أثناء عملية المصادقة",
+   "إرسال Failure Codes لتوضيح سبب فشل المصادقة",
+   "تحسين مرونة إدارة سلة المصادقة وتخفيض الأخطاء",
+   "كل ما ذكر صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "MS-CHAP يضيف دعم تغيير كلمة المرور أثناء المصادقة ورموز الفشل (Failure Codes) وتحسينات الإدارة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1086,
+  "key": "y5:p211",
+  "subject_id": 35,
+  "question": "ما الصحيح عن ثغرات يوم الصفر zero day:",
+  "options": [
+   "ثغرات غير معروفة سابقا ولايوجد لها توقيعات ولا تصحيح",
+   "استجابة تلقائية للحوادث",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "ثغرات يوم الصفر (Zero-day) غير معروفة سابقاً ولا توجد لها توقيعات أو تصحيحات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1087,
+  "key": "y5:p212",
+  "subject_id": 35,
+  "question": "الاجراء الذي يستخدمه المبدل  عندما يصل mac غير مصرح به على منفذ port seciurty?",
+  "options": [
+   "يدخل بحالة err-disable"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ }
+]

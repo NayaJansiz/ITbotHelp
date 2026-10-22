@@ -1,0 +1,597 @@
+[
+ {
+  "id": 663,
+  "key": "y4:p116",
+  "subject_id": 24,
+  "question": "1. النظام المفتوح :",
+  "options": [
+   "يتفاعل مع البيئة المحيطة ويتأثر بها",
+   "يعمل بمعزل عن العوامل الخارجية",
+   "لا يتأثر بمحيطه",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "النظام المفتوح يتفاعل مع البيئة المحيطة ويتأثر بها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 664,
+  "key": "y4:p117",
+  "subject_id": 24,
+  "question": "2. تعرف نظم المعلومات بأنها :",
+  "options": [
+   "بيئة تحتوي على عناصر تتفاعل فيما بينها ومع محيطها",
+   "إنتاج وبث المعلومات لمن يحتاجها لصناعة القرار",
+   "A & b"
+  ],
+  "correct_index": 2,
+  "explanation": "نظام المعلومات بيئة عناصر متفاعلة، ويُنتج المعلومات ويبثها لمن يحتاجها لاتخاذ القرار.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 665,
+  "key": "y4:p118",
+  "subject_id": 24,
+  "question": "3. تتعلق باستحصال و تجميع العناصر التي تدخل لكي تعالج :",
+  "options": [
+   "المعالجة",
+   "المدخلات",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "المدخلات (Inputs) هي استحصال وتجميع العناصر الداخلة للمعالجة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 666,
+  "key": "y4:p119",
+  "subject_id": 24,
+  "question": "4. من مكونات موارد الماديات :",
+  "options": [
+   "أنظمة التشغيل والبرامج التطبيقية",
+   "محطات الحواسيب",
+   "الآلات الحاسبة و الأقراص المغناطيسية",
+   "B & c"
+  ],
+  "correct_index": 3,
+  "explanation": "موارد الماديات (Hardware) تشمل محطات الحواسيب والآلات الحاسبة والأقراص المغناطيسية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 667,
+  "key": "y4:p120",
+  "subject_id": 24,
+  "question": "5. يمكن تعريف الإجراءات procedures على أنها :",
+  "options": [
+   "برامج توجه للمعالج الدقيق",
+   "الأقراص المغناطيسية المستخدمة في التخزين",
+   "توجيهات تشغيلية للأفراد الذين سيستخدمون النظام"
+  ],
+  "correct_index": 2,
+  "explanation": "الإجراءات (Procedures) توجيهات تشغيلية للأفراد الذين سيستخدمون النظام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 668,
+  "key": "y4:p121",
+  "subject_id": 24,
+  "question": "6. ما هو الجزء بنظام التشغيل المسؤول عن مراقبة كل ما يجري بالنظام و هو موجود بالذاكرة الأولية دائما :",
+  "options": [
+   "المشرف supervisor",
+   "تحرير الملف edit"
+  ],
+  "correct_index": 0,
+  "explanation": "المشرف (Supervisor) جزء من نظام التشغيل يراقب النظام ويبقى دائماً بالذاكرة الأولية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 669,
+  "key": "y4:p122",
+  "subject_id": 24,
+  "question": "7. عملية جعل البرامج تُحمل إلى الذاكرة الأولية وجعل المعالج يُنفذ شيفرتها :",
+  "options": [
+   "إدارة الملف",
+   "إدارة العمل"
+  ],
+  "correct_index": 1,
+  "explanation": "إدارة العمل تحمّل البرامج للذاكرة الأولية وتجعل المعالج ينفّذ شيفرتها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 670,
+  "key": "y4:p123",
+  "subject_id": 24,
+  "question": "8. موارد الأفراد تتكون من :",
+  "options": [
+   "الإختصاصيين",
+   "المبرمجين ومحللي الحاسوب",
+   "المستخدمون النهائيون",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "موارد الأفراد: الاختصاصيون والمبرمجون ومحللو الحاسوب والمستخدمون النهائيون.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 671,
+  "key": "y4:p124",
+  "subject_id": 24,
+  "question": "9. التصميم بناء على الوظيفة المنطقية من وظيفة :",
+  "options": [
+   "مبرمج الحاسوب",
+   "محلل النظام",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "محلل النظام هو من يضع التصميم المنطقي حسب وظيفة النظام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 672,
+  "key": "y4:p125",
+  "subject_id": 24,
+  "question": "10. الفرق الذي يميز البيانات المكانية عن الوصفية :",
+  "options": [
+   "تعتمد على الموقع من سطح الأرض",
+   "تتغير بتغير الموقع الجغرافي"
+  ],
+  "correct_index": 0,
+  "explanation": "البيانات المكانية تعتمد على موقع العنصر على سطح الأرض.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 673,
+  "key": "y4:p126",
+  "subject_id": 24,
+  "question": "11. وجدت للإجابة عن استفسار هل سيتمكن النظام من معالجة حجم المعاملات المتزايد في المستقبل :",
+  "options": [
+   "جدوى اقتصادية",
+   "جدوى فنية",
+   "جدوى تشغيلية"
+  ],
+  "correct_index": 1,
+  "explanation": "قدرة النظام على معالجة حجم المعاملات المتزايد سؤال عن الجدوى الفنية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 674,
+  "key": "y4:p127",
+  "subject_id": 24,
+  "question": "12. جهاز معالجة الإتصالات الذي يسمح لقناة إتصال واحدة بحمل بيانات متزامنة تنقل من عدة محطات طرفية :",
+  "options": [
+   "المازج",
+   "المركز",
+   "الجهاز الخلوي"
+  ],
+  "correct_index": 0,
+  "explanation": "المازج (Multiplexer) يسمح لقناة واحدة بحمل بيانات متزامنة من عدة محطات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 675,
+  "key": "y4:p128",
+  "subject_id": 24,
+  "question": "13. في أي مرحلة من المراحل يتم دراسة الجدوى ؟",
+  "options": [
+   "التخطيط",
+   "التحليل",
+   "كل الاجابات خاطئة"
+  ],
+  "correct_index": 0,
+  "explanation": "تُدرس الجدوى في مرحلة التخطيط (التحقيق المبدئي).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 676,
+  "key": "y4:p129",
+  "subject_id": 24,
+  "question": "14. المهمة الأساسية لمنظومة معالجة المعاملات هي :",
+  "options": [
+   "مساعدة المدراء في اتخاذ القرارات الافضل",
+   "استخدام تقنيات الذكاء للتحكم في الآلات",
+   "معالجة البيانات وإجراء حسابات معينة لاصدار فواتير وطلبيات"
+  ],
+  "correct_index": 2,
+  "explanation": "المهمة الأساسية لمعالجة المعاملات معالجة البيانات وإصدار الفواتير والطلبيات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 677,
+  "key": "y4:p131",
+  "subject_id": 24,
+  "question": "16. الطريقة تناسب إعداد المنظومات الكبيرة والمعقدة نظراً لأنها تقسم المنظومة إلى أجزاء صغيرة لتبسيطها :",
+  "options": [
+   "الهيكلية",
+   "غير الهيكلية",
+   "الشيئية"
+  ],
+  "correct_index": 0,
+  "explanation": "الطريقة الهيكلية تقسّم المنظومة لأجزاء صغيرة لتبسيط الأنظمة الكبيرة المعقدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 678,
+  "key": "y4:p132",
+  "subject_id": 24,
+  "question": "17. يتم اللجوء إلى إستخدام هيكلية خطوط النقل \"نقطة إلى نقطة\" بدلاً من \"نقطة إلى عدة نقاط\" بالرغم من زيادة التكلفة:",
+  "options": [
+   "عندما تكون الخطوط بطيئة السرعة",
+   "في حالة وجود اتصالات مستمرة بين الحاسب و المحطة الطرفية أو الحاسوبات الأخرى",
+   "عند رغبة المؤسسة في تخفيض تكاليف خطوط النقل",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "يُفضَّل خط نقطة لنقطة عند وجود اتصالات مستمرة بين الحاسب والمحطات رغم الكلفة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 679,
+  "key": "y4:p133",
+  "subject_id": 24,
+  "question": "18. يستخدم في تحليل المتطلبات :",
+  "options": [
+   "مخطط DFD",
+   "قاموس البيانات",
+   "جدول القرار",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "في تحليل المتطلبات تُستخدم مخططات DFD وقاموس البيانات وجداول القرار.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 680,
+  "key": "y4:p135",
+  "subject_id": 24,
+  "question": "22. في مرحلة .... يتم تجزئة النظام البرمجي إلى مكونات بإستخدام التخطيط الهيكلي كأداة تصميم :",
+  "options": [
+   "تقسيم المعلومات",
+   "تصميم الخوارزميات",
+   "التصميم المعماري"
+  ],
+  "correct_index": 2,
+  "explanation": "التصميم المعماري هو المرحلة التي يُجزَّأ فيها النظام لمكونات باستخدام التخطيط الهيكلي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 681,
+  "key": "y4:p136",
+  "subject_id": 24,
+  "question": "23. تعرف بأنها كل ما يحيط بالمنظومة من عمليات وإجراءات وسياسات قد تؤثر على المنظومة أو تتأثر بها :",
+  "options": [
+   "حدود",
+   "قيود",
+   "البيئة"
+  ],
+  "correct_index": 2,
+  "explanation": "البيئة هي كل ما يحيط بالمنظومة من عمليات وسياسات تؤثر عليها أو تتأثر بها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 682,
+  "key": "y4:p137",
+  "subject_id": 24,
+  "question": "25. مثال حقيقي عن البيانات :",
+  "options": [
+   "حساب متوسط درجات الحرارة",
+   "استنتاج ان المنطقة التي سجلت فيها متوسطات الحرارة السابقة",
+   "درجات الحرارة لمنطقة ما"
+  ],
+  "correct_index": 2,
+  "explanation": "درجات الحرارة المسجلة لمنطقة ما هي بيانات خام، أما المتوسط والاستنتاج فمعلومات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 683,
+  "key": "y4:p138",
+  "subject_id": 24,
+  "question": "19. معالجة وإجراء حسابات وتصنيفات معينة :",
+  "options": [
+   "معالجة المعاملات",
+   "منظومة إدارة المعلومات",
+   "تحسين فعالية المستخدم"
+  ],
+  "correct_index": 0,
+  "explanation": "معالجة المعاملات هي معالجة وإجراء حسابات وتصنيفات معينة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 684,
+  "key": "y4:p139",
+  "subject_id": 24,
+  "question": "20. مكونات نظام المعلومات الجغرافية :",
+  "options": [
+   "البيانات والمعلومات",
+   "المستخدم",
+   "البرامج الحاسوبية والأجهزة",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "مكونات GIS: البيانات والمستخدم والبرامج والأجهزة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 685,
+  "key": "y4:p140",
+  "subject_id": 24,
+  "question": "24. من ميزات WBS :",
+  "options": [
+   "أداة قوية لتوضيح الحدود",
+   "فعالة لإعداد تقارير حول سير المشروع",
+   "تقدير التكلفة والمدة",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "ميزات WBS: توضيح الحدود، وإعداد تقارير سير المشروع، وتقدير الكلفة والمدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 686,
+  "key": "y4:p143",
+  "subject_id": 24,
+  "question": "28. تعريف ال knowledge :",
+  "options": [
+   "بيانات",
+   "معلومات",
+   "إستنتاج دلالات إعتماداً على البيانات والمعلومات"
+  ],
+  "correct_index": 2,
+  "explanation": "المعرفة (Knowledge) هي استنتاج دلالات اعتماداً على البيانات والمعلومات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 687,
+  "key": "y4:p144",
+  "subject_id": 24,
+  "question": "29. الرموز المستخدمة لأسماء الشوارع أو الأحياء :",
+  "options": [
+   "نقاط",
+   "مضلعات",
+   "نصوص"
+  ],
+  "correct_index": 2,
+  "explanation": "أسماء الشوارع والأحياء تُمثَّل في الخرائط برموز نصية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 688,
+  "key": "y4:p145",
+  "subject_id": 24,
+  "question": "30. التقنيات المرتبطة بنظم المعلومات الجغرافية GIS :",
+  "options": [
+   "الإستشعار عن بعد",
+   "تحديد الموقع على سطح الارض GPS",
+   "إدارة قواعد البيانات",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "تقنيات GIS المرتبطة: الاستشعار عن بعد وGPS وإدارة قواعد البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 689,
+  "key": "y4:p146",
+  "subject_id": 24,
+  "question": "31. من رموز STD :",
+  "options": [
+   "Transition",
+   "State",
+   "Entity",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 690,
+  "key": "y4:p147",
+  "subject_id": 24,
+  "question": "32. أي مما يلي من مكونات ال DFD :",
+  "options": [
+   "Entity & process",
+   "Data flow & data store",
+   "A & b"
+  ],
+  "correct_index": 2,
+  "explanation": "مكونات DFD: Entity وProcess وData flow وData store.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 691,
+  "key": "y4:p148",
+  "subject_id": 24,
+  "question": "33. يعتبر ... بمثابة اظافة لتنفيذ function  يرمز لأحد لغات البرمجة :",
+  "options": [
+   "DF",
+   "Entity",
+   "Process"
+  ],
+  "correct_index": 2,
+  "explanation": "العملية (Process) هي التي تنفّذ الدالة (function) وقد يُرمز لها بلغة برمجة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 692,
+  "key": "y4:p149",
+  "subject_id": 24,
+  "question": "34. عبارة عن جملة بيانات أو معطيات النظام التي تمر عبر process :",
+  "options": [
+   "DF",
+   "Data Store",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "تدفق البيانات (DF) هو جملة البيانات التي تمر عبر الـ process.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 693,
+  "key": "y4:p150",
+  "subject_id": 24,
+  "question": "35. في مخطط DFD المستوى الذي يشير إلى حدود النظام المراد تصميمه وكيفية ترابطه مع الأنشطة الأُخرى :",
+  "options": [
+   "المستوى 0",
+   "المستوى 1",
+   "المستوى 2"
+  ],
+  "correct_index": 0,
+  "explanation": "المستوى 0 (مخطط السياق) يبين حدود النظام وارتباطه بالأنشطة الأخرى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

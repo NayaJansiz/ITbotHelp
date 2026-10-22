@@ -1,0 +1,282 @@
+[
+ {
+  "id": 1,
+  "year": 1,
+  "semester": 1,
+  "name": "برمجة 1",
+  "track": "shared"
+ },
+ {
+  "id": 2,
+  "year": 1,
+  "semester": 1,
+  "name": "دارات 1",
+  "track": "shared"
+ },
+ {
+  "id": 3,
+  "year": 1,
+  "semester": 2,
+  "name": "رياضيات 2",
+  "track": "shared"
+ },
+ {
+  "id": 4,
+  "year": 1,
+  "semester": 2,
+  "name": "دارات 2",
+  "track": "shared"
+ },
+ {
+  "id": 5,
+  "year": 1,
+  "semester": 2,
+  "name": "برمجة 2",
+  "track": "shared"
+ },
+ {
+  "id": 6,
+  "year": 1,
+  "semester": 2,
+  "name": "مبادئ 2",
+  "track": "shared"
+ },
+ {
+  "id": 7,
+  "year": 1,
+  "semester": 2,
+  "name": "انكليزي 2",
+  "track": "shared"
+ },
+ {
+  "id": 8,
+  "year": 2,
+  "semester": 1,
+  "name": "خوارزميات 1",
+  "track": "shared"
+ },
+ {
+  "id": 9,
+  "year": 2,
+  "semester": 1,
+  "name": "برمجة الويب",
+  "track": "shared"
+ },
+ {
+  "id": 10,
+  "year": 2,
+  "semester": 2,
+  "name": "احتمالات و احصاء",
+  "track": "shared"
+ },
+ {
+  "id": 11,
+  "year": 3,
+  "semester": 2,
+  "name": "اتصالات رقمية",
+  "track": "shared"
+ },
+ {
+  "id": 12,
+  "year": 3,
+  "semester": 2,
+  "name": "بحوث العمليات 2",
+  "track": "shared"
+ },
+ {
+  "id": 13,
+  "year": 3,
+  "semester": 2,
+  "name": "لغة انكليزي تخصصية 1",
+  "track": "shared"
+ },
+ {
+  "id": 14,
+  "year": 3,
+  "semester": 2,
+  "name": "برمجة متقدمة 2",
+  "track": "shared"
+ },
+ {
+  "id": 15,
+  "year": 3,
+  "semester": 2,
+  "name": "ذكاء صنعي",
+  "track": "shared"
+ },
+ {
+  "id": 16,
+  "year": 3,
+  "semester": 2,
+  "name": "مترجمات",
+  "track": "shared"
+ },
+ {
+  "id": 17,
+  "year": 3,
+  "semester": 1,
+  "name": "بنيان 2",
+  "track": "shared"
+ },
+ {
+  "id": 18,
+  "year": 3,
+  "semester": 1,
+  "name": "هندسة البرمجيات 1",
+  "track": "shared"
+ },
+ {
+  "id": 19,
+  "year": 3,
+  "semester": 1,
+  "name": "اتومات",
+  "track": "shared"
+ },
+ {
+  "id": 20,
+  "year": 4,
+  "semester": 1,
+  "name": "نمذجة و محاكاة",
+  "track": "shared"
+ },
+ {
+  "id": 21,
+  "year": 4,
+  "semester": 1,
+  "name": "نظم وسائط متعددة",
+  "track": "shared"
+ },
+ {
+  "id": 22,
+  "year": 4,
+  "semester": 1,
+  "name": "رسم و حاسب",
+  "track": "shared"
+ },
+ {
+  "id": 23,
+  "year": 4,
+  "semester": 1,
+  "name": "قواعد معطيات 2",
+  "track": "software"
+ },
+ {
+  "id": 24,
+  "year": 4,
+  "semester": 2,
+  "name": "نظم معلومات",
+  "track": "software"
+ },
+ {
+  "id": 25,
+  "year": 4,
+  "semester": 2,
+  "name": "لغات برمجة",
+  "track": "software"
+ },
+ {
+  "id": 26,
+  "year": 4,
+  "semester": 2,
+  "name": "منطق عائم",
+  "track": "ai"
+ },
+ {
+  "id": 27,
+  "year": 4,
+  "semester": 2,
+  "name": "برمجة منطقية",
+  "track": "ai"
+ },
+ {
+  "id": 28,
+  "year": 4,
+  "semester": 2,
+  "name": "برمجية تفرعية",
+  "track": "shared"
+ },
+ {
+  "id": 29,
+  "year": 4,
+  "semester": 2,
+  "name": "لغة انكليزي تخصصية 2",
+  "track": "shared"
+ },
+ {
+  "id": 30,
+  "year": 4,
+  "semester": 2,
+  "name": "نظم تشغيل 2",
+  "track": "shared"
+ },
+ {
+  "id": 31,
+  "year": 4,
+  "semester": 2,
+  "name": "تحليل و تصميم",
+  "track": "networks"
+ },
+ {
+  "id": 32,
+  "year": 5,
+  "semester": 1,
+  "name": "تجارة و تسويق",
+  "track": "shared"
+ },
+ {
+  "id": 33,
+  "year": 5,
+  "semester": 1,
+  "name": "نظم الزمن",
+  "track": "networks"
+ },
+ {
+  "id": 34,
+  "year": 5,
+  "semester": 2,
+  "name": "هندسة نظم المعلومات",
+  "track": "shared"
+ },
+ {
+  "id": 35,
+  "year": 5,
+  "semester": 2,
+  "name": "امن الشبكات",
+  "track": "networks"
+ },
+ {
+  "id": 36,
+  "year": 5,
+  "semester": 2,
+  "name": "امن المعلومات",
+  "track": "software"
+ },
+ {
+  "id": 37,
+  "year": 5,
+  "semester": 2,
+  "name": "ادارة المشاريع",
+  "track": "shared"
+ },
+ {
+  "id": 38,
+  "year": 5,
+  "semester": 2,
+  "name": "نظم و تطبيقات موزعة",
+  "track": "shared"
+ },
+ {
+  "id": 39,
+  "year": 5,
+  "semester": 2,
+  "name": "قواعد معطيات معرفية",
+  "track": "shared"
+ },
+ {
+  "id": 40,
+  "year": 5,
+  "semester": 1,
+  "name": "لغة انكليزي تخصصية 3",
+  "track": "shared"
+ }
+]

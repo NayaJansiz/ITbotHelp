@@ -1,0 +1,698 @@
+[
+ {
+  "id": 1122,
+  "key": "y5:p247",
+  "subject_id": 37,
+  "question": "3- On a custom docker user-defined network, containers comunicate using their container name.",
+  "options": [
+   "true",
+   "false"
+  ],
+  "correct_index": 0,
+  "explanation": "في شبكة Docker المعرّفة من المستخدم (user-defined) تتواصل الحاويات بأسمائها بفضل الـ DNS الداخلي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1123,
+  "key": "y5:p248",
+  "subject_id": 37,
+  "question": "32- Find isses created in last 3d, priority sorted desc, created date asc:",
+  "options": [
+   "created > -3d order by desc created desc",
+   "created > -3d order by desc createdDate acs",
+   "created > -3d sort by desc create asc",
+   "all of above"
+  ],
+  "correct_index": 1,
+  "explanation": "المطلوب JQL: created >= -3d ORDER BY priority DESC, created ASC؛ والخيار B الأقرب (desc ثم asc).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1124,
+  "key": "y5:p249",
+  "subject_id": 37,
+  "question": "Run apt.get update\nCopy package.json \nRun npm install Copy..  المطور غير فقط ملف package.json ( اضاف اعتماديات جديدة)   قام المطور بعمل run build docker   Which layer get rebuilt?",
+  "options": [
+   "package.json",
+   "Run npm install",
+   "Copy..",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "تغيير package.json يبطل الكاش من أمر COPY الخاص به، فتُعاد كل الطبقات اللاحقة (npm install وCOPY . .).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1125,
+  "key": "y5:p250",
+  "subject_id": 37,
+  "question": "A.6 خلال ال risk mitigation شو الفرق الاساسي بين transfer and sharing:",
+  "options": [
+   "sharing shift risk to third party transfer distribute it internally",
+   "Trans shift risk third party sharing distribute risk",
+   "C both are identical",
+   "الtrans بيتطبق ع المخاطر المالية و وال share ع المخاطر التقنية"
+  ],
+  "correct_index": 1,
+  "explanation": "في Risk Mitigation: التحويل (Transfer) ينقل المخاطر لطرف ثالث، والمشاركة (Sharing) توزعها بين الأطراف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1126,
+  "key": "y5:p251",
+  "subject_id": 37,
+  "question": "سؤال عن CIF \n•  LS = 8 \n•  ES = 5  •  Duration = 3  => Float =3 ?",
+  "options": [
+   "true",
+   "false"
+  ],
+  "correct_index": 0,
+  "explanation": "الفائض Float = LS - ES = 8 - 5 = 3، فالعبارة صحيحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1127,
+  "key": "y5:p252",
+  "subject_id": 37,
+  "question": "In jira,which report is most commonaly to visualize the number of issues in each status over time:",
+  "options": [
+   "Burndown",
+   "Burnup",
+   "Velocity",
+   "Cumulative"
+  ],
+  "correct_index": 3,
+  "explanation": "تقرير Cumulative Flow يوضح عدد القضايا بكل حالة عبر الزمن.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1128,
+  "key": "y5:p253",
+  "subject_id": 37,
+  "question": "In canban coniums represent difernt path of work flow",
+  "options": [
+   "true",
+   "false"
+  ],
+  "correct_index": 0,
+  "explanation": "أعمدة الكانبان تمثل مراحل مسار العمل (To do، In progress، Done...).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1129,
+  "key": "y5:p254",
+  "subject_id": 37,
+  "question": "in cirtical path method,cirtical path is the shortest sequence of tasks",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "المسار الحرج هو أطول مسار للمهام وليس أقصرها، ويحدد أقل زمن لإنجاز المشروع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1130,
+  "key": "y5:p255",
+  "subject_id": 37,
+  "question": "2)User stories must follow the format \"As....., I want\", so that..",
+  "options": [
+   "True",
+   "FALSE"
+  ],
+  "correct_index": 1,
+  "explanation": "صيغة \"As a... I want... so that\" شائعة وموصى بها لكنها ليست إلزامية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1131,
+  "key": "y5:p256",
+  "subject_id": 37,
+  "question": "اي النماذج تستخدم في كانبان لاظهار المشاكل لكل حالة مع الزمن",
+  "options": [
+   "burndown",
+   "burnup",
+   "comulative flow diagram"
+  ],
+  "correct_index": 2,
+  "explanation": "مخطط التدفق التراكمي (Cumulative Flow Diagram) يُظهر عدد المهام بكل حالة عبر الزمن في كانبان.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1132,
+  "key": "y5:p257",
+  "subject_id": 37,
+  "question": "في شركة لوجستية عم تشتغل على مشروع لعميل واحد و هاد العميل عطاهم تفاصيل كتيرة لكل المهام الرئيسية والمهام الفرعية\nف شو طريقة التقدير اللي مناسب استخدامها:",
+  "options": [
+   "Top-down estimation",
+   "Bottom-up estimation",
+   "Parametric estimation",
+   "PERT"
+  ],
+  "correct_index": 1,
+  "explanation": "عند توفر تفاصيل كثيرة للمهام الرئيسية والفرعية تناسب طريقة التقدير من الأسفل للأعلى (Bottom-up).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1133,
+  "key": "y5:p258",
+  "subject_id": 37,
+  "question": "حاويتين\nA تكتب بملف /data على أنه root\nB تقرأ منه على أنه user  لماذا لا يمكن ل b  القراءة",
+  "options": [
+   "Named volume can't shared accross container",
+   "B على شبكة مختلفة",
+   "صلاحيات ملفات A تمنع b",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "ملفات الحاوية A كُتبت بصلاحيات root، فصلاحيات الملفات تمنع الحاوية B (user) من القراءة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1134,
+  "key": "y5:p259",
+  "subject_id": 37,
+  "question": "كل القضايا يلي انتقلت من حالة block الى  select  for developing بواسطة المستخدم jode \n\nStatus changed from backlog to select for developing by ...",
+  "options": [
+   "true",
+   "false"
+  ],
+  "correct_index": 1,
+  "explanation": "الاستعلام يبحث عن قضايا انتقلت من backlog (لا من blocked) إلى Select for development، فالعبارة غير دقيقة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1135,
+  "key": "y5:p260",
+  "subject_id": 37,
+  "question": "Docker volumes are used to persist data beyond the lifecycle of a container.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ Docker volumes تُستخدم لحفظ البيانات بعد انتهاء دورة حياة الحاوية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1136,
+  "key": "y5:p261",
+  "subject_id": 37,
+  "question": "Which scenario is an organizational risk rather than a project risk?",
+  "options": [
+   "A library becomes deprecated, requiring refactoring",
+   "Bad weather delays material delivery",
+   "Project delivers on time and budget, but market demand plummets, making it unprofitable",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "نجاح المشروع بالوقت والميزانية مع انهيار طلب السوق يجعل الخطر تنظيمياً (organizational) لا خطر مشروع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1137,
+  "key": "y5:p262",
+  "subject_id": 37,
+  "question": "An issue type that is more suitable for a large feature and requires a multi tasks and can span to several spiners",
+  "options": [
+   "Task",
+   "Mega",
+   "Bug",
+   "Ecp"
+  ],
+  "correct_index": 3,
+  "explanation": "الـ Epic هو نوع القضية المناسب للميزة الكبيرة التي تتطلب مهام متعددة وتمتد عبر عدة سبرنتات (Sprints).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1138,
+  "key": "y5:p263",
+  "subject_id": 37,
+  "question": "المسار الحرج هو أقصر مسار بتسلسل ال task",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "المسار الحرج هو أطول مسار للمهام، وليس أقصرها، وهو يحدد أقل مدة لإنجاز المشروع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1139,
+  "key": "y5:p264",
+  "subject_id": 37,
+  "question": "Which rewrites History to avoid merge commits",
+  "options": [
+   "A pull",
+   "B pull merge",
+   "C push rebase",
+   "D none of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ rebase يعيد كتابة التاريخ ويجعله خطياً بدل إنشاء merge commits.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1140,
+  "key": "y5:p265",
+  "subject_id": 37,
+  "question": "Developer need to switch branches ungelty bu has uncommitted.\n\nWhich git statement is preserved... ?",
+  "options": [
+   "Git commit  Git stash Git checkout branch",
+   "Git add.  Git stash Git checkout branch",
+   "Git stash Git checkout branch  None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "لحفظ التعديلات غير المثبّتة: git stash ثم git checkout للفرع الآخر.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1141,
+  "key": "y5:p266",
+  "subject_id": 37,
+  "question": "Project budget = Baseline+Management  \nReverse \nManagement reverse is controlled by project manager.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "ميزانية المشروع = Baseline + Management reserve، لكن احتياطي الإدارة يتحكم به الإدارة العليا لا مدير المشروع.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1142,
+  "key": "y5:p267",
+  "subject_id": 37,
+  "question": "Jira board that shows issues in three different projects , project manager wants the board to show only issues where assignee \"Team .. \"\nand priority is high",
+  "options": [
+   "Project in (project A, project B , project C ) And  assignee =\"Team..\" And priority= \"hight\"",
+   "assignee =\"Team..\" And priority= \"hight\"",
+   "assignee =\"Team..\" OR  priority= \"hight\"",
+   "None all the bove"
+  ],
+  "correct_index": 0,
+  "explanation": "لعرض مشاريع محددة بشرطين معاً نستخدم project in (...) AND assignee AND priority.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1143,
+  "key": "y5:p268",
+  "subject_id": 37,
+  "question": "Docker volume انو يستخدم في حال بدنا نحفظ بيانات ال container",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ Docker volume يُستخدم لحفظ بيانات الحاوية خارج دورة حياتها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1144,
+  "key": "y5:p269",
+  "subject_id": 37,
+  "question": "In Kanban, columns with different parts of workflow flows:",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "أعمدة لوحة الكانبان تمثل مراحل مسار العمل المختلفة (To do, In progress, Done).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1145,
+  "key": "y5:p270",
+  "subject_id": 37,
+  "question": "During risk mitigation, what is the main difference between transfer and sharing:",
+  "options": [
+   "Sharing distributes the risk among partners, while transfer shifts risk to a third party"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1146,
+  "key": "y5:p271",
+  "subject_id": 37,
+  "question": "A developer needs to switch branches urgently,",
+  "options": [
+   "stash and check out"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1147,
+  "key": "y5:p272",
+  "subject_id": 37,
+  "question": "A project manager chooses to use a very old, well-understood database system, the clear risk avoidance:",
+  "options": [
+   "Risk avoidance"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1148,
+  "key": "y5:p273",
+  "subject_id": 37,
+  "question": "Find all issues status changed so  To find all issues where the status changes in progress review during the last 14 days",
+  "options": [
+   "none of the above"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1149,
+  "key": "y5:p274",
+  "subject_id": 37,
+  "question": "In Agile manifesto principles, which principle best aligns that is simplicity?",
+  "options": [
+   "Simplicity",
+   "Welcome..."
+  ],
+  "correct_index": 0,
+  "explanation": "مبدأ البساطة (Simplicity) من مبادئ بيان Agile: فن تعظيم كمية العمل غير المنجز.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1150,
+  "key": "y5:p275",
+  "subject_id": 37,
+  "question": "An e-commerce company runs a MySQL database in a Docker with this volume configuration.\n\n وعندما أتشغل هذا الأمر، لماذا يعطيني backup؟",
+  "options": [
+   "bad mount path."
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1151,
+  "key": "y5:p278",
+  "subject_id": 37,
+  "question": "Logistics company in Netherlands, Netherlands \nIs bidding",
+  "options": [
+   "bottom-up",
+   "باراميتريك"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1152,
+  "key": "y5:p279",
+  "subject_id": 37,
+  "question": "To connect two containers share a named volume:",
+  "options": [
+   "File permissions"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1153,
+  "key": "y5:p280",
+  "subject_id": 37,
+  "question": "في تعليمة rm \nفكان حجم ملف النسخ صفر \n شو ناتج تنفيذه؟",
+  "options": [
+   "حذفنا الحاوية قبل ما نحفظ بياناتا"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1154,
+  "key": "y5:p281",
+  "subject_id": 37,
+  "question": "الفرق بين الصورة والحاوية\nالجواب هو انو",
+  "options": [
+   "الصورة ما بتتعدل او ما بينكتب عليها (انو للقراءة بس) اما الحاوية بقدر عدل"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1155,
+  "key": "y5:p282",
+  "subject_id": 37,
+  "question": "ليش مهم نحط قيود ع العمل Wip",
+  "options": [
+   "Multitask , bottleneck ، smoother flow، منع الاختناقات"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1156,
+  "key": "y5:p283",
+  "subject_id": 37,
+  "question": "بس الي بتذكره انو كان فيه مسارين الاول نهايته :ro \nالتاني الي بدنا نكتب عليه او نوصله هوي مسار بنهايته error/log",
+  "options": [
+   "بمعنى لا يمكن الوصول لانو read only"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1157,
+  "key": "y5:p284",
+  "subject_id": 37,
+  "question": "In DevOps, Continuous Integration (CI) helps identify integration issues early by merging code changes frequently",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "التكامل المستمر (CI) يكتشف مشاكل الدمج مبكراً بدمج تغييرات الكود بشكل متكرر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1158,
+  "key": "y5:p285",
+  "subject_id": 37,
+  "question": "In Agile, the stakeholder is responsible for managing the Product Backlog and prioritizing work",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "المسؤول عن إدارة وترتيب Product Backlog هو الـ Product Owner وليس الـ stakeholder.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1159,
+  "key": "y5:p286",
+  "subject_id": 37,
+  "question": "In JIRA, a Board Filter uses JQL to determine which issues appear on a board",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "فلتر اللوحة (Board Filter) في Jira يستخدم JQL لتحديد القضايا التي تظهر على اللوحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

@@ -1,0 +1,388 @@
+[
+ {
+  "id": 568,
+  "key": "y4:p4",
+  "subject_id": 20,
+  "question": "1.  توزيع بواسون هو توزيع مستمر",
+  "options": [
+   "False",
+   "True"
+  ],
+  "correct_index": 0,
+  "explanation": "توزيع بواسون توزيع متقطع (discrete)، لذلك العبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 569,
+  "key": "y4:p5",
+  "subject_id": 20,
+  "question": "2. دالة chi-square  تستخدم لفحص الاستقلالية.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "اختبار chi-square يُستخدم لاختبار جودة المطابقة، وأيضاً لفحص الاستقلالية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 570,
+  "key": "y4:p6",
+  "subject_id": 20,
+  "question": "3. Unconditional wait",
+  "options": [
+   "Event",
+   "Delay",
+   "حدث وشيك",
+   "Activity"
+  ],
+  "correct_index": 3,
+  "explanation": "الانتظار غير المشروط (Unconditional wait) نشاط (Activity) مدته معروفة سلفاً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 571,
+  "key": "y4:p7",
+  "subject_id": 20,
+  "question": "4. في chi-square إذا كان :\nX² < (X²)k−1,1−α\nيتم قبول الفرضية H0 ؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "إذا كانت قيمة χ² المحسوبة أقل من القيمة الحرجة نقبل الفرضية H0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 572,
+  "key": "y4:p8",
+  "subject_id": 20,
+  "question": "6. استخدام الأساليب الرياضية للحصول على معلومات دقيقة حول النظام المدروس يسمى :",
+  "options": [
+   "الحل الرياضي",
+   "الحل الفيزيائي",
+   "الحل التحليلي",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "استخدام الأساليب الرياضية للحصول على معلومات دقيقة يسمى الحل التحليلي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 573,
+  "key": "y4:p9",
+  "subject_id": 20,
+  "question": "10. الدور period للمولد السابق هو :",
+  "options": [
+   "30",
+   "16",
+   "15",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 574,
+  "key": "y4:p10",
+  "subject_id": 20,
+  "question": "11. هل يملك دور أعظمي ؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 575,
+  "key": "y4:p11",
+  "subject_id": 20,
+  "question": "12. المتحول العشوائي X في طريقة convildition method",
+  "options": [
+   "هو مجموع دوالpdf",
+   "مجموع دوالcdf",
+   "مجموع متغيرات عشوائية أخرى",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "في طريقة التفاف (Convolution) المتحول العشوائي X هو مجموع متغيرات عشوائية أخرى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 576,
+  "key": "y4:p13",
+  "subject_id": 20,
+  "question": "13. ما هي العمليات التي يمثلها :",
+  "options": [
+   "Synchronization",
+   "Concurrently",
+   "A and b",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 577,
+  "key": "y4:p14",
+  "subject_id": 20,
+  "question": "14. ما هي الإنتقالات المفعلة :",
+  "options": [
+   "T1",
+   "T1 T2",
+   "T1 T2 T3",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 578,
+  "key": "y4:p17",
+  "subject_id": 20,
+  "question": "18. وصول الطلب هو :",
+  "options": [
+   "Activity",
+   "Entity",
+   "Event",
+   "None"
+  ],
+  "correct_index": 2,
+  "explanation": "وصول الطلب حدث (Event) لأنه يغيّر حالة النظام عند لحظة معينة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 579,
+  "key": "y4:p18",
+  "subject_id": 20,
+  "question": "19. عملية التغليف هي :",
+  "options": [
+   "Activity",
+   "Entity",
+   "Event",
+   "None"
+  ],
+  "correct_index": 0,
+  "explanation": "عملية التغليف نشاط (Activity) له مدة زمنية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 580,
+  "key": "y4:p19",
+  "subject_id": 20,
+  "question": "20. المنتج هو :",
+  "options": [
+   "Activity",
+   "Entity",
+   "Event",
+   "None"
+  ],
+  "correct_index": 1,
+  "explanation": "المنتج كيان (Entity) يمر عبر النظام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 581,
+  "key": "y4:p20",
+  "subject_id": 20,
+  "question": "21. نفاذ البضائع :",
+  "options": [
+   "Activity",
+   "Entity",
+   "Event",
+   "None"
+  ],
+  "correct_index": 2,
+  "explanation": "نفاذ البضائع حدث (Event) يغيّر حالة المخزون.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 582,
+  "key": "y4:p21",
+  "subject_id": 20,
+  "question": "22. يمكن أن يحتوي النموذج على أرتال ؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "يمكن أن يحتوي النموذج على أرتال (Queues) لانتظار الكيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 583,
+  "key": "y4:p22",
+  "subject_id": 20,
+  "question": "23. عدد المنتجات في نهاية اليوم الرابع :",
+  "options": [
+   "14",
+   "13",
+   "12",
+   "None"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 584,
+  "key": "y4:p23",
+  "subject_id": 20,
+  "question": "24. عدد المنتجات في نهاية اليوم السابع :",
+  "options": [
+   "9",
+   "7",
+   "None"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 585,
+  "key": "y4:p24",
+  "subject_id": 20,
+  "question": "25. يتم طلب إعادة شحن في نهاية اليوم السابع ؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 586,
+  "key": "y4:p25",
+  "subject_id": 20,
+  "question": "إذا علمت أن l=4 فإن ناتج توليد أول 5 أعداد عشوائية\nl = 4",
+  "options": [
+   "0.468 0.281 0.312 0.125 0.0625",
+   "0.937 0.562 0.625 0.250 0.125",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 587,
+  "key": "y4:p26",
+  "subject_id": 20,
+  "question": "7. من الاختبارات المستخدمة لاختبار تطابق التوزع الاحتمالي مع الدخل :",
+  "options": [
+   "run tests",
+   "kogolmorov-simarnov",
+   "a&b",
+   "جميع الإجابات خاطئة"
+  ],
+  "correct_index": 1,
+  "explanation": "اختبار كولموغوروف-سميرنوف يختبر تطابق التوزيع الاحتمالي، أما run test فللاستقلالية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

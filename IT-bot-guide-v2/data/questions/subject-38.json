@@ -1,0 +1,703 @@
+[
+ {
+  "id": 1160,
+  "key": "y5:p287",
+  "subject_id": 38,
+  "question": "1 - من أنواع الشفافية والتي تهتم بالوصول للموارد المحلية والبعيدة باستخدام نفس العمليات:",
+  "options": [
+   "شفافية التنقل Mobility transparency",
+   "شفافية النسخ Replication transparency",
+   "شفافية الوصول Access transparency",
+   "شفافية الموقع Location transparency"
+  ],
+  "correct_index": 2,
+  "explanation": "شفافية الوصول (Access): الوصول للموارد المحلية والبعيدة بنفس العمليات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1161,
+  "key": "y5:p288",
+  "subject_id": 38,
+  "question": "2 - المقصود بـ RPC هو:",
+  "options": [
+   "Remote process call",
+   "Remote procedure call",
+   "Reliable procedure call",
+   "Reliable process call"
+  ],
+  "correct_index": 1,
+  "explanation": "RPC هي Remote Procedure Call أي استدعاء الإجراءات عن بعد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1162,
+  "key": "y5:p289",
+  "subject_id": 38,
+  "question": "3 - من مكونات RMI software الموجودة عند الزبون:",
+  "options": [
+   "dispatcher",
+   "skeleton",
+   "proxy",
+   "غير ذلك"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ Proxy (الوكيل) موجود عند الزبون في RMI، والـ Dispatcher والـ Skeleton عند الخادم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1163,
+  "key": "y5:p290",
+  "subject_id": 38,
+  "question": "4 - في نموذج الأغراض الموزعة يكون الاستدعاء عن بعد هو استدعاء لطرائق:",
+  "options": [
+   "بين الـ remote objects وأي غرض آخر",
+   "بين غرضين موجودين على جهازين مختلفين",
+   "بين غرضين موجودين ضمن بروسيس مختلفين",
+   "B + C"
+  ],
+  "correct_index": 2,
+  "explanation": "الاستدعاء عن بعد هو استدعاء طرائق بين غرضين في عمليتين (process) مختلفتين، سواء على نفس الجهاز أم لا.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1164,
+  "key": "y5:p291",
+  "subject_id": 38,
+  "question": "5 - أي العمليات التالية ليست من النوع idempotent:",
+  "options": [
+   "قراءة ملف",
+   "كتابة بيانات إلى ملف",
+   "إضافة عنصر إلى مجموعة",
+   "ترجمة البرنامج compiling"
+  ],
+  "correct_index": 3,
+  "explanation": "القراءة والكتابة وإضافة عنصر لمجموعة عمليات idempotent، أما الترجمة (compiling) فليست منها في تصنيف المحاضرة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1165,
+  "key": "y5:p292",
+  "subject_id": 38,
+  "question": "6 - الحافز الأساسي لبناء النظم الموزعة:",
+  "options": [
+   "التنافس Concurrency",
+   "مشاركة الموارد Sharing of resources",
+   "الفشل المستقل Independent Failures",
+   "غير ذلك"
+  ],
+  "correct_index": 1,
+  "explanation": "الدافع الأساسي لبناء النظم الموزعة هو مشاركة الموارد (Sharing of resources).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1166,
+  "key": "y5:p293",
+  "subject_id": 38,
+  "question": "7 - تسليم البريد الإلكتروني يوضح شفافية (يحقق شفافية):",
+  "options": [
+   "شفافية الفشل Failure transparency",
+   "شفافية الموقع Location transparency",
+   "شفافية الوصول Access transparency",
+   "شفافية التنقل Mobility transparency"
+  ],
+  "correct_index": 1,
+  "explanation": "عناوين البريد الإلكتروني مثال على شفافية الموقع (Location transparency).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1167,
+  "key": "y5:p294",
+  "subject_id": 38,
+  "question": "8 - ليس من الأمثلة على إخفاء اختلاف مكونات النظام الموزع:",
+  "options": [
+   "بروتوكولات الإنترنت",
+   "طبقة برمجية وسيطة",
+   "الكود المتنقل",
+   "غير ذلك"
+  ],
+  "correct_index": 3,
+  "explanation": "بروتوكولات الإنترنت وطبقة الـ middleware والكود المتنقل كلها أمثلة على إخفاء اختلاف المكونات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1168,
+  "key": "y5:p295",
+  "subject_id": 38,
+  "question": "9 - ليست من المتطلبات التي تهتم النماذج البنيوية Architectural Models بتحقيقها:",
+  "options": [
+   "موثوق Reliable",
+   "قابل للإدارة Manageable",
+   "كلفة معقولة Cost-effective",
+   "غير ذلك"
+  ],
+  "correct_index": 3,
+  "explanation": "الموثوقية وقابلية الإدارة والكلفة المعقولة كلها من متطلبات النماذج البنيوية، فالمطلوب \"غير ذلك\".",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1169,
+  "key": "y5:p296",
+  "subject_id": 38,
+  "question": "10 - أين تتحقق خاصية الأمن security أكثر فعالية في نموذج:",
+  "options": [
+   "نموذج خادم-عميل Client-Server model",
+   "نموذج الند-للند Peer-to-peer model",
+   "غير ذلك"
+  ],
+  "correct_index": 0,
+  "explanation": "الأمان أكثر فعالية في نموذج خادم-عميل لأن الخادم المركزي يتحكم بالوصول.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1170,
+  "key": "y5:p297",
+  "subject_id": 38,
+  "question": "11 - من الأمثلة على تقنيات التعامل مع الفشل والتي تحقق التعافي من الفشل Recovery نذكر:",
+  "options": [
+   "إعادة إرسال الرسائل التي تحتوي أخطاء Retransmission of corrupt messages",
+   "آلية تشكيل نقاط استعادة Rollback mechanisms",
+   "إدارة الاستثناءات Exception handling",
+   "تفحص الرسائل Checksums"
+  ],
+  "correct_index": 1,
+  "explanation": "آلية تشكيل نقاط الاستعادة (Rollback) تحقق التعافي من الفشل (Recovery).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1171,
+  "key": "y5:p298",
+  "subject_id": 38,
+  "question": "12 - يمكن للمخدم أن يكون زبون لمخدم آخر في نموذج والمثال على ذلك:",
+  "options": [
+   "محركات البحث a search engine",
+   "تطبيقات الويب web-based applications",
+   "خادم-العميل Client-Server model",
+   "العنقود cluster",
+   "كل ما سبق"
+  ],
+  "correct_index": 4,
+  "explanation": "الخادم قد يكون زبوناً لخادم آخر في محركات البحث وتطبيقات الويب ونموذج خادم-عميل والعنقود.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1172,
+  "key": "y5:p299",
+  "subject_id": 38,
+  "question": "13 - من تقنيات حماية الأغراض protecting objects والتي تحدد من المسموح له بالقيام بعمليات على الغرض object:",
+  "options": [
+   "الهوية Principal",
+   "حقوق الوصول Access rights",
+   "المصادقة Authentication",
+   "غير ذلك"
+  ],
+  "correct_index": 1,
+  "explanation": "حقوق الوصول (Access rights) تحدد من يُسمح له بتنفيذ العمليات على الغرض.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1173,
+  "key": "y5:p301",
+  "subject_id": 38,
+  "question": "14 - إن أنواع الفشل الذي يمكن أن تعاني منه الخدمة A:",
+  "options": [
+   "timing failures و omission failures",
+   "timing failures و arbitrary failures",
+   "omission failures و arbitrary failures",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "الخدمة A قد تفقد الرسائل (omission) وتؤخرها (timing) ولا تفحص المحتوى (arbitrary).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1174,
+  "key": "y5:p302",
+  "subject_id": 38,
+  "question": "15لنأخذ بعين الاعتبار زوج من العمليات X و Y التي تستخدم الخدمة B من أجل الاتصال مع بعضها البعض. لنفرض أن Xهو عميل وY خادم وأن الاستدعاء يتكون من رسالة طلب منX إلى Y (التي تنفذ الطلب) متبوعة برسالة رد من Y إلى X. إن نوع الفشل الذي يعاني منه هذا الاستدعاء:",
+  "options": [
+   "omission failures و crash failures",
+   "arbitrary failures و omission failures",
+   "crash failures و arbitrary failures",
+   "كل ما سبق"
+  ],
+  "correct_index": 0,
+  "explanation": "استدعاء عبر الخدمة B يعاني من omission failures (ضياع الرسائل) وcrash failures (توقف العمليات).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1175,
+  "key": "y5:p303",
+  "subject_id": 38,
+  "question": "16 - من الأمثلة على تمثيل البيانات الخارجي external data representation:",
+  "options": [
+   "XML",
+   "Java's object serialization",
+   "CORBA's common data representation",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "XML وJava serialization وCORBA CDR كلها أمثلة على تمثيل البيانات الخارجي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1176,
+  "key": "y5:p304",
+  "subject_id": 38,
+  "question": "17 - ليست من المعلومات التي سيتم إرسالها في رسالة طلب أو رسالة جواب في بروتوكول request-reply:",
+  "options": [
+   "MessageType",
+   "dataType",
+   "methodID",
+   "requestId"
+  ],
+  "correct_index": 1,
+  "explanation": "رسالة request-reply تحتوي MessageType وrequestId وmethodID، ولا تحتوي dataType.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1177,
+  "key": "y5:p305",
+  "subject_id": 38,
+  "question": "18 - أي من دلالات الاستدعاء التالية يمكن أن تعاني من الخطأ العشوائي arbitrary failures:",
+  "options": [
+   "maybe",
+   "at least once",
+   "at most once",
+   "كل ما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "دلالة at-least-once قد تنفذ العملية أكثر من مرة، فتعاني من arbitrary failures عند عدم الـ idempotence.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1178,
+  "key": "y5:p306",
+  "subject_id": 38,
+  "question": "19 - أي من العبارات التالية غير صحيحة:\n   server stub",
+  "options": [
+   "RPC لا يطبق على الأغراض",
+   "المسؤول عن تحقيق دلالة الاستدعاء هو فقط وحدات الاتصال Communication module الـ",
+   "يحتوي العميل على   stub procedure واحد من أجل جميع الإجراءات الموجودة في واجهة الخدمة",
+   "dispatcher هو المسؤول عن اختيار الـ stub المناسب"
+  ],
+  "correct_index": 2,
+  "explanation": "العبارة الخاطئة: للعميل stub procedure مستقل لكل إجراء في واجهة الخدمة، وليس واحداً للكل.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1179,
+  "key": "y5:p307",
+  "subject_id": 38,
+  "question": "20 - من أشكال بروتوكول الطلب والرد Request-reply والذي يحسن من إدارة المخدم للذاكرة المخزنة للنتائج المرسلة:",
+  "options": [
+   "بروتوكول الطلب (R)",
+   "بروتوكول الطلب والرد (RR)",
+   "بروتوكول الطلب والإقرار والرد (RRA)",
+   "كل ما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "بروتوكول RRA (الطلب والرد والإقرار) يسمح للخادم بحذف النتيجة المخزنة بعد إقرار العميل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1180,
+  "key": "y5:p308",
+  "subject_id": 38,
+  "question": "21 - أي استدعاء عن بعد remote invocation يمكن أن يفشل بسبب:",
+  "options": [
+   "ضياع الرسالة",
+   "فشل العمليات process failure",
+   "كل ما سبق غير ذلك"
+  ],
+  "correct_index": 2,
+  "explanation": "الاستدعاء عن بعد قد يفشل بسبب ضياع الرسالة وفشل العمليات وغيرها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1181,
+  "key": "y5:p309",
+  "subject_id": 38,
+  "question": "22 - عندما يصل الـ remote object reference إلى رسالة طلب أو رسالة جواب، فإنه (a remote object reference) يمكن أن يشير إلى:",
+  "options": [
+   "A proxy",
+   "A remote object",
+   "يمكن أن يكون غير موجود في الـ remote object table",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "الـ remote object reference قد يشير إلى proxy أو إلى remote object أو لغرض غير موجود بالجدول.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1182,
+  "key": "y5:p310",
+  "subject_id": 38,
+  "question": "23 - ليس من دلالات التسليم delivery semantics في نموذج Publish/Subscribe:",
+  "options": [
+   "Unreliable",
+   "Reliable",
+   "Real-time",
+   "غير ذلك"
+  ],
+  "correct_index": 3,
+  "explanation": "دلالات التسليم في Publish/Subscribe هي Unreliable وReliable وReal-time، فالمطلوب \"غير ذلك\".",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1183,
+  "key": "y5:p311",
+  "subject_id": 38,
+  "question": "24 - عندما يكون الـ performance هو الأهم، ماذا نختار؟",
+  "options": [
+   "أنظمة تشغيل بـ microkernel",
+   "أنظمة تشغيل بـ monolithic kernel",
+   "A + B",
+   "غير ذلك"
+  ],
+  "correct_index": 1,
+  "explanation": "عندما يكون الأداء الأهم يُفضَّل نواة monolithic لأنها أسرع (بلا تبديل بين فضاءات).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1184,
+  "key": "y5:p312",
+  "subject_id": 38,
+  "question": "25 - إذا كانت ساعتي جهازين متزامنتين مع منبع خارجي للزمن بمقدار T، فإن أقل فرق ممكن بين ساعتي الجهازين:",
+  "options": [
+   "0",
+   "T",
+   "2T",
+   "غير ذلك"
+  ],
+  "correct_index": 0,
+  "explanation": "ساعتا الجهازين المتزامنتان مع منبع خارجي ضمن T قد يتطابقان تماماً، فأقل فرق ممكن 0 (وأكبره 2T).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1185,
+  "key": "y5:p313",
+  "subject_id": 38,
+  "question": "26 - من الأسباب التي جعلت المستخدمين يفضلون الـ network operating system على الـ distributed operating system:",
+  "options": [
+   "إمكانية الوصول للموارد عن بعد",
+   "تفضيل المستخدمين لدرجة من الاستقلالية على أجهزتهم",
+   "الكلفة المنخفضة",
+   "الأداء الأفضل"
+  ],
+  "correct_index": 1,
+  "explanation": "المستخدمون يفضلون الـ NOS لأنه يمنحهم درجة من الاستقلالية على أجهزتهم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1186,
+  "key": "y5:p314",
+  "subject_id": 38,
+  "question": "27 - ليس من وظائف الـ Thread manager:",
+  "options": [
+   "thread communication",
+   "threads synchronization",
+   "threads scheduling",
+   "thread creation"
+  ],
+  "correct_index": 0,
+  "explanation": "وظائف مدير الخيوط: الإنشاء والمزامنة والجدولة، والاتصال بين الخيوط ليس منها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1187,
+  "key": "y5:p315",
+  "subject_id": 38,
+  "question": "28 - بني الخوادم متعددة المسالك الممكنة Alternative server threading architectures:",
+  "options": [
+   "Thread-per-request",
+   "Thread-per-connection",
+   "Thread-per-object remote",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "بنى الخوادم متعددة المسالك: thread-per-request وthread-per-connection وthread-per-object.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1188,
+  "key": "y5:p317",
+  "subject_id": 38,
+  "question": "29 - إن أكبر قيمة ممكنة للزمن عند الزبون هي:",
+  "options": [
+   "9:00:01",
+   "9:00:03",
+   "9:00:05",
+   "9:00:07"
+  ],
+  "correct_index": 2,
+  "explanation": "بحسب Cristian: زمن الزبون = T + [min2, RTT - min1] = 9:00:00 + [1, 5]، فأكبر قيمة 9:00:05.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1189,
+  "key": "y5:p318",
+  "subject_id": 38,
+  "question": "30 - إن أقل قيمة ممكنة للزمن عند الزبون هي:",
+  "options": [
+   "9:00:00",
+   "9:00:01",
+   "9:00:02",
+   "9:00:03"
+  ],
+  "correct_index": 1,
+  "explanation": "أقل قيمة = T + min2 = 9:00:00 + 1s = 9:00:01.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1190,
+  "key": "y5:p319",
+  "subject_id": 38,
+  "question": "31 - أي مما يلي صحيح؟",
+  "options": [
+   "إذا كان الحدث A يحصل قبل الحدث B فإن كلا الحدثين سيكونان على نفس الـ process",
+   "إذا كان L(a) < L(b) فإن الحدث a يحصل قبل الحدث b (L(x) تشير إلى قيمة lamport clock للحدث x).",
+   "لا يوجد أي فرق بين lamport clock و vector clock.",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "رقم lamport الأصغر لا يعني بالضرورة أن الحدث سبق الآخر، فالعبارات A وB وC خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1191,
+  "key": "y5:p320",
+  "subject_id": 38,
+  "question": "32 - أي من العبارات التالية غير صحيحة:",
+  "options": [
+   "يحقق بروتوكول NTP مزامنة داخلية Internal synchronization للحواسيب المتصلة بالانترنت",
+   "يعتبر Multicast mode من الأنماط الأقل دقة لتحقيق المزامنة بين مخدمات بروتوكول NTP",
+   "في خوارزمية بيركلي يعيد المنسق لبقية المكونات (التابعين) المقدار الذي ينبغي على  يتبع...",
+   "تتمة الخيار السابق: التابع أن يعدل قيمة الساعة به والذي يمكن أن يكون موجباً أو سالباً.",
+   "في خوارزمية بيركلي عند حساب المتوسط لا يأخذ المنسق بعين الاعتبار قيمة يتبع...",
+   "تتمة d: ساعة المكون التي تنحرف بشكل كبير عن بقية المكونات."
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1192,
+  "key": "y5:p322",
+  "subject_id": 38,
+  "question": "33 - إن قيمة الـ Vector timestamp للحدث c هي:",
+  "options": [
+   "(4, 5, 5)",
+   "(5, 5, 5)",
+   "(6, 5, 5)",
+   "غير ذلك"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1193,
+  "key": "y5:p323",
+  "subject_id": 38,
+  "question": "34 - إن قيمة الـ Vector timestamp للحدث b هي:",
+  "options": [
+   "(4, 3, 2)",
+   "(4, 3, 5)",
+   "(4, 3, 4)",
+   "غير ذلك"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1194,
+  "key": "y5:p324",
+  "subject_id": 38,
+  "question": "35 - بفرض لدينا الحدثين التاليين e1, e2 ولهما Vector timestamp كما يلي (0,3,2,0) و (1,4,1,2)، فإن العلاقة بين هذين الحدثين هي:",
+  "options": [
+   "e1 || e2",
+   "e2 -> e1",
+   "e1 -> e2",
+   "غير ذلك"
+  ],
+  "correct_index": 0,
+  "explanation": "(0,3,2,0) و(1,4,1,2): لا أحدهما أصغر أو يساوي الآخر في كل المركبات، فالحدثان متزامنان e1",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

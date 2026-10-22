@@ -1,0 +1,662 @@
+[
+ {
+  "id": 841,
+  "key": "y4:p317",
+  "subject_id": 29,
+  "question": "2. Which should NOT be done in onPause():",
+  "options": [
+   "pause video playback",
+   "release GPS resources",
+   "perform database transactions",
+   "release sensor resources"
+  ],
+  "correct_index": 2,
+  "explanation": "يجب ألا تُجرى عمليات قاعدة البيانات الثقيلة في onPause() لأنها تبطّئ الانتقال بين الشاشات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 842,
+  "key": "y4:p318",
+  "subject_id": 29,
+  "question": "3. In kotlin, which keyword is required in superclass to allow other classes to inherit from it:",
+  "options": [
+   "Val",
+   "Override",
+   "Internal",
+   "Open"
+  ],
+  "correct_index": 3,
+  "explanation": "الكلمة open ضرورية في Kotlin ليسمح الصف الأب بالوراثة منه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 843,
+  "key": "y4:p319",
+  "subject_id": 29,
+  "question": "6. If we have URI OF an image and want to display it in the gallery app what build in action type we should use:",
+  "options": [
+   "ACTION.VIEW",
+   "ACTION.EDIT",
+   "ACTION.PICK",
+   "ACTION.SEND"
+  ],
+  "correct_index": 0,
+  "explanation": "ACTION_VIEW يُستخدم لعرض صورة عبر تطبيق المعرض (gallery) انطلاقاً من URI.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 844,
+  "key": "y4:p320",
+  "subject_id": 29,
+  "question": "7. Which is defined as central navigation coordinate for managing destination :",
+  "options": [
+   "navHost",
+   "navGraph",
+   "navController",
+   "navDestination"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ NavController هو المنسق المركزي للتنقل بين الوجهات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 845,
+  "key": "y4:p321",
+  "subject_id": 29,
+  "question": "8. What is the Intent type here:",
+  "options": [
+   "Explicit",
+   "Implicit",
+   "Ordered"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 846,
+  "key": "y4:p322",
+  "subject_id": 29,
+  "question": "9. What is the output of the code:",
+  "options": [
+   "The count type should be val",
+   "The text can't accept Integer",
+   "Local variables don't survive via recomposition"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 847,
+  "key": "y4:p323",
+  "subject_id": 29,
+  "question": "10. Which Java API component is responsible for the user navigation back stack:",
+  "options": [
+   "Activity manager",
+   "Broadcast receiver"
+  ],
+  "correct_index": 0,
+  "explanation": "مدير الـ Activities (Activity Manager) هو المسؤول عن مكدس العودة (back stack).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 848,
+  "key": "y4:p324",
+  "subject_id": 29,
+  "question": "11. A class specify an unknown placeholder data type that can be int , string, boolean.\nwhich is the best option to use:",
+  "options": [
+   "Generics",
+   "Enum",
+   "Singleton"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ Generics تسمح بتحديد نوع بيانات مجهول (placeholder) يمكن أن يكون int أو string أو boolean.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 849,
+  "key": "y4:p325",
+  "subject_id": 29,
+  "question": "12. What's the output based on the modifier:",
+  "options": [
+   "Only text is clickable",
+   "Text with padding are clickable",
+   "Button doesn't have text",
+   "Modifier don't accept padding"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 850,
+  "key": "y4:p326",
+  "subject_id": 29,
+  "question": "13. Make the declaration accessible in the same module and prevent unauthorized access from outside the module.\nWhich type should we use:",
+  "options": [
+   "Internal",
+   "Public",
+   "Protected",
+   "Private"
+  ],
+  "correct_index": 0,
+  "explanation": "المُعدِّل internal يجعل التصريح متاحاً داخل نفس الوحدة (module) فقط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 851,
+  "key": "y4:p327",
+  "subject_id": 29,
+  "question": "14. Current back stack is:\n[ login → home → settings ].\nWhat's the Result for the new stack:",
+  "options": [
+   "[ login → profile ]",
+   "[ login → home ]",
+   "[ login → home → settings → profile]"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 852,
+  "key": "y4:p328",
+  "subject_id": 29,
+  "question": "17. In modern Android development, for most background work,which alternative components are recommended by Google:",
+  "options": [
+   "Content provider",
+   "Service",
+   "WorkManager"
+  ],
+  "correct_index": 2,
+  "explanation": "WorkManager هو المكوّن الذي توصي به Google لمعظم الأعمال الخلفية في Android الحديث.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 853,
+  "key": "y4:p329",
+  "subject_id": 29,
+  "question": "18. An Android App Bundle, which is an archive file with an .aab suffix, which of the following is True:",
+  "options": [
+   "An AAB is a publishing format and can't be installed on Android devices.",
+   "Contain resources and code",
+   "Can be install on Android devices",
+   "A & B"
+  ],
+  "correct_index": 3,
+  "explanation": "ملف AAB صيغة نشر ولا يُثبَّت مباشرة على الأجهزة، ويحتوي الموارد والكود.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 854,
+  "key": "y4:p330",
+  "subject_id": 29,
+  "question": "19. If the user wants to play an audio and leave the app, which kind of service work:",
+  "options": [
+   "Background service",
+   "Foreground service",
+   "Bound service",
+   "Broadcast"
+  ],
+  "correct_index": 1,
+  "explanation": "الخدمة الأمامية (Foreground service) تستمر بتشغيل الصوت حتى بعد مغادرة التطبيق.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 855,
+  "key": "y4:p331",
+  "subject_id": 29,
+  "question": "20. Java API component Centralizes access to various application resources like layouts, strings, images, colors, styles and animations:",
+  "options": [
+   "Resource Manager",
+   "Package Manager",
+   "Notification Manager",
+   "View System"
+  ],
+  "correct_index": 0,
+  "explanation": "مدير الموارد (Resource Manager) يوفر وصولاً مركزياً لموارد التطبيق من تخطيطات ونصوص وصور وألوان.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 856,
+  "key": "y4:p332",
+  "subject_id": 29,
+  "question": "22. Which is True About action test:",
+  "options": [
+   "If Intent action matched one of the Intent-filters, it passes.",
+   "If Intent has no action, it passes even if the Intent-filters didn't have any actions.",
+   "If the Intent-filters didn't have any actions, all Intents passed.",
+   "All of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "فحص الـ action ينجح إذا طابق action الـ Intent أحد actions في الـ filter.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 857,
+  "key": "y4:p333",
+  "subject_id": 29,
+  "question": "23. What's the right output in this case:",
+  "options": [
+   "No errors, it prints and continue",
+   "Compiler ignore.....",
+   "nullPointerException",
+   "Compilation error"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 858,
+  "key": "y4:p334",
+  "subject_id": 29,
+  "question": "26. mutableStateOf Job :",
+  "options": [
+   "Makes changes observable",
+   "Keeps objects values across recompositions"
+  ],
+  "correct_index": 0,
+  "explanation": "mutableStateOf يجعل التغييرات قابلة للمراقبة، فتُعاد تركيبة الواجهة عند تغيّر القيمة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 859,
+  "key": "y4:p335",
+  "subject_id": 29,
+  "question": "28. In Compose's declarative approach, widgets are:",
+  "options": [
+   "widgets are exposed as objects.",
+   "Relatively stateless and don't  expose setter or getter functions.",
+   "you can initialize the UI by  instantiating a tree of widgets."
+  ],
+  "correct_index": 1,
+  "explanation": "في Compose التصريحي تكون الودجات عديمة الحالة نسبياً ولا تكشف setters/getters.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 860,
+  "key": "y4:p336",
+  "subject_id": 29,
+  "question": "30. Which is True About Secondary constructor body, when a primary one is exist:",
+  "options": [
+   "Requiered Initialization of the primary constructor",
+   "Put 'constructor' word",
+   "In class's header...."
+  ],
+  "correct_index": 0,
+  "explanation": "المُنشئ الثانوي يجب أن يفوّض (delegate) للمُنشئ الأساسي إن وُجد.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 861,
+  "key": "y4:p337",
+  "subject_id": 29,
+  "question": "21. Which of the following is TRUE about the Android Runtime (ART) difference from (DEX):",
+  "options": [
+   "ART compiles Ahead-of-Time (AOT) compilation.",
+   "ART compiles Just-In-Time (JIT) compilation.",
+   "DEX has more efficient memory management.",
+   "ART replaces the need for core runtime libraries."
+  ],
+  "correct_index": 0,
+  "explanation": "الـ ART يعتمد الترجمة المسبقة (Ahead-of-Time) بخلاف Dalvik الذي كان يعتمد JIT.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 862,
+  "key": "y4:p338",
+  "subject_id": 29,
+  "question": "16. What is the task of hardware abstraction layer (HAL) in Android Platform?",
+  "options": [
+   "Written to run multiple virtual machines on low-memory devices.",
+   "Responsible of providing standard Interfaces exposes hardware capabilities to Java API framework.",
+   "It is responsible of providing File & network I/O management.",
+   "set of tools required to develop, debug, and test Android applications."
+  ],
+  "correct_index": 1,
+  "explanation": "الـ HAL يوفر واجهات قياسية تكشف إمكانيات العتاد لإطار عمل Java API.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 863,
+  "key": "y4:p339",
+  "subject_id": 29,
+  "question": "31. Suppose your app requires a camera and you declared these requirements in your app manifest file, What does it mean?",
+  "options": [
+   "Devices that don't have a camera can't install your app from Google Play.",
+   "It can install the app but without the camera features enabled.",
+   "It ignores the requirements and install the app with camera enabled."
+  ],
+  "correct_index": 0,
+  "explanation": "إعلان الكاميرا كمتطلب في المانيفست يمنع تثبيت التطبيق من Google Play على أجهزة بلا كاميرا.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 864,
+  "key": "y4:p341",
+  "subject_id": 29,
+  "question": "33. In layout phase tree traversing:",
+  "options": [
+   "Parents measure and sized before their children.",
+   "Parents measure before their children, but are sized and placed after their children.",
+   "Each node is visited multiple times.",
+   "Nodes contain all information needed to decide on each node's size and location in 3D coordinates."
+  ],
+  "correct_index": 1,
+  "explanation": "في طور التخطيط (layout) يُقاس الأب قبل أبنائه، لكن يُحدَّد حجمه وموضعه بعد أبنائه.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 865,
+  "key": "y4:p342",
+  "subject_id": 29,
+  "question": "34. If the user device have multiple windows, however the screen is visible but Not focused, what's the state description:",
+  "options": [
+   "Running",
+   "Paused",
+   "Resumed",
+   "Destroyed"
+  ],
+  "correct_index": 1,
+  "explanation": "الشاشة المرئية لكن غير المركّزة (نوافذ متعددة) تكون في حالة Paused.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 866,
+  "key": "y4:p343",
+  "subject_id": 29,
+  "question": "35. In modern Android development for most applications, Instead of multiple Activities, apps typically use:",
+  "options": [
+   "A single hosting Activity with Multiple UI destinations managed via Jetpack Compose navigation.",
+   "App contains multiple activities.",
+   "No need for activities anymore."
+  ],
+  "correct_index": 0,
+  "explanation": "التطبيقات الحديثة تستخدم Activity واحداً مع وجهات واجهة متعددة عبر Navigation Compose.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 867,
+  "key": "y4:p345",
+  "subject_id": 29,
+  "question": "15. Which of the following is True about data class :",
+  "options": [
+   "The following methods are implemented by compiler equals() .hashCode() .toString().",
+   "Can't have parameters in its primary constructor.",
+   "Can't have properties."
+  ],
+  "correct_index": 0,
+  "explanation": "الـ data class يولّد المترجم لها equals() وhashCode() وtoString().",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 868,
+  "key": "y4:p346",
+  "subject_id": 29,
+  "question": "24. What is a companion object:",
+  "options": [
+   "A secondary constructor that calls the primary constructor.",
+   "Singleton object inside other class."
+  ],
+  "correct_index": 1,
+  "explanation": "الـ companion object كائن وحيد (singleton) داخل الصف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 869,
+  "key": "y4:p347",
+  "subject_id": 29,
+  "question": "25. We use requiredSize modifier for:",
+  "options": [
+   "To make the element wrap its child components",
+   "Determine the size based on incoming constraints.",
+   "If you require the composable size to be fixed regardless the incoming constraints from it's parent."
+  ],
+  "correct_index": 2,
+  "explanation": "requiredSize يفرض حجماً ثابتاً للعنصر بغض النظر عن قيود أبيه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 870,
+  "key": "y4:p348",
+  "subject_id": 29,
+  "question": "27. When should we use rememberSaveable instead of remember:",
+  "options": [
+   "User visible state that should survive rotation.",
+   "UI-only, temporary state."
+  ],
+  "correct_index": 0,
+  "explanation": "rememberSaveable للحالة المرئية للمستخدم التي يجب أن تبقى بعد تدوير الشاشة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 871,
+  "key": "y4:p349",
+  "subject_id": 29,
+  "question": "1. Prperty Not primary for intent resolving characteristic is:",
+  "options": [
+   "Action",
+   "Data",
+   "Category",
+   "Extras"
+  ],
+  "correct_index": 3,
+  "explanation": "الـ Extras ليست من خصائص تحديد هدف الـ Intent (resolution)، بخلاف Action وData وCategory.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 872,
+  "key": "y4:p350",
+  "subject_id": 29,
+  "question": "4. Which operator provides safe nullable access to variables and methods:",
+  "options": [
+   "::",
+   "!!",
+   "?:"
+  ],
+  "correct_index": 2,
+  "explanation": "العامل ?. يتيح الوصول الآمن لمتحول أو دالة قد تكون null.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 873,
+  "key": "y4:p351",
+  "subject_id": 29,
+  "question": "5. How do you declare a nullable function type that takes in an Int and return String:",
+  "options": [
+   "(Int) -> String?",
+   "((Int) -> String)",
+   "Int -> String?",
+   "((Int) -> String)?"
+  ],
+  "correct_index": 3,
+  "explanation": "النوع ((Int) -> String)? هو نوع دالة تقبل Int وتعيد String ويمكن أن تكون null.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 874,
+  "key": "y4:p352",
+  "subject_id": 29,
+  "question": "29. Not one of Linux Kernal Standard Services",
+  "options": [
+   "Security",
+   "Memory & process management",
+   "device drivers",
+   "Notifications channels"
+  ],
+  "correct_index": 3,
+  "explanation": "قنوات الإشعارات ليست من الخدمات القياسية لنواة Linux.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

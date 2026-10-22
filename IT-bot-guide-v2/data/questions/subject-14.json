@@ -1,0 +1,843 @@
+[
+ {
+  "id": 410,
+  "key": "y3:p120",
+  "subject_id": 14,
+  "question": "To count the frequencies of any age use:",
+  "options": [
+   "Counter(age)",
+   "counter(age)",
+   "pd.counter(age)",
+   "np.Counter9age)"
+  ],
+  "correct_index": 0,
+  "explanation": "Counter(age) من collections يحسب تكرار كل قيمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 411,
+  "key": "y3:p121",
+  "subject_id": 14,
+  "question": "To know how many male adult in dataset use:",
+  "options": [
+   "m1 = [(df['sex'] == 'Male')]",
+   "m2 = df[(df['sex'] == 'Male')]",
+   "m3 = dataframe['sex'] == 'Male'",
+   "m4 = df[(df['sex'] == 'Famle')]"
+  ],
+  "correct_index": 1,
+  "explanation": "df[(df['sex']=='Male')] تُرجع الصفوف المطابقة، ويمكن عدّها بـ len.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 412,
+  "key": "y3:p122",
+  "subject_id": 14,
+  "question": "Which of the attributes(features) that can playing target role in machine learning?",
+  "options": [
+   "income",
+   "fnlwgt",
+   "education",
+   "capital_loss"
+  ],
+  "correct_index": 0,
+  "explanation": "سمة income هي الهدف (الصنف) في مجموعة بيانات Adult.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 413,
+  "key": "y3:p123",
+  "subject_id": 14,
+  "question": "How match attributes(features) that can playing main role in data analyses without preprocessing?",
+  "options": [
+   "2",
+   "3",
+   "6",
+   "15"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 414,
+  "key": "y3:p125",
+  "subject_id": 14,
+  "question": "Options to fill in blanks 31–36:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "e) show"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 415,
+  "key": "y3:p126",
+  "subject_id": 14,
+  "question": "To delete empty rows use:",
+  "options": [
+   "delete()",
+   "drop()",
+   "dropna()",
+   "pd_drop()"
+  ],
+  "correct_index": 2,
+  "explanation": "الدالة dropna() تحذف الصفوف/الأعمدة التي فيها قيم فارغة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 416,
+  "key": "y3:p128",
+  "subject_id": 14,
+  "question": "To see how much people survived use:\ndata[\"Survived\"]==1",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "data['Survived']==1 تُرجع سلسلة منطقية، ولا تعطي عدد الناجين إلا مع sum().",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 417,
+  "key": "y3:p129",
+  "subject_id": 14,
+  "question": "To know how many empty cells in dataset we use:\ndf.isnull()",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "df.isnull() تُرجع جدولاً منطقياً، والعدد يحتاج df.isnull().sum().",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 418,
+  "key": "y3:p130",
+  "subject_id": 14,
+  "question": "To know the number of survived for male use:\n titanic.groupby('Sex').Survived.value_counts()",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "groupby('Sex').Survived.value_counts() يعطي عدد الناجين وغير الناجين لكل جنس.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 419,
+  "key": "y3:p131",
+  "subject_id": 14,
+  "question": "To know how of passenger have survival chance use:\ntitanic['Survived'] == 1",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "titanic['Survived']==1 تعطي سلسلة منطقية وليس نسبة فرصة النجاة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nInt64Index: 1309 entries, 0 to 417\nData columns (total 13 columns):\n#   Column       Non-Null Count  Dtype  \n--- ------       --------------  -----  \n0   PassId       1309 non-null   int64  \n1   Survived     891 non-null    float64\n2   Pclass       1309 non-null   int64  \n3   Name         1309 non-null   object \n4   Sex          1309 non-null   object \n5   Age          1046 non-null   float64\n6   SibSp        1309 non-null   int64  \n7   Parch        1309 non-null   int64  \n8   Ticket       1309 non-null   object \n9   Fare         1308 non-null   float64\n10  Cabin        295 non-null    object \n11  Embarked     1307 non-null   object \ndtypes: float64(3), int64(4), object(5)\nmemory usage: 143.2+ KB"
+ },
+ {
+  "id": 420,
+  "key": "y3:p133",
+  "subject_id": 14,
+  "question": "To build data frame from this dataset use:",
+  "options": [
+   "data=data_frame(\"tips.csv\")",
+   "d=np.read_csv(\"tips.csv\")",
+   "dd=pd.read_csv(\"tips.csv\")",
+   "df=pd.read(\"tips.csv\")"
+  ],
+  "correct_index": 2,
+  "explanation": "pd.read_csv(\"tips.csv\") هي الطريقة الصحيحة لبناء DataFrame.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 244 entries, 0 to 243\nData columns (total 7 columns):\ntotal_bill    241 non-null float64\ntip           244 non-null float64\nsex           244 non-null object\nsmoker        242 non-null object\nday           244 non-null object\ntime          244 non-null object\nsize          241 non-null object\ndtypes: float64(2), object(5)\nmemory usage: 13.5+ KB"
+ },
+ {
+  "id": 421,
+  "key": "y3:p134",
+  "subject_id": 14,
+  "question": "Which of the attributes(features) that can playing output role in data analyses?",
+  "options": [
+   "sex",
+   "day",
+   "tip",
+   "time"
+  ],
+  "correct_index": 2,
+  "explanation": "السمة tip هي الناتج (Output) في مجموعة بيانات tips.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 244 entries, 0 to 243\nData columns (total 7 columns):\ntotal_bill    241 non-null float64\ntip           244 non-null float64\nsex           244 non-null object\nsmoker        242 non-null object\nday           244 non-null object\ntime          244 non-null object\nsize          241 non-null object\ndtypes: float64(2), object(5)\nmemory usage: 13.5+ KB"
+ },
+ {
+  "id": 422,
+  "key": "y3:p135",
+  "subject_id": 14,
+  "question": "How many empty cells?",
+  "options": [
+   "3",
+   "5",
+   "8",
+   "0"
+  ],
+  "correct_index": 2,
+  "explanation": "الفراغات: total_bill 3 + smoker 2 + size 3 = 8 خلايا فارغة (244 - عدد non-null لكل عمود).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 244 entries, 0 to 243\nData columns (total 7 columns):\ntotal_bill    241 non-null float64\ntip           244 non-null float64\nsex           244 non-null object\nsmoker        242 non-null object\nday           244 non-null object\ntime          244 non-null object\nsize          241 non-null object\ndtypes: float64(2), object(5)\nmemory usage: 13.5+ KB"
+ },
+ {
+  "id": 423,
+  "key": "y3:p136",
+  "subject_id": 14,
+  "question": "Which of the following is NOT a reason to use Python?",
+  "options": [
+   "It is free and open source",
+   "It is a compiled language",
+   "It is easy to learn and readable",
+   "It is crossplatform and portable",
+   "It has a large standard library"
+  ],
+  "correct_index": 1,
+  "explanation": "بايثون لغة مفسَّرة وليست مترجمة (compiled)، فهذا ليس سبباً لاستخدامها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 424,
+  "key": "y3:p137",
+  "subject_id": 14,
+  "question": "In Python, what is the characteristic of a tuple compared to a list?",
+  "options": [
+   "A tuple is mutable, while a list is immutable",
+   "A tuple is used for storing only numbers",
+   "A tuple is immutable",
+   "A tuple is faster for any operation than a list",
+   "A tuple can only store two items"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ tuple غير قابل للتعديل (immutable) بخلاف القائمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 425,
+  "key": "y3:p138",
+  "subject_id": 14,
+  "question": "According to \"The Zen of Python\", which of the following is a principle?",
+  "options": [
+   "Complex is better than simple",
+   "Readability counts",
+   "You must always use classes",
+   "Speed is more important than anything else",
+   "Never use comments in your code"
+  ],
+  "correct_index": 1,
+  "explanation": "من مبادئ Zen of Python: Readability counts (للقراءة أهمية).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 426,
+  "key": "y3:p139",
+  "subject_id": 14,
+  "question": "In the JSON example, what does json.dump(numbers, f_obj) do?",
+  "options": [
+   "It reads JSON data from the file",
+   "It writes to the file in JSON format",
+   "It deletes the JSON file",
+   "It converts the file to a Python list",
+   "It prints the JSON data to the console"
+  ],
+  "correct_index": 1,
+  "explanation": "json.dump(numbers, f_obj) تكتب البيانات للملف بصيغة JSON.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 427,
+  "key": "y3:p140",
+  "subject_id": 14,
+  "question": "from collections import defaultdict\nword_counts = defaultdict(int)",
+  "options": [
+   "Dictionary with 'integer' as key",
+   "Dictionary that returns 0 for missing keys",
+   "Dictionary returns None for missing keys",
+   "List instead of a dictionary",
+   "it raises an error"
+  ],
+  "correct_index": 1,
+  "explanation": "defaultdict(int) قاموس يعيد 0 للمفاتيح المفقودة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 428,
+  "key": "y3:p141",
+  "subject_id": 14,
+  "question": "What is the correct way to create an array of integers using the 'array' module",
+  "options": [
+   "nums = array('i', [])",
+   "nums = array(int, [])",
+   "nums = array(\"int\", [])",
+   "nums = []",
+   "nums = list(\"i\", [])"
+  ],
+  "correct_index": 0,
+  "explanation": "إنشاء مصفوفة أعداد صحيحة: array('i', []).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 429,
+  "key": "y3:p142",
+  "subject_id": 14,
+  "question": "What does the zip function do in Python?",
+  "options": [
+   "It compresses a file",
+   "It combines two or more lists into tuples",
+   "It sorts a list",
+   "It reverses a list",
+   "It removes duplicate elements from a list"
+  ],
+  "correct_index": 1,
+  "explanation": "الدالة zip تجمع عدة قوائم في أزواج/tuples.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 430,
+  "key": "y3:p143",
+  "subject_id": 14,
+  "question": "Which function is used to save a plot to a file in Matplotlib",
+  "options": [
+   "plt.save()",
+   "plt.store()",
+   "plt.savefig()",
+   "plt.export()",
+   "plt.write()"
+  ],
+  "correct_index": 2,
+  "explanation": "plt.savefig() تحفظ الرسم في ملف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 431,
+  "key": "y3:p144",
+  "subject_id": 14,
+  "question": "The purpose of 'Counter' class from the collections module in the histogram example?",
+  "options": [
+   "It creates a bar chart",
+   "Counts the frequency of each value dataset",
+   "It sorts a list",
+   "It generates random numbers",
+   "It creates a scatter plot"
+  ],
+  "correct_index": 1,
+  "explanation": "الصف Counter يعد تكرار كل قيمة في البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 432,
+  "key": "y3:p145",
+  "subject_id": 14,
+  "question": "In Seaborn, what does the sns.lmplot() function do?",
+  "options": [
+   "it creates a bar chart",
+   "Linear regression plot with a line of best fit",
+   "it creates a pil chart",
+   "It creates a histogram",
+   "It creates a 3D scatter plot"
+  ],
+  "correct_index": 1,
+  "explanation": "sns.lmplot() ترسم انحداراً خطياً مع خط أفضل ملاءمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 433,
+  "key": "y3:p146",
+  "subject_id": 14,
+  "question": "How do you create a Dataframe from a dictionary in Pandas",
+  "options": [
+   "pd.DataFrame(data)",
+   "pd.createDataFrame(data)",
+   "pd.newDataFrame(data)",
+   "DataFrame(data)",
+   "pd.table(data)"
+  ],
+  "correct_index": 0,
+  "explanation": "pd.DataFrame(data) تنشئ DataFrame من قاموس.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 434,
+  "key": "y3:p147",
+  "subject_id": 14,
+  "question": "What does the parameter na_values = \":\" when reading a CSV file with pd.read_csv()?",
+  "options": [
+   "It removes all rows containing colons",
+   "As a missing value indicator",
+   "It adds colons to the data",
+   "It changes the columns names",
+   "It sorts the data by colons"
+  ],
+  "correct_index": 1,
+  "explanation": "المعامل na_values=\":\" يعتبر النقطتين رمزاً للقيمة المفقودة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 435,
+  "key": "y3:p148",
+  "subject_id": 14,
+  "question": "What does the groupby() method do in Pandas?",
+  "options": [
+   "It sorts the Dataframe",
+   "It groups data by a specified column",
+   "It drops duplicate rows",
+   "It renames columns",
+   "it creates a pivot table"
+  ],
+  "correct_index": 1,
+  "explanation": "groupby() تجمّع البيانات حسب عمود محدد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 436,
+  "key": "y3:p149",
+  "subject_id": 14,
+  "question": "Which of the following is NOT common step for data preparation?",
+  "options": [
+   "Obtaining the data",
+   "Parsing the data",
+   "Cleaning the data",
+   "Building data structures",
+   "Performing machine learning algorithms"
+  ],
+  "correct_index": 4,
+  "explanation": "تنفيذ خوارزميات التعلم الآلي ليس خطوة تحضير بيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 437,
+  "key": "y3:p150",
+  "subject_id": 14,
+  "question": "What is the (PMF)?",
+  "options": [
+   "A cumulative distribution function",
+   "A histogram where frequencies are divided by the number of samples",
+   "A measure of central tendency",
+   "A method for outlier detection",
+   "A type of bar chart"
+  ],
+  "correct_index": 1,
+  "explanation": "PMF هو هيستوغرام تُقسَّم تكراراته على عدد العينات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 438,
+  "key": "y3:p151",
+  "subject_id": 14,
+  "question": "What is skewness a measure of?",
+  "options": [
+   "The central tendency of data",
+   "The spread or variability of data",
+   "The asymmetry of the data distribution",
+   "The correlation between two variables",
+   "The number of missing values in the data"
+  ],
+  "correct_index": 2,
+  "explanation": "الالتواء (Skewness) يقيس عدم تماثل توزيع البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 439,
+  "key": "y3:p152",
+  "subject_id": 14,
+  "question": "What does Pearson's correlation coefficient measure?",
+  "options": [
+   "The mean of two variables",
+   "The variance of a single variable",
+   "Linear relationship between two variables",
+   "The skewness of a distribution",
+   "The median of a dataset"
+  ],
+  "correct_index": 2,
+  "explanation": "معامل بيرسون يقيس العلاقة الخطية بين متغيرين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 440,
+  "key": "y3:p153",
+  "subject_id": 14,
+  "question": "What is the purpose of standardization (z-score) as described in the lecture",
+  "options": [
+   "To remove outliers from the dataset",
+   "To convert data to a dimensionless scale",
+   "To calculate the median of the data",
+   "To create a histogram of the data",
+   "To count the number of missing values"
+  ],
+  "correct_index": 1,
+  "explanation": "المعايرة بـ z-score تحول البيانات لمقياس بلا وحدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 441,
+  "key": "y3:p154",
+  "subject_id": 14,
+  "question": "In the Bootstrap method, how are samples generated?",
+  "options": [
+   "By sampling without replacement",
+   "By sampling with replacement",
+   "By sampling from a normal distribution",
+   "By using only the first n observations",
+   "By randomly generating new data"
+  ],
+  "correct_index": 1,
+  "explanation": "في Bootstrap تؤخذ العينات بالسحب مع الاستبدال.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 442,
+  "key": "y3:p155",
+  "subject_id": 14,
+  "question": "What method was used to fill missing age values in the dataset?",
+  "options": [
+   "Filled with 0",
+   "Filled with the median age",
+   "Filled with random values (mean - std) and (mean + std)",
+   "Removed rows with missing age",
+   "Filled with the maximum age"
+  ],
+  "correct_index": 2,
+  "explanation": "ملأت القيم المفقودة للعمر بقيم عشوائية بين (mean-std) و(mean+std).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 443,
+  "key": "y3:p156",
+  "subject_id": 14,
+  "question": "What is the purpose of the 'RandomWalk' class?",
+  "options": [
+   "To roll dice and analyze results",
+   "To generate a sequence of random steps in 2D space",
+   "To download weather data from CSV files",
+   "To create world population maps",
+   "To visualize JSON data"
+  ],
+  "correct_index": 1,
+  "explanation": "الصف RandomWalk يولد سلسلة خطوات عشوائية في بعدين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 444,
+  "key": "y3:p157",
+  "subject_id": 14,
+  "question": "What is the goal of the Titanic machine learning project described in the lecture?",
+  "options": [
+   "To predict the age of passengers",
+   "To predict a passenger survived or not",
+   "To predict the fare paid by passengers",
+   "To predict the passenger class",
+   "To predict the passenger's gender"
+  ],
+  "correct_index": 1,
+  "explanation": "هدف مشروع Titanic هو التنبؤ بنجاة الراكب أم لا.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1248,
+  "key": "y3:code31",
+  "subject_id": 14,
+  "question": "الفراغ ---- 31 ---- في الكود أعلاه يُملأ بـ:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "show"
+  ],
+  "correct_index": 1,
+  "explanation": "الفراغ بتعريف القوائم الثلاث: dates, highs, lows = [], [], []",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "import csv\nfrom datetime import datetime\nfrom matplotlib import pyplot as plt\n\nfilename = 'weather.csv'\nwith open(filename) as f:\n    reader = csv.reader(f)\n    header_row = next(reader)\n    dates, highs, ---- 31 ---- = [], [], []\n    for row in reader:\n        current_date = datetime.strptime(row[1], \"%Y-%m-%d\")\n        dates.append(current_date)\n        high = ---- 32 ---- (row[2])\n        highs.append(high)\n        low = ---- 33 ---- (row[4])\n        lows.append(low)\n\nfig = plt.figure(dpi=128, figsize=(10, 6))\nplt.plot(dates, ---- 34 ----, 'r')\nplt.plot(dates, ---- 35 ----, 'b')\nplt.fill_between(dates, highs, lows, facecolor='green', alpha=0.1)\nplt.title(\"Daily high and low temperatures 20xx\", fontsize=24)\nplt.xlabel(\"\", fontsize=16)\nfig.autofmt_xdate()\nplt.ylabel(\"Temperature (F)\", fontsize=16)\nplt.tick_params(axis='both', which='major', labelsize=16)\nplt. ---- 36 ---- ()"
+ },
+ {
+  "id": 1249,
+  "key": "y3:code32",
+  "subject_id": 14,
+  "question": "الفراغ ---- 32 ---- في الكود أعلاه يُملأ بـ:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "show"
+  ],
+  "correct_index": 2,
+  "explanation": "high = int(row[2]) لتحويل نص درجة الحرارة إلى عدد صحيح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "import csv\nfrom datetime import datetime\nfrom matplotlib import pyplot as plt\n\nfilename = 'weather.csv'\nwith open(filename) as f:\n    reader = csv.reader(f)\n    header_row = next(reader)\n    dates, highs, ---- 31 ---- = [], [], []\n    for row in reader:\n        current_date = datetime.strptime(row[1], \"%Y-%m-%d\")\n        dates.append(current_date)\n        high = ---- 32 ---- (row[2])\n        highs.append(high)\n        low = ---- 33 ---- (row[4])\n        lows.append(low)\n\nfig = plt.figure(dpi=128, figsize=(10, 6))\nplt.plot(dates, ---- 34 ----, 'r')\nplt.plot(dates, ---- 35 ----, 'b')\nplt.fill_between(dates, highs, lows, facecolor='green', alpha=0.1)\nplt.title(\"Daily high and low temperatures 20xx\", fontsize=24)\nplt.xlabel(\"\", fontsize=16)\nfig.autofmt_xdate()\nplt.ylabel(\"Temperature (F)\", fontsize=16)\nplt.tick_params(axis='both', which='major', labelsize=16)\nplt. ---- 36 ---- ()"
+ },
+ {
+  "id": 1250,
+  "key": "y3:code33",
+  "subject_id": 14,
+  "question": "الفراغ ---- 33 ---- في الكود أعلاه يُملأ بـ:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "show"
+  ],
+  "correct_index": 2,
+  "explanation": "low = int(row[4]) لتحويل نص درجة الحرارة الدنيا إلى عدد صحيح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "import csv\nfrom datetime import datetime\nfrom matplotlib import pyplot as plt\n\nfilename = 'weather.csv'\nwith open(filename) as f:\n    reader = csv.reader(f)\n    header_row = next(reader)\n    dates, highs, ---- 31 ---- = [], [], []\n    for row in reader:\n        current_date = datetime.strptime(row[1], \"%Y-%m-%d\")\n        dates.append(current_date)\n        high = ---- 32 ---- (row[2])\n        highs.append(high)\n        low = ---- 33 ---- (row[4])\n        lows.append(low)\n\nfig = plt.figure(dpi=128, figsize=(10, 6))\nplt.plot(dates, ---- 34 ----, 'r')\nplt.plot(dates, ---- 35 ----, 'b')\nplt.fill_between(dates, highs, lows, facecolor='green', alpha=0.1)\nplt.title(\"Daily high and low temperatures 20xx\", fontsize=24)\nplt.xlabel(\"\", fontsize=16)\nfig.autofmt_xdate()\nplt.ylabel(\"Temperature (F)\", fontsize=16)\nplt.tick_params(axis='both', which='major', labelsize=16)\nplt. ---- 36 ---- ()"
+ },
+ {
+  "id": 1251,
+  "key": "y3:code34",
+  "subject_id": 14,
+  "question": "الفراغ ---- 34 ---- في الكود أعلاه يُملأ بـ:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "show"
+  ],
+  "correct_index": 0,
+  "explanation": "plt.plot(dates, highs, 'r') يرسم الدرجات العظمى بالأحمر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "import csv\nfrom datetime import datetime\nfrom matplotlib import pyplot as plt\n\nfilename = 'weather.csv'\nwith open(filename) as f:\n    reader = csv.reader(f)\n    header_row = next(reader)\n    dates, highs, ---- 31 ---- = [], [], []\n    for row in reader:\n        current_date = datetime.strptime(row[1], \"%Y-%m-%d\")\n        dates.append(current_date)\n        high = ---- 32 ---- (row[2])\n        highs.append(high)\n        low = ---- 33 ---- (row[4])\n        lows.append(low)\n\nfig = plt.figure(dpi=128, figsize=(10, 6))\nplt.plot(dates, ---- 34 ----, 'r')\nplt.plot(dates, ---- 35 ----, 'b')\nplt.fill_between(dates, highs, lows, facecolor='green', alpha=0.1)\nplt.title(\"Daily high and low temperatures 20xx\", fontsize=24)\nplt.xlabel(\"\", fontsize=16)\nfig.autofmt_xdate()\nplt.ylabel(\"Temperature (F)\", fontsize=16)\nplt.tick_params(axis='both', which='major', labelsize=16)\nplt. ---- 36 ---- ()"
+ },
+ {
+  "id": 1252,
+  "key": "y3:code35",
+  "subject_id": 14,
+  "question": "الفراغ ---- 35 ---- في الكود أعلاه يُملأ بـ:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "show"
+  ],
+  "correct_index": 1,
+  "explanation": "plt.plot(dates, lows, 'b') يرسم الدرجات الصغرى بالأزرق.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "import csv\nfrom datetime import datetime\nfrom matplotlib import pyplot as plt\n\nfilename = 'weather.csv'\nwith open(filename) as f:\n    reader = csv.reader(f)\n    header_row = next(reader)\n    dates, highs, ---- 31 ---- = [], [], []\n    for row in reader:\n        current_date = datetime.strptime(row[1], \"%Y-%m-%d\")\n        dates.append(current_date)\n        high = ---- 32 ---- (row[2])\n        highs.append(high)\n        low = ---- 33 ---- (row[4])\n        lows.append(low)\n\nfig = plt.figure(dpi=128, figsize=(10, 6))\nplt.plot(dates, ---- 34 ----, 'r')\nplt.plot(dates, ---- 35 ----, 'b')\nplt.fill_between(dates, highs, lows, facecolor='green', alpha=0.1)\nplt.title(\"Daily high and low temperatures 20xx\", fontsize=24)\nplt.xlabel(\"\", fontsize=16)\nfig.autofmt_xdate()\nplt.ylabel(\"Temperature (F)\", fontsize=16)\nplt.tick_params(axis='both', which='major', labelsize=16)\nplt. ---- 36 ---- ()"
+ },
+ {
+  "id": 1253,
+  "key": "y3:code36",
+  "subject_id": 14,
+  "question": "الفراغ ---- 36 ---- في الكود أعلاه يُملأ بـ:",
+  "options": [
+   "highs",
+   "lows",
+   "int",
+   "dates",
+   "show"
+  ],
+  "correct_index": 4,
+  "explanation": "plt.show() تعرض الرسم البياني على الشاشة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": "import csv\nfrom datetime import datetime\nfrom matplotlib import pyplot as plt\n\nfilename = 'weather.csv'\nwith open(filename) as f:\n    reader = csv.reader(f)\n    header_row = next(reader)\n    dates, highs, ---- 31 ---- = [], [], []\n    for row in reader:\n        current_date = datetime.strptime(row[1], \"%Y-%m-%d\")\n        dates.append(current_date)\n        high = ---- 32 ---- (row[2])\n        highs.append(high)\n        low = ---- 33 ---- (row[4])\n        lows.append(low)\n\nfig = plt.figure(dpi=128, figsize=(10, 6))\nplt.plot(dates, ---- 34 ----, 'r')\nplt.plot(dates, ---- 35 ----, 'b')\nplt.fill_between(dates, highs, lows, facecolor='green', alpha=0.1)\nplt.title(\"Daily high and low temperatures 20xx\", fontsize=24)\nplt.xlabel(\"\", fontsize=16)\nfig.autofmt_xdate()\nplt.ylabel(\"Temperature (F)\", fontsize=16)\nplt.tick_params(axis='both', which='major', labelsize=16)\nplt. ---- 36 ---- ()"
+ }
+]

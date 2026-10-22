@@ -1,0 +1,421 @@
+[
+ {
+  "id": 233,
+  "key": "y2:p4",
+  "subject_id": 8,
+  "question": "1) شجرة ثنائية عقدها 63 فإن ارتفاعها h",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "correct_index": 1,
+  "explanation": "شجرة ثنائية كاملة بـ 63 عقدة (2^6 - 1) ارتفاعها 5 (عدد الحواف).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 234,
+  "key": "y2:p5",
+  "subject_id": 8,
+  "question": "2)شجرة ثنائية عدد عقدها 8 ارتفاعها",
+  "options": [
+   "4<=h<=8",
+   "3<=h<=7",
+   "4<=h<=7",
+   "3<=h<=8"
+  ],
+  "correct_index": 1,
+  "explanation": "أقل ارتفاع لـ 8 عقد هو 3 (⌊log2 8⌋) وأكبره 7 (شجرة سلسلة).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 235,
+  "key": "y2:p6",
+  "subject_id": 8,
+  "question": "3) 2^n - 1 حل عودي للمعادلة :",
+  "options": [
+   "T(n)=T(n-1) +1",
+   "T(n)=2T(n-1) +1",
+   "T(n)=2T(n-1) -1"
+  ],
+  "correct_index": 1,
+  "explanation": "2^n - 1 تحقق T(n) = 2T(n-1) + 1 مع T(0) = 0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 236,
+  "key": "y2:p7",
+  "subject_id": 8,
+  "question": "4)for (int i=0;i<=n^2;i++)\n   for (int j=0;j=i;i++)\n   for (int k=0;k<=j;k*=2)",
+  "options": [
+   "n^4",
+   "n^2",
+   "n^4 log 2n",
+   "n^2 log 2n"
+  ],
+  "correct_index": 2,
+  "explanation": "الحلقات تعطي مجموع Σ i·log ≈ n^4 · log n.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 237,
+  "key": "y2:p8",
+  "subject_id": 8,
+  "question": "6)f تابع صحيح غير سالب عندئذ واحد مما يلي غير صحيح",
+  "options": [
+   "f€O(f)",
+   "f€o(f)",
+   "f€w(f)",
+   "f€سيتا(f)"
+  ],
+  "correct_index": 1,
+  "explanation": "الرمز o صغير يعني أصغر تماماً، فالقول f∈o(f) غير صحيح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 238,
+  "key": "y2:p9",
+  "subject_id": 8,
+  "question": "7)g(n)=1+c+c²+.....+c^n\nفإن g(n)= سيتا(1) عندما",
+  "options": [
+   "C<1",
+   "C>1",
+   "C=1",
+   "ماسبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "المجموع الهندسي 1 + c + … + c^n يكون Θ(1) عندما c<1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 239,
+  "key": "y2:p10",
+  "subject_id": 8,
+  "question": "8) لدينا الشجرة الثنائية التالية الممثلة ب العلاقة: (A+B)*(c-d)/e ما هو ارتفاعها",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "correct_index": 1,
+  "explanation": "ارتفاع الشجرة (عدد الحواف في أطول مسار): / ثم * ثم + ثم A = 3.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 240,
+  "key": "y2:p11",
+  "subject_id": 8,
+  "question": "9)الشجرة الثنائية السابقة ممثلة ب :",
+  "options": [
+   "in order",
+   "pre order",
+   "post order",
+   "level order"
+  ],
+  "correct_index": 0,
+  "explanation": "التعبير مكتوب بالصيغة الوسطية (infix)، فالشجرة ممثلة بالمرور in order.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 241,
+  "key": "y2:p12",
+  "subject_id": 8,
+  "question": "10) اذا اردنا تمثيل الشجرة الثنائية  ب  pre-order",
+  "options": [
+   "/*+ab-cde",
+   "/*ab+cd-e",
+   "/a*bc+d-e",
+   "+ab*-cd/e"
+  ],
+  "correct_index": 0,
+  "explanation": "المرور المسبق (pre-order) يبدأ بالجذر: / * + A B - c d e.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 242,
+  "key": "y2:p13",
+  "subject_id": 8,
+  "question": "11)لتكن لدينا شحرة ثنائية تتكون من f عقدة ورقية f+1 عقدة من الدرجة الاولى عندئذ عقد الشجرة تكون",
+  "options": [
+   "3f",
+   "3f+1",
+   "3f-1",
+   "3(f+1)"
+  ],
+  "correct_index": 0,
+  "explanation": "عدد العقد = أوراق f + عقد درجة 1 (f+1) + عقد درجة 2 (f-1) = 3f.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 243,
+  "key": "y2:p14",
+  "subject_id": 8,
+  "question": "12)لدينا العلاقةnT(n-1)+n!=T(n) نبدأ بحل العلاقة العودية ب:",
+  "options": [
+   "بالطريقة التكرارية",
+   "بالطريقة الرئيسية",
+   "التقسيم على n",
+   "التقسيم على n!"
+  ],
+  "correct_index": 3,
+  "explanation": "بقسمة العلاقة على n! نحصل على T(n)/n! = T(n-1)/(n-1)! + 1 وتُحل مباشرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 244,
+  "key": "y2:p15",
+  "subject_id": 8,
+  "question": "13)ما هو عدد عناصر المرشحين في مسالة حصان الشطرنج علما ان حجم الرقعة n*n:",
+  "options": [
+   "8",
+   "n!",
+   "n",
+   "4"
+  ],
+  "correct_index": 0,
+  "explanation": "لحصان الشطرنج 8 حركات محتملة (مرشحين) من كل موضع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 245,
+  "key": "y2:p16",
+  "subject_id": 8,
+  "question": "14) ما هو شرط الاستمرار في مسالة هانوي",
+  "options": [
+   "n>=1",
+   "n==1",
+   "n<1",
+   "n>1"
+  ],
+  "correct_index": 3,
+  "explanation": "الاستمرار في الاستدعاء العودي لهانوي يكون ما دام n>1، والحالة الأساسية n=1.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 246,
+  "key": "y2:p17",
+  "subject_id": 8,
+  "question": "15) شرط توقف جولة الحصان :",
+  "options": [
+   "i < n²",
+   "i < 8",
+   "i == n²",
+   "i == 8"
+  ],
+  "correct_index": 2,
+  "explanation": "تتوقف جولة الحصان عند زيارة كل المربعات: i == n².",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 247,
+  "key": "y2:p18",
+  "subject_id": 8,
+  "question": "16) اول عملية لنقل برج هانوي كانت :",
+  "options": [
+   "نقل n-1 من العمود المصدر الى العمود الهدف",
+   "نقل n-1 من العمود المصدر الى العمود المساعد",
+   "نقل n-1 من العمود المساعد الى العمود المصدر",
+   "نقل n-1 من العمود المساعد الى العمود الهدف"
+  ],
+  "correct_index": 1,
+  "explanation": "أول عملية في هانوي نقل n-1 قرصاً من العمود المصدر إلى العمود المساعد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 248,
+  "key": "y2:p19",
+  "subject_id": 8,
+  "question": "19) ما العملية التي تعتمد على طول القائمة المترابطة التي تحتوي head كمؤشر على العقدة الاولى و tail كمؤشر على اخر عقدة :",
+  "options": [
+   "حذف اول عنصر",
+   "حذف اخر عنصر",
+   "اضافة عنصر بعد الاخير",
+   "اضافة عنصر قبل الاول"
+  ],
+  "correct_index": 1,
+  "explanation": "حذف آخر عنصر في قائمة مترابطة بسيطة يحتاج المرور على القائمة (يعتمد على طولها).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 249,
+  "key": "y2:p20",
+  "subject_id": 8,
+  "question": "23) void f(int n){\ncout<< n ;\nif(n<=1) return ; f(n-1); cout<<n ; } int main(){ f(3); }",
+  "options": [
+   "32123",
+   "321123",
+   "3223",
+   "غير ذلك"
+  ],
+  "correct_index": 0,
+  "explanation": "f(3) تطبع 3 ثم تستدعي f(2) فتطبع 2 ثم f(1) تطبع 1، وبعد العودة تطبع 2 ثم 3: 32123.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 250,
+  "key": "y2:p21",
+  "subject_id": 8,
+  "question": "24)Void f(stack s , int x)\n{\nif (x==0) s.push(0); f(s, x-1); int a= s.top; s.pop(); Stack.push(a+x); } Int main() { F(s,3); Cout <<s.top() ; }",
+  "options": [
+   "4",
+   "10",
+   "6",
+   "غير ذلك"
+  ],
+  "correct_index": 2,
+  "explanation": "الدالة تجمع x إلى قمة المكدس في كل مستوى (0+1+2+3 = 6).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 251,
+  "key": "y2:p22",
+  "subject_id": 8,
+  "question": "26) عندما يكون لدينا قائمة مترابطة دائرية مضاعفة الارتباط فارغة و تحتوي dummy head node و مؤشر  head يكون:",
+  "options": [
+   "head->prev =head                head->next=head",
+   "head->next=null                            head->prev=null",
+   "head->prev->next = null",
+   "كل مما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "في القائمة الدائرية الفارغة يشير next وprev للعقدة الوهمية نفسها (head).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 252,
+  "key": "y2:p23",
+  "subject_id": 8,
+  "question": "27)لدينا القائمة المترابطة التالية:\n1-><-2-><-3-><-4\nتحوي head مؤشر على اول عنصر ، و tail مؤشر على اخر عنصر  ، ما هو ترتيب القائمة بعد: tail->next =head->prev; head->prev = tail->next; head->next =prev->null; tail=head; head=head->next; tail->next =null;",
+  "options": [
+   "2-><-3-><-4-><-1",
+   "3-><-4-><-2-><-1",
+   "1-><-3-><-4-><-2",
+   "2-><-3-><-1-><-4"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 253,
+  "key": "y2:p24",
+  "subject_id": 8,
+  "question": "28)حل المعادلة :\nT(i+1)= sum (i=1->n-1) T(i) + (n+1)²",
+  "options": [
+   "2T(2n-1)+2n+1",
+   "2T(n-1)+2n+1",
+   "2T(n-1)+2n-1",
+   "غير ذلك"
+  ],
+  "correct_index": 1,
+  "explanation": "بطرح T(n-1) من T(n): T(n) = 2T(n-1) + (n+1)² - n² = 2T(n-1) + 2n + 1.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

@@ -1,0 +1,589 @@
+[
+ {
+  "id": 36,
+  "key": "y1:p43",
+  "subject_id": 2,
+  "question": "1- التيار هو :",
+  "options": [
+   "معدل تغير الجهد مع الزمن",
+   "معدل تغير الزمن مع الشحنة",
+   "معدل تغير الشحنة مع الزمن",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "التيار هو معدل تغير الشحنة مع الزمن (I = dQ/dt).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 37,
+  "key": "y1:p44",
+  "subject_id": 2,
+  "question": "2_ الجهد هو",
+  "options": [
+   "العمل المطلوب لتحريك شحنة بين نقطتين",
+   "العمل المطلوب لتحريك شحنة بين لحظتين زمنيتين",
+   "العمل المطلوب لتحريك التيار",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الجهد هو العمل اللازم لتحريك شحنة بين نقطتين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 38,
+  "key": "y1:p45",
+  "subject_id": 2,
+  "question": "3- سعة المكثفة",
+  "options": [
+   "كامل الشحنة في المكثفة",
+   "معدل تغير شحنة المكثفة مع الزمن",
+   "الشحنة المخزنة في المكثفة من أجل 1 فولت",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "سعة المكثفة هي الشحنة المخزنة فيها لكل 1 فولت (C = Q/V).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 39,
+  "key": "y1:p46",
+  "subject_id": 2,
+  "question": "4- الاستطاعة هي :",
+  "options": [
+   "معدل الطاقة (العمل) المصروف لنقل الشحنة بين نقطتين",
+   "معدل الطاقة (العمل ) المصروف خلال واحدة الزمن",
+   "كامل الطاقة المصروفة",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الاستطاعة هي معدل الطاقة (العمل) المصروف خلال واحدة الزمن.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 40,
+  "key": "y1:p47",
+  "subject_id": 2,
+  "question": "5-الاوم هو:",
+  "options": [
+   "التيار اللازم لنزول بالجهد قدره 1 فولت",
+   "الجهد اللازم لمرور تيار شدته 1 A",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الأوم هو المقاومة التي يمر فيها تيار 1A عند جهد 1V.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 41,
+  "key": "y1:p49",
+  "subject_id": 2,
+  "question": "6-مقاومة تيڤنن :",
+  "options": [
+   "ـ10",
+   "ـ9",
+   "ـ8",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "بتبسيط الدارة (مصدر التيار 8A مع R3∥R2=4Ω) تصبح Rth = 4 + 3 + 2 = 9Ω.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_2_02-10-2026_13-40-41.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 42,
+  "key": "y1:p50",
+  "subject_id": 2,
+  "question": "7-جهد تيڤنن:",
+  "options": [
+   "ـ36",
+   "ـ44",
+   "ـ75",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "مصدر التيار يكافئ 32V على التوالي مع 4Ω، ومع بطارية 12V تصبح Vth = 32 + 12 = 44V.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_2_02-10-2026_13-40-41.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 43,
+  "key": "y1:p51",
+  "subject_id": 2,
+  "question": "8- اذا كانت الفاعليه تساوي 50% فان قيمه RL :",
+  "options": [
+   "-9",
+   "-1",
+   "-8",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الفاعلية 50% تعني RL = Rth = 9Ω.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_2_02-10-2026_13-40-41.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 44,
+  "key": "y1:p52",
+  "subject_id": 2,
+  "question": "9- قيمه الفعالية عندما RL = 1K :",
+  "options": [
+   "100%",
+   "50%",
+   "0%",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الفاعلية = RL/(RL+Rth) = 1000/1009 ≈ 99%، أي قريبة من 100%.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_2_02-10-2026_13-40-41.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 45,
+  "key": "y1:p53",
+  "subject_id": 2,
+  "question": "10- وصل بطاريتين على التسلسل أو على التفرع يمكننا من الحصول على إستطاعة أعلى :",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "التوصيل على التسلسل أو التفرع يزيد الاستطاعة الكلية المتاحة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 46,
+  "key": "y1:p54",
+  "subject_id": 2,
+  "question": "11- سعة البطارية هي استطاعتها مقدرة بالواط :",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "سعة البطارية تُقدَّر بالأمبير ساعة (Ah) وليس بالواط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 47,
+  "key": "y1:p55",
+  "subject_id": 2,
+  "question": "12- الواط الساعي هو جول في الثانية :",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الواط الساعي وحدة طاقة (3600 جول)، أما جول في الثانية فهو الواط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 48,
+  "key": "y1:p56",
+  "subject_id": 2,
+  "question": "13-الديود يكافئ دارة مفتوحة في الاستقطاب العكسي مع تيار متناوب ذو تغيرات صغيرة وتردد عالي",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الديود المنحاز عكسياً يملك سعة وصلة تجعله يمرر الترددات العالية، فلا يكافئ دارة مفتوحة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 49,
+  "key": "y1:p57",
+  "subject_id": 2,
+  "question": "14-ممانعة المكثفة تزداد بازدياد تردد التيار المتناوب",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "ممانعة المكثفة 1/(2πfC) تنقص بازدياد التردد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 50,
+  "key": "y1:p58",
+  "subject_id": 2,
+  "question": "15- ممانعة الوشيعة تزداد بازدياد تردد التيار المتناوب",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "ممانعة الوشيعة 2πfL تزداد بازدياد التردد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 51,
+  "key": "y1:p59",
+  "subject_id": 2,
+  "question": "16-اذا كانت الاستطاعة المنقولة عظمى فإن الفعالية = 1",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "عند نقل الاستطاعة العظمى تكون الفعالية 50% وليس 100%.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 52,
+  "key": "y1:p60",
+  "subject_id": 2,
+  "question": "17-التيار المتناوب يحمل استطاعة أعلى من التيار المستمر",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "التيار المتناوب لا يحمل استطاعة أعلى بحد ذاته من التيار المستمر.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 53,
+  "key": "y1:p61",
+  "subject_id": 2,
+  "question": "18- تمثل المكثفة دارة مفتوحة إذا تم توصيلها إلى منبع تيار متواصل",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "المكثفة دارة مفتوحة بالنسبة للتيار المستمر بعد اكتمال الشحن.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 54,
+  "key": "y1:p62",
+  "subject_id": 2,
+  "question": "19- تمثل الوشيعة دارة مفتوحة إذا تم توصيلها إلى منبع تيار متناوب تردده عالي جدا",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الوشيعة تمانع بشدة التيارات العالية التردد فتشبه دارة مفتوحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 55,
+  "key": "y1:p63",
+  "subject_id": 2,
+  "question": "20- وصل بطاريتين على التسلسل أو على التفرع يمكننا الحصول على تيار أعلى",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "لا يزيد التوصيل على التسلسل التيار، فالعبارة (تسلسل أو تفرع) غير صحيحة، فالتفرع وحده يزيد التيار.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 56,
+  "key": "y1:p64",
+  "subject_id": 2,
+  "question": "21- جهد عتبة الديود عندما يكون الانحياز مباشر يساوي جهد عتبة زينر ويعاكسه بالإشارة",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "جهد عتبة الديود المباشر (~0.7V) لا يساوي جهد زينر ولا يعاكسه.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 57,
+  "key": "y1:p66",
+  "subject_id": 2,
+  "question": "22-أعلى قيمة لتيار الخرج هي :",
+  "options": [
+   "ـ 37.8mA",
+   "ـ 37.8A",
+   "ـ 38.7mA",
+   "ـ كل ما سبق خطأ"
+  ],
+  "correct_index": 3,
+  "explanation": "الثنائي مثالي: أعلى تيار = 20V ÷ 500Ω = 40mA، وهذه القيمة ليست بين الخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_3_02-10-2026_13-40-41.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 58,
+  "key": "y1:p67",
+  "subject_id": 2,
+  "question": "23-أعلى قيمة لجهد الخرج هي :",
+  "options": [
+   "ـ 37.8",
+   "ـ 20",
+   "ـ 18.9",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الثنائي (مقوّم نصف موجة) يمرر القمة الموجبة، فأعلى جهد خرج 20V.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_3_02-10-2026_13-40-41.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 59,
+  "key": "y1:p69",
+  "subject_id": 2,
+  "question": "24ـ التيار المار في R2 :",
+  "options": [
+   "ـ 4",
+   "ـ 10",
+   "ـ1",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "التيار في R2 = 100V ÷ 25Ω = 4A.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_4_02-10-2026_13-40-42.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 60,
+  "key": "y1:p70",
+  "subject_id": 2,
+  "question": "25ـ قيمة التيار الكلي :",
+  "options": [
+   "ـ10",
+   "ـ 12",
+   "ـ13",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 3,
+  "explanation": "التيار الكلي = 100 × 0.15S = 15A، وهي ليست من الخيارات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_4_02-10-2026_13-40-42.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 61,
+  "key": "y1:p71",
+  "subject_id": 2,
+  "question": "26ـ قيمة الاستطاعة المصروفة في R2:",
+  "options": [
+   "ـ 100",
+   "ـ 400",
+   "ـ1000",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الاستطاعة في R2 = V²/R = 100²/25 = 400W.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_4_02-10-2026_13-40-42.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 62,
+  "key": "y1:p72",
+  "subject_id": 2,
+  "question": "27- قيمة الناقلية المكافئة للمقاومات الثلاث هو :",
+  "options": [
+   "0,025 ميلي سيمنز",
+   "0,15سيمنز",
+   "0,25ميلي سيمنز"
+  ],
+  "correct_index": 1,
+  "explanation": "الناقلية المكافئة = 1/10 + 1/25 + 1/100 = 0.15 سيمنز.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_4_02-10-2026_13-40-42.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 63,
+  "key": "y1:p73",
+  "subject_id": 2,
+  "question": "28- قيمة المقاومة المكافئة للمقاومات الثلاث :",
+  "options": [
+   "6,67 أوم",
+   "15 أوم",
+   "0,5 أوم"
+  ],
+  "correct_index": 0,
+  "explanation": "المقاومة المكافئة = 1/0.15 ≈ 6.67 أوم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_4_02-10-2026_13-40-42.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 64,
+  "key": "y1:p74",
+  "subject_id": 2,
+  "question": "29- وصل بطاريتين على التسلسل أو التفرع يمكننا من الحصول  على جهد أعلى",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "التوصيل على التفرع لا يرفع الجهد، فالعبارة (تسلسل أو تفرع) خاطئة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 65,
+  "key": "y1:p75",
+  "subject_id": 2,
+  "question": "30- وصل بطاريتين على التسلسل يمكننا من الحصول على جهد أعلى",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "التوصيل على التسلسل يجمع الجهود فيعطي جهداً أعلى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 66,
+  "key": "y1:p76",
+  "subject_id": 2,
+  "question": "31- وصل بطاريتين على التفرع يمكننا من الحصول على جهد اعلى :",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "التوصيل على التفرع يبقي الجهد نفسه، فلا يعطي جهداً أعلى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

@@ -1,0 +1,599 @@
+[
+ {
+  "id": 694,
+  "key": "y4:p153",
+  "subject_id": 25,
+  "question": "1. لا تدعم لغة Python الوراثة المتعددة.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "بايثون تدعم الوراثة المتعددة، فالعبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 695,
+  "key": "y4:p154",
+  "subject_id": 25,
+  "question": "3. بالنظر الى الكود التالي c++, ماهو نوع المتحول str الذي سيستنتجه المترجم :",
+  "options": [
+   "string",
+   "int",
+   "char[ ]",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 696,
+  "key": "y4:p155",
+  "subject_id": 25,
+  "question": "6. اذا استعملنا عبارة Switch Statement بدل Switch Expression التقليدي :",
+  "options": [
+   "تقلل الأخطاء في الكود",
+   "يزيد سرعة التنفيذ",
+   "لا حاجة للأمر break في نهاية كل حالة الذي يسبب مشاكل عند نسيانه",
+   "لاحاجة لوضع case أبدا"
+  ],
+  "correct_index": 2,
+  "explanation": "مع switch expression الحديثة لا حاجة لـ break بنهاية كل حالة، فتقل الأخطاء.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 697,
+  "key": "y4:p156",
+  "subject_id": 25,
+  "question": "7. عند الحاجة لكتابة برنامج يقوم بالمرور على مصفوفة وتحديث الفهارس الزوجية نستخدم:",
+  "options": [
+   "For",
+   "Foreach",
+   "Do-While",
+   "A & B"
+  ],
+  "correct_index": 0,
+  "explanation": "لتحديث الفهارس الزوجية نحتاج الفهرس، لذلك نستخدم حلقة for.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 698,
+  "key": "y4:p157",
+  "subject_id": 25,
+  "question": "8. عند اختبار برنامج بايثون عملت دالة بشكل صحيح لمدة أسابيع و لكن ظهر خطأ عند تمرير قيمة نصية بدل عدد رغم أن الدالة لم تتغير ما التفسير المناسب؟",
+  "options": [
+   "الدالة تحوي خطأ ظهر فجاة",
+   "الدالة تحوي خطأ كامن من قبل و لم يكتشف إلا عند التنفيذ",
+   "بايثون تغير قيمة الدالة عمد كل استدعاء",
+   "المفسر توقف مؤقتا عن العمل"
+  ],
+  "correct_index": 1,
+  "explanation": "الخطأ كامن في الدالة (لا تتحقق من النوع) ولم يظهر إلا عند التنفيذ بقيمة نصية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 699,
+  "key": "y4:p158",
+  "subject_id": 25,
+  "question": "في لغة RUST بالنسبة لمفهوم الملكية اذا لم يقم المالك بتحرير القيمة يدويا لا يتم تحريرها وحذفها من الذاكرة تلقائياً.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "في Rust يُحرَّر المتغير تلقائياً عند خروج المالك من النطاق (drop)، فالعبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 700,
+  "key": "y4:p159",
+  "subject_id": 25,
+  "question": "13. الشيء المشترك الذي يجعل #C و Java لغتين (مفسرتين و مترجمتين):",
+  "options": [
+   "مطوراهما لم يحسما القرار",
+   "كلاهما يحول الى صيغة وسيطة (clr, bytecode) و يتم التنفيذ على VM",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "C# وJava تُترجمان لصيغة وسيطة (CLR/bytecode) وتُنفَّذان على آلة افتراضية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 701,
+  "key": "y4:p160",
+  "subject_id": 25,
+  "question": "14. أسلوب إدارة الذاكرة في بايثون (الأكثر تميزا) :",
+  "options": [
+   "Garbage collector",
+   "Reference counting",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الأسلوب الأبرز في بايثون هو العد المرجعي (Reference counting) مع GC للحلقات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 702,
+  "key": "y4:p161",
+  "subject_id": 25,
+  "question": "15. المفسر لا يكتشف الخطأ إلا عند الوصول إلى التعليمة التي تحتويه بينما المترجم يكتشفه أثناء تحليل الكود قبل التنفيذ.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "المفسر يكتشف الخطأ عند الوصول للتعليمة، أما المترجم فيكتشفه قبل التنفيذ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 703,
+  "key": "y4:p162",
+  "subject_id": 25,
+  "question": "16. يتم تخزين وسطاء تابع عند استدعائه في :",
+  "options": [
+   "كومة heap",
+   "مسجلات المعالج",
+   "مكدس stack",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "وسطاء التابع (arguments) تُخزَّن في المكدس (stack) عند الاستدعاء.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 704,
+  "key": "y4:p163",
+  "subject_id": 25,
+  "question": "17. في #C، الكلمة المفتاحية async تعني أن الدالة ستنفذ على التوازي مع الدوال الأخرى.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الكلمة async لا تعني التنفيذ على التوازي بل تتيح عدم الحجب (await) على نفس المسلك أو غيره.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 705,
+  "key": "y4:p164",
+  "subject_id": 25,
+  "question": "18. اذا كان هناك مرجع دائري بين غرضين في لغة تستخدم reference counting ما الخطأ الذي ينتج:",
+  "options": [
+   "حذف مبكر للكائنات",
+   "Null deference",
+   "تسرب ذاكرة memory leak",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "المرجع الدائري مع reference counting يمنع وصول العداد إلى صفر، فيسبب تسرب ذاكرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 706,
+  "key": "y4:p165",
+  "subject_id": 25,
+  "question": "20. الربط الديناميكي للتوابع هو آلية يتم فيها تحديد أي دالة سيتم تنفيذها أثناء :",
+  "options": [
+   "التشغيل",
+   "الترجمة",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "الربط الديناميكي يحدد الدالة المنفَّذة أثناء التشغيل (runtime) وليس الترجمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 707,
+  "key": "y4:p166",
+  "subject_id": 25,
+  "question": "21. في Python يتم استخدام : __ ( شرطتان) قبل اسم الخاصية للدلالة على أنها :",
+  "options": [
+   "Public",
+   "Private",
+   "Protected",
+   "Static"
+  ],
+  "correct_index": 1,
+  "explanation": "في بايثون شرطتان قبل اسم الخاصية تعنيان خاصية خاصة (Private) بتحريف الاسم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 708,
+  "key": "y4:p167",
+  "subject_id": 25,
+  "question": "23. النوعين الأساسيين للتواصل بين المسالك هما ال Semaphore وال Monitor.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "آليتا التواصل/المزامنة الأساسيتان بين المسالك هما Semaphore وMonitor.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 709,
+  "key": "y4:p168",
+  "subject_id": 25,
+  "question": "30. في لغة ++C يتم تدمير الاغراض بشكل افتراضي أثناء :",
+  "options": [
+   "إنهاء دورة حياتها",
+   "لا تمتلك آلية لتدمير الاغراض بشكل افتراضي",
+   "الخروج من مجال الرؤية المبنية ضمنه",
+   "الخروج من مجال الرؤية المبنية ضمنه في حال انتهاء استخدامه في البرنامج"
+  ],
+  "correct_index": 2,
+  "explanation": "في C++ تُدمَّر الأغراض الآلية تلقائياً عند الخروج من نطاقها (scope).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 710,
+  "key": "y4:p169",
+  "subject_id": 25,
+  "question": "31. الكود أعلاه بلغة Rust ما التغيير اللازم للتخلص من compiler error؟",
+  "options": [
+   "تغيير معامل الدالة الى & mut string  وتمرير &mut s",
+   "حذف toString",
+   "تبديلstring::from(\"hello\") مع new()",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 711,
+  "key": "y4:p170",
+  "subject_id": 25,
+  "question": "35. تتميز البرمجة الوظيفية بمفهوم ”عدم القابلية للتغيير“ Immutability، حيث لا يمكن تعديل البيانات بعد إنشائها.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "البرمجة الوظيفية تتميز بعدم القابلية للتغيير (Immutability).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 712,
+  "key": "y4:p171",
+  "subject_id": 25,
+  "question": "5. في لغة #C لماذا يعمل الجامع Mark & sweep على ضغط الذاكرة:",
+  "options": [
+   "لمنع الهدر الذي قد يأتي من وجود أماكن فارغة في الذاكرة قد لا تناسب من حيث الحجم الأغراض الجديدة",
+   "لان #C لاتدعم ادارة الذاكرة تلقائيا أصلا",
+   "لأن جميع العناصر تحذف بغض النظر عن وظيفتها",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "الضغط يمنع التجزؤ (fragmentation) الذي يترك فراغات قد لا تناسب أحجام الأغراض الجديدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 713,
+  "key": "y4:p172",
+  "subject_id": 25,
+  "question": "24. ناتج التنفيذ :",
+  "options": [
+   "2,4,6",
+   "1,2,3",
+   "1,2,3,4,5,6"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 714,
+  "key": "y4:p173",
+  "subject_id": 25,
+  "question": "25. كود C++ عند التنفيذ يتم طباعة:",
+  "options": [
+   "Base, show Derived",
+   "Derived, show Derived",
+   "Derived, show Base",
+   "Base, show Base"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 715,
+  "key": "y4:p174",
+  "subject_id": 25,
+  "question": "32. ما وجه الشبه الجوهري بين نموذج تورينغ ولغة حديثة تعتمد على آلية حالات محدودة Finite States:",
+  "options": [
+   "آلة تورينغ ليست مصممة للتطبيق وإنما فقط نموذج نظري",
+   "كلاهما يعتمد على القيمة الحالية وقيمة الدخل المقروء بدون تذكر تاريخ الخرج السابق",
+   "لايوجد تشابه"
+  ],
+  "correct_index": 1,
+  "explanation": "كلاهما يعتمد على الحالة الحالية وقيمة الدخل المقروءة دون تذكر تاريخ الخرج.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 716,
+  "key": "y4:p176",
+  "subject_id": 25,
+  "question": "2. عملية استنتاج النوع تسمى :",
+  "options": [
+   "Dynamic Typing",
+   "Static Typing + Type inference",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "استنتاج النوع (Type inference) يترافق مع الكتابة الساكنة (Static typing).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 717,
+  "key": "y4:p177",
+  "subject_id": 25,
+  "question": "10. في #C إذا كان لدينا سجل تستعمل قيمته دالة أُخرى(تمرير بالقيمة) وقامت بتغييرها ماذا سيحدث للقيمة في السجل:",
+  "options": [
+   "الدوال الإفتراضية لاتتغير قيمتها",
+   "تتغير القيمة",
+   "في #C السجلات تمرر بالقيمة فستبقى نفس القيمة"
+  ],
+  "correct_index": 2,
+  "explanation": "في #C السجلات (struct) تمرر بالقيمة، فتبقى القيمة الأصلية دون تغيير.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 718,
+  "key": "y4:p178",
+  "subject_id": 25,
+  "question": "11. أي مما يلي خاطئ:",
+  "options": [
+   "ياخذ ال stack حجم متغير والheap حجم ثابت.",
+   "يمكن أن يؤشر أكثر من shared_ptr إلى نفس الغرض في نفس الوقت، بينما يعبر unique_ptr عن ملكية حصرية.",
+   "يتم حذف الكائن عند خروج المؤشر unique_ptr من النطاق أو تتغير الملكية."
+  ],
+  "correct_index": 0,
+  "explanation": "العبارة الخاطئة: حجم الـ stack ثابت نسبياً (محدود)، والـ heap متغير الحجم، وليس العكس.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 719,
+  "key": "y4:p179",
+  "subject_id": 25,
+  "question": "4. ماذا سيحدث عند انتهاء تنفيذ الدالة main :",
+  "options": [
+   "تحرير تلقائي للذاكرة",
+   "يتم استدعاء الهادم destructor ليُحرر الذاكرة",
+   "لن يتم التحرير وتحصل مشكلة memory lack",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 720,
+  "key": "y4:p180",
+  "subject_id": 25,
+  "question": "19. ماهي قيمة Refrence count بعد تنفيذ السطر الثالث:",
+  "options": [
+   "3",
+   "2 لأن sum تُحرِّر بعد انتهاء تنفيذها",
+   "1",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 721,
+  "key": "y4:p181",
+  "subject_id": 25,
+  "question": "22. ماذا يعطي n([L, 10]) ؟",
+  "options": [
+   "L=[10]",
+   "L=[1,2,3,4]",
+   "يعطي خطأ",
+   "يدخل في حلقة لانهائية"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 722,
+  "key": "y4:p182",
+  "subject_id": 25,
+  "question": "26. إذا تمت إزالة virtual يصبح ناتج bptr->print هو :",
+  "options": [
+   "Base",
+   "Derived",
+   "لا يترجم الكود أصلاً",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 723,
+  "key": "y4:p183",
+  "subject_id": 25,
+  "question": "12. الدوال من الدرجة الأولى :",
+  "options": [
+   "يمكن استدعاؤها مرة واحدة فقط",
+   "يمكن تخزينها كمتغيرات أو تمريرها كوسطاء و إرجاعها من دوال أُخرى."
+  ],
+  "correct_index": 1,
+  "explanation": "الدوال من الدرجة الأولى تُخزَّن بمتغيرات وتُمرَّر كوسطاء وتُعاد من دوال أخرى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 724,
+  "key": "y4:p184",
+  "subject_id": 25,
+  "question": "33. عن علاقة ال JVM بالمسالك أياً من هذا صحيح",
+  "options": [
+   "جميع المكونات (بما فيها الكومة) تكون لكل مسلك على حدى.",
+   "ال PC Register وال JVM stack مخصصة، وال method وال heap مشتركة.",
+   "لكل Thread مكدس خاص لكن بيشترك بالتوابع وبال Heap."
+  ],
+  "correct_index": 1,
+  "explanation": "لكل مسلك PC register وJVM stack خاصان، بينما method area والـ heap مشتركان.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

@@ -1,0 +1,47 @@
+# Lecture PDFs: after a maintainer MERGES a student pull request that added inbox/<subject id>/<lecture>.pdf,
+# this turns the PDF into text (sources/<id>/<slug>.md + figure pages) and lists it for that subject in config/sources.json.
+# The subject is the folder name the student chose and the maintainer approved by merging; it is never guessed.
+# Needs: Settings -> Actions -> General -> Workflow permissions = "Read and write" (same as data-writer.yml).
+name: ingest-pdf
+on:
+  push:
+    branches: [main]
+    paths: ['inbox/**/*.pdf']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: ingest-pdf
+  cancel-in-progress: false
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pymupdf
+      - name: PDF -> sources/
+        run: |
+          set +e
+          python tools/ingest_inbox.py --data data --inbox inbox --sources sources --config config --report report.md
+          echo "INGEST_EXIT=$?" >> "$GITHUB_ENV"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit sources/ back to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A sources config inbox
+          git diff --cached --quiet || git commit -m "sources: ingest lecture PDF(s) from inbox/" -m "$(head -n 12 report.md)"
+          git pull --rebase origin main
+          git push
+      - name: Re-check old answers against the new text, then rebuild the page (data-writer does both)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run data-writer.yml
+      - name: Fail the run if a PDF could not be ingested (it stays in inbox/)
+        run: test "${INGEST_EXIT:-0}" = "0"

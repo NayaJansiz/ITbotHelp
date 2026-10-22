@@ -1,0 +1,402 @@
+[
+ {
+  "id": 67,
+  "key": "y1:p80",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 1,
+  "explanation": "arccos تتطلب x∈[-1,1] والجذر يتطلب 4x-1>0 أي x>0.25، فالمجال ]0.25, 1].",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_5_02-10-2026_13-42-59.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 68,
+  "key": "y1:p82",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 2,
+  "explanation": "الدالة 2^x تزايدية، فعلى [-2,4] مستقرها [2^-2, 2^4] = [0.25, 16].",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_6_02-10-2026_13-42-59.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 69,
+  "key": "y1:p84",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 2,
+  "explanation": "e^x موجبة دائماً وتقترب من 0 عندما x→-∞ دون أن تبلغه، فالحد الأدنى (inf) هو 0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_7_02-10-2026_13-42-59.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 70,
+  "key": "y1:p86",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 0,
+  "explanation": "cos(sinh(-x)) = cos(-sinh x) = cos(sinh x) = f(x)، فالدالة زوجية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_8_02-10-2026_13-42-59.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 71,
+  "key": "y1:p88",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 2,
+  "explanation": "arctan(√3) = π/3 لأن tan(π/3) = √3.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_9_02-10-2026_13-42-59.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 72,
+  "key": "y1:p90",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 3,
+  "explanation": "من y = x/(x+2) نحصل x = 2y/(1-y)، فالدالة العكسية f⁻¹(x) = 2x/(1-x).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_10_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 73,
+  "key": "y1:p92",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 1,
+  "explanation": "y = x/(x+2) = 1 - 2/(x+2) ولا تأخذ القيمة 1 أبداً، فالمستقر R\\{1}.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_11_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 74,
+  "key": "y1:p94",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 3,
+  "explanation": "الدالة الضمنية هي التي لا يمكن عزل y فيها بصيغة صريحة، وهي الخيار D.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_12_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 75,
+  "key": "y1:p96",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 1,
+  "explanation": "-1 ≤ (2x+1)/3 ≤ 1 تعطي -2 ≤ x ≤ 1، فالمجال [-2, 1].",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_13_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 76,
+  "key": "y1:p98",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 1,
+  "explanation": "",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_14_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 77,
+  "key": "y1:p100",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 3,
+  "explanation": "tan x - x ≈ x³/3 وx - sin x ≈ x³/6، فالنهاية 2.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_15_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 78,
+  "key": "y1:p102",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 1,
+  "explanation": "(1+sin4x)^(cot x) → e^(lim 4x·(cos x/sin x)) = e^4 (بافتراض cot g تعني cot x).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_photo_16_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 79,
+  "key": "y1:p104",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 0,
+  "explanation": "الاستمرار عند 0: b-a=1، وعند 2: a+b=3، فنحصل (a,b)=(1,2).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_17_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 80,
+  "key": "y1:p106",
+  "subject_id": 3,
+  "question": "اختر الإجابة الصحيحة (حسب الصورة أعلاه)",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 2,
+  "explanation": "بالاشتقاق اللوغاريتمي: y′ = y·[ln x/√(1-x²) + arcsin x/x].",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_18_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 81,
+  "key": "y1:p108",
+  "subject_id": 3,
+  "question": "السؤال الاول",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 2,
+  "explanation": "مشتقات sin x تتبع sin(x + nπ/2) للمشتق ذي الرتبة n.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_19_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 82,
+  "key": "y1:p110",
+  "subject_id": 3,
+  "question": "السوال الثاني",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 0,
+  "explanation": "عند x=0: f^(k)(0) = sin(kπ/2) فتساوي 0 للزوجي و(-1)^n عند k=2n+1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_20_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 83,
+  "key": "y1:p112",
+  "subject_id": 3,
+  "question": "السوال الثالث",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 3,
+  "explanation": "منشور ماكلوران لـ sin x هو Σ (-1)^n x^(2n+1)/(2n+1)!",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_21_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 84,
+  "key": "y1:p114",
+  "subject_id": 3,
+  "question": "السوال الاول",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 3,
+  "explanation": "الدالة f(x)=x فردية على [-π,π]، فكل معاملات الجيب فقط وa₀ = 0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_22_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 85,
+  "key": "y1:p116",
+  "subject_id": 3,
+  "question": "السوال الثاني",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 3,
+  "explanation": "b_k = (1/π)∫ x sin(kx)dx = 2(-1)^(k+1)/k.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_23_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 86,
+  "key": "y1:p118",
+  "subject_id": 3,
+  "question": "السوال الثالث",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "correct_index": 1,
+  "explanation": "سلسلة فورييه للدالة x هي Σ (2/k)(-1)^(k+1) sin(kx).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_photo_24_02-10-2026_13-43-00.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

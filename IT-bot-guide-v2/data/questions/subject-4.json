@@ -1,0 +1,560 @@
+[
+ {
+  "id": 87,
+  "key": "y1:p121",
+  "subject_id": 4,
+  "question": "الشكل التالي (حسب الصورة) يكافئ ترانزستور:",
+  "options": [
+   "NPN",
+   "PNP",
+   "NMOS"
+  ],
+  "correct_index": 0,
+  "explanation": "الديودان مصعداهما (أنود) متصلان بالقاعدة b، فالقاعدة P والباعث والمجمع N، أي ترانزستور NPN.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_1.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 88,
+  "key": "y1:p122",
+  "subject_id": 4,
+  "question": "في تشكيلة القاعدة المشتركة يكون الدخل هو:",
+  "options": [
+   "الباعث",
+   "المجمع",
+   "القاعدة"
+  ],
+  "correct_index": 0,
+  "explanation": "في تشكيلة القاعدة المشتركة تدخل الإشارة إلى الباعث وتخرج من المجمع، والقاعدة مشتركة بينهما.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 89,
+  "key": "y1:p123",
+  "subject_id": 4,
+  "question": "في النمط المشبع saturation يكون فرق الجهد بين المجمع والباعث:",
+  "options": [
+   "صغير أقل من 0.2 فولت",
+   "معتدل يساوي 0.7 فولت",
+   "كبير"
+  ],
+  "correct_index": 0,
+  "explanation": "في الإشباع يكون الفرق Vce صغيراً (أقل من 0.2 فولت).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 90,
+  "key": "y1:p124",
+  "subject_id": 4,
+  "question": "كمية الكهرباء المنتجة من الألواح الشمسية تعتمد على:",
+  "options": [
+   "الطقس",
+   "زاوية الألواح",
+   "A+B"
+  ],
+  "correct_index": 2,
+  "explanation": "إنتاج الألواح يتأثر بالطقس وبزاوية الألواح معاً، فالجواب A+B.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 91,
+  "key": "y1:p125",
+  "subject_id": 4,
+  "question": "(حسب جدول الأحمال بالصورة) مجموع الحمل الكهربائي:",
+  "options": [
+   "4500 Watt",
+   "4000 Watt.h",
+   "4500 Watt.h"
+  ],
+  "correct_index": 2,
+  "explanation": "الطاقة = 10×20×10 + 4×50×5 + 300×5 = 2000 + 1000 + 1500 = 4500 Wh.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_2.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 92,
+  "key": "y1:p126",
+  "subject_id": 4,
+  "question": "عدد الألواح الشمسية اللازمة (كفاءة 90% من القيمة الاسمية، قدرة 500W):",
+  "options": [
+   "2",
+   "3",
+   "1"
+  ],
+  "correct_index": 1,
+  "explanation": "القدرة المطلوبة 4500/4 = 1125 W، واللوح الفعلي 500×0.9 = 450 W، فالعدد 2.5 أي 3 ألواح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_2.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 93,
+  "key": "y1:p127",
+  "subject_id": 4,
+  "question": "استطاعة التحويل للمحول Inverter (كفاءة تحويل 90% من القيمة الاسمية):",
+  "options": [
+   "1000 Watt",
+   "500 Watt",
+   "800 Watt"
+  ],
+  "correct_index": 2,
+  "explanation": "الحمل اللحظي = 200+200+300 = 700 W، وبكفاءة 90%: 700/0.9 ≈ 778 W، فنختار 800 W.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_2.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 94,
+  "key": "y1:p128",
+  "subject_id": 4,
+  "question": "عدد البطاريات (سعة 200 أمبير ساعي وجهد 12 فولت):",
+  "options": [
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": 1,
+  "explanation": "الطاقة عند البطاريات 4500/0.9 = 5000 Wh، والبطارية 200×12 = 2400 Wh، فالعدد 2.1 أي 3 بطاريات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_2.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 95,
+  "key": "y1:p129",
+  "subject_id": 4,
+  "question": "نوع الترانزستور في الدارة المعطاة بالصورة:",
+  "options": [
+   "NPN",
+   "PNP",
+   "N-MOSFET"
+  ],
+  "correct_index": 2,
+  "explanation": "سهم المنبع متجه نحو القناة وبوابته معزولة، فهو ترانزستور MOSFET بقناة N (N-MOSFET).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 96,
+  "key": "y1:p130",
+  "subject_id": 4,
+  "question": "الترانزستور يعمل في نمط:",
+  "options": [
+   "الإشباع",
+   "القطع",
+   "المنطقة الخطية (النمط العادي)"
+  ],
+  "correct_index": 2,
+  "explanation": "VGS = 5V و VDS = 0.1V أقل بكثير من VGS−Vt = 4V، فالترانزستور في المنطقة الخطية (Triode).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 97,
+  "key": "y1:p131",
+  "subject_id": 4,
+  "question": "قيمة جهد المنبع Vs:",
+  "options": [
+   "1.2 V",
+   "-1.2 V",
+   "0 V"
+  ],
+  "correct_index": 2,
+  "explanation": "المنبع S موصول مباشرة بالأرضي، فالجهد Vs = 0 V.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 98,
+  "key": "y1:p132",
+  "subject_id": 4,
+  "question": "قيمة مقاومة المصرف Rd:",
+  "options": [
+   "3.25 KΩ",
+   "12.4 KΩ",
+   "253 Ω"
+  ],
+  "correct_index": 1,
+  "explanation": "Rd = (VDD − VD)/ID = (5 − 0.1)/0.395mA ≈ 12.4 KΩ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 99,
+  "key": "y1:p133",
+  "subject_id": 4,
+  "question": "قيمة تيار المصرف Id:",
+  "options": [
+   "4.48 mA",
+   "0.395 mA",
+   "100 mA"
+  ],
+  "correct_index": 1,
+  "explanation": "ID = k(W/L)[(VGS−Vt)·VDS − VDS²/2] = 1×[4×0.1 − 0.005] = 0.395 mA.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 100,
+  "key": "y1:p134",
+  "subject_id": 4,
+  "question": "قيمة المقاومة rds:",
+  "options": [
+   "12.4 KΩ",
+   "3.25 KΩ",
+   "253 Ω"
+  ],
+  "correct_index": 2,
+  "explanation": "rDS = VDS/ID = 0.1V / 0.395mA ≈ 253 Ω.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 101,
+  "key": "y1:p135",
+  "subject_id": 4,
+  "question": "الترانزستور في هذه الدارة يعمل كـ:",
+  "options": [
+   "مقاومة متغيرة",
+   "قاطع",
+   "مضخم"
+  ],
+  "correct_index": 0,
+  "explanation": "في المنطقة الخطية يتصرف الترانزستور كمقاومة rDS يتحكم بها جهد البوابة، أي مقاومة متغيرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_6.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 102,
+  "key": "y1:p136",
+  "subject_id": 4,
+  "question": "كلما زاد عمق تفريغ البطارية زاد عدد دورات الشحن والتفريغ.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "كلما زاد عمق التفريغ نقص عدد دورات الشحن والتفريغ، فالعبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 103,
+  "key": "y1:p137",
+  "subject_id": 4,
+  "question": "يتناسب ربح مضخم الموسفت طرداً مع مقاومة المصرف Rd.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "ربح مضخم MOSFET = gm·Rd فيتناسب طرداً مع مقاومة المصرف Rd.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 104,
+  "key": "y1:p138",
+  "subject_id": 4,
+  "question": "يتكون الترانزستور MOSFET من ثلاث مناطق نصف ناقلة هي المنبع والمصرف والبوابة.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "مناطق MOSFET: المنبع والمصرف والجسم، والبوابة معزولة بالأكسيد وليست منطقة نصف ناقلة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 105,
+  "key": "y1:p139",
+  "subject_id": 4,
+  "question": "يتناسب تيار المصرف بشكل طردي مع جهد Vds في منطقة الإشباع.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "في الإشباع يكون تيار المصرف شبه مستقل عن Vds.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 106,
+  "key": "y1:p140",
+  "subject_id": 4,
+  "question": "تتناسب الـ gm عكساً مع جهد القيادة الزائد Vov.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "gm يتناسب طرداً مع Vov (gm = k·Vov) وليس عكساً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 107,
+  "key": "y1:p141",
+  "subject_id": 4,
+  "question": "دارة تحييز الترانزستور هي العناصر التي تدخل في اختيار نقطة العمل، وهذه النقطة تكون أمثلية أو قد لا تكون.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "دارة التحييز تحدد نقطة العمل، وقد تكون أمثلية أو لا.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 108,
+  "key": "y1:p142",
+  "subject_id": 4,
+  "question": "يمكن نموذجة الترانزستور MOSFET بمنبع فولطية في الخرج Vds متحكم فيه بفولطية الدخل Vgs.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الـ MOSFET يُنمذج بمنبع تيار متحكم بالجهد وليس منبع فولطية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 109,
+  "key": "y1:p143",
+  "subject_id": 4,
+  "question": "كلما زادت الحرارة زادت الطاقة الكهربائية من الألواح الشمسية.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "زيادة الحرارة تنقص كفاءة الألواح الشمسية وتقلل الطاقة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 110,
+  "key": "y1:p144",
+  "subject_id": 4,
+  "question": "وظيفة الشاحن (متحكم الشحن) الموافقة بين جهد الألواح وتيار البطارية.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "متحكم الشحن يوفق بين جهد الألواح وتيار البطارية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 111,
+  "key": "y1:p145",
+  "subject_id": 4,
+  "question": "الشواحن ذات 3 مراحل أقل كفاءة من الشواحن ذات 7 مراحل.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الشواحن ذات المراحل الأقل أقل كفاءة من متعددة المراحل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 112,
+  "key": "y1:p146",
+  "subject_id": 4,
+  "question": "يمكن عمل نظام للطاقة الشمسية لا يحتوي بطارية ويعمل في الليل.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "النظام بلا بطارية لا يعمل ليلاً لغياب الشمس.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 113,
+  "key": "y1:p147",
+  "subject_id": 4,
+  "question": "قيمة beta تمثل ربح التيار للترانزستور BJT.",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "beta يمثل ربح التيار في الترانزستور BJT.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 114,
+  "key": "y1:p148",
+  "subject_id": 4,
+  "question": "الخرج Y1 للدارة الأولى (حسب الصورة):",
+  "options": [
+   "Y1 = A + BC",
+   "Y1 = NOT (A + BC)",
+   "Y1 = A.(B + C)"
+  ],
+  "correct_index": 1,
+  "explanation": "QA على التفرع مع (QB على التسلسل مع QC) تنقل عند A + BC، والخرج معكوس: Y1 = NOT(A + BC).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 115,
+  "key": "y1:p149",
+  "subject_id": 4,
+  "question": "الدارة الأولى هي:",
+  "options": [
+   "شبكة شد للأسفل",
+   "شبكة شد للأعلى",
+   "A و B (كل ما سبق صحيح)"
+  ],
+  "correct_index": 0,
+  "explanation": "الدارة مكونة من ترانزستورات NMOS موصولة بالأرضي، فهي شبكة شد للأسفل (Pull-down).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 116,
+  "key": "y1:p150",
+  "subject_id": 4,
+  "question": "الخرج Y2 للدارة الثانية (حسب الصورة):",
+  "options": [
+   "Y2 = A.B",
+   "Y2 = NOT (A.B)",
+   "Y2 = A + B"
+  ],
+  "correct_index": 1,
+  "explanation": "ترانزستورا PMOS على التفرع مع التغذية (شد للأعلى): الخرج 1 إذا A=0 أو B=0، أي Y2 = NOT(A·B).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y1_dar2_photo_15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

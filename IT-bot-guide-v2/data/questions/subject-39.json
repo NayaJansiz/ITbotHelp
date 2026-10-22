@@ -1,0 +1,505 @@
+[
+ {
+  "id": 1195,
+  "key": "y5:p325",
+  "subject_id": 39,
+  "question": "Which is false about sampling?",
+  "options": [
+   "hold out method is pessimistic for accuracy measuring",
+   "K in leave one out is the number of classes",
+   "In 0.632 bootstrap 63.2% are from the training set",
+   "Train and test are done k times in k fold cross validation method",
+   "كل ما سبق صحيح/خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "العبارة الخاطئة: في Leave-one-out الـ K هو عدد العينات (instances) وليس عدد الأصناف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1196,
+  "key": "y5:p326",
+  "subject_id": 39,
+  "question": "اي attribute افضل شي ليكون عقدة تفصل البيانات (أعلى split للقيم)\ngain(s,att1)= 0.6\ngain(s,att2)=0.12",
+  "options": [
+   "attr1",
+   "attr2",
+   "attr3",
+   "class"
+  ],
+  "correct_index": 0,
+  "explanation": "أفضل خاصية للانقسام هي ذات أعلى كسب معلومات (Gain)، أي attr1 بقيمة 0.6.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1197,
+  "key": "y5:p327",
+  "subject_id": 39,
+  "question": "why does using the training dataset to mesaure thr classifier's accuracy produce  optimise(opstic) estimate?",
+  "options": [
+   ". training dataset is less noise than test dataset",
+   "... training dataset has a larger number of instance than test dataset",
+   ".. the classfier tend to memorize the pattern in trainig dataset",
+   "... trainig dataset is  indepented of test dataset",
+   "E ...none of above"
+  ],
+  "correct_index": 2,
+  "explanation": "اختبار المصنّف على بيانات التدريب يعطي تقديراً متفائلاً لأن المصنّف يحفظ نمط بيانات التدريب.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1198,
+  "key": "y5:p328",
+  "subject_id": 39,
+  "question": "1- in the context of decision tree learning, which of the following is false:",
+  "options": [
+   "the search space grows exponentialy with the number of attributes",
+   "training error and test error are inversly proportion regardless of model coplexity.",
+   "having very small decision r may r the presence of noise in the training data .",
+   "if an attribute split produces perfectly pure child nodes then the information gain becomes maximum.",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "العبارة الخاطئة: خطأ التدريب والاختبار لا يتناسبان عكسياً دائماً، فتعقيد النموذج يخفض خطأ التدريب ويرفع خطأ الاختبار.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1199,
+  "key": "y5:p329",
+  "subject_id": 39,
+  "question": "What scenario shows why scalability is a big concern in data mining?",
+  "options": [
+   "training a classification model on 200 data samsples",
+   "querying relational database with many indexes",
+   "processing and mining infinite stream of sensor reading",
+   "merging multiple databases.....",
+   "كل ما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "معالجة تدفق لا نهائي من قراءات الحساسات هي السيناريو الذي تظهر فيه مشكلة قابلية التوسع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1200,
+  "key": "y5:p330",
+  "subject_id": 39,
+  "question": "مصفوفة \nx1        x2          y      lap\n1           1           1       0.25 -1         -1          -1       0.25  قيمة الوزن w",
+  "options": [
+   "0.5",
+   "0.25",
+   "0.125",
+   "0.085",
+   "0.419"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1201,
+  "key": "y5:p331",
+  "subject_id": 39,
+  "question": "a numeric attribute  sorted in thousands of dollars [10,29,30,35,40,45,50,55,60,65,95,100]\n which values classified suspected outliers to five number summary?",
+  "options": [
+   "10",
+   "150",
+   "10,150",
+   "non"
+  ],
+  "correct_index": 3,
+  "explanation": "بحسب قاعدة 1.5×IQR لا توجد قيم شاذة: الحدّان تقريباً -17 و112، والقيم كلها داخلهما.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1202,
+  "key": "y5:p332",
+  "subject_id": 39,
+  "question": "احسب التشابه اذا كانت القيم \nq=3\ns=1 r=1 t=5",
+  "options": [
+   "0.6",
+   "0.2"
+  ],
+  "correct_index": 0,
+  "explanation": "معامل Jaccard = q/(q+r+s) = 3/(3+1+1) = 0.6.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1203,
+  "key": "y5:p333",
+  "subject_id": 39,
+  "question": "اذا القيمة للatt1 hot \nAtt2 true\nAtt3 high   فماذا سيكون التصنيف",
+  "options": [
+   "Yes",
+   "No"
+  ],
+  "correct_index": 1,
+  "explanation": "بحسب الجدول: السجلات ذات القيم (True, Hot, High) كلها تصنيفها No.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1204,
+  "key": "y5:p334",
+  "subject_id": 39,
+  "question": "ما الصحيح حول attribute and dataset؟",
+  "options": [
+   "Feature vector تشير ال الداتا اوبجكت",
+   "الحالة الاجتماعية تمثل اوردينال",
+   "ماتركس داتا هي مزيج بين المهام الوصفية والتنبؤية",
+   "Sequential data purchase history..."
+  ],
+  "correct_index": 0,
+  "explanation": "متجه الخصائص (Feature vector) يصف كائن البيانات (data object). والحالة الاجتماعية اسمية لا ترتيبية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1205,
+  "key": "y5:p335",
+  "subject_id": 39,
+  "question": "عدد ال frequent item set في حال(3 )support",
+  "options": [
+   "3",
+   "5",
+   "6",
+   "7"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1206,
+  "key": "y5:p336",
+  "subject_id": 39,
+  "question": "في DT اذا كانت الDecision Boundary صغيرة",
+  "options": [
+   "يوجد  outliers",
+   "لا يوجد outliers"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1207,
+  "key": "y5:p338",
+  "subject_id": 39,
+  "question": "جدول 3 خصائص فيه سطرين ك مركزين ( اذا تذكرناهم منكتبهم)\nونحسب كم تكرار لتستقر وتوقف خوارزمية \n(بتعتمد على الفروقات بالnominal attribute)",
+  "options": [
+   "one iteration",
+   "Two iteration",
+   "Three iteration",
+   "Four iteration"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1208,
+  "key": "y5:p339",
+  "subject_id": 39,
+  "question": "عنا regression في 5 input",
+  "options": [
+   "output 5 مع هايبربلين",
+   "5 output مع الcurve",
+   "output 6 مع هايبربلين",
+   "output 6 مع curve"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1209,
+  "key": "y5:p340",
+  "subject_id": 39,
+  "question": "شو الصح حول الcluster",
+  "options": [
+   "الmediod  اقل حساسية للقيم شاذة",
+   "k-mean حساسة للقيم شاذة لان الشواذ بيكسر تجمعها العشوائي"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ Medoid (k-medoids) أقل حساسية للقيم الشاذة من الـ k-means.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1210,
+  "key": "y5:p341",
+  "subject_id": 39,
+  "question": "ايمت بتتوقف الخوارزمية المعطاة",
+  "options": [
+   "بعد 1 تكرار",
+   "بعد 2 تكرار",
+   "بعد 3 تكرار",
+   "بعد 4 تكرار"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1211,
+  "key": "y5:p342",
+  "subject_id": 39,
+  "question": "بيانات شراء  بتنقاس كل  visit ١٠٠٠٠ قيمة \nمن شو بتعاني",
+  "options": [
+   "sparsity",
+   "low dimention",
+   "low distribution",
+   "low resolution"
+  ],
+  "correct_index": 0,
+  "explanation": "بيانات شراء بآلاف القيم لكل زيارة معظمها صفر تعاني من التشتت (Sparsity).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1212,
+  "key": "y5:p343",
+  "subject_id": 39,
+  "question": "القيم الشاذة منيحة مع",
+  "options": [
+   "z score بخلي المجال بين 0و1 يمكن",
+   "min max"
+  ],
+  "correct_index": 0,
+  "explanation": "معايرة z-score أقل تأثراً بالقيم الشاذة من min-max.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1213,
+  "key": "y5:p344",
+  "subject_id": 39,
+  "question": "كان في كلمة intelligence وانو success of learning",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1214,
+  "key": "y5:p347",
+  "subject_id": 39,
+  "question": "شو الصح حول ال Machine Learning",
+  "options": [
+   "Can apply  only on structured data...",
+   "manually programmed....",
+   "Outliers effect output...."
+  ],
+  "correct_index": 2,
+  "explanation": "القيم الشاذة (Outliers) تؤثر على مخرجات نماذج التعلم الآلي، والعبارتان الأخريان خاطئتان.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1215,
+  "key": "y5:p348",
+  "subject_id": 39,
+  "question": "جودة النموذج بتتحدد by decting data وال ML مسؤولة عن بناؤه",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "جودة النموذج تتحدد بجودة البيانات، والتعلم الآلي مسؤول عن بناء النموذج منها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1216,
+  "key": "y5:p349",
+  "subject_id": 39,
+  "question": "عندك Adabooster \nعندي 10 عينات، 6منن تم تصنيفن بشكل خاطئ\nشو هوي الوزن الجديد للعينات يلي تم تصنيفها بشكل صحيح /والعينات التي تم تصنيفها بشكل خاطئ؟",
+  "options": [
+   "0.083و 0.125",
+   "0.1-0.1",
+   "0.49-0.125"
+  ],
+  "correct_index": 0,
+  "explanation": "بعد التحديث: الخاطئة تصبح 0.083 والصحيحة 0.125 (الخطأ 0.6) بعد التطبيع.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1217,
+  "key": "y5:p350",
+  "subject_id": 39,
+  "question": "عن خوارزمية Apriori",
+  "options": [
+   "عملية ال prune تتم بعد Candidate generalization",
+   "Increase intemsets",
+   "none"
+  ],
+  "correct_index": 0,
+  "explanation": "في خوارزمية Apriori تأتي مرحلة التقليم (Prune) بعد توليد المجموعات المرشحة (Candidate generation).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1218,
+  "key": "y5:p351",
+  "subject_id": 39,
+  "question": "شو  افضل طريقة للتخلص من الoutliers",
+  "options": [
+   "Data cleaning",
+   "Data reduction"
+  ],
+  "correct_index": 0,
+  "explanation": "أفضل طريقة للتخلص من القيم الشاذة هي تنظيف البيانات (Data cleaning).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1219,
+  "key": "y5:p352",
+  "subject_id": 39,
+  "question": "لدينا نظام تمر منه البطاقات الاحتيالية كثيراً، ماذا يجب أن نزيد؟",
+  "options": [
+   "Precision",
+   "Recall",
+   "Accuracy"
+  ],
+  "correct_index": 1,
+  "explanation": "إذا كانت البطاقات الاحتيالية تمر كثيراً فنرفع الـ Recall لنكشف أكبر عدد ممكن من حالات الاحتيال.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1220,
+  "key": "y5:p353",
+  "subject_id": 39,
+  "question": "احسب الsupport و confidante وlift",
+  "options": [
+   "S=60% Conf=75% Lift=94%",
+   "S = 60%، conf = 75%, lift = 19%"
+  ],
+  "correct_index": 0,
+  "explanation": "Support = 60% و Confidence = 75%، وقيمة Lift = Conf / support(B) أقل من 1 (0.94) في هذا السؤال.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

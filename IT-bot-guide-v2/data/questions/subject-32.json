@@ -1,0 +1,699 @@
+[
+ {
+  "id": 938,
+  "key": "y5:p4",
+  "subject_id": 32,
+  "question": "1. What is a key characteristic of virtual credit cards?",
+  "options": [
+   "They are physical cards used for in-store purchases.",
+   "They do not have card numbers, expiration dates, or CVV codes.",
+   "They can only be used for online transactions.",
+   "All of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "البطاقة الافتراضية رقمية بالكامل (لها رقم وتاريخ وCVV) وتُستخدم في المعاملات عبر الإنترنت فقط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 939,
+  "key": "y5:p5",
+  "subject_id": 32,
+  "question": "2. Digital marketing objectives:",
+  "options": [
+   "Reaching the right audience",
+   "To engage with your audience",
+   "Return on investment (ROI)",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "أهداف التسويق الرقمي تشمل الوصول للجمهور الصحيح والتفاعل معه وتحقيق عائد على الاستثمار (ROI).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 940,
+  "key": "y5:p6",
+  "subject_id": 32,
+  "question": "3. A newly created pricelist is automatically applied on the website.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "القائمة الجديدة لا تُطبّق تلقائياً على الموقع، بل يجب ربطها بالموقع أو ببلد/مجموعة عملاء.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 941,
+  "key": "y5:p7",
+  "subject_id": 32,
+  "question": "4. In drop shipping logistics, the provider ships the order:",
+  "options": [
+   "Directly to your warehouse, then you can deliver it to the customer. .",
+   "Directly to the customer.",
+   "To a third-party logistics provider for further processing.",
+   "To the nearest distribution center for the seller's pickup"
+  ],
+  "correct_index": 1,
+  "explanation": "في الـ Drop shipping المورّد يرسل الطلب مباشرة إلى العميل دون أن تخزنه أنت.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 942,
+  "key": "y5:p8",
+  "subject_id": 32,
+  "question": "5. Non-repudiation is an aspect of e-Commerce security that ensures:",
+  "options": [
+   "Transactions cannot be changed after they are completed",
+   "Only authorized users can access the system",
+   "Buyers or sellers cannot deny that a transaction took place",
+   "Data is encrypted during transmission"
+  ],
+  "correct_index": 2,
+  "explanation": "عدم الإنكار (Non-repudiation) يضمن أنه لا يستطيع البائع أو المشتري إنكار حدوث المعاملة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 943,
+  "key": "y5:p9",
+  "subject_id": 32,
+  "question": "6. Which delivery calculation method allows you to set prices based on weight brackets ($10 for 0–5kg)?",
+  "options": [
+   "Percentage of Order",
+   "Fixed Price",
+   "Based on Rules",
+   "Real Cost"
+  ],
+  "correct_index": 2,
+  "explanation": "طريقة Based on Rules تسمح بتحديد سعر الشحن حسب شرائح الوزن (مثلاً 10$ لـ 0-5 كغ).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 944,
+  "key": "y5:p10",
+  "subject_id": 32,
+  "question": "7. Which of the following is True about debit cards?",
+  "options": [
+   "Deducts money from the user’s bank account instantly at the time of the transaction.",
+   "Should not be sufficient balance in the bank account for the transaction to get completed.",
+   "Issuer bank pays on behalf of the customer."
+  ],
+  "correct_index": 0,
+  "explanation": "بطاقة الخصم (Debit) تخصم المبلغ فوراً من حساب العميل لحظة العملية، ولذلك يجب أن يتوفر رصيد كافٍ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 945,
+  "key": "y5:p11",
+  "subject_id": 32,
+  "question": "8. e-checks security level:",
+  "options": [
+   "Authentication & Encryption",
+   "Digital signature & Duplicate detection",
+   "Certificate authorities",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "الأمان في الشيك الإلكتروني يشمل كل ما سبق: المصادقة والتشفير، والتوقيع الرقمي وكشف التكرار، وسلطات التصديق.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 946,
+  "key": "y5:p12",
+  "subject_id": 32,
+  "question": "9. Which Creation Mode should you choose if you want to save database space by only creating variants when they are actually added to a cart or sales order?",
+  "options": [
+   "Manually",
+   "Instantly",
+   "Always",
+   "Dynamically"
+  ],
+  "correct_index": 3,
+  "explanation": "وضع Dynamically ينشئ الـ variants فقط عند إضافتها للسلة أو لطلب البيع، فيوفر مساحة قاعدة البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 947,
+  "key": "y5:p13",
+  "subject_id": 32,
+  "question": "10. When you enable the \"Extra Step\" in the website checkout settings, where does it physically appear in the flow?",
+  "options": [
+   "Only on the Product page",
+   "After the Payment is processed",
+   "Between Address and Confirm Order",
+   "Before the Cart page"
+  ],
+  "correct_index": 2,
+  "explanation": "الخطوة الإضافية (Extra Step) في الـ checkout تظهر بين صفحة العنوان وصفحة تأكيد الطلب.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 948,
+  "key": "y5:p14",
+  "subject_id": 32,
+  "question": "11. How does Cross-site scripting (XSS) pose a threat to an e-commerce website?",
+  "options": [
+   "By overloading the server with requests.",
+   "Through exposure of sensitive user data.",
+   "Injection of malicious code.",
+   "By redirecting users to malicious websites."
+  ],
+  "correct_index": 2,
+  "explanation": "هجوم XSS يتم بحقن كود خبيث (غالباً JavaScript) في صفحات الموقع ينفذ في متصفح الضحية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 949,
+  "key": "y5:p15",
+  "subject_id": 32,
+  "question": "12. What is the purpose of identifying weaknesses in SWOT analysis?",
+  "options": [
+   "To capitalize on external opportunities.",
+   "To address external threats.",
+   "To evaluate internal positive attributes.",
+   "To improve organizational performance."
+  ],
+  "correct_index": 3,
+  "explanation": "تحديد نقاط الضعف (عوامل داخلية سلبية) هدفه معالجتها وتحسين أداء المؤسسة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 950,
+  "key": "y5:p16",
+  "subject_id": 32,
+  "question": "13. What is DDoS attacks?",
+  "options": [
+   "DDoS overload the website with traffic from a single device.",
+   "DDoS aims to slow the website by overloading it with traffic from multiple devices.",
+   "DDoS comes from anonymous IP addresses.",
+   "None of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "هجوم DDoS يبطئ الموقع أو يوقفه بإغراقه بحركة مرور من أجهزة متعددة موزعة، لا من جهاز واحد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 951,
+  "key": "y5:p17",
+  "subject_id": 32,
+  "question": "14. A 'Social' factor in PESTEL describes 'Increased Health Consciousness'. If a fast-food company ignores this, it will likely see its 'Brand Image' move into which SWOT quadrant?",
+  "options": [
+   "Strengths",
+   "Weaknesses",
+   "Opportunities",
+   "Threats"
+  ],
+  "correct_index": 1,
+  "explanation": "تجاهل اتجاه الوعي الصحي يضعف صورة العلامة التجارية، وهذا عامل داخلي سلبي أي نقطة ضعف (Weakness).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 952,
+  "key": "y5:p18",
+  "subject_id": 32,
+  "question": "15. Which of the following statements is TRUE:",
+  "options": [
+   "Alternative Products are displayed on the product page",
+   "Accessory Products appear in a pop-up only after the customer has paid (Post-purchase)",
+   "Optional Products are used to replace the main product in the cart",
+   "Alternative Products are displayed on the checkout page"
+  ],
+  "correct_index": 0,
+  "explanation": "المنتجات البديلة (Alternative) تظهر على صفحة المنتج نفسها، أما الملحقات فتظهر عند السلة قبل الدفع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 953,
+  "key": "y5:p19",
+  "subject_id": 32,
+  "question": "16. \"Satisfied customers – Customer Centric\" is for Amazon within the SWOT analysis:",
+  "options": [
+   "Strengths",
+   "Weaknesses",
+   "Opportunities",
+   "Threats"
+  ],
+  "correct_index": 0,
+  "explanation": "رضا العملاء والتركيز عليهم ميزة داخلية إيجابية لأمازون، أي نقطة قوة (Strength).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 954,
+  "key": "y5:p20",
+  "subject_id": 32,
+  "question": "17. An organization discovers that a competitor has developed a new technology that makes its main product outdated. In a SWOT analysis, how should this be categorized?",
+  "options": [
+   "Technological Strength",
+   "Weaknesses",
+   "Opportunities",
+   "Threats"
+  ],
+  "correct_index": 3,
+  "explanation": "ظهور تقنية منافس تجعل منتجك قديماً هو عامل خارجي سلبي، أي تهديد (Threat).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 955,
+  "key": "y5:p21",
+  "subject_id": 32,
+  "question": "18. A company realizes its 'outdated IT infrastructure' makes it vulnerable to cyber-attacks. In a SWOT analysis, how should this be categorized?",
+  "options": [
+   "Strengths",
+   "Weaknesses",
+   "Opportunities",
+   "Threats"
+  ],
+  "correct_index": 1,
+  "explanation": "البنية التحتية القديمة عامل داخلي سلبي يعرّض الشركة للهجمات، أي نقطة ضعف (Weakness).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 956,
+  "key": "y5:p22",
+  "subject_id": 32,
+  "question": "19. A rise in fuel prices increases transportation costs for businesses. Which PESTEL category does this fall under?",
+  "options": [
+   "Environmental",
+   "Technological",
+   "Economic",
+   "Legal"
+  ],
+  "correct_index": 2,
+  "explanation": "ارتفاع أسعار الوقود يرفع التكاليف، وهو عامل اقتصادي (Economic) من تحليل PESTEL.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 957,
+  "key": "y5:p23",
+  "subject_id": 32,
+  "question": "20. If you want to charge a customer an extra $5 fee only if they choose to pay via PayPal, where is this configured?\n\nط",
+  "options": [
+   "In the Pricelist formulas",
+   "On the Product Template under 'Sales'",
+   "In the Shipping Method settings",
+   "In the 'Extra Fees' section of the Payment Provider setting"
+  ],
+  "correct_index": 3,
+  "explanation": "رسوم PayPal الإضافية تُضبط من قسم Extra Fees في إعدادات مزود الدفع (Payment Provider).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 958,
+  "key": "y5:p24",
+  "subject_id": 32,
+  "question": "21. __ prevents users from accessing their system or personal files",
+  "options": [
+   "Trojan horse",
+   "Ransomware",
+   "Fileless malware",
+   "Rootkits"
+  ],
+  "correct_index": 1,
+  "explanation": "برمجية الفدية (Ransomware) تمنع المستخدم من الوصول لنظامه أو ملفاته وتطلب فدية لفك الحظر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 959,
+  "key": "y5:p25",
+  "subject_id": 32,
+  "question": "22. Which of the following is FALSE:",
+  "options": [
+   "e-Business does include commercial transactions that generate revenue.",
+   "CDNs are global distribution networks that enhance website performance.",
+   "B2B examples can include the transactions between a wholesaler and a retailer.",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "العبارات A وB وC كلها صحيحة، فالعبارة \"كلها صحيحة\" هي الخاطئة، والمطلوب العبارة الخاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 960,
+  "key": "y5:p26",
+  "subject_id": 32,
+  "question": "23. According to the materials, e-skimming can be a result of all the following methods:\n\n.",
+  "options": [
+   "Brute force attacks.",
+   "Cross-site scripting (XSS).",
+   "Phishing.",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "تسريب بيانات البطاقة (e-skimming) قد يحدث عبر هجمات القوة الغاشمة وXSS والتصيد الاحتيالي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 961,
+  "key": "y5:p27",
+  "subject_id": 32,
+  "question": "24. Third-Party Logistics (3PL) refers to:",
+  "options": [
+   "A third-party company handling storage, packing, and shipping for a business.",
+   "A company managing its own storage and delivery.",
+   "A government organization controlling transportation.",
+   "Customers delivering products themselves."
+  ],
+  "correct_index": 0,
+  "explanation": "الـ 3PL شركة خارجية تتولى التخزين والتغليف والشحن نيابة عن الشركة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 962,
+  "key": "y5:p28",
+  "subject_id": 32,
+  "question": "25. To officially turn a Wire Transfer 'Quotation' into a 'Sales Order' and trigger the delivery, what must the manager do?",
+  "options": [
+   "Change the customer's name.",
+   "The system does it automatically.",
+   "Delete the Quotation and make a new one.",
+   "Manually confirm the quotation."
+  ],
+  "correct_index": 3,
+  "explanation": "لتحويل عرض السعر (Quotation) إلى طلب بيع (Sales Order) يؤكده المدير يدوياً فيبدأ التسليم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 963,
+  "key": "y5:p29",
+  "subject_id": 32,
+  "question": "26. When a 'Free Shipping' coupon is applied to an order, how does the system represent this discount on the Sales Order?",
+  "options": [
+   "It deletes the delivery line.",
+   "It adds a negative service line.",
+   "It sets the tax rate to zero.",
+   "It hides the shipping cost."
+  ],
+  "correct_index": 1,
+  "explanation": "كوبون الشحن المجاني يضيف سطر خدمة بقيمة سالبة يلغي كلفة الشحن في طلب البيع.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 964,
+  "key": "y5:p30",
+  "subject_id": 32,
+  "question": "27. Which statement about firewalls is TRUE?",
+  "options": [
+   "Firewalls monitor traffic but do not block malicious requests. .",
+   "Firewalls block viruses but not application-level attacks.",
+   "C Firewalls filter incoming and outgoing traffic to protect against attacks likeXSSandSQL injection",
+   "Firewalls protect systems only from internal network threats"
+  ],
+  "correct_index": 2,
+  "explanation": "الجدار الناري (Firewall) يفلتر الحركة الواردة والصادرة لحماية الأنظمة من هجمات مثل XSS وSQL injection.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 965,
+  "key": "y5:p31",
+  "subject_id": 32,
+  "question": "28. When a payment provider is set to 'Test Mode', which of the following is true regarding the transaction process?\n\n.",
+  "options": [
+   "The transaction uses real money but is refunded immediately.",
+   "The checkout page is hidden from all customers.",
+   "Payments are automatically confirmed without any API call.",
+   "The system connects to a sandbox environment using test credentials"
+  ],
+  "correct_index": 3,
+  "explanation": "وضع الاختبار (Test Mode) يتصل ببيئة تجريبية (sandbox) باستخدام بيانات اعتماد اختبارية دون مال حقيقي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 966,
+  "key": "y5:p32",
+  "subject_id": 32,
+  "question": "29. Which type of testing involves creating combinations of specific elements like title, image, button, and text to optimize web page performance?",
+  "options": [
+   "A/B testing",
+   "Template testing",
+   "Multivariate testing",
+   "New concept testing"
+  ],
+  "correct_index": 2,
+  "explanation": "الاختبار متعدد المتغيرات (Multivariate) يجرّب تركيبات عناصر الصفحة (عنوان، صورة، زر، نص) لتحسين الأداء.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 967,
+  "key": "y5:p33",
+  "subject_id": 32,
+  "question": "30. Which of the following is True:",
+  "options": [
+   "E-commerce websites are finished, it's limited process.",
+   "Payment tokens replace non-sensitive data with sensitive ones.",
+   "Online Banking enables users to pay for online purchases with the need for a credit card.",
+   "Any marketing message that appears online is referred to as online advertising."
+  ],
+  "correct_index": 3,
+  "explanation": "عبارة D صحيحة: الاستخدام الأوسع لـ \"الإعلان عبر الإنترنت\" هو أي رسالة تسويقية تظهر عبر الإنترنت.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 968,
+  "key": "y5:p34",
+  "subject_id": 32,
+  "question": "31. Which field on the Product Template must be accurately filled for 'Real Cost' shipping to calculate correctly at checkout?",
+  "options": [
+   "Barcode",
+   "Internal Reference",
+   "Volume",
+   "Weight"
+  ],
+  "correct_index": 3,
+  "explanation": "حساب الشحن بالتكلفة الفعلية (Real Cost) يعتمد على حقل الوزن (Weight) في قالب المنتج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 969,
+  "key": "y5:p35",
+  "subject_id": 32,
+  "question": "32. How does PESTEL typically relate to SWOT?\n\n*",
+  "options": [
+   "PESTEL provides data to identify Opportunities and Threats.",
+   "SWOT is a sub-category of PESTEL.",
+   "PESTEL identifies Strengths and Weaknesses.",
+   "There is no relationship between them."
+  ],
+  "correct_index": 0,
+  "explanation": "PESTEL يوفر معلومات عن البيئة الخارجية تُستخدم لتحديد الفرص والتهديدات في SWOT.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 970,
+  "key": "y5:p36",
+  "subject_id": 32,
+  "question": "33. A pricelist is configured with a 'Formula' based on a -10% discount, a Rounding Method of 1.00, and an Extra Fee of -0.10. Which of the following is true?",
+  "options": [
+   "The pricelist only applies to orders with more than 10 units.",
+   "All prices will end in '.00' because of the rounding method.",
+   "All final product prices will end in '.90'.",
+   "Customers will receive a discount of exactly 10% regardless of decimals."
+  ],
+  "correct_index": 2,
+  "explanation": "الخصم 10% ثم التقريب إلى 1.00 ثم رسم إضافي -0.10 يجعل كل الأسعار تنتهي بـ .90.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 971,
+  "key": "y5:p37",
+  "subject_id": 32,
+  "question": "34. All products with Attribute Value 'A' are automatically priced $100 higher than products with Attribute Value 'B'. How can you automate this price difference globally?",
+  "options": [
+   "By changing the 'Cost Price' on the product template.",
+   "By manually editing the 'Sales Price' on every product variant. .",
+   "This can only be done with a pricelist adjustment.",
+   "By changing the 'Value Price Extra' in the backend of that attribute value"
+  ],
+  "correct_index": 3,
+  "explanation": "Value Price Extra لقيمة الخاصية يضيف فرق السعر آلياً على كل المنتجات ذات هذه القيمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 972,
+  "key": "y5:p38",
+  "subject_id": 32,
+  "question": "35. POST method refers to:",
+  "options": [
+   "Product, Objectives, Strategy, Technology.",
+   "People, Objectives, Strategy, Technology.",
+   "People, Organization, Strategy, Technology.",
+   "Process, Objectives, Strategy, Technology."
+  ],
+  "correct_index": 1,
+  "explanation": "تحليل POST هو: People, Objectives, Strategy, Technology.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

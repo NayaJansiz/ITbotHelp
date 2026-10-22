@@ -1,0 +1,731 @@
+[
+ {
+  "id": 518,
+  "key": "y3:p240",
+  "subject_id": 18,
+  "question": "1) ان مستندات توثيق النظام",
+  "options": [
+   "تصف هيكلية النظام",
+   "تصف وثائق المستخدم",
+   "تشرح كيفية استخدام النظام",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "مستندات توثيق النظام تصف هيكلية النظام ووثائق المستخدم وكيفية الاستخدام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 519,
+  "key": "y3:p241",
+  "subject_id": 18,
+  "question": "2) عند انغلاق المكابح في السيارة و البرمجيات في الغسالة",
+  "options": [
+   "الانظمة الدفعية",
+   "تطبيقات مستقلة",
+   "انظمة التحكم المدمجة",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "أنظمة التحكم المدمجة (Embedded) مثل مكابح السيارة وبرمجيات الغسالة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 520,
+  "key": "y3:p242",
+  "subject_id": 18,
+  "question": "3) ___تنفيذ مهمة ما في حالة الاستخدام حيث لا يمكن انو يوجد دون وجود فاعل اولي يرتبط به",
+  "options": [
+   "فاعل ثانوي",
+   "فاعل مجرد"
+  ],
+  "correct_index": 0,
+  "explanation": "الفاعل الثانوي لا يوجد إلا بوجود فاعل أولي مرتبط به.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 521,
+  "key": "y3:p243",
+  "subject_id": 18,
+  "question": "4) اي ما يلي structure diagram",
+  "options": [
+   "Class diagram",
+   "Object diagram",
+   "كل ما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "مخطط الأصناف ومخطط الأغراض كلاهما مخطط بنيوي (structure diagram).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 522,
+  "key": "y3:p244",
+  "subject_id": 18,
+  "question": "5) ان البرمجية الجيدة هي التي",
+  "options": [
+   "تنجز ما يطلب منها وتكلفتها مقبولة",
+   "تسلم ضمن الوقت المحدد دون تاخير",
+   "تحترم معايير الجودة",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "البرمجية الجيدة: تنجز المطلوب بكلفة مقبولة، وتُسلَّم بالوقت، وتحترم معايير الجودة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 523,
+  "key": "y3:p245",
+  "subject_id": 18,
+  "question": "6) مقياس ____ يستخدم مجموعة من القوانين والمعادلات الرياضية لتقدير درجة التعقيد",
+  "options": [
+   "هولستيد",
+   "مكابي"
+  ],
+  "correct_index": 0,
+  "explanation": "مقياس هولستيد يستخدم معادلات رياضية لتقدير التعقيد، أما مكابي فيعتمد مخطط التحكم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 524,
+  "key": "y3:p246",
+  "subject_id": 18,
+  "question": "7) الفحص ___ يتعلق بتنفيذ البرنامج حيث يتم اختبار جميع مسارات البرنامج",
+  "options": [
+   "التركيبي ( الصندوق الابيض)",
+   "الوظيفي( الصندوق الاسود)"
+  ],
+  "correct_index": 0,
+  "explanation": "الفحص التركيبي (الصندوق الأبيض) يختبر مسارات البرنامج الداخلية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 525,
+  "key": "y3:p247",
+  "subject_id": 18,
+  "question": "8) ___ تعني أن صفا اول يستخدم صفا ثانيا وتغيير مواصفات الصف المستخدَم يؤثر على الصف المستخدِم",
+  "options": [
+   "التعميم",
+   "الارتباط",
+   "الاعتمادية"
+  ],
+  "correct_index": 2,
+  "explanation": "الاعتمادية: تغيير مواصفات الصف المستخدَم يؤثر على الصف المستخدِم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 526,
+  "key": "y3:p248",
+  "subject_id": 18,
+  "question": "9)في اي من الجوانب تختلف الطريقة المرنة عن التقليدية",
+  "options": [
+   "الوقت المستهلك",
+   "نشاطات تجميع المتطلبات ومدى التفصيل في كتابة وتوثيق المتطلبات",
+   "كل ما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "تختلف الطريقة المرنة عن التقليدية بنشاطات جمع المتطلبات ومدى التفصيل في توثيقها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 527,
+  "key": "y3:p249",
+  "subject_id": 18,
+  "question": "10) تقسم عملية التطوير البرمجية الى حلقات قصيرة scrum في الطريقة التقليدية",
+  "options": [
+   "صح",
+   "غلط"
+  ],
+  "correct_index": 1,
+  "explanation": "السكرم (Scrum) من الطرق المرنة وليس التقليدية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 528,
+  "key": "y3:p250",
+  "subject_id": 18,
+  "question": "11) تمثل العقدة بين عدة طرق (خيارات) يتم اختيار أحدها بناء على نتيجة شرط معين يتم تطبيقه على الدخل في هذه النقطة",
+  "options": [
+   "Decision",
+   "Join"
+  ],
+  "correct_index": 0,
+  "explanation": "عقدة القرار (Decision) تختار أحد المسارات بناءً على شرط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 529,
+  "key": "y3:p251",
+  "subject_id": 18,
+  "question": "12) مرحلة ___ تتم الاجابة عن أسئلة حول من سيستخدم النظام وماذا سيفعل النظام ومتى سيتم استخدامه",
+  "options": [
+   "تخطيط",
+   "تحليل",
+   "تصميم"
+  ],
+  "correct_index": 1,
+  "explanation": "مرحلة التحليل تجيب عن: من سيستخدم النظام وماذا سيفعل ومتى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 530,
+  "key": "y3:p252",
+  "subject_id": 18,
+  "question": "13) من مساوئ النموذج الشلالي",
+  "options": [
+   "التصميم يجب ان يكون جاهز وكامل قبل بدء البرمجة",
+   "يمر وقت طويل بين الانتهاء من مرحلة التحليل وتسليم النظام",
+   "كل ما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "من مساوئ الشلالي: التصميم كامل قبل البرمجة، وطول الفترة بين التحليل والتسليم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 531,
+  "key": "y3:p253",
+  "subject_id": 18,
+  "question": "14) المستخدم يجب ان يعرف الاسعار لمختلف الرحلات",
+  "options": [
+   "متطلبات وظيفية",
+   "متطلبات غير وظيفية"
+  ],
+  "correct_index": 0,
+  "explanation": "معرفة المستخدم لأسعار الرحلات متطلب وظيفي (خدمة يقدمها النظام).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 532,
+  "key": "y3:p254",
+  "subject_id": 18,
+  "question": "15) مجموعة قيود وظيفية يفرضها النظام على المستخدمين للحصول على اداء جيد للنظام",
+  "options": [
+   "حدود النظام",
+   "حدود الاستيعاب",
+   "حدود الاداء"
+  ],
+  "correct_index": 2,
+  "explanation": "حدود الأداء هي القيود التي تُفرض لضمان أداء جيد للنظام.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 533,
+  "key": "y3:p255",
+  "subject_id": 18,
+  "question": "16) اي مما يلي يعتبر من الاسئلة المفتوحة",
+  "options": [
+   "ما عدد الطلبات الهاتفية التي تصل يوميا",
+   "ما هي التحسينات التي تتمنى ان تتم في اجرائية معالجة الفواتير"
+  ],
+  "correct_index": 1,
+  "explanation": "السؤال المفتوح يسمح بإجابة حرة مثل التحسينات التي يتمناها المستخدم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 534,
+  "key": "y3:p256",
+  "subject_id": 18,
+  "question": "17) يتم اختبار البرنامج من خلال تنفيذه وملاحظة النتائج",
+  "options": [
+   "الاسلوب الثابت",
+   "الاسلوب الديناميكي"
+  ],
+  "correct_index": 1,
+  "explanation": "الأسلوب الديناميكي يختبر البرنامج بتنفيذه وملاحظة النتائج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 535,
+  "key": "y3:p257",
+  "subject_id": 18,
+  "question": "18) اي مما يلي مرتبط بجودة البرمجيات",
+  "options": [
+   "Time",
+   "Quality",
+   "Cost",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "الوقت والجودة والكلفة كلها مرتبطة بجودة البرمجيات (مثلث المشروع).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 536,
+  "key": "y3:p258",
+  "subject_id": 18,
+  "question": "19) اثناء بناء مخطط التتابع يتم استخدام الصفوف نفسها",
+  "options": [
+   "صح",
+   "غلط"
+  ],
+  "correct_index": 0,
+  "explanation": "عند بناء مخطط التتابع تُستخدم نفس الصفوف الموجودة بمخطط الأصناف.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 537,
+  "key": "y3:p259",
+  "subject_id": 18,
+  "question": "20) يتم استخدام رسالة ____ عندما ينتظر المرسل ان يقوم المستلم بمعالجة الرسالة قبل العودة والاستمرار بعمليات أخرى",
+  "options": [
+   "متزامنة",
+   "غير متزامنة"
+  ],
+  "correct_index": 0,
+  "explanation": "الرسالة المتزامنة ينتظر فيها المرسل معالجة المستلم قبل المتابعة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 538,
+  "key": "y3:p260",
+  "subject_id": 18,
+  "question": "21) تتعلق جودة البرمجيات بسهولة التصميم واعادة استخدام أجزائها وسهولة الصيانة بالنسبة ل",
+  "options": [
+   "الزبون",
+   "المستخدم",
+   "المطور"
+  ],
+  "correct_index": 2,
+  "explanation": "سهولة التصميم وإعادة الاستخدام والصيانة تهم المطوّر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 539,
+  "key": "y3:p261",
+  "subject_id": 18,
+  "question": "22) قدرة النظام البرمجي على التصرف بشكل مناسب في حال وجود شروط غير طبيعية",
+  "options": [
+   "الموثوقية والمتانة",
+   "الاستخدامية",
+   "الكفاءة",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 0,
+  "explanation": "الموثوقية والمتانة (Robustness) هي التصرف المناسب عند الظروف غير الطبيعية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 540,
+  "key": "y3:p262",
+  "subject_id": 18,
+  "question": "23) تماسك يؤدي مجموعة من المهام المترابطة",
+  "options": [
+   "تماسك عرضي",
+   "تماسك منطقي",
+   "تماسك مؤقت"
+  ],
+  "correct_index": 1,
+  "explanation": "التماسك المنطقي: عناصر المكوّن تؤدي مهاماً مترابطة منطقياً ويُختار أحدها بمعامل.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 541,
+  "key": "y3:p263",
+  "subject_id": 18,
+  "question": "24) تكون طريقة جاكسون مناسبة للتعامل مع البرامج الكبيرة والعملية ويمكن اسنخدامها اذا تطلب الامر تعديل البرنامج او تغيرت ظروف العمل",
+  "options": [
+   "صح",
+   "غلط"
+  ],
+  "correct_index": 1,
+  "explanation": "طريقة جاكسون تناسب البرامج الصغيرة والبسيطة، وليست للبرامج الكبيرة والمتغيرة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 542,
+  "key": "y3:p264",
+  "subject_id": 18,
+  "question": "25) فحص يفيد في اكتشاف الاخطاء في مراحلها الاولى مما يقلل التكاليف",
+  "options": [
+   "تصاعدي",
+   "تنازلي"
+  ],
+  "correct_index": 1,
+  "explanation": "الاختبار التنازلي (Top-down) يكشف أخطاء التصميم الرئيسية مبكراً فيقلل الكلفة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 543,
+  "key": "y3:p265",
+  "subject_id": 18,
+  "question": "26) مقاييس التعقيد تعتمد بالاساس على عدد سطور البرنامج ( حجمه) ولكن ليس دائما",
+  "options": [
+   "صح",
+   "غلط"
+  ],
+  "correct_index": 0,
+  "explanation": "مقاييس التعقيد تعتمد غالباً على حجم البرنامج (عدد السطور) لكن ليس دائماً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 544,
+  "key": "y3:p266",
+  "subject_id": 18,
+  "question": "27) متطلبات نموذج الشلال",
+  "options": [
+   "سلوك النظام",
+   "العلاقات بين البيانات",
+   "كل ما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "متطلبات الشلالي تشمل سلوك النظام والعلاقات بين البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 545,
+  "key": "y3:p267",
+  "subject_id": 18,
+  "question": "28) مخطط يكتب توصيف وجهة نظر النظام من الداخل",
+  "options": [
+   "مخطط النشاط",
+   "مخطط حالة الاستخدام"
+  ],
+  "correct_index": 0,
+  "explanation": "مخطط النشاط يصف وجهة نظر النظام من الداخل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1237,
+  "key": "y3:img29",
+  "subject_id": 18,
+  "question": "29) هذا المخطط (حسب الصورة) علاقته:",
+  "options": [
+   "Include",
+   "Extend"
+  ],
+  "correct_index": 1,
+  "explanation": "السهم المتقطع مع <<extend>>: عرض نتائج الامتحانات يمتد من عرض تعليمات التسجيل (علاقة Extend).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_5_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1238,
+  "key": "y3:img30",
+  "subject_id": 18,
+  "question": "30) في مخطط استعارة كتاب: العلاقة مع «اختبار تسديد رسم التأمين» هي:",
+  "options": [
+   "Include",
+   "Extend",
+   "Generalization (تعميم)"
+  ],
+  "correct_index": 0,
+  "explanation": "السهم مكتوب عليه <<Include>>: الاستعارة تتضمن دائماً اختبار تسديد رسم التأمين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_6_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1239,
+  "key": "y3:img31",
+  "subject_id": 18,
+  "question": "31) في مخطط استعارة كتاب: العلاقة مع «اختبار حد الاستعارة» هي:",
+  "options": [
+   "Include",
+   "Extend",
+   "Generalization (تعميم)"
+  ],
+  "correct_index": 0,
+  "explanation": "السهم مكتوب عليه <<Include>>: اختبار حد الاستعارة جزء إلزامي من استعارة كتاب.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_6_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1240,
+  "key": "y3:img32",
+  "subject_id": 18,
+  "question": "32) في مخطط استعارة كتاب: العلاقة مع «طباعة إيصال استعارة» هي:",
+  "options": [
+   "Include",
+   "Extend",
+   "Generalization (تعميم)"
+  ],
+  "correct_index": 1,
+  "explanation": "مكتوب <<Extend>>: طباعة الإيصال سلوك اختياري يمتد من الاستعارة عند الحاجة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_6_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1241,
+  "key": "y3:img33",
+  "subject_id": 18,
+  "question": "33) العلاقة بين Order و OrderDetail (حسب مخطط الصفوف):",
+  "options": [
+   "تجميع Aggregation",
+   "تركيب Composition"
+  ],
+  "correct_index": 0,
+  "explanation": "المعين الأبيض (فارغ) عند Order يعني تجميع Aggregation، أما المعين الأسود فهو التركيب.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_7_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1242,
+  "key": "y3:img34",
+  "subject_id": 18,
+  "question": "34) العلاقة بين Payment وكل من Cash و Check:",
+  "options": [
+   "تجميع Aggregation",
+   "تعميم Generalization"
+  ],
+  "correct_index": 1,
+  "explanation": "المثلث الأبيض المفرغ يشير إلى التعميم Generalization (وراثة): Cash و Check أنواع من Payment.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_7_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1243,
+  "key": "y3:img35",
+  "subject_id": 18,
+  "question": "35) في مخطط التتابع: نوع الرسالة Place order:",
+  "options": [
+   "رسالة بسيطة",
+   "رسالة تكرارية (iteration *)",
+   "رسالة شرطية [guard]"
+  ],
+  "correct_index": 0,
+  "explanation": "placeOrder رسالة عادية من Customer إلى Salesperson بدون نجمة وبدون شرط.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_8_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1244,
+  "key": "y3:img36",
+  "subject_id": 18,
+  "question": "36) في مخطط التتابع: نوع الرسالة Find:",
+  "options": [
+   "رسالة بسيطة",
+   "رسالة تكرارية (iteration *)",
+   "رسالة شرطية [guard]"
+  ],
+  "correct_index": 1,
+  "explanation": "*find عليها نجمة (*) أي رسالة تكرارية تُرسل لكل سجل زبون.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_8_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1245,
+  "key": "y3:img37",
+  "subject_id": 18,
+  "question": "37) في مخطط التتابع: نوع الرسالة Findstock:",
+  "options": [
+   "رسالة بسيطة",
+   "رسالة تكرارية (iteration *)",
+   "رسالة شرطية [guard]"
+  ],
+  "correct_index": 1,
+  "explanation": "*findStock عليها نجمة (*) أي رسالة تكرارية على عناصر المخزون.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_8_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1246,
+  "key": "y3:img38",
+  "subject_id": 18,
+  "question": "38) في مخطط التتابع: نوع الرسالة Update:",
+  "options": [
+   "رسالة بسيطة",
+   "رسالة تكرارية (iteration *)",
+   "رسالة شرطية [guard]"
+  ],
+  "correct_index": 0,
+  "explanation": "update رسالة عادية إلى Stock، لا نجمة ولا شرط عليها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_8_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1247,
+  "key": "y3:img39",
+  "subject_id": 18,
+  "question": "39) في مخطط التتابع: نوع الرسالة Confirm order:",
+  "options": [
+   "رسالة بسيطة",
+   "رسالة تكرارية (iteration *)",
+   "رسالة شرطية [guard]"
+  ],
+  "correct_index": 0,
+  "explanation": "confirmOrder رسالة عادية راجعة إلى Customer؛ الشرط [no_stock] خاص برسالة apologyMessage.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_8_02-10-2026_14-09-13.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

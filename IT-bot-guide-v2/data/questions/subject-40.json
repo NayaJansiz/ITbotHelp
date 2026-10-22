@@ -1,0 +1,300 @@
+[
+ {
+  "id": 1221,
+  "key": "y5:img1",
+  "subject_id": 40,
+  "question": "27 - We are building an application to allow users to read novels and books in Flutter, each book is divided into chapters, how to handle chapter selection in order achieve good UX?",
+  "options": [
+   "Separate UI for chapter selection",
+   "Dropdown list at the start and end of chapter to select chapter to read",
+   "Floating box for chapter selection (like Facebook messenger)",
+   "Any of the above is good"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ Floating box (FAB) يرافق المستخدم أينما كان بالصفحة ويفتح نافذة صغيرة لاختيار الفصل بنقرة واحدة، دون مغادرة صفحة القراءة.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1222,
+  "key": "y5:img2",
+  "subject_id": 40,
+  "question": "21 - You are building a search and rescue drone to assists in finding people under derbies, what is the most important part of the following for the operator UX?",
+  "options": [
+   "Sonic alarm to indicate where people are",
+   "Infrared heat camera to find people under derbies",
+   "Extremely large batteries to operate as long as possible",
+   "All of the above answers are wrong"
+  ],
+  "correct_index": 0,
+  "explanation": "المشغّل ينظر للشاشة، فنوفر له تغذية راجعة سمعية (صوت) عند إيجاد شخص. الكاميرا والبطاريات تخص الهاردوير وليس تجربة المستخدم UX.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1223,
+  "key": "y5:img3",
+  "subject_id": 40,
+  "question": "2 - Another fan group of Real Madrid CF is now jealous and wants their own website, again what colors you use?",
+  "options": [
+   "Black and white",
+   "Gold and white",
+   "Black and gold",
+   "Gold and red"
+  ],
+  "correct_index": 1,
+  "explanation": "نادي ريال مدريد يتميز بالأبيض كلون أساسي والذهبي كلون تمييز (Accent) يدل على الفخامة والتاريخ.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1224,
+  "key": "y5:img4",
+  "subject_id": 40,
+  "question": "12 - In mobile UI we opt for using toggle instead of checkbox due to",
+  "options": [
+   "Ease of select by fingers",
+   "We don't, we opt for checkbox to save screen space",
+   "Nicer look",
+   "None of the above"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ Checkbox صغير جداً على الشاشات اللمسية، فاخترع الـ Toggle ليكون أكبر وأسهل للمس بإصبع الإنسان دون خطأ.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1225,
+  "key": "y5:img5",
+  "subject_id": 40,
+  "question": "6 - Which of the following is most important in mobile UI",
+  "options": [
+   "Reduce the number of clicks to achieve a task",
+   "Error messages",
+   "Sufficient data input",
+   "Gesture navigation"
+  ],
+  "correct_index": 0,
+  "explanation": "مستخدم الجوال يريد إنهاء مهمته بسرعة، فتقليل النقرات (Friction) هو سر نجاح تطبيقات الموبايل. إدخال البيانات الكثير سيئ.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1226,
+  "key": "y5:img6",
+  "subject_id": 40,
+  "question": "2 - Why it is hard to design UI for poor vision in mobile devices",
+  "options": [
+   "Not all applications follow system scaling",
+   "Small screens",
+   "Both A&B",
+   "Neither A|B"
+  ],
+  "correct_index": 2,
+  "explanation": "الصعوبة تجمع العائق البرمجي (تطبيقات لا تتبع حجم خط النظام) والعائق الفيزيائي (شاشة صغيرة لا تتسع للنص الكبير).",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1227,
+  "key": "y5:img7",
+  "subject_id": 40,
+  "question": "5 - \"Is a set of information about shape of numbers, date format, paper sizes and measuring units among others\"",
+  "options": [
+   "RTL Support",
+   "Local",
+   "Locale",
+   "UI Alignment"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ Locale هو المصطلح البرمجي الذي يعرّف الإعدادات الثقافية والجغرافية للمستخدم (العملة، شكل التاريخ، الأرقام).",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1228,
+  "key": "y5:img8",
+  "subject_id": 40,
+  "question": "13 - You want to ensure the most important button in your application is always accessible without navigating away from the main screen. Which UX concept are you applying",
+  "options": [
+   "Visual hierarchy",
+   "Balance principle",
+   "Scale",
+   "Number of Clicks"
+  ],
+  "correct_index": 3,
+  "explanation": "وضع الزر في الشاشة الرئيسية يعني أنه على بعد صفر نقرات (0 Clicks away)، وهو تطبيق لمبدأ تقليل عدد النقرات.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1229,
+  "key": "y5:img9",
+  "subject_id": 40,
+  "question": "1 - A friend of yours is a civil engineer, and he asks you to build a software to simulate the process of water pressure upon a dam, what is the most important UX of this software",
+  "options": [
+   "Speed",
+   "Visualization",
+   "Accurate numbers",
+   "None of the above"
+  ],
+  "correct_index": 2,
+  "explanation": "في البرامج الهندسية والحرجة أساس تجربة المستخدم هو الثقة والموثوقية. إذا لم تكن الأرقام دقيقة فالبرنامج فاشل مهما كان جميلاً.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1230,
+  "key": "y5:img10",
+  "subject_id": 40,
+  "question": "20 - Fluid elements scale to a specified percentage of its container.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "العناصر المرنة (Fluid) تُعطى نسبة مئوية (مثلاً عرض 50%) فتتمدد وتتقلص حسب الشاشة، عكس العناصر الثابتة (Static) بالبكسل.",
+  "needs_review": 0,
+  "answer_source": 1,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1231,
+  "key": "y5:m85",
+  "subject_id": 40,
+  "question": "A webpage has proper text size hierarchy but the same weight/color throughout; primary and secondary buttons are identical; scattered filters with no boundary; a complex diagram with ungrouped parts. Which principle was violated?",
+  "options": [
+   "visual hierarchy, Fitt's law, scale",
+   "scale, Common Region, proximity",
+   "Jakob's law, Common Region, 8pt grid",
+   "contrast, golden ratio, scale"
+  ],
+  "correct_index": 1,
+  "explanation": "غياب التجميع بين الفلاتر والعناصر يخالف Common Region وproximity، وتماثل الأزرار يخالف scale.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1232,
+  "key": "y5:m103",
+  "subject_id": 40,
+  "question": "You are building a UI for a website with two password input fields, a button to unmask the password, and a button at the end to change the password. You are in the first input field and press Tab: you will navigate to the second input field.",
+  "options": [
+   "True",
+   "True, it should follow the elements order",
+   "False, the user doesn't use the unmask button anyway",
+   "False, the user uses the mouse"
+  ],
+  "correct_index": 1,
+  "explanation": "ترتيب التنقل بزر Tab يتبع ترتيب العناصر في الصفحة (DOM)، وبينها زر إظهار كلمة المرور.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1233,
+  "key": "y5:m105",
+  "subject_id": 40,
+  "question": "An 'Add to cart' button is placed next to the 'Remove' button with the same size, color, and shape. What UX laws and psychological principles conflict with this design?",
+  "options": [
+   "Hick's Law and Fitts's Law and Constraint...",
+   "Fitts's Law and Constraint...",
+   "Fitts's Law and Proximity Law...",
+   "None of the Above"
+  ],
+  "correct_index": 2,
+  "explanation": "الأزرار المتجاورة المتطابقة تخالف قانون Fitts (حجم وبعد الهدف) وقانون القرب (Proximity).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1234,
+  "key": "y5:m118",
+  "subject_id": 40,
+  "question": "Increasing contrast improves WCAG compliance but reduces brand identity recognition. Which strategic decision aligns MOST with long-term UX sustainability?",
+  "options": [
+   "Prioritize brand consistency over compliance",
+   "Maintain low contrast but add explanatory text",
+   "Reduce typography size to compensate",
+   "Introduce optional accessibility theme"
+  ],
+  "correct_index": 3,
+  "explanation": "توفير خيار سمة وصول (Accessibility theme) اختيارية يحقق الامتثال لـ WCAG دون التضحية بهوية العلامة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1235,
+  "key": "y5:m119",
+  "subject_id": 40,
+  "question": "A social platform introduces dynamic privacy settings that adapt based on user activity. Users report feeling safer but also more uncertain about what data is visible. Which underlying principle MOST explains this tension UX wise?",
+  "options": [
+   "Transparency without hierarchy increases cognitive ambiguity",
+   "Adaptive systems inherently reduce perceived control",
+   "Progressive disclosure conflicts with dynamic personalization",
+   "Over-optimization of extrinsic cognitive load"
+  ],
+  "correct_index": 0,
+  "explanation": "الشفافية دون ترتيب هرمي واضح تزيد الغموض المعرفي، فيشعر المستخدم بالأمان لكن بعدم اليقين.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

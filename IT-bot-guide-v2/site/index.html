@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حلّ أسئلة المحاضرة مع Claude</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif; margin: 0; padding: 2rem 1.5rem; background: #f0f4f8; color: #1a1a1a; line-height: 1.6; }
+    .wrap { max-width: 560px; margin: 0 auto; }
+    h1 { font-size: 1.5rem; margin: 0 0 .5rem; }
+    .lead { color: #555; margin: 0 0 1.5rem; font-size: .95rem; }
+    .panel, .card, .steps { background: #fff; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; border: 1px solid #dde3ea; }
+    .card { display: none; }
+    .card.is-visible { display: block; }
+    .card__title { font-size: 1.05rem; margin: 0 0 .35rem; color: #1e5a8a; }
+    .meta { font-size: .8rem; color: #666; margin: 0 0 1rem; }
+    .field { margin-bottom: 1rem; }
+    .field:last-child { margin-bottom: 0; }
+    .field label { display: block; font-weight: 600; margin-bottom: .35rem; font-size: .9rem; color: #333; }
+    select, input[type=text], textarea { width: 100%; padding: .6rem .75rem; border-radius: 8px; border: 1px solid #c5d0dc; font-family: inherit; font-size: 1rem; background: #fff; }
+    select:disabled { background: #f5f7fa; color: #888; }
+    textarea { min-height: 150px; direction: ltr; text-align: left; font-family: monospace; font-size: .8rem; }
+    .actions { display: flex; flex-direction: column; gap: .5rem; margin-top: .75rem; }
+    .btn { display: block; width: 100%; text-align: center; padding: .65rem .85rem; border-radius: 8px; font-size: .95rem; font-family: inherit; text-decoration: none; background: #e8eef4; color: #1a1a1a; border: 1px solid #c5d0dc; cursor: pointer; }
+    .btn:hover { background: #dce6f0; }
+    .btn--primary { background: #1e5a8a; color: #fff; border-color: #1e5a8a; font-weight: 600; }
+    .btn--primary:hover { background: #164a72; }
+    .btn.is-disabled, .btn:disabled { pointer-events: none; opacity: .45; }
+    .note--ok, .note--warn, .note--bad { border-radius: 8px; padding: .75rem 1rem; margin-bottom: 1rem; font-size: .88rem; }
+    .note--ok { background: #eef8f0; border: 1px solid #b8dcc0; color: #1f4d2a; }
+    .note--warn { background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; }
+    .note--bad { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+    .msgbox { direction: rtl; background: #f5f8fb; border: 1px dashed #9db3c8; border-radius: 8px; padding: .6rem .75rem; font-size: .9rem; margin: .5rem 0; }
+    .steps { font-size: .9rem; }
+    .steps ol { margin: .5rem 0 0; padding-right: 1.25rem; }
+    .steps li { margin-bottom: .35rem; }
+    code { background: #e8eef4; padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
+    .imgs { font-size: .85rem; margin-top: .75rem; padding: .6rem .75rem; background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; }
+    .imgs a { direction: ltr; unicode-bidi: embed; }
+    .sum { display: flex; flex-wrap: wrap; gap: .4rem; margin: .75rem 0; font-size: .85rem; }
+    .chip { padding: .15rem .6rem; border-radius: 999px; border: 1px solid #c5d0dc; background: #f5f7fa; }
+    .chip.ok { background: #eef8f0; border-color: #b8dcc0; color: #1f4d2a; }
+    .chip.inf { background: #fefce8; border-color: #fde68a; color: #854d0e; }
+    .chip.bad { background: #fef2f2; border-color: #fecaca; color: #991b1b; }
+    table.res { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    table.res td { padding: .35rem .4rem; border-bottom: 1px solid #eef1f5; vertical-align: top; }
+    table.res td:first-child { width: 1.6rem; text-align: center; }
+    .k { font-family: monospace; direction: ltr; unicode-bidi: embed; }
+    .why { color: #666; font-size: .8rem; }
+    .st-ok { color: #15803d; } .st-inf { color: #a16207; } .st-nf { color: #a16207; } .st-bad { color: #b91c1c; } .st-fig, .st-stu { color: #a16207; }
+    .hint { font-size: .8rem; color: #888; margin: .35rem 0 0; }
+    .rc { border: 1px solid #dde3ea; border-radius: 10px; padding: .75rem; margin: .6rem 0; background: #fafcfe; }
+    .pic { margin: .5rem 0; padding: .5rem; border: 1px dashed #9db3c8; border-radius: 8px; background: #fff; }
+    .pic img { display: block; max-width: 100%; max-height: 260px; margin: 0 auto .4rem; }
+    .pic label { display: flex; gap: .5rem; align-items: center; font-weight: 600; }
+    .rc.edited { border-color: #1e5a8a; background: #f0f7fd; }
+    .rc h3 { font-size: .9rem; margin: 0 0 .4rem; }
+    .rc ol { margin: .3rem 0; padding-right: 1.4rem; font-size: .85rem; list-style: upper-alpha; }
+    .rc label { font-size: .8rem; font-weight: 600; display: block; margin: .5rem 0 .2rem; }
+    .rc textarea { min-height: 60px; font-family: inherit; direction: rtl; text-align: right; font-size: .85rem; }
+    .rc textarea.q { direction: ltr; text-align: left; min-height: 48px; }
+    .cnt { font-size: .75rem; color: #888; } .cnt.over { color: #b91c1c; }
+    .badge { font-size: .72rem; padding: .05rem .5rem; border-radius: 999px; border: 1px solid #c5d0dc; margin-inline-start: .4rem; }
+    .field label.lec { display: flex; gap: .5rem; align-items: center; font-weight: 400; font-size: .88rem; margin: .15rem 0; }
+    #lecList { max-height: 18rem; overflow: auto; border: 1px solid #dde3ea; border-radius: 8px; padding: .4rem .6rem; background: #fafcfe; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📚 حلّ أسئلة المحاضرة مع Claude</h1>
+  <p class="lead">اختر المادة، نزّل ملفاً واحداً فيه كل محاضراتها وكل أسئلتها، أعطه لـ Claude، ثم الصق الرد هنا. الصفحة تتحقق من كل جواب تلقائياً قبل أن ترسله.</p>
+
+  <div class="note--warn">
+    <strong>قاعدة واحدة:</strong> الجواب يُقبل فقط إذا وُجد اقتباسه <strong>حرفياً</strong> في المحاضرة. إن لم يجد Claude الجواب في المحاضرة يكتب «لم يوجد» وهذا طبيعي.<br>
+    افتح <strong>محادثة جديدة</strong> لكل ملف (Claude لا يتذكر المحادثات السابقة). إن ظهر أكثر من جزء فالصق ردود كل الأجزاء معاً في الخطوة ③.
+  </div>
+
+  <div class="panel">
+    <div class="field">
+      <label for="yearSel">١ — السنة الدراسية</label>
+      <select id="yearSel"><option value="">— اختر السنة —</option></select>
+    </div>
+    <div class="field">
+      <label for="subjSel">٢ — المادة</label>
+      <select id="subjSel" disabled><option value="">— اختر المادة —</option></select>
+    </div>
+    <div class="field" id="lecField" hidden>
+      <label>٣ — المحاضرات (كلها محدّدة؛ ألغِ تحديد ما لا تريده)</label>
+      <div id="lecList"></div>
+      <p class="hint" id="lecSum"></p>
+    </div>
+  </div>
+
+  <div id="loadErr" class="note--bad" hidden></div>
+
+  <article class="card" id="quickCard">
+    <h2 class="card__title">⚡ الطريقة السريعة: ارفع ملفاتك</h2>
+    <p class="meta">التحويل يتم على جهازك. لا يُرسل شيء إلى أي مكان قبل أن تفتح Pull Request.</p>
+    <div class="field">
+      <label for="qPdf">محاضرة PDF (واحدة أو أكثر)</label>
+      <input type="file" id="qPdf" accept=".pdf,application/pdf" multiple>
+      <div id="qPdfList"></div>
+    </div>
+    <div class="field">
+      <label for="qTg">تصدير تيليجرام (<code dir="ltr">messages.html</code> وإن وُجد <code dir="ltr">messages2.html</code> … كلها)</label>
+      <input type="file" id="qTg" accept=".html,text/html" multiple>
+      <p class="hint">من Telegram Desktop: ⋮ ← Export chat history ← Format = HTML، ودون الصور. بلا ملف تصدير: تُحَل كل أسئلة المادة الموجودة.</p>
+    </div>
+    <div class="field">
+      <label class="lec"><input type="checkbox" id="qOnlyNew"> وفّر توكنز: اطلب فقط الأسئلة الجديدة وغير المحلولة</label>
+      <label class="lec" id="qRepoWrap" hidden><input type="checkbox" id="qRepoLec"> أضف أيضاً محاضرات هذه المادة الموجودة في الموقع (توكنز أكثر)</label>
+    </div>
+    <div class="actions"><button class="btn btn--primary" id="btnQuick" type="button" disabled>حضّر الملف لـ Claude</button></div>
+    <div id="qReport" class="note--ok" style="margin-top:.75rem" hidden></div>
+  </article>
+
+  <article class="card" id="packCard">
+    <h2 class="card__title" id="cardTitle"></h2>
+    <p class="meta" id="cardMeta"></p>
+
+    <strong>① نزّل كل شيء لـ Claude</strong>
+    <div class="actions" id="dlBox"></div>
+    <div class="imgs" id="imgBox" hidden></div>
+
+    <p style="margin:1rem 0 .25rem"><strong>② افتح Claude</strong> (محادثة جديدة)، أرفق الملف، والصق هذه الرسالة:</p>
+    <div class="msgbox" id="msgText">اقرأ الملف المرفق كاملاً، ثم نفّذ تعليمات المهمة المكتوبة في أوّله.
+أجب بأسطر JSON فقط: سطر واحد لكل سؤال، بنفس ترتيب الأسئلة، بلا أي كلام آخر وبلا صناديق كود.
+لا تحذف أي سؤال: إن لم تجد جوابه في المحاضرات فاكتب له NOT-FOUND.</div>
+    <div class="actions">
+      <button class="btn" id="btnCopyMsg" type="button">نسخ الرسالة</button>
+      <a class="btn btn--primary" href="https://claude.ai/new" target="_blank" rel="noopener">فتح Claude ↗</a>
+    </div>
+    <p class="hint">إن انقطع الرد قبل نهاية الأسئلة اكتب له: «أكمل» ثم الصق كل الأسطر معاً.</p>
+  </article>
+
+  <article class="card" id="replyCard">
+    <h2 class="card__title">③ الصق رد Claude</h2>
+    <div class="field">
+      <textarea id="reply" spellcheck="false" placeholder='{"id":"y3:p4","a":"B","src":"LECTURE",...}'></textarea>
+    </div>
+    <div class="actions"><button class="btn btn--primary" id="btnCheck" type="button">تحقّق من الرد</button></div>
+    <div id="result" hidden>
+      <div class="sum" id="sum"></div>
+      <div id="verdict"></div>
+      <table class="res"><tbody id="rows"></tbody></table>
+      <div id="missing" class="note--warn" style="margin-top:.75rem" hidden></div>
+      <div id="review" hidden>
+        <h2 class="card__title" style="margin-top:1rem">مراجعة وتعديل (اختياري)</h2>
+        <p class="hint">راجع أولاً ما ليس «موثّقاً». يمكنك تعديل الجواب أو الشرح. تغيير الجواب بدون اقتباس صحيح من المحاضرة يُسجَّل «جواب طالب» ويقرّره المشرفون عند الدمج. تعديلاتك محفوظة في المتصفح.</p>
+        <div class="actions">
+          <select id="rvFilter"><option value="att">اعرض غير الموثّق فقط</option><option value="all">اعرض الكل</option></select>
+          <button class="btn" id="btnAcceptOk" type="button">✓ اقبل كل الموثّق كما هو</button>
+        </div>
+        <div id="cards"></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card" id="sendCard">
+    <h2 class="card__title">④ أرسل الملف للمراجعة</h2>
+    <div class="actions"><button class="btn btn--primary" id="btnZip" type="button" disabled hidden>⬇ تنزيل حزمة الـ Pull Request (zip: الرد + المحاضرة + الأسئلة)</button>
+      <button class="btn btn--primary" id="btnReplyFile" type="button" disabled>⬇ تنزيل ملف الرد</button>
+      <button class="btn" id="btnSummary" type="button" disabled>⬇ تنزيل ملخص التغييرات (.md)</button>
+      <button class="btn" id="btnSummaryCopy" type="button" disabled>نسخ الملخص كنص</button></div>
+    <div class="field" style="margin-top:1rem">
+      <label for="ghUser">اسمك على GitHub (username)</label>
+      <input type="text" id="ghUser" dir="ltr" inputmode="latin" placeholder="ahmad-dev" autocomplete="username" spellcheck="false" autocapitalize="off" autocorrect="off">
+      <p class="hint">حروف إنجليزية وأرقام فقط، من رابط صفحتك: github.com/<strong>USERNAME</strong></p>
+    </div>
+    <div class="actions">
+      <a class="btn is-disabled" id="btnFork" href="#" target="_blank" rel="noopener">أ) Fork للمستودع (مرة واحدة)</a>
+      <a class="btn is-disabled" id="btnUpload" href="#" target="_blank" rel="noopener">ب) رفع الملف إلى نسختك</a>
+      <a class="btn is-disabled" id="btnPr" href="#" target="_blank" rel="noopener">ج) فتح Pull Request</a>
+    </div>
+    <p class="hint" id="uploadHint"></p>
+    <details style="margin-top:1rem">
+      <summary><strong>عندك محاضرة PDF جديدة لهذه المادة؟</strong></summary>
+      <p class="hint">ارفع الملف إلى مجلد <code dir="ltr">inbox/رقم المادة/</code> في نسختك (بعد الـ Fork) ثم افتح Pull Request. بعد أن يدمجه المشرف يتحوّل الملف تلقائياً إلى نص وتظهر المحاضرة في هذه الصفحة.</p>
+      <div class="actions"><a class="btn is-disabled" id="btnPdf" href="#" target="_blank" rel="noopener">رفع ملف PDF إلى نسختك</a></div>
+    </details>
+  </article>
+
+  <div class="steps">
+    <strong>الخطوات بإيجاز:</strong>
+    <ol>
+      <li><strong>الأسرع:</strong> اختر المادة ثم ارفع PDF المحاضرة وتصدير تيليجرام في بطاقة ⚡، ونزّل الملف وأعطه لـ Claude. (أو اختر محاضرات الموقع الجاهزة.)</li>
+      <li>الصق الرد واضغط «تحقّق»: ✓ يعني الاقتباس موجود في المحاضرة.</li>
+      <li>نزّل الـ zip (أو ملف الرد في الطريقة العادية) وارفعه إلى نسختك (Fork).</li>
+      <li>افتح Pull Request. المشرف يراجع ويدمج.</li>
+      <li><strong>لا تعدّل ملفاً موجوداً:</strong> أضف ملفك الجديد فقط (الرد والملخص، أو ملف PDF في <code dir="ltr">inbox/</code>).</li>
+    </ol>
+  </div>
+
+  <details class="card" style="margin-top:1rem">
+    <summary><strong>للمشرفين: كيف تُنشأ الحزم؟</strong></summary>
+    <p class="hint">تُشغَّل على حاسوب المشرف، لا في المتصفح. تحتاج <code dir="ltr">pip install pymupdf beautifulsoup4</code>.</p>
+    <pre dir="ltr" style="overflow:auto;text-align:left">python tools/ingest_polls.py export-folder --year Y --subject N
+python tools/build_site.py --data data --lectures ../lecture-site-engine --intake intake
+python tools/dev_site.py --lectures ../lecture-site-engine      # build + open http://localhost:8000</pre>
+    <p class="hint">ملفات PDF التي يرفعها الطلاب تُعالَج تلقائياً بعد الدمج (<code dir="ltr">ingest-pdf.yml</code>) وتُسجَّل في <code dir="ltr">config/sources.json</code>. الصفحة تُنشر من GitHub Pages.</p>
+  </details>
+</div>
+
+<script>
+/* ===== validation: mirrors tools/merge_answers.py + tools/lecturelib.py (keep in sync; tools/test_site.py checks it) ===== */
+// <validate>
+var LET = 'ABCDEFGHIJ';
+function norm(s) {
+  s = String(s).toLowerCase().replace(/[\u064B-\u0652\u0640]/g, '').replace(/[إأآ]/g, 'ا');
+  return s.replace(/ى/g, 'ي').replace(/ة/g, 'ه');
+}
+function flat(s) {
+  return norm(String(s).replace(/<!--[\s\S]*?-->/g, ' ').replace(/<\/?[a-zA-Z][^>\n]{0,100}>/g, ' ')).replace(/[^a-z0-9\u0621-\u064A]+/g, '');
+}
+function extractLecture(packText) {
+  var i = packText.indexOf('\n# LECTURE (');
+  if (i < 0) return null;
+  var start = packText.indexOf('\n', i + 1) + 1;
+  var end = packText.lastIndexOf('\n# QUESTIONS\n\n');
+  return end > start ? packText.slice(start, end) : null;
+}
+function figPagesOf(lectureText) {      // page numbers that have a <!-- fig: ... --> marker (sources/ lectures made by ingest_pdf.py)
+  var out = [], page = 0, lines = String(lectureText || '').split('\n');
+  lines.forEach(function (ln) { var m = /^\s*<!-- p(\d+) -->/.exec(ln); if (m) { page = Number(m[1]); return; } if (/^\s*<!-- fig: \S+ -->/.test(ln)) out.push(page); });
+  return out;
+}
+function quoteState(quote, lectureFlat) {
+  var parts = String(quote == null ? '' : quote).split(/…|\.\.\./).map(flat).filter(function (p) { return p.length >= 15; });
+  if (!parts.length) return 'short';
+  return parts.every(function (p) { return lectureFlat.indexOf(p) >= 0; }) ? 'ok' : 'missing';
+}
+function parseReply(text) {
+  var good = [], bad = [], lines = String(text).split('\n');
+  for (var n = 0; n < lines.length; n++) {
+    var line = lines[n].trim().replace(/^,+|,+$/g, '');
+    if (line.charAt(0) !== '{') continue;
+    try { var o = JSON.parse(line); if (o && typeof o === 'object' && !Array.isArray(o)) good.push({ n: n + 1, obj: o }); else bad.push(n + 1); }
+    catch (e) { bad.push(n + 1); }
+  }
+  return { good: good, bad: bad };
+}
+function falsy(v) { return v === undefined || v === null || v === '' || v === 0 || v === false; }
+/* ---- one-run pack (lecture picker). Twins of tools/lecturelib.py (plan_bins, lec_order) and tools/make_packs.py (pack_text_all); tools/test_oneshot.py checks they agree. ---- */
+var LEC_HEADER_COST = 40, PACK_SLACK = 200;
+function byLec(a, b) { return a.num !== b.num ? a.num - b.num : (a.file < b.file ? -1 : a.file > b.file ? 1 : 0); }
+function planBins(lectures, overhead, maxChars) {        // lectures: [{file, num, chars}] -> [[file, ...], ...]  (first-fit decreasing; fewest packs)
+  var budget = maxChars - overhead, bins = [];
+  lectures.slice().sort(function (a, b) {
+    var ca = a.chars + LEC_HEADER_COST, cb = b.chars + LEC_HEADER_COST;
+    return ca !== cb ? cb - ca : (a.file < b.file ? -1 : a.file > b.file ? 1 : 0);
+  }).forEach(function (l) {
+    var cost = l.chars + LEC_HEADER_COST, placed = false;
+    for (var i = 0; i < bins.length && !placed; i++) if (bins[i].used + cost <= budget) { bins[i].used += cost; bins[i].l.push(l); placed = true; }
+    if (!placed) bins.push({ used: cost, l: [l] });
+  });
+  var out = bins.map(function (b) { return b.l.sort(byLec); });
+  out.sort(function (a, b) { return byLec(a[0], b[0]); });
+  return out.map(function (b) { return b.map(function (l) { return l.file; }); });
+}
+function buildPack(instr, title, qb, lectures, figs) {   // lectures: [{file, text}]; figs: [[file, {page: repoPath}], ...] in pack order
+  var s = instr + '\n# ' + title + '\n';
+  lectures.forEach(function (l) { s += '\n# LECTURE (' + l.file + ')\n\n' + l.text + '\n'; });
+  s += '\n# QUESTIONS\n\n' + qb;
+  var fl = [];
+  figs.forEach(function (e) { Object.keys(e[1]).map(Number).sort(function (a, b) { return a - b; }).forEach(function (pg) { fl.push('- ' + e[0] + ' p' + pg + ': ' + e[1][pg].split('/').pop()); }); });
+  if (fl.length) s += '\n# FIGURE IMAGES (attached to this chat)\n' + fl.join('\n') + '\n';
+  return s;
+}
+function normLec(hint, order) {                          // the lecture file a reply line's "lec" names ('par5.md', 'par5', or a path ending in it), or null
+  if (hint === undefined || hint === null || hint === '') return null;
+  var h = String(hint).trim().replace(/\\/g, '/').split('/').pop(), r = null;
+  [h, h + '.md'].forEach(function (c) { if (r === null && order.indexOf(c) >= 0) r = c; });
+  return r;
+}
+function lecOrder(hint, order) {                         // files to try for a quote / figure page: the named one first, then the others in lecture order
+  var h = normLec(hint, order);
+  return (h === null ? [] : [h]).concat(order.filter(function (f) { return f !== h; }));
+}
+function lecCtx(ctx) {                                   // ctx.lectures = {file: {flat, figs:[pages]}}, ctx.order = [files]; the old single-lecture shape is one anonymous lecture
+  if (ctx.lectures) return { lectures: ctx.lectures, order: ctx.order || Object.keys(ctx.lectures) };
+  if (ctx.hasLecture) { var o = {}; o[''] = { flat: ctx.lectureFlat, figs: ctx.figPages || [] }; return { lectures: o, order: [''] }; }
+  return { lectures: {}, order: [] };
+}
+function findQuote(quote, hint, lc) {
+  var o = lecOrder(hint, lc.order);
+  for (var i = 0; i < o.length; i++) if (quoteState(quote, lc.lectures[o[i]].flat) === 'ok') return o[i];
+  return null;
+}
+/* ctx = { lectures:{file:{flat,figs}}, order:[files], qinfo:{key:[nopts,curIndexOrNull]}, keys:[keys expected] }   (old shape: hasLecture, lectureFlat, figPages) */
+function validateReply(text, ctx) {
+  var p = parseReply(text), rows = [], counts = {}, lc = lecCtx(ctx), answered = {}, seenNf = {};
+  function bump(k) { counts[k] = (counts[k] || 0) + 1; }
+  p.good.forEach(function (g) { if (!(g.obj.src === 'NOT-FOUND' || falsy(g.obj.a))) answered[g.obj.id] = 1; });   // several parts pasted together: a NOT-FOUND never hides an answer
+  p.good.forEach(function (g) {
+    var it = g.obj, k = it.id, info = Object.prototype.hasOwnProperty.call(ctx.qinfo, k) ? ctx.qinfo[k] : null, row = { n: g.n, id: k, item: it, kind: 'bad', why: '', letterIdx: null, cur: null, lec: null };
+    rows.push(row);
+    if (!info) { bump('INVALID unknown id'); row.why = 'رقم السؤال غير معروف'; return; }
+    row.cur = info[1];
+    if (it.src === 'NOT-FOUND' || falsy(it.a)) {
+      if (answered[k] || seenNf[k]) { rows.pop(); return; }
+      seenNf[k] = 1; bump('NOT-FOUND'); row.kind = 'nf'; row.why = 'Claude لم يجد الجواب في المحاضرات'; return;
+    }
+    var L = String(it.a).trim().toUpperCase().slice(0, 1);
+    if (!L || LET.slice(0, info[0]).indexOf(L) < 0) { bump('INVALID letter'); row.why = 'الحرف ' + JSON.stringify(it.a) + ' خارج الخيارات (' + info[0] + ' خيارات)'; return; }
+    row.letterIdx = LET.indexOf(L);
+    if (it.src === 'LECTURE') {
+      if (!lc.order.length) { bump('INVALID no lecture file'); row.why = 'هذا الملف ليس ملف محاضرة'; return; }
+      var hit = findQuote(it.q, it.lec, lc);
+      if (hit === null) { bump('QUOTE-FAIL'); row.why = quoteState(it.q, lc.lectures[lc.order[0]].flat) === 'short' ? 'الاقتباس قصير جداً أو غير موجود' : 'الاقتباس غير موجود حرفياً في المحاضرات'; return; }
+      bump('LECTURE ok'); row.kind = 'ok'; row.lec = hit;
+    } else if (it.src === 'STUDENT') {
+      var sh = it.q && lc.order.length ? findQuote(it.q, it.lec, lc) : null;
+      if (sh !== null) { bump('STUDENT+quote verified'); row.kind = 'ok'; row.lec = sh; row.why = 'اختيار الطالب + اقتباس موثّق'; }
+      else { bump('STUDENT (no verified quote)'); row.kind = 'stu'; row.why = 'جواب الطالب بدون اقتباس موثّق (يراجعه المشرفون)'; }
+    } else if (it.src === 'FIGURE') {
+      var fm = /^p(\d+)$/.exec(String(it.ref == null ? '' : it.ref).trim()), fh = null;
+      if (fm) lecOrder(it.lec, lc.order).forEach(function (f) { if (fh === null && (lc.lectures[f].figs || []).indexOf(Number(fm[1])) >= 0) fh = f; });
+      if (fh === null) { bump('INVALID figure ref'); row.why = 'مرجع الشكل غير صحيح'; return; }
+      bump('FIGURE'); row.kind = 'fig'; row.lec = fh; row.why = 'جواب من شكل: لا يُتحقَّق آلياً، يراجعه المشرفون';
+    } else if (it.src === 'INFERRED') { bump('INFERRED'); row.kind = 'inf'; row.why = 'استنتاج من Claude (ليس من المحاضرة)'; }
+    else { bump('INVALID src ' + (it.src == null ? 'None' : it.src)); row.why = 'قيمة src غير مقبولة'; return; }
+  });
+  // two LECTURE answers with different letters for one question = conflict (nothing applied)
+  var byId = {};
+  rows.forEach(function (r) { if (r.kind === 'ok') (byId[r.id] = byId[r.id] || []).push(r); });
+  Object.keys(byId).forEach(function (k) {
+    var rs = byId[k];
+    if (rs.some(function (r) { return r.letterIdx !== rs[0].letterIdx; })) rs.forEach(function (r) { r.kind = 'bad'; r.why = 'السؤال مكرر بجوابين مختلفين'; });
+  });
+  rows.forEach(function (r) {
+    if ((r.kind === 'ok' || r.kind === 'inf' || r.kind === 'stu' || r.kind === 'fig') && r.cur != null && r.cur !== r.letterIdx)
+      r.why = (r.why ? r.why + ' — ' : '') + 'يخالف الجواب الحالي (' + LET[r.cur] + ') وسيُراجع';
+  });
+  var got = {}; rows.forEach(function (r) { got[r.id] = 1; });
+  var missing = (ctx.keys || []).filter(function (k) { return !got[k]; });
+  return { rows: rows, bad: p.bad, counts: counts, missing: missing };
+}
+// </validate>
+
+/* ===== page ===== */
+var REPO = 'nadeembrijawy/IT-bot', BRANCH = 'main', GH = 'https://github.com/' + REPO;
+var $ = function (id) { return document.getElementById(id); };
+var index = null, subj = null, siteData = null, qblock = '', selected = [], parts = [], lastOk = [], packName = 'all', lecCache = {}, vctx = null, quick = null;
+
+function opt(sel, value, label) { var o = document.createElement('option'); o.value = value; o.textContent = label; sel.appendChild(o); }
+function fail(msg) { var e = $('loadErr'); e.textContent = msg; e.hidden = !msg; }
+function reset(sel, label) { sel.innerHTML = ''; opt(sel, '', label); sel.disabled = true; }
+function hideCards() { ['packCard', 'replyCard', 'sendCard'].forEach(function (i) { $(i).classList.remove('is-visible'); }); }
+function fetchText(url) { return fetch(url).then(function (r) { if (!r.ok) throw new Error(url + ' → ' + r.status); return r.text(); }).then(function (t) { return t.replace(/\r\n/g, '\n'); }); }
+function save(name, text, type) {
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text], { type: type || 'text/plain;charset=utf-8' }));
+  a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+}
+function resetPick() {
+  subj = null; siteData = null; qblock = ''; selected = []; parts = []; lastOk = []; cards = []; vctx = null;
+  $('lecField').hidden = true; $('lecList').innerHTML = ''; $('lecSum').textContent = ''; $('reply').value = ''; $('result').hidden = true; $('review').hidden = true; hideCards();
+  quickReset();
+}
+
+fetchText('packs/index.json').then(function (t) {
+  index = JSON.parse(t);
+  var years = []; index.subjects.forEach(function (s) { if (years.indexOf(s.year) < 0) years.push(s.year); });
+  years.sort(function (a, b) { return a - b; }).forEach(function (y) { opt($('yearSel'), y, 'السنة ' + y); });
+  if (!years.length) fail('لا توجد حزم بعد.');
+}).catch(function (e) { fail('تعذّر تحميل قائمة الحزم (' + e.message + '). افتح الصفحة من الموقع وليس كملف محلي.'); });
+
+$('yearSel').onchange = function () {
+  reset($('subjSel'), '— اختر المادة —'); resetPick();
+  var y = Number($('yearSel').value); if (!y) return;
+  index.subjects.filter(function (s) { return s.year === y; }).forEach(function (s) { opt($('subjSel'), s.id, s.name); });
+  $('subjSel').disabled = false;
+};
+function lecLabel(l) { return l.file.replace(/\.md$/, '') + ' ' + l.marker + ' · ' + (l.origin === 'sources' ? 'PDF' : 'مستودع') + ' · ' + Math.round(l.chars / 1000) + 'K'; }
+$('subjSel').onchange = function () {
+  resetPick(); fail('');
+  var id = Number($('subjSel').value), s = index.subjects.find(function (x) { return x.id === id; }); if (!s) return;
+  var jobs = [fetchText('packs/' + id + '/site.json')]; if (!s.inferred) jobs.push(fetchText('packs/' + id + '/questions.md'));
+  Promise.all(jobs).then(function (r) {
+    if (Number($('subjSel').value) !== id) return;            // the student already picked another subject
+    subj = s; siteData = JSON.parse(r[0]); qblock = r[1] || ''; packName = s.inferred ? 'INFERRED' : 'all';
+    quickShow();
+    if (s.inferred) { showPackCard(); return; }
+    var box = $('lecList');
+    s.lectures.forEach(function (l) {
+      var lab = document.createElement('label'), cb = document.createElement('input'); lab.className = 'lec'; cb.type = 'checkbox'; cb.checked = true; cb.value = l.file; cb.onchange = onPick;
+      lab.appendChild(cb); lab.appendChild(document.createTextNode(' ' + lecLabel(l))); box.appendChild(lab);
+    });
+    $('lecField').hidden = false; onPick();
+  }).catch(function (e) { fail('تعذّر تحميل المادة (' + e.message + ')'); });
+};
+function onPick() {                                           // the ticked lectures -> how many packs they need
+  selected = [].slice.call($('lecList').querySelectorAll('input')).filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
+  var metas = subj.lectures.filter(function (l) { return selected.indexOf(l.file) >= 0; }), tot = 0; metas.forEach(function (l) { tot += l.chars; });
+  parts = metas.length ? planBins(metas, index.instr.length + qblock.length + PACK_SLACK, index.max_chars) : [];
+  $('lecSum').textContent = metas.length ? 'المحدّد ' + metas.length + ' من ' + subj.lectures.length + ' محاضرة (' + Math.round(tot / 1000) + 'K حرف) ← ' + (parts.length > 1 ? parts.length + ' ملفات، محادثة جديدة لكل ملف' : 'ملف واحد') : 'اختر محاضرة واحدة على الأقل.';
+  lastOk = []; showPackCard();
+}
+function addDl(box, label, job) {
+  var b = document.createElement('button'); b.type = 'button'; b.className = 'btn btn--primary'; b.textContent = label;
+  b.onclick = function () { b.disabled = true; job().catch(function (e) { fail('تعذّر تنزيل الملف (' + e.message + ')'); }).then(function () { b.disabled = false; }); };
+  box.appendChild(b);
+}
+function getLecture(f) {                                      // Promise<lecture text>, fetched once
+  var k = subj.id + '/' + f; if (lecCache[k] != null) return Promise.resolve(lecCache[k]);
+  return fetchText('packs/' + subj.id + '/lectures/' + encodeURIComponent(f)).then(function (t) { lecCache[k] = t; return t; });
+}
+function partText(i) {                                        // Promise<string>: pack number i, built from the ticked lectures (same text as tools/make_packs.py --mode all)
+  var files = parts[i], n = parts.length;
+  return Promise.all(files.map(getLecture)).then(function (texts) {
+    var figs = files.filter(function (f) { return Object.keys(siteData.lectures[f].figs).length; }).map(function (f) { return [f, siteData.lectures[f].figs]; });
+    return buildPack(index.instr, 'SUBJECT ' + subj.id + (n > 1 ? ' \u2014 part ' + (i + 1) + ' of ' + n : ''), qblock, files.map(function (f, j) { return { file: f, text: texts[j] }; }), figs);
+  });
+}
+function makeCtx() {                                          // validation context: the ticked lectures (what Claude was given)
+  if (subj.inferred) return Promise.resolve({ hasLecture: false, qinfo: siteData.q, keys: siteData.keys });
+  return Promise.all(selected.map(getLecture)).then(function (texts) {
+    var lectures = {}; selected.forEach(function (f, i) { lectures[f] = { flat: flat(texts[i]), figs: figPagesOf(texts[i]) }; });
+    return { lectures: lectures, order: selected.slice(), qinfo: siteData.q, keys: siteData.keys };
+  });
+}
+function showPackCard() {
+  var box = $('dlBox'); box.innerHTML = ''; $('cardTitle').textContent = subj.name;
+  if (subj.inferred) {
+    $('cardMeta').textContent = subj.nq + ' سؤال خارج المحاضرات (لا توجد محاضرات لهذه المادة بعد)';
+    addDl(box, '⬇ تنزيل ملف الأسئلة', function () { return fetchText('packs/' + subj.id + '/INFERRED.md').then(function (t) { save(subj.id + '-INFERRED.md', t, 'text/markdown;charset=utf-8'); }); });
+  } else {
+    if (!parts.length) { hideCards(); return; }
+    $('cardMeta').textContent = subj.nq + ' سؤال · ' + selected.length + ' محاضرة · ' + parts.length + (parts.length > 1 ? ' ملفات' : ' ملف');
+    parts.forEach(function (files, i) {
+      addDl(box, parts.length > 1 ? '⬇ الجزء ' + (i + 1) + ' من ' + parts.length + ' (' + files.length + ' محاضرات)' : '⬇ تنزيل كل شيء لـ Claude', function () {
+        return partText(i).then(function (t) { save(subj.id + '-lectures' + (parts.length > 1 ? '-part' + (i + 1) + 'of' + parts.length : '') + '.md', t, 'text/markdown;charset=utf-8'); });
+      });
+    });
+  }
+  var imgs = (siteData.images || []).slice();                // question pictures + the figure pages of the ticked lectures
+  selected.forEach(function (f) { var fg = siteData.lectures[f].figs; Object.keys(fg).forEach(function (pg) { imgs.push(fg[pg]); }); });
+  var ib = $('imgBox');
+  if (imgs.length) {
+    ib.hidden = false; ib.innerHTML = '';
+    ib.appendChild(document.createTextNode('🖼 بعض الأسئلة والمحاضرات فيها صور. نزّلها وأرفقها بنفس المحادثة (' + imgs.length + '): '));
+    imgs.forEach(function (n, i) {
+      var a = document.createElement('a'); a.href = 'https://raw.githubusercontent.com/' + REPO + '/' + BRANCH + '/' + (n.indexOf('/') >= 0 ? n.split('/').map(encodeURIComponent).join('/') : 'media/' + encodeURIComponent(n));   // figure pages are repo paths (sources/<id>/figs/..), question pictures are bare media names
+      a.target = '_blank'; a.rel = 'noopener'; a.textContent = n.split('/').pop(); ib.appendChild(a);
+      if (i < imgs.length - 1) ib.appendChild(document.createTextNode(' · '));
+    });
+  } else ib.hidden = true;
+  ['packCard', 'replyCard', 'sendCard'].forEach(function (i) { $(i).classList.add('is-visible'); });
+  $('btnReplyFile').disabled = true; refreshLinks();
+}
+$('btnCopyMsg').onclick = function () {
+  var t = $('msgText').textContent, b = $('btnCopyMsg');
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { b.textContent = '✓ تم النسخ'; }, function () {
+    var r = document.createRange(); r.selectNodeContents($('msgText')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'حدّد النص وانسخه يدوياً';
+  });
+  setTimeout(function () { b.textContent = 'نسخ الرسالة'; }, 2500);
+};
+$('btnCheck').onclick = function () {
+  var b = $('btnCheck'); b.disabled = true;
+  makeCtx().then(function (ctx) { vctx = ctx; show(validateReply($('reply').value, ctx)); })
+    .catch(function (e) { fail('تعذّر التحقق (' + e.message + ')'); }).then(function () { b.disabled = false; });
+};
+function chip(cls, text) { var s = document.createElement('span'); s.className = 'chip ' + cls; s.textContent = text; return s; }
+function show(res) {
+  var c = { ok: 0, inf: 0, nf: 0, bad: 0, stu: 0, fig: 0 }; res.rows.forEach(function (r) { c[r.kind]++; });
+  $('result').hidden = false;
+  var sum = $('sum'); sum.innerHTML = '';
+  sum.appendChild(chip('ok', '✓ موثّق: ' + c.ok));
+  if (c.inf) sum.appendChild(chip('inf', '◐ استنتاج: ' + c.inf));
+  if (c.stu) sum.appendChild(chip('inf', '✎ جواب طالب: ' + c.stu));
+  if (c.fig) sum.appendChild(chip('inf', '🖼 من شكل (يراجعه المشرف): ' + c.fig));
+  if (c.nf) sum.appendChild(chip('inf', '⚠ لم يوجد: ' + c.nf));
+  if (c.bad || res.bad.length) sum.appendChild(chip('bad', '✗ مرفوض: ' + (c.bad + res.bad.length)));
+  var tb = $('rows'); tb.innerHTML = '';
+  var ICON = { ok: '✓', inf: '◐', nf: '⚠', bad: '✗', stu: '✎', fig: '🖼' };
+  res.rows.forEach(function (r) {
+    var tr = document.createElement('tr'), a = document.createElement('td'), b = document.createElement('td'), k = document.createElement('span'), w = document.createElement('div');
+    a.textContent = ICON[r.kind]; a.className = 'st-' + r.kind;
+    k.className = 'k'; k.textContent = String(r.id);
+    b.appendChild(k);
+    if (r.letterIdx != null) b.appendChild(document.createTextNode('  →  ' + LET[r.letterIdx]));
+    w.className = 'why'; w.textContent = r.why; b.appendChild(w);
+    tr.appendChild(a); tr.appendChild(b); tb.appendChild(tr);
+  });
+  res.bad.forEach(function (n) {
+    var tr = document.createElement('tr'), a = document.createElement('td'), b = document.createElement('td');
+    a.textContent = '✗'; a.className = 'st-bad'; b.textContent = 'السطر ' + n + ' ليس JSON صحيحاً (يُتجاهل)'; b.className = 'why'; tr.appendChild(a); tr.appendChild(b); tb.appendChild(tr);
+  });
+  var mi = $('missing');
+  if (res.missing.length) { mi.hidden = false; mi.textContent = 'لا يوجد رد على ' + res.missing.length + ' سؤال من ' + siteData.keys.length + ': ' + res.missing.slice(0, 8).join(' ، ') + (res.missing.length > 8 ? ' …' : '') + ' — اطلب من Claude أن يكمل ثم الصق كل الأسطر معاً.'; }
+  else mi.hidden = true;
+  var v = $('verdict');
+  if (c.bad || res.bad.length) { v.className = 'note--bad'; v.textContent = 'الأسطر المرفوضة لن تُرسل. اطلب من Claude إعادتها، أو أرسل ما نجح فقط.'; }
+  else if (c.ok + c.inf + c.nf + c.stu + c.fig) { v.className = 'note--ok'; v.textContent = 'كل الأسطر المقروءة سليمة.'; }
+  else { v.className = 'note--warn'; v.textContent = 'لم أجد أي سطر JSON في النص الملصوق.'; }
+  renderReview(res);
+  refreshLinks();
+}
+/* ===== Part 2D: review + edit + summary ===== */
+var cards = [], rvKey = null;
+function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function hash32(s) { var x = 2166136261; for (var i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return (x >>> 0).toString(16); }
+function sha8(text) {
+  if (window.crypto && crypto.subtle && window.TextEncoder) return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function (b) { return Array.prototype.map.call(new Uint8Array(b), function (v) { return ('0' + v.toString(16)).slice(-2); }).join('').slice(0, 8); });
+  return Promise.resolve((hash32(text) + '00000000').slice(0, 8));
+}
+var KIND = { ok: 'موثّق', inf: 'استنتاج', nf: 'لم يوجد', stu: 'جواب طالب', fig: 'من شكل', bad: 'مرفوض' };
+function origL(o) { return o.a ? String(o.a).trim().toUpperCase().slice(0, 1) : ''; }
+function evalItem(it) { return validateReply(JSON.stringify(it), vctx).rows[0] || { kind: 'bad' }; }
+function mkOf(it, kind, r) { if (kind === 'ok' && it.src !== 'INFERRED') { var l = r && r.lec != null ? siteData.lectures[r.lec] : null; return l ? l.marker : ''; } return kind === 'inf' ? '(استنتاج)' : ''; }
+function renderReview(res) {
+  rvKey = 'bot-edits:' + subj.id + ':' + packName + ':' + hash32($('reply').value);
+  var saved = {}; try { saved = JSON.parse(localStorage.getItem(rvKey) || '{}'); } catch (e) {}
+  cards = [];
+  res.rows.forEach(function (r) { if (r.kind !== 'bad') cards.push({ id: r.id, orig: r.item, item: r.item, kind: r.kind, origKind: r.kind }); });
+  var box = $('cards'); box.innerHTML = '';
+  cards.forEach(function (cd) {
+    var t = siteData.t[cd.id] || ['', []], o = cd.orig, root = mk('div', 'rc'); cd.root = root;
+    var h3 = mk('h3', null, String(cd.id) + ' — ' + t[0]); cd.badge = mk('span', 'badge', ''); h3.appendChild(cd.badge); root.appendChild(h3);
+    var ol = mk('ol'); t[1].forEach(function (x) { ol.appendChild(mk('li', null, x)); }); root.appendChild(ol);
+    root.appendChild(mk('label', null, 'الجواب'));
+    cd.sel = document.createElement('select'); if (!origL(o)) opt(cd.sel, '', '— بلا جواب —');
+    t[1].forEach(function (x, i) { opt(cd.sel, LET[i], LET[i]); }); cd.sel.value = origL(o); root.appendChild(cd.sel);
+    root.appendChild(mk('label', null, 'الشرح'));
+    cd.ta = mk('textarea'); cd.ta.value = o.e || ''; cd.cnt = mk('div', 'cnt'); root.appendChild(cd.ta); root.appendChild(cd.cnt);
+    if (o.src === 'LECTURE' && o.q) { root.appendChild(mk('label', null, 'الاقتباس من المحاضرة (للقراءة)')); var ro = mk('div', 'why', o.q); ro.dir = 'auto'; root.appendChild(ro); }
+    cd.qlab = mk('label', null, 'اقتباس حرفي من المحاضرة يدعم الجواب (اختياري، يحوّل جوابك إلى موثّق إن وُجد)'); cd.qt = mk('textarea', 'q'); cd.qt.value = o.src === 'STUDENT' ? (o.q || '') : '';
+    cd.rlab = mk('label', null, 'سبب التعديل (يُنصح به)'); cd.rs = mk('input'); cd.rs.type = 'text'; cd.rs.value = o.reason || '';
+    cd.prop = (siteData.p || {})[cd.id]; cd.def = o.uses_image === true;
+    if (cd.prop) {
+      var mi = (siteData.m || {})[cd.prop] || { f: '', c: '' }; cd.pic = mk('div', 'pic');
+      var im = mk('img'); im.alt = mi.c || mi.f; im.loading = 'lazy'; im.src = 'https://raw.githubusercontent.com/' + REPO + '/' + BRANCH + '/media/' + encodeURIComponent(mi.f); cd.pic.appendChild(im);
+      var lb = mk('label'); cd.chk = mk('input'); cd.chk.type = 'checkbox'; cd.chk.checked = cd.def; lb.appendChild(cd.chk);
+      lb.appendChild(document.createTextNode('هذه الصورة تخصّ هذا السؤال' + (mi.c ? ' (' + mi.c + ')' : '') + (typeof o.uses_image === 'boolean' ? ' — اقتراح Claude: ' + (o.uses_image ? 'نعم' : 'لا') : ' — Claude لم يحدّد: قرّر أنت')));
+      cd.pic.appendChild(lb); root.appendChild(cd.pic);
+    }
+    cd.extra = mk('div'); [cd.qlab, cd.qt, cd.rlab, cd.rs].forEach(function (e) { cd.extra.appendChild(e); }); root.appendChild(cd.extra);
+    var s = saved[cd.id]; if (s) { cd.sel.value = s.L; cd.ta.value = s.e; cd.qt.value = s.q; cd.rs.value = s.r; if (cd.chk && s.i != null) cd.chk.checked = !!s.i; }
+    var on = function () { onEdit(cd); }; cd.sel.onchange = on; cd.ta.oninput = on; cd.qt.oninput = on; cd.rs.oninput = on; if (cd.chk) cd.chk.onchange = on;
+    onEdit(cd, true); box.appendChild(root);
+  });
+  $('review').hidden = !cards.length; applyFilter();
+}
+function onEdit(cd, init) {
+  var o = cd.orig, L = cd.sel.value, e = cd.ta.value, q = cd.qt.value, rs = cd.rs.value, n = JSON.parse(JSON.stringify(o));
+  if (L !== origL(o)) { n.a0 = o.a == null ? null : o.a; n.src0 = o.src; n.src = 'STUDENT'; n.q = q; }
+  else if (o.src === 'STUDENT' || (q && o.src !== 'LECTURE')) { if (q) n.q = q; }
+  if (L) n.a = L;
+  if (e !== (o.e || '')) { n.e = e; n.e_edited = true; }
+  if (rs) n.reason = rs;
+  if (cd.prop) { var on = cd.chk.checked; if (on) n.img = cd.prop; if (on !== cd.def) n.img_edited = true; }
+  var r = evalItem(n), mkr = mkOf(n, r.kind, r), limit = 200 - (mkr ? mkr.length + 1 : 0);
+  cd.ta.maxLength = limit; cd.cnt.textContent = e.length + ' / ' + limit; cd.cnt.className = 'cnt' + (e.length >= limit ? ' over' : '');
+  cd.item = n; cd.kind = r.kind; cd.why = r.why; var n0 = JSON.parse(JSON.stringify(n)); delete n0.img; delete n0.img_edited;
+  cd.edited = !!(n.e_edited || n.img_edited || n.src === 'STUDENT' && o.src !== 'STUDENT' || JSON.stringify(n0) !== JSON.stringify(o));
+  cd.badge.textContent = KIND[r.kind] + (cd.edited ? ' · معدَّل' : ''); cd.root.classList.toggle('edited', cd.edited);
+  cd.extra.hidden = !(L !== origL(o) || o.src === 'STUDENT');
+  if (!init) { var m = {}; cards.forEach(function (c) { if (c.edited) m[c.id] = { L: c.sel.value, e: c.ta.value, q: c.qt.value, r: c.rs.value, i: c.chk ? c.chk.checked : null }; }); try { localStorage.setItem(rvKey, JSON.stringify(m)); } catch (x) {} applyFilter(); }
+  refreshSend();
+}
+function applyFilter() { var all = $('rvFilter').value === 'all'; cards.forEach(function (c) { c.root.hidden = !all && c.kind === 'ok' && !c.edited && !(c.prop && typeof c.orig.uses_image !== 'boolean'); }); }
+$('rvFilter').onchange = applyFilter;
+$('btnAcceptOk').onclick = function () { $('rvFilter').value = 'att'; applyFilter(); var n = cards.filter(function (c) { return c.kind === 'ok' && !c.edited; }).length; $('btnAcceptOk').textContent = '✓ ' + n + ' موثّق قُبل كما هو'; };
+function refreshSend() {
+  lastOk = cards.filter(function (c) { return c.kind !== 'bad'; }).map(function (c) { return JSON.stringify(c.item); });
+  var on = lastOk.length > 0; $('btnReplyFile').disabled = !on; $('btnSummary').disabled = !on; $('btnSummaryCopy').disabled = !on;
+  $('btnReplyFile').textContent = '⬇ تنزيل ملف الرد (' + lastOk.length + ' سطر)';
+  $('btnZip').hidden = !quick; $('btnZip').disabled = !on;
+}
+function buildSummary(h8) {
+  var d = new Date().toISOString().slice(0, 10), u = cleanUser($('ghUser').value) || '(غير مكتوب)', cnt = { ok: 0, inf: 0, nf: 0, stu: 0, fig: 0 };
+  cards.forEach(function (c) { if (cnt[c.kind] != null) cnt[c.kind]++; });
+  var ans = cards.filter(function (c) { return c.item.src === 'STUDENT' && c.orig.src !== 'STUDENT' || (c.item.a !== c.orig.a && c.orig.src === 'STUDENT'); });
+  var exp = cards.filter(function (c) { return c.item.e_edited; });
+  var todo = cards.filter(function (c) { return c.kind === 'stu' || c.kind === 'fig' || c.kind === 'nf' || (c.why && c.why.indexOf('يخالف') >= 0); });
+  var L = ['# ملخص التغييرات', '', '- الطالب (GitHub): ' + u, '- المادة: ' + subj.name + ' (' + subj.id + ')', '- الحزمة: `' + packName + '`', '- المحاضرات: ' + (selected.join(', ') || '—'), '- التاريخ: ' + d, '- ملف الرد: `' + packName + '-' + h8 + '.jsonl`', '',
+    '## الأعداد', '- موثّق من المحاضرة: ' + cnt.ok, '- استنتاج: ' + cnt.inf, '- جواب طالب بلا اقتباس موثّق: ' + cnt.stu, '- من شكل (غير موثّق آلياً): ' + cnt.fig, '- لم يوجد: ' + cnt.nf, '- أجوبة غيّرها الطالب: ' + ans.length, '- شروح عدّلها الطالب: ' + exp.length, ''];
+  L.push('## أجوبة تغيّرت');
+  if (!ans.length) L.push('لا يوجد');
+  ans.forEach(function (c) { var t = siteData.t[c.id] || ['']; L.push('- `' + c.id + '` ' + t[0] + ' : ' + (c.item.a0 || c.orig.a || '—') + ' ← ' + c.item.a + (c.item.reason ? ' | السبب: ' + c.item.reason : '') + (c.item.q ? ' | اقتباس ' + (c.kind === 'ok' ? '(وُجد في المحاضرة)' : '(لم يُوجد)') + ': ' + c.item.q : '')); });
+  L.push('', '## شروح عُدّلت');
+  if (!exp.length) L.push('لا يوجد');
+  exp.forEach(function (c) { L.push('- `' + c.id + '`: ' + (c.orig.e || '') + ' ← ' + c.item.e); });
+  L.push('', '## تحتاج قراراً من المشرفين');
+  if (!todo.length) L.push('لا يوجد');
+  todo.forEach(function (c) { L.push('- `' + c.id + '` ' + KIND[c.kind] + (c.why ? ' — ' + c.why : '')); });
+  L.push('', '## ربط الصور');
+  var pics = cards.filter(function (c) { return c.prop; });
+  if (!pics.length) L.push('لا يوجد');
+  pics.forEach(function (c) {
+    var mi = (siteData.m || {})[c.prop] || { f: '', c: '' }, on = c.chk.checked, t = siteData.t[c.id] || [''];
+    var st = on === c.def ? (on ? 'مربوطة (كما اقترح Claude)' : 'غير مربوطة (كما اقترح Claude أو لم يحدّد)') : (on ? 'الطالب أضاف ربط الصورة' : 'الطالب أزال ربط الصورة');
+    L.push('- `' + c.id + '` ' + t[0] + ' ← ' + mi.f + (mi.c ? ' (' + mi.c + ')' : '') + ' : ' + st);
+  });
+  L.push('');
+  return L.join('\n');
+}
+function withHash(fn) { var t = lastOk.join('\n') + '\n'; sha8(t).then(function (h) { fn(h, t); }); }
+$('btnReplyFile').onclick = function () { withHash(function (h, t) { save(packName + '-' + h + '.jsonl', t, 'application/x-ndjson;charset=utf-8'); }); };
+$('btnSummary').onclick = function () { withHash(function (h) { save(packName + '-' + h + '.summary.md', buildSummary(h), 'text/markdown;charset=utf-8'); }); };
+$('btnSummaryCopy').onclick = function () {
+  withHash(function (h) { var t = buildSummary(h), b = $('btnSummaryCopy'); (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { b.textContent = '✓ تم النسخ'; }, function () { b.textContent = 'تعذّر النسخ؛ نزّل الملف'; }); setTimeout(function () { b.textContent = 'نسخ الملخص كنص'; }, 2500); });
+};
+
+/* ===== quick mode: the student uploads lecture PDF(s) + the Telegram export; everything is converted in the browser =====
+   Output = the same pack/validation/review flow as the picker, plus ONE zip for the pull request:
+   sources/<id>/<slug>.md (lecture text) · intake/<id>/<date>-<sha8>.json (new questions) · replies/<id>/quick-<sha8>.jsonl + .summary.md
+   Mirrors tools/ingest_polls.py (fingerprints, keys) and tools/ingest_pdf.py (page markers); tools/test_quick.py checks both. */
+var PDFJS_VER = '3.11.174', PDFJS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/' + PDFJS_VER + '/pdf.min.js', PDFJS_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/' + PDFJS_VER + '/pdf.worker.min.js';
+var realSubj = null, realSite = null, realQblock = '', pdfFiles = [], tgFiles = [];
+
+function quickReset() { quick = null; realSubj = null; realSite = null; realQblock = ''; pdfFiles = []; tgFiles = []; $('quickCard').classList.remove('is-visible'); $('qReport').hidden = true; $('qPdfList').innerHTML = ''; $('qPdf').value = ''; $('qTg').value = ''; $('btnQuick').disabled = true; $('lecField').hidden = !subj; }
+function quickShow() {                                        // a subject is loaded: offer the upload card
+  realSubj = subj; realSite = siteData; realQblock = qblock; quick = null;
+  $('qRepoWrap').hidden = !(realSubj.lectures || []).length; $('qRepoLec').checked = false; $('qOnlyNew').checked = false;
+  $('quickCard').classList.add('is-visible'); quickEnable();
+}
+function quickEnable() { $('btnQuick').disabled = !(pdfFiles.length || tgFiles.length || ($('qRepoLec').checked && (realSubj.lectures || []).length)); }
+function readFile(file, as) {
+  return new Promise(function (res, rej) {
+    var r = new FileReader(); r.onload = function () { res(r.result); }; r.onerror = function () { rej(new Error('تعذّرت قراءة ' + file.name)); };
+    if (as === 'text') r.readAsText(file, 'utf-8'); else r.readAsArrayBuffer(file);
+  });
+}
+function lecNumGuess(name) { var m = /(\d+)(?=\D*$)/.exec(String(name).replace(/\.[^.]*$/, '')); return m ? Number(m[1]) : ''; }
+function slugify(name) { return String(name).replace(/\.[^.]*$/, '').trim().toLowerCase().replace(/[^\p{L}\p{N}_]+/gu, '-').replace(/^-+|-+$/g, '') || 'lecture'; }
+
+$('qPdf').onchange = function () {
+  pdfFiles = [].slice.call($('qPdf').files || []).filter(function (f) { return /\.pdf$/i.test(f.name); });
+  var box = $('qPdfList'); box.innerHTML = '';
+  pdfFiles.forEach(function (f, i) {
+    var row = document.createElement('div'); row.className = 'field'; row.style.marginTop = '.5rem';
+    var lab = document.createElement('label'); lab.textContent = f.name + ' — رقم المحاضرة:'; lab.style.fontWeight = '400';
+    var inp = document.createElement('input'); inp.type = 'number'; inp.min = 1; inp.max = 99; inp.id = 'qNum' + i; inp.value = lecNumGuess(f.name); inp.style.width = '6rem'; inp.style.marginInlineStart = '.5rem';
+    lab.appendChild(inp); row.appendChild(lab); box.appendChild(row);
+  });
+  quickEnable();
+};
+$('qTg').onchange = function () { tgFiles = [].slice.call($('qTg').files || []).filter(function (f) { return /\.html?$/i.test(f.name); }).sort(function (a, b) { var n = function (x) { var m = /messages(\d*)\.html?$/i.exec(x.name); return m ? Number(m[1] || 1) : 0; }; return n(a) - n(b) || (a.name < b.name ? -1 : 1); }); quickEnable(); };
+$('qRepoLec').onchange = quickEnable;
+
+/* --- PDF -> text (tools/ingest_pdf.py format: <!-- pN --> markers, blank lines and bare page numbers dropped) --- */
+var pdfLibP = null;
+function getPdfLib() {
+  if (window.pdfjsLib) { try { window.pdfjsLib.GlobalWorkerOptions.workerSrc = window.pdfjsLib.GlobalWorkerOptions.workerSrc || PDFJS_WORKER; } catch (e) {} return Promise.resolve(window.pdfjsLib); }
+  if (!pdfLibP) pdfLibP = new Promise(function (res, rej) {
+    var s = document.createElement('script'); s.src = PDFJS_URL; s.onload = function () { window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER; res(window.pdfjsLib); };
+    s.onerror = function () { pdfLibP = null; rej(new Error('تعذّر تحميل قارئ الـ PDF (تحقّق من الإنترنت)')); }; document.head.appendChild(s);
+  });
+  return pdfLibP;
+}
+function cleanPage(t) {
+  return t.normalize('NFKC').replace(/\r/g, '').split('\n').map(function (l) { return l.replace(/\s+$/, ''); }).filter(function (l) { return l.trim() && !/^\s*\d{1,3}\s*$/.test(l); }).join('\n');
+}
+function pageText(items) {                                    // text items of one page -> lines (a new line when the baseline moves, a space when the gap is wider than a letter gap: Arabic PDFs give one glyph per item)
+  var out = '', lastY = null, prev = null;
+  items.forEach(function (it) {
+    if (typeof it.str !== 'string') return;
+    var y = it.transform ? Math.round(it.transform[5]) : null, x = it.transform ? it.transform[4] : null;
+    if (out && lastY !== null && y !== null && Math.abs(y - lastY) > 3) { if (!/\n$/.test(out)) out += '\n'; }
+    else if (out && !/\s$/.test(out) && it.str && !/^\s/.test(it.str)) {
+      if (x === null || !prev) out += ' ';
+      else { var gap = x >= prev.x ? x - (prev.x + prev.w) : prev.x - (x + (it.width || 0)), em = it.height || prev.h || 10; if (gap > 0.2 * em) out += ' '; }
+    }
+    out += it.str; if (it.hasEOL && !/\n$/.test(out)) out += '\n'; if (y !== null) lastY = y; if (x !== null) prev = { x: x, w: it.width || 0, h: it.height || 0 };
+  });
+  return cleanPage(out);
+}
+function pdfToMarkdown(lib, data) {                           // Promise<{text, pages, chars, empty:[page numbers without text]}>
+  return lib.getDocument({ data: data }).promise.then(function (doc) {
+    var parts = [], empty = [], chars = 0, chain = Promise.resolve();
+    for (var i = 1; i <= doc.numPages; i++) (function (n) {
+      chain = chain.then(function () { return doc.getPage(n); }).then(function (pg) { return pg.getTextContent(); }).then(function (tc) {
+        var t = pageText(tc.items); chars += t.length; if (t.replace(/\s/g, '').length < 20) empty.push(n);
+        parts.push('<!-- p' + n + ' -->'); if (t) parts.push(t);
+      });
+    })(i);
+    return chain.then(function () { return { text: parts.join('\n') + '\n', pages: doc.numPages, chars: chars, empty: empty }; });
+  });
+}
+
+/* --- Telegram Desktop HTML export -> polls (tools/ingest_polls.py parse()) --- */
+function strText(el) { var w = el.ownerDocument.createTreeWalker(el, 4), a = [], n; while ((n = w.nextNode())) { var t = n.nodeValue.trim(); if (t) a.push(t); } return a.join(' '); }
+function tgParse(htmlText) {
+  var doc = new DOMParser().parseFromString(htmlText, 'text/html'), polls = [], photos = 0, skipped = 0;
+  [].slice.call(doc.querySelectorAll('div.message.default')).forEach(function (m) {
+    var fw = m.querySelector('div.forwarded.body .from_name'), batch = fw ? strText(fw).replace(/\s+/g, ' ') : '', poll = m.querySelector('div.media_poll');
+    if (poll) {
+      var qe = poll.querySelector('div.question');
+      polls.push({ msg: m.id || '', q: qe ? strText(qe) : '', options: [].slice.call(poll.querySelectorAll('div.answer')).map(function (x) { return strText(x).trim().replace(/^\s*-\s?/, ''); }), batch: batch }); return;
+    }
+    var ph = m.querySelector('a.photo_wrap'); if (ph && ph.getAttribute('href') && !/_thumb\.jpg$/.test(ph.getAttribute('href'))) photos++; else skipped++;
+  });
+  return { polls: polls, photos: photos, skipped: skipped };
+}
+function flatn(s) { return norm(s).replace(/[^a-z0-9\u0621-\u064A]+/g, ''); }
+function stripNum(q) { return String(q).trim().replace(/^\s*\d+\s*[-_\u0640.)\]:]+\s*/, ''); }
+function sha256hex(text) {
+  if (!(window.crypto && crypto.subtle && window.TextEncoder)) return Promise.reject(new Error('افتح الصفحة عبر https (المتصفح يمنع التشفير هنا)'));
+  return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function (b) { return [].map.call(new Uint8Array(b), function (v) { return ('0' + v.toString(16)).slice(-2); }).join(''); });
+}
+function fpOf(q, opts) { return sha256hex(flatn(stripNum(q)) + '#' + opts.map(flatn).sort().join('|')); }   // = lecturelib.fp_parts()[2]
+function blocksOf(qb) {                                       // the question block of the real subject -> {key: block text}
+  var out = {}; String(qb || '').split(/^### /m).forEach(function (c) { if (!c.trim()) return; var k = c.split('\n')[0].trim(); out[k] = '### ' + c.replace(/\n+$/, '') + '\n'; }); return out;
+}
+function renderQ(key, q, opts) { return '### ' + key + '\n' + q.trim() + '\n' + opts.map(function (o, i) { return LET[i] + ') ' + o; }).join('\n') + '\n'; }
+
+/* --- store-only zip (no library): [{path, text}] -> Blob --- */
+var CRC = (function () { var t = [], c, n, k; for (n = 0; n < 256; n++) { c = n; for (k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { var c = 0xFFFFFFFF; for (var i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function makeZip(files) {
+  var enc = new TextEncoder(), chunks = [], cd = [], off = 0;
+  function u16(v) { return [v & 255, (v >>> 8) & 255]; } function u32(v) { return [v & 255, (v >>> 8) & 255, (v >>> 16) & 255, (v >>> 24) & 255]; }
+  files.forEach(function (f) {
+    var name = enc.encode(f.path), data = enc.encode(f.text), crc = crc32(data);
+    var lh = [].concat(u32(0x04034b50), u16(20), u16(0x0800), u16(0), u16(0), u16(0x21), u32(crc), u32(data.length), u32(data.length), u16(name.length), u16(0));
+    chunks.push(new Uint8Array(lh), name, data);
+    cd.push([].concat(u32(0x02014b50), u16(20), u16(20), u16(0x0800), u16(0), u16(0), u16(0x21), u32(crc), u32(data.length), u32(data.length), u16(name.length), u16(0), u16(0), u16(0), u16(0), u32(0), u32(off)), [].slice.call(name));
+    off += lh.length + name.length + data.length;
+  });
+  var cdBytes = [].concat.apply([], cd);
+  chunks.push(new Uint8Array(cdBytes), new Uint8Array([].concat(u32(0x06054b50), u16(0), u16(0), u16(files.length), u16(files.length), u32(cdBytes.length), u32(off), u16(0))));
+  return new Blob(chunks, { type: 'application/zip' });
+}
+
+/* --- the button: PDFs + export -> pack --- */
+function qmsg(html, cls) { var r = $('qReport'); r.className = cls || 'note--ok'; r.style.marginTop = '.75rem'; r.innerHTML = html; r.hidden = false; }
+function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+$('btnQuick').onclick = function () {
+  var b = $('btnQuick'); b.disabled = true; fail(''); qmsg('جارٍ التحويل على جهازك…', 'note--warn');
+  quickBuild().then(function (r) { quickApply(r); }).catch(function (e) { qmsg(esc(e.message || e), 'note--bad'); }).then(function () { quickEnable(); });
+};
+function quickBuild() {
+  var uploads = [], taken = {}; (realSubj.lectures || []).forEach(function (l) { taken[l.file] = 1; });
+  for (var i = 0; i < pdfFiles.length; i++) {
+    var n = Number($('qNum' + i).value);
+    if (!(n >= 1 && n <= 99)) return Promise.reject(new Error('اكتب رقم المحاضرة (1 إلى 99) لكل ملف PDF: ' + pdfFiles[i].name));
+    var slug = slugify(pdfFiles[i].name); if (lecNumGuess(slug) !== n) slug += '-' + n;
+    var base = slug, k = 2; while (taken[slug + '.md']) slug = base + '-' + (k++); taken[slug + '.md'] = 1;
+    uploads.push({ file: slug + '.md', num: n, pdf: pdfFiles[i] });
+  }
+  var pdfWork = uploads.length ? getPdfLib() : Promise.resolve(null);
+  return pdfWork.then(function (lib) {
+    return uploads.reduce(function (p, u) {
+      return p.then(function () { return readFile(u.pdf, 'buf'); }).then(function (buf) { return pdfToMarkdown(lib, new Uint8Array(buf)); }).then(function (r) { u.text = r.text; u.pages = r.pages; u.chars = r.chars; u.empty = r.empty; });
+    }, Promise.resolve());
+  }).then(function () {
+    return tgFiles.reduce(function (p, f) { return p.then(function (acc) { return readFile(f, 'text').then(function (t) { var r = tgParse(t); acc.polls = acc.polls.concat(r.polls); acc.photos += r.photos; return acc; }); }); }, Promise.resolve({ polls: [], photos: 0 }));
+  }).then(function (tg) {
+    var known = {};
+    return Promise.all(Object.keys(realSite.t).map(function (k) { return fpOf(realSite.t[k][0], realSite.t[k][1]).then(function (h) { known[h] = known[h] || k; }); })).then(function () {
+      var seen = {}, recs = [], dups = 0;
+      return tg.polls.reduce(function (p, it) {
+        return p.then(function () { return fpOf(it.q, it.options); }).then(function (h) {
+          if (seen[h]) { dups++; return; } seen[h] = 1;
+          var rec = { fingerprint: h, question: stripNum(it.q), options: it.options, batch: it.batch, msg: it.msg };
+          if (known[h]) { rec.key = known[h]; rec.match = 'exact'; rec.action = 'unchanged'; } else { rec.key = 'f:' + h.slice(0, 12); rec.action = 'new'; }
+          recs.push(rec);
+        });
+      }, Promise.resolve()).then(function () { return { uploads: uploads, tg: tg, recs: recs, dups: dups }; });
+    });
+  });
+}
+function quickApply(r) {
+  var real = realSubj, rb = blocksOf(realQblock), blocks = [], t = {}, q = {}, keys = [], images = [], newRecs = [], onlyNew = $('qOnlyNew').checked, skippedSolved = 0, used = {};
+  function addExisting(key) {
+    if (used[key] || !realSite.t[key]) return; used[key] = 1;
+    if (onlyNew && realSite.q[key][1] != null) { skippedSolved++; return; }
+    var blk = rb[key] || renderQ(key, realSite.t[key][0], realSite.t[key][1]); blocks.push(blk); keys.push(key); t[key] = realSite.t[key]; q[key] = realSite.q[key];
+    var im = /^IMAGE\??: (.+)$/m.exec(blk); if (im && images.indexOf(im[1].trim()) < 0) images.push(im[1].trim());
+  }
+  if (!r.tg.polls.length) Object.keys(realSite.t).forEach(addExisting);
+  r.recs.forEach(function (rec) {
+    if (rec.action === 'unchanged') { addExisting(rec.key); return; }
+    newRecs.push(rec); blocks.push(renderQ(rec.key, rec.question, rec.options)); keys.push(rec.key); t[rec.key] = [rec.question, rec.options]; q[rec.key] = [rec.options.length, null];
+  });
+  if (!keys.length) throw new Error('لا توجد أسئلة للحل' + (skippedSolved ? ' (كلها محلولة وطلبتَ الجديد فقط)' : ' (لم أجد أسئلة Poll في ملف التصدير)'));
+  var lecs = {}, metas = [], texts = {};
+  r.uploads.forEach(function (u) { lecs[u.file] = { marker: '(م' + u.num + ')', chars: u.text.length, origin: 'upload', figs: {} }; metas.push({ file: u.file, num: u.num, chars: u.text.length, origin: 'upload', marker: '(م' + u.num + ')' }); texts[u.file] = u.text; });
+  if ($('qRepoLec').checked) (real.lectures || []).forEach(function (l) { lecs[l.file] = realSite.lectures[l.file]; metas.push(l); });
+  if (!metas.length) throw new Error('ارفع ملف PDF للمحاضرة، أو فعّل «أضف أيضاً محاضرات المادة الموجودة».');
+  metas.sort(byLec);
+  lecCache = {}; Object.keys(texts).forEach(function (f) { lecCache[real.id + '/' + f] = texts[f]; });
+  subj = { id: real.id, year: real.year, name: real.name, nq: keys.length, inferred: false, lectures: metas };
+  siteData = { t: t, q: q, keys: keys, images: images, lectures: lecs, m: {}, p: {} };
+  qblock = blocks.join('\n'); selected = metas.map(function (l) { return l.file; }); packName = 'quick';
+  parts = planBins(metas, index.instr.length + qblock.length + PACK_SLACK, index.max_chars);
+  var intake = null, added = 0;
+  quick = { uploads: r.uploads, newRecs: newRecs, intake: null, date: new Date().toISOString().slice(0, 10) };
+  var warn = [];
+  r.uploads.forEach(function (u) { if (u.empty.length) warn.push(esc(u.pdf ? u.pdf.name : u.file) + ': ' + u.empty.length + ' صفحة بلا نص (صور أو أشكال) لم تدخل: ' + u.empty.slice(0, 15).join('، ') + (u.empty.length > 15 ? '…' : '')); });
+  if (r.tg.photos) warn.push(r.tg.photos + ' صورة في التصدير لم تُرفع: أسئلة الصور تُحَل نصّاً فقط، فراجع جوابها بنفسك.');
+  var tok = 0; metas.forEach(function (l) { tok += l.chars; });
+  var html = '<strong>✓ جاهز.</strong><br>' + r.uploads.map(function (u) { return esc(u.file) + ': ' + u.pages + ' صفحة · ' + u.chars + ' حرف'; }).join('<br>') +
+    (r.uploads.length ? '<br><span class="hint">أول سطور المحاضرة (تأكد أن العربية تظهر سليمة): </span><span dir="auto" class="hint">' + esc(r.uploads[0].text.replace(/<!--.*?-->\n?/g, '').slice(0, 160)) + '</span><br>' : '') +
+    'الأسئلة: ' + keys.length + ' (جديد ' + newRecs.length + ' · موجود ' + (keys.length - newRecs.length) + (r.dups ? ' · مكرر في التصدير ' + r.dups : '') + (skippedSolved ? ' · محلول وتخطيته ' + skippedSolved : '') + ')' +
+    '<br>حجم الملف ≈ ' + Math.round((tok + qblock.length) / 1000) + 'K حرف ← ' + (parts.length > 1 ? parts.length + ' ملفات، محادثة جديدة لكل ملف' : 'ملف واحد');
+  qmsg(html + (warn.length ? '<br><span class="note--bad" style="display:block;margin-top:.4rem">⚠ ' + warn.join('<br>⚠ ') + '</span>' : ''), 'note--ok');
+  $('lecField').hidden = true; lastOk = []; cards = []; $('reply').value = ''; $('result').hidden = true; $('review').hidden = true;
+  showPackCard(); refreshSend();
+  var back = document.createElement('a'); back.href = '#'; back.textContent = '↩ العودة للطريقة العادية (اختيار المحاضرات)'; back.style.display = 'block'; back.style.marginTop = '.5rem';
+  back.onclick = function (e) { e.preventDefault(); $('subjSel').onchange(); }; $('qReport').appendChild(back);
+}
+
+/* --- the zip for the pull request --- */
+function intakeFile() {                                       // -> Promise<{path, text}|null>  (same shape as tools/ingest_polls.py writes; only the NEW questions)
+  if (!quick.newRecs.length) return Promise.resolve(null);
+  var body = { subject: subj.id, year: subj.year, date: quick.date, polls: quick.newRecs, media: {} }, text = JSON.stringify(body, null, 1);
+  return sha8(text).then(function (h) { return { path: 'intake/' + subj.id + '/' + quick.date + '-' + h + '.json', text: text }; });
+}
+$('btnZip').onclick = function () {
+  if (!quick) return; var b = $('btnZip'); b.disabled = true;
+  withHash(function (h, t) {
+    intakeFile().then(function (ik) {
+      var files = [{ path: 'replies/' + subj.id + '/quick-' + h + '.jsonl', text: t }, { path: 'replies/' + subj.id + '/quick-' + h + '.summary.md', text: buildSummary(h) }];
+      if (ik) files.push(ik);
+      quick.uploads.forEach(function (u) { files.push({ path: 'sources/' + subj.id + '/' + u.file, text: u.text }); });
+      var a = document.createElement('a'); a.href = URL.createObjectURL(makeZip(files)); a.download = 'pr-' + subj.id + '-' + h + '.zip'; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000); window.__lastZip = files.map(function (f) { return f.path; });
+    }).catch(function (e) { fail('تعذّر إنشاء الـ zip (' + e.message + ')'); }).then(function () { refreshSend(); });
+  });
+};
+
+function cleanUser(raw) { return String(raw).trim().replace(/^@/, '').replace(/[\u200B-\u200F\u202A-\u202E\u2066-\u2069\uFEFF\u064B-\u065F\u0670\u0610-\u061A\u06D6-\u06ED]/g, '').replace(/[^a-zA-Z0-9-]/g, '').slice(0, 39); }
+function setBtn(el, href, on) { el.href = href || '#'; el.classList.toggle('is-disabled', !on); }
+function refreshLinks() {
+  var u = cleanUser($('ghUser').value).replace(/^-+|-+$/g, ''), on = !!(u && subj);
+  var repoName = REPO.split('/')[1], dir = subj ? 'replies/' + subj.id : '';
+  setBtn($('btnFork'), GH + '/fork', true);
+  setBtn($('btnUpload'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + (quick ? '' : '/' + dir) : '#', on);
+  setBtn($('btnPdf'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + '/inbox/' + subj.id : '#', on);
+  setBtn($('btnPr'), on ? GH + '/compare/' + BRANCH + '...' + u + ':' + BRANCH + '?expand=1' : '#', on);
+  if (quick) { $('uploadHint').textContent = on ? 'فُكّ ضغط الـ zip، ثم اسحب المجلدات التي بداخله (replies وsources وintake) كلها إلى صفحة الرفع في نسختك (Commit ثم افتح Pull Request).' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
+  $('uploadHint').textContent = on ? 'ارفع ملف الرد (اسمه يبدأ بـ ' + packName + '- وينتهي بـ .jsonl) وملف الملخص (.summary.md) إلى المجلد ' + dir + '/ (Commit ثم افتح Pull Request).' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
+}
+try { var su = localStorage.getItem('bot-gh-user'); if (su) $('ghUser').value = cleanUser(su); } catch (e) {}
+$('ghUser').oninput = function () {
+  var v = cleanUser($('ghUser').value); if (v !== $('ghUser').value) $('ghUser').value = v;
+  try { localStorage.setItem('bot-gh-user', v); } catch (e) {}
+  refreshLinks();
+};
+refreshLinks();
+</script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+[
+ {
+  "id": 546,
+  "key": "y3:p274",
+  "subject_id": 19,
+  "question": "1) اللغة L التي تتكون من جميع السلاسل التي تبدا بالرمز 0 وعدد الاصفار يزيد فيها باثنين على عدد الواحدات تكتب",
+  "options": [
+   "L={w:w E A* : w=0x , |x|0=|x|1}",
+   "L={w:w E A* : w=0x , |x|0=|x|1+1}",
+   "L={w:w E A* : w=0x , |x|0=|x|1+2}",
+   "L={w:w E A* : w=0x , |x|0=|x|1+3}"
+  ],
+  "correct_index": 1,
+  "explanation": "يبدأ بـ 0 والأصفار تزيد 2 على الواحدات: 1 +",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 547,
+  "key": "y3:p275",
+  "subject_id": 19,
+  "question": "2) ناتج اختزال القواعد S -> aSa | bSb | ε",
+  "options": [
+   "S -> aSa | bSb",
+   "S -> aaaa | bbbb",
+   "S -> aSa | bSb | aa | bb",
+   "S -> aa | bb"
+  ],
+  "correct_index": 2,
+  "explanation": "إزالة قاعدة ε: S → aSa",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 548,
+  "key": "y3:p276",
+  "subject_id": 19,
+  "question": "3) ليكن لدينا الاوتومات المنتهي اللاحتمي NFA التالي\n M<={q0,q1,q2},{0,1},δ,q0,{q0}>z \nفان عدد الحالات في الاوتومات الحتمي DFA هو",
+  "options": [
+   "3",
+   "8",
+   "9",
+   "16"
+  ],
+  "correct_index": 1,
+  "explanation": "NFA بثلاث حالات يعطي DFA بحد أقصى 2^3 = 8 حالات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 549,
+  "key": "y3:p277",
+  "subject_id": 19,
+  "question": "4) تعاقب السلاسل عملية:",
+  "options": [
+   "غير تجميعية",
+   "غير تبديلية",
+   "لا يوجد عنصر حيادي",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "تعاقب (concatenation) السلاسل غير تبديلي، لكنه تجميعي وله عنصر حيادي ε.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 550,
+  "key": "y3:p278",
+  "subject_id": 19,
+  "question": "5)لتكن لدينا اللغة \nL={aa,ab}\nعندها L⁰ هي",
+  "options": [
+   "{ε}",
+   "{aabb,abab,aaaa,abaa}",
+   "{aa,bb}",
+   "كلا ما سبق غير صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "أي لغة مرفوعة للقوة 0 تساوي {ε}.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 551,
+  "key": "y3:p279",
+  "subject_id": 19,
+  "question": "6 ) ليكن لدينا جدول الانتقالات التالي للاتومات M اللاحتمي NFA وعلى فرض ان الحالة p2={q0,q1} في الاوتومات الحتمي المكافئ M' فان δ(P2,0) تساوي",
+  "options": [
+   "P0={q0}",
+   "P1={q1}",
+   "P2={q0,q1}",
+   "P3={Φ}"
+  ],
+  "correct_index": 0,
+  "explanation": "δ({q0,q1},0) = δ(q0,0) ∪ δ(q1,0) = {q0} ∪ Φ = {q0} = P0.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_9_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 552,
+  "key": "y3:p281",
+  "subject_id": 19,
+  "question": "7) اللغة التي يقبلها الاوتومات الحتمي DFA التالي:",
+  "options": [
+   "L={w:w E (0*.1.1*.0)(0.0*.1.1*.0)*.1.{0,1}*)",
+   "L={w:w E (0*.1.1*.0).1.{0,1}*)",
+   "L={w:w E (0*.1*.0)(0*.1*.0)*.1.{0,1}*)",
+   "كل ما سبق خاطى"
+  ],
+  "correct_index": 0,
+  "explanation": "الحالة q0 تحلقن على 0، ثم 1 فـ q1 (حلقة 1)، ثم 0 إلى q2، ومنها 0 إلى q0 أو 1 إلى q3 النهائية، وهذا ما يصفه التعبير A.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_10_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 553,
+  "key": "y3:p283",
+  "subject_id": 19,
+  "question": "8) التعبير المنتظم الذي يعرف اللغة التي تحوي السلاسل التي تحوي صفرين على الاكثر:",
+  "options": [
+   "1*(ε+0)1*(ε+0)1*",
+   "0*(ε+1)0*(ε+1)0*",
+   "1*.0.1*.0.1*",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 0,
+  "explanation": "التعبير 1*(ε+0)1*(ε+0)1* يقبل السلاسل التي فيها صفران على الأكثر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 554,
+  "key": "y3:p284",
+  "subject_id": 19,
+  "question": "9) نعرف التشاكل \nh: {a,b} —> {0,1}*\nحيث h(a)=01 و h(b)=1 فما هو h^-1(L) (ا h اس ناقص واحد) علما ان  L = {01,11,011}",
+  "options": [
+   "{a,bb}",
+   "{a,b}",
+   "{a, ab, bb}",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "h(a)=01 وh(b)=1: السلاسل 01 → a، و11 → bb، و011 → ab، فالنتيجة {a, ab, bb}.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 555,
+  "key": "y3:p285",
+  "subject_id": 19,
+  "question": "10) ما هي القاعدة الغير مقبولة حسب صيغة تشومسكي:",
+  "options": [
+   "S —> AB",
+   "S —> aAB",
+   "S —>  a",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "في صيغة تشومسكي لا يُسمح بـ S → aAB (مزج رمز طرفي مع أكثر من لا طرفي).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 556,
+  "key": "y3:p286",
+  "subject_id": 19,
+  "question": "11) من بادئات prefix السلسلة abbaaba",
+  "options": [
+   "aba",
+   "abab",
+   "ε",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 2,
+  "explanation": "ε هي بادئة لكل سلسلة، أما aba وabab فلا تبدآن بالسلسلة الأصلية abbaaba.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 557,
+  "key": "y3:p287",
+  "subject_id": 19,
+  "question": "12) اذا كانت السلسلة y=baab فان y²",
+  "options": [
+   "baabbaab",
+   "ba³bba³b",
+   "2a2b",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "y² = y·y = baabbaab.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 558,
+  "key": "y3:p288",
+  "subject_id": 19,
+  "question": "13) في الة تورينغ \nδ(q0,b)=(q1,a,L)\nيعني",
+  "options": [
+   "اقرا b واكتب a عوضا عنها على الشريط وانتقل يسارا على الاوتومات",
+   "اقرا b واكتب a عوضا عنها على الشريط وانتقل يسارا على الشريط",
+   "اقرا a واكتب b عوضا عنها على الشريط وانتقل يسارا على الاوتومات",
+   "اقرا a واكتب b عوضا عنها على الشريط وانتقل يسارا على الشريط"
+  ],
+  "correct_index": 1,
+  "explanation": "δ(q0,b)=(q1,a,L): اقرأ b واكتب a وانتقل يساراً على الشريط (وللحالة q1).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 559,
+  "key": "y3:p289",
+  "subject_id": 19,
+  "question": "14) ليكن لدينا الاوتومات M مع ε-تحرك التالي عندها يكون \nε-closure(q1)",
+  "options": [
+   "{q0,q1,q2,q3}",
+   "{q0,q1,q3}",
+   "{q1,q3}",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 2,
+  "explanation": "ε-closure(q1) = الحالة نفسها q1 مع ما تصل إليه بـ ε فقط، أي q3: {q1,q3}.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_11_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 560,
+  "key": "y3:p291",
+  "subject_id": 19,
+  "question": "15) التعبير المنتظم الذي يكافئ الاوتومات مع ε-تحرك في المخطط التالي هو",
+  "options": [
+   "011.1*.0",
+   "0.1.011",
+   "0.1*.011",
+   "0.1+011"
+  ],
+  "correct_index": 2,
+  "explanation": "المسار: 0 ثم تكرار 1 (حلقة q3↔q4) ثم 011، فالتعبير 0.1*.011.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_12_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 561,
+  "key": "y3:p293",
+  "subject_id": 19,
+  "question": "16) يمثل الاوتومات المنتهي DFA السلاسل التي",
+  "options": [
+   "تنتهي بثلاثة اصفار متتالية",
+   "تنتهي بواحد",
+   "تبدا بواحد وتنتهي بصفر",
+   "تحتوي ثلاثة اصفار متتالية"
+  ],
+  "correct_index": 3,
+  "explanation": "الحالة النهائية q3 لا تُبلَغ إلا بثلاثة أصفار متتالية، وبعدها تبقى فيها: تحتوي ثلاثة أصفار متتالية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_13_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 562,
+  "key": "y3:p295",
+  "subject_id": 19,
+  "question": "17) ليكن لدينا الاتومات التالي وذلك بعد اعادة ترميز الحالات بحيث تصبح q1 هي الحالة الابتدائية عوضا عن q0 والحالة النهائية هي q3 فان r(1,2,1) بعد اختصاره هو",
+  "options": [
+   "0",
+   "1",
+   "ε",
+   "Φ"
+  ],
+  "correct_index": 1,
+  "explanation": "r(1,2,1): الانتقال المباشر من الحالة 1 إلى 2 هو الرمز 1 ولا توجد حلقة على الحالة 1، فيصبح 1 + ε·1 = 1.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_14_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 563,
+  "key": "y3:p297",
+  "subject_id": 19,
+  "question": "18 ) ان اللغة \nL={a^m b^s : m>=0 , s>=0}\nحسب توطئة الضخ",
+  "options": [
+   "لغة منتهية",
+   "لغة منتظمة",
+   "لغة غير منتظمة",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "اللغة a^m b^s (m,s≥0) منتظمة لأن التعبير a*b* يعرّفها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 564,
+  "key": "y3:p298",
+  "subject_id": 19,
+  "question": "19) ليكن جدول انتقالات الاوتومات الحتمي التالي \nفان حالات الاوتومات المنتهي الاصغري المكافئ هي",
+  "options": [
+   "G1={q4} , G21={q1,q3,q5} , G22={q0,q2,q6}",
+   "G1={q4} , G21={q1,q3} , G22={q0,q2,q6,q5}",
+   "G1={q4} , G21={q1,q3,q6} , G22={q0,q2,q5}",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "عند التصغير: النهائية {q4}، ثم {q1,q3,q5} (تنتقل بـ 1 إلى q4)، و{q0,q2,q6} الباقية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_15_02-10-2026_14-11-15.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 565,
+  "key": "y3:p300",
+  "subject_id": 19,
+  "question": "20) ما هي اللغة المقبولة من قبل اتومات ذو المكدس PDA التالي",
+  "options": [
+   "{L=0^i 1^j |i,j>=0 &i=j}",
+   "{L=0^i 1^j |i,j>=0 &i>j}",
+   "{L=0^i 1^j |i,j>=0 &i<j}",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "يُدفع $ ثم صفر لكل 0، ثم يُسحب صفر مقابل كل 1، ثم $: عدد الواحدات يساوي الأصفار.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_16_02-10-2026_14-11-16.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 566,
+  "key": "y3:p302",
+  "subject_id": 19,
+  "question": "21) ليكن الاوتومات M مع ε-تحرك التالي وابجدية الدخل {0,1} عندها يكون الانتقال الموسع \n δ^(q0,1)",
+  "options": [
+   "{q0,q1,q2}",
+   "{q0,q1}",
+   "{q1,q2}",
+   "Φ"
+  ],
+  "correct_index": 2,
+  "explanation": "δ^(q0,1) = ε-closure(δ(ε-closure(q0),1)): من q0 بـ 1 إلى q1 ومن q2 بـ 1 إلى q2، فالناتج {q1,q2}.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_17_02-10-2026_14-11-16.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 567,
+  "key": "y3:p304",
+  "subject_id": 19,
+  "question": "22) اوجد القواعد خارج السياق للغة\nL={a^(n+4)cb^(n+1); n>=0}",
+  "options": [
+   "P={S--> a⁴cb, S --> aaSb}",
+   "P={S--> a⁴cb, S --> aSb}",
+   "P={S--> a³cb, S --> aaSb}",
+   "P={S--> a³cb, S --> aSb}"
+  ],
+  "correct_index": 1,
+  "explanation": "الحالة الأساسية a⁴cb (n=0) والقاعدة العودية S → aSb تزيد a وb بمقدار واحد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

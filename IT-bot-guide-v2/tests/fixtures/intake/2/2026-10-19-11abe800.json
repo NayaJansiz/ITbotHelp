@@ -1,0 +1,490 @@
+{
+ "subject": 2,
+ "year": 1,
+ "date": "2026-10-19",
+ "polls": [
+  {
+   "fingerprint": "43c755fb73c3b33a6e18997bbb25db560395cd5a15a3e14bfb28d0a2ffe64a2e",
+   "question": "التيار هو :",
+   "options": [
+    "معدل تغير الجهد مع الزمن",
+    "معدل تغير الزمن مع الشحنة",
+    "معدل تغير الشحنة مع الزمن",
+    "كل ماسبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460281",
+   "key": "y1:p43",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "7fd43da3f0d8806a8dc7a901a882acc411da67d9bf3905909a9f68995360dbac",
+   "question": "الجهد هو",
+   "options": [
+    "العمل المطلوب لتحريك شحنة بين نقطتين",
+    "العمل المطلوب لتحريك شحنة بين لحظتين زمنيتين",
+    "العمل المطلوب لتحريك التيار",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460282",
+   "key": "y1:p44",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "401e9f915c2e9a4bf4e76a7c5c4c6092bafe56985ac48558ac825b63a70cd784",
+   "question": "سعة المكثفة",
+   "options": [
+    "كامل الشحنة في المكثفة",
+    "معدل تغير شحنة المكثفة مع الزمن",
+    "الشحنة المخزنة في المكثفة من أجل 1 فولت",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460283",
+   "key": "y1:p45",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "ec3daad3ba99ca5c1399a5df8d94279ae19724ba85445e6db241ae6347d8ddb5",
+   "question": "الاستطاعة هي :",
+   "options": [
+    "معدل الطاقة (العمل) المصروف لنقل الشحنة بين نقطتين",
+    "معدل الطاقة (العمل ) المصروف خلال واحدة الزمن",
+    "كامل الطاقة المصروفة",
+    "كل ماسبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460284",
+   "key": "y1:p46",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "2894d8f61eb6f952b755ccf4a7ccb627bdbca280b535b835e989ad64c727d682",
+   "question": "الاوم هو:",
+   "options": [
+    "التيار اللازم لنزول بالجهد قدره 1 فولت",
+    "الجهد اللازم لمرور تيار شدته 1 A",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460285",
+   "key": "y1:p47",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "26362d9452272cfb33a4f6529efcecc2d0a0f62e36411a9d1ddc118883ec3d02",
+   "question": "مقاومة تيڤنن :",
+   "options": [
+    "ـ10",
+    "ـ9",
+    "ـ8",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460287",
+   "key": "y1:p49",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_2_02-10-2026_13-40-41.jpg"
+  },
+  {
+   "fingerprint": "cf2c75d6c8999457fe4e37a28f2a0051e6d898d503e36f72bb05f62d6754eeee",
+   "question": "جهد تيڤنن:",
+   "options": [
+    "ـ36",
+    "ـ44",
+    "ـ75",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460288",
+   "key": "y1:p50",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_2_02-10-2026_13-40-41.jpg"
+  },
+  {
+   "fingerprint": "00545b354caabaca62d2898be3cba22cf0fbf7e5ba0b7b335d997a4d56f32a4d",
+   "question": "اذا كانت الفاعليه تساوي 50% فان قيمه RL :",
+   "options": [
+    "-9",
+    "-1",
+    "-8",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:18",
+   "msg": "message460289",
+   "key": "y1:p51",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_2_02-10-2026_13-40-41.jpg"
+  },
+  {
+   "fingerprint": "f28f12c03cf81e88900fb1c6d024de64a13f0c6e3e85a7d53a1960c32084be07",
+   "question": "قيمه الفعالية عندما RL = 1K :",
+   "options": [
+    "100%",
+    "50%",
+    "0%",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460290",
+   "key": "y1:p52",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_2_02-10-2026_13-40-41.jpg"
+  },
+  {
+   "fingerprint": "21d2f0dd052b12846e44192627204c86c469cdfabc997ed9772106ddaff6f929",
+   "question": "وصل بطاريتين على التسلسل أو على التفرع يمكننا من الحصول على إستطاعة أعلى :",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460291",
+   "key": "y1:p53",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "7e9f638347ead954b6593efc785ac598d6c8c043a32bae03293db697546985b9",
+   "question": "سعة البطارية هي استطاعتها مقدرة بالواط :",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460292",
+   "key": "y1:p54",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "e9b59d3c2d230d84f250815ee633f273ec7a0d0a45d32bf1046c6ddd6276f7c2",
+   "question": "الواط الساعي هو جول في الثانية :",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460293",
+   "key": "y1:p55",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "0dd1b65f914ce17e26cf40c238d9fc228bd60f6af714bee5c85fb3adcc283524",
+   "question": "الديود يكافئ دارة مفتوحة في الاستقطاب العكسي مع تيار متناوب ذو تغيرات صغيرة وتردد عالي",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460294",
+   "key": "y1:p56",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "e8d5ad3019e0fe59d58fce560498cf158dc6d05033562efd1d344d4ffc1dda01",
+   "question": "ممانعة المكثفة تزداد بازدياد تردد التيار المتناوب",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460295",
+   "key": "y1:p57",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "2c1aed4e89d680bf1566781494b49b592146cd1b2c88498ded6fd1d491f87cd8",
+   "question": "ممانعة الوشيعة تزداد بازدياد تردد التيار المتناوب",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460296",
+   "key": "y1:p58",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "6643e901ba0eb3f8a8e906983029e906a92ce3dad9524018e6513ebb42bbbea3",
+   "question": "اذا كانت الاستطاعة المنقولة عظمى فإن الفعالية = 1",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460297",
+   "key": "y1:p59",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "db43e524db342f4527146ba8f4846f5d0b78a17831c14b018fadaf64d1839be1",
+   "question": "التيار المتناوب يحمل استطاعة أعلى من التيار المستمر",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460298",
+   "key": "y1:p60",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "dce9642dc39a"
+  },
+  {
+   "fingerprint": "d6fde9ca10d2ab5fd3c2b630a25e5bff6d7092ec6229a0c4ff92af90a496ab61",
+   "question": "تمثل المكثفة دارة مفتوحة إذا تم توصيلها إلى منبع تيار متواصل",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460299",
+   "key": "y1:p61",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "7e8d51d8a23e7ad108dc604937c2ab4865e625a9b86cc13ef922df0169d00cd6",
+   "question": "تمثل الوشيعة دارة مفتوحة إذا تم توصيلها إلى منبع تيار متناوب تردده عالي جدا",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460300",
+   "key": "y1:p62",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "d35fa72f960a280e46c83be5a705b87a123edcdba12bc34555848591d6b9258f",
+   "question": "وصل بطاريتين على التسلسل أو على التفرع يمكننا الحصول على تيار أعلى",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460301",
+   "key": "y1:p63",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "25d8745e5b574003bec70e54815538b4c5c3e50007bcefc9e8772a58120cf3dc",
+   "question": "جهد عتبة الديود عندما يكون الانحياز مباشر يساوي جهد عتبة زينر ويعاكسه بالإشارة",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460302",
+   "key": "y1:p64",
+   "match": "exact",
+   "action": "unchanged"
+  },
+  {
+   "fingerprint": "ab76ce6b91fc31fb1373b2aadab1f7cff1b4d976fe701cfb40ef2df211f40162",
+   "question": "أعلى قيمة لتيار الخرج هي :",
+   "options": [
+    "ـ 37.8mA",
+    "ـ 37.8A",
+    "ـ 38.7mA",
+    "ـ كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460304",
+   "key": "y1:p66",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_3_02-10-2026_13-40-41.jpg"
+  },
+  {
+   "fingerprint": "5644449b33d91e6d24091117c7883247e5f53da18410167d4559ec69e5a9feab",
+   "question": "أعلى قيمة لجهد الخرج هي :",
+   "options": [
+    "ـ 37.8",
+    "ـ 20",
+    "ـ 18.9",
+    "كل ماسبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460305",
+   "key": "y1:p67",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_3_02-10-2026_13-40-41.jpg"
+  },
+  {
+   "fingerprint": "d32d6def3d129edb9a608da12245e865115ce469a1b3fabc3a584d9346a1b093",
+   "question": "التيار المار في R2 :",
+   "options": [
+    "ـ 4",
+    "ـ 10",
+    "ـ1",
+    "كل ماسبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460307",
+   "key": "y1:p69",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_4_02-10-2026_13-40-42.jpg"
+  },
+  {
+   "fingerprint": "82fa184a4873cf93755c5b2330f71253604f4c90c6d92079fcc341d7a0394461",
+   "question": "قيمة التيار الكلي :",
+   "options": [
+    "ـ10",
+    "ـ 12",
+    "ـ13",
+    "كل ماسبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460308",
+   "key": "y1:p70",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_4_02-10-2026_13-40-42.jpg"
+  },
+  {
+   "fingerprint": "e3007b4e5ef6f66345228bcc33f1473ceacbec4cddfed7380f9b6682f40dc58d",
+   "question": "قيمة الاستطاعة المصروفة في R2:",
+   "options": [
+    "ـ 100",
+    "ـ 400",
+    "ـ1000",
+    "كل ما سبق خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460309",
+   "key": "y1:p71",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_4_02-10-2026_13-40-42.jpg"
+  },
+  {
+   "fingerprint": "a15b524923712e738ddc9d3cbecafe5923eb896ce3e1d9d1b70b9c0451db85ca",
+   "question": "قيمة الناقلية المكافئة للمقاومات الثلاث هو :",
+   "options": [
+    "0,025 ميلي سيمنز",
+    "0,15سيمنز",
+    "0,25ميلي سيمنز"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460310",
+   "key": "y1:p72",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_4_02-10-2026_13-40-42.jpg"
+  },
+  {
+   "fingerprint": "13e4c9581abce0c1b4ece9936055b650a8fdf831341102e4250230c611956703",
+   "question": "قيمة المقاومة المكافئة للمقاومات الثلاث :",
+   "options": [
+    "6,67 أوم",
+    "15 أوم",
+    "0,5 أوم"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460311",
+   "key": "y1:p73",
+   "match": "exact",
+   "action": "unchanged",
+   "image_kept": "media/y1_photo_4_02-10-2026_13-40-42.jpg"
+  },
+  {
+   "fingerprint": "dd214057e7785ff6610be2576c4d16f875b978690350aa46006ec31dbc386bbf",
+   "question": "وصل بطاريتين على التسلسل أو التفرع يمكننا من الحصول  على جهد أعلى",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460312",
+   "key": "y1:p74",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "4ac3ed645a49"
+  },
+  {
+   "fingerprint": "9bfe13f3aa8e58d8e3167ef82f721e694f5aef951add6d7d09b5b63aad1f7432",
+   "question": "وصل بطاريتين على التسلسل يمكننا من الحصول على جهد أعلى",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460313",
+   "key": "y1:p75",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "4ac3ed645a49"
+  },
+  {
+   "fingerprint": "5be722ab2488440c7035fccb61d93d2de3ee4d89117e91778dd15bdfd2c7e3a5",
+   "question": "وصل بطاريتين على التفرع يمكننا من الحصول على جهد اعلى :",
+   "options": [
+    "صح",
+    "خطأ"
+   ],
+   "batch": "Rukaia Al Abrash 07.02.2026 01:57:19",
+   "msg": "message460314",
+   "key": "y1:p76",
+   "match": "exact",
+   "action": "unchanged",
+   "proposed_media": "4ac3ed645a49"
+  }
+ ],
+ "media": {
+  "dce9642dc39a": {
+   "file": "media/dce9642dc39a.jpg",
+   "sha256": "dce9642dc39af7ed6ad78efefb5242f6395b11d3b7c50a013aa39931467c8a43",
+   "original_names": [
+    "photo_2@19-10-2026_14-28-31.jpg"
+   ],
+   "caption": "النموذج C",
+   "used_by": []
+  },
+  "4ac3ed645a49": {
+   "file": "media/4ac3ed645a49.jpg",
+   "sha256": "4ac3ed645a49864d1789852a43c1025bfa790a33ce499526a4a0f485f285a205",
+   "original_names": [
+    "photo_4@19-10-2026_14-28-31.jpg"
+   ],
+   "caption": "",
+   "used_by": []
+  },
+  "d324a0d6fc3e": {
+   "file": "media/d324a0d6fc3e.jpg",
+   "sha256": "d324a0d6fc3e6f0e8ba73179504721ca5c08df69b188433857e6c39c577282a6",
+   "original_names": [
+    "photo_3@19-10-2026_14-28-31.jpg"
+   ],
+   "caption": "",
+   "used_by": []
+  }
+ }
+}

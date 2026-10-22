@@ -1,0 +1,702 @@
+[
+ {
+  "id": 628,
+  "key": "y4:p76",
+  "subject_id": 23,
+  "question": "1 ) في بروتوكول 2PL تتم عملية ال Downgrading للاقفال في طور shrinking",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "في 2PL يُسمح بخفض القفل (Downgrading) في طور الانكماش (shrinking).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 629,
+  "key": "y4:p77",
+  "subject_id": 23,
+  "question": "2 ) في استراتيجية الاستعادة القائمة على ال Shadowing لا يوجد تحديث على البيانات في مواقعها الاصلية",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "في Shadowing تُكتب التعديلات في صفحات ظل ولا تُحدَّث البيانات في أماكنها الأصلية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 630,
+  "key": "y4:p78",
+  "subject_id": 23,
+  "question": "3 ) يعتبر مدير التخزين في ال DBMS مسؤولا عن الوصول الى البيانات المخزنة",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "مدير التخزين (Storage manager) مسؤول عن الوصول للبيانات المخزنة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 631,
+  "key": "y4:p79",
+  "subject_id": 23,
+  "question": "4 ) تعتبر القيم الفارغة NULL غير مستهلكة لمساحة التخزين في قواعد البيانات",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 1,
+  "explanation": "القيم NULL تستهلك مساحة تخزين (ولو بتات علم) في قواعد البيانات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 632,
+  "key": "y4:p80",
+  "subject_id": 23,
+  "question": "5 ) تستخدم ال Buffer من قبل ال DBMS في عمليات القراءة والكتابة",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "يستخدم الـ DBMS مخزناً مؤقتاً (Buffer) في عمليات القراءة والكتابة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 633,
+  "key": "y4:p81",
+  "subject_id": 23,
+  "question": "6 ) يمكن انشاء اكثر من فهرس اساسي على جدول واحد",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 1,
+  "explanation": "لا يمكن إنشاء أكثر من فهرس أساسي واحد على الجدول لأن الترتيب الفيزيائي واحد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 634,
+  "key": "y4:p82",
+  "subject_id": 23,
+  "question": "7 ) يمكن استخدام فهرس على خاصية ما من قبل ال optimizer لحساب متوسط قيم هذه الخاصية اذا كان الفهرس Dense",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "الفهرس الكثيف يحوي كل قيم الخاصية، فيمكن حساب المتوسط منه دون قراءة الجدول.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 635,
+  "key": "y4:p83",
+  "subject_id": 23,
+  "question": "8 ) لا يوجد كتابة لاي نتائج مرحلية عند تقييم الاستعلامات في النمط pipelined",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "في النمط الأنبوبي (Pipelined) لا تُكتب نتائج مرحلية على القرص.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 636,
+  "key": "y4:p84",
+  "subject_id": 23,
+  "question": "9 ) لا يحتاج محسن الاستعلامات لاي معلومات من ال  system catalog",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 1,
+  "explanation": "محسن الاستعلامات يحتاج معلومات الـ system catalog (الإحصائيات) لتقدير التكاليف.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 637,
+  "key": "y4:p85",
+  "subject_id": 23,
+  "question": "10 ) من سلبيات عملية ال Checkpointing زيادة وقت الاستعادة",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 1,
+  "explanation": "سلبية الـ Checkpointing هي زيادة الكلفة أثناء التشغيل العادي، وهو يقلل وقت الاستعادة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 638,
+  "key": "y4:p86",
+  "subject_id": 23,
+  "question": "11 ) اي العبارات التالية صحيحة ؟",
+  "options": [
+   "إنهاء مناقلة قسريا لا يمثل حالة فشل لها",
+   "حالة committed في مخطط حالة المناقلات هي الحالة الاخيرة",
+   "مفاهيم معالجة المناقلات في ادارة قواعد البيانات مرتبطة بحجم عناصر البيانات (نعومة) Granularity",
+   "كل ما سبق خاطئ",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 639,
+  "key": "y4:p87",
+  "subject_id": 23,
+  "question": "12 ) اي العبارات التالية صحيحة",
+  "options": [
+   "كلفة تحسين الاستعلامات optimizing في ال DBMS لا تتعلق باسلوب كتابتها من قبل المستخدمين",
+   "يتبع محسن الاستعلامات مجموعة من القواعد الارشادية فيما يخص تنفيذ عمليات group by مع المناظير views",
+   "يتم بناء شجرة لتمثيل الاستعلامات في نمط التحسين القائم على الارشادات heuristic based",
+   "b+c",
+   "كافة العبارات خاطئة"
+  ],
+  "correct_index": 3,
+  "explanation": "المحسن يتبع قواعد إرشادية مع الـ views، ويبني شجرة تمثيل للاستعلام في التحسين الإرشادي.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 640,
+  "key": "y4:p88",
+  "subject_id": 23,
+  "question": "13) اي العبارات التالية صحيحة",
+  "options": [
+   "يمكن ان يرتبط data item في قاعدة البيانات باكثر من قفل",
+   "اتباع كل مناقلة لبروتوكول القفل على مرحلتين two phase lock لا يضمن ان تكون الجدولة serializable",
+   "يمكن تحويل حالة قفل القراءة الى قفل للكتابة والعكس",
+   "b+c",
+   "a+b+c"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 641,
+  "key": "y4:p89",
+  "subject_id": 23,
+  "question": "14) اي العبارات التالية صحيحة",
+  "options": [
+   "في الفهارس الثانوية المنشاة على حقل مفتاحي يمكن ان نستخدم record pointers",
+   "قد يوجد اكثر من مؤشر على نفس ال block في حال تم فهرسة البيانات بفهارس ثانوية من خلال حقل مفتاحي",
+   "لن يكون هناك حاجة ل block anchor في الفهارس الثانوية",
+   "a+b+c",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "الفهارس الثانوية على حقل مفتاحي كثيفة وتستخدم مؤشرات سجل، وقد توجد عدة مؤشرات لنفس الـ block، ولا حاجة لـ block anchor.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 642,
+  "key": "y4:p90",
+  "subject_id": 23,
+  "question": "15) ما هي سمات الجدولة\nS:R1(A), W2(A), commit2, W1(A), W3(A), Commit3, Commit1",
+  "options": [
+   "Serializable and Strict Recoverable",
+   "Serializable and not Strict Recoverable",
+   "Non-Serializable and Strict Recoverable",
+   "Non-Serializable and not Strict Recoverable"
+  ],
+  "correct_index": 3,
+  "explanation": "الجدولة فيها دورة T1→T2→T1 فهي غير تسلسلية، وكتابة W3(A) على قيمة T1 غير المثبّتة تخالف Strict.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 643,
+  "key": "y4:p91",
+  "subject_id": 23,
+  "question": "16) اي من ما يلي صحيح في عملية Query Optimization",
+  "options": [
+   "لا يمكن التبديل بين العمليتين  SELECT+PROJECT دائما",
+   "يجب تجنب عمليات الجداء الديكارتي في شجرة الاستعلام",
+   "يجب تحريك عمليات ال PROJECT الى اسفل شجرة الاستعلام",
+   "يجب تطبيق عمليات ال SELECT الاكثر تقييدا في البداية",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 4,
+  "explanation": "كل العبارات صحيحة: لا يمكن دائماً تبديل Select/Project، وتجنب الجداء الديكارتي، ودفع Project وSelect الأكثر تقييداً للأسفل.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 644,
+  "key": "y4:p92",
+  "subject_id": 23,
+  "question": "17) لدينا العلاقة R لنظام تسجيل مقررات جامعية  \n R( stdID, stdName, stdMajor, cID, instructorID, instructorName, office, mark) // stdMajor اختصاص الطالب\nاي العبارات التالية صحيحة عن R عند  تحويلها لصيغة 3NF",
+  "options": [
+   "نحصل على 5 جداول",
+   "نحولها لصيغة 2NF فنحصل على 3 جداول جميعها بصيغة 3NF",
+   "نحصل على 4 جداول يكون stdID+cID مفتاحا اساسيا في احدها",
+   "لا يمكن تحويلها ل 3NF",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "نحصل على 4 جداول: طالب، مدرّس، مقرر، تسجيل، والمفتاح (stdID, cID) في جدول التسجيل.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 645,
+  "key": "y4:p93",
+  "subject_id": 23,
+  "question": "18) اي العبارات صحيحة اذا كان NDV(depID) =240",
+  "options": [
+   "عدد ال entries في الفهرس يساوي 6000",
+   "BFR الفهرس يساوي 164",
+   "BFR الجدول يساوي 6000",
+   "نحتاج 240 مؤشر سجل في الفهرس",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 646,
+  "key": "y4:p94",
+  "subject_id": 23,
+  "question": "19 ) كلفة استرجاع 500 موظف موجودين في القسم 25 عن طريق الفهرس تساوي",
+  "options": [
+   "501",
+   "120",
+   "204",
+   "27",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 647,
+  "key": "y4:p95",
+  "subject_id": 23,
+  "question": "20 ) اي العبارات التالية صحيحة",
+  "options": [
+   "يمكن استخدام المعامل Anti-join في حالة الاستعلامات الفرعية مع الكلمة المفتاحية All",
+   "يمكن استخدام فهرس Clustering لاسترجاع اكثر من سجل",
+   "يتم تقدير قيمة ال selectivity بشكل تقريبي",
+   "يمكن تحقيق العملية count(x) في استعلام من خلال الفهرس المنشئ على x اذا كان هذا الفهرس dense",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 4,
+  "explanation": "كل العبارات صحيحة: anti-join، فهرس clustering لأكثر من سجل، تقدير selectivity، وcount عبر فهرس كثيف.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 648,
+  "key": "y4:p96",
+  "subject_id": 23,
+  "question": "اي العبارات التالية صحيحة",
+  "options": [
+   "يمكن حصول استعصاء في بروتوكول conservidion 2pl",
+   "لا يمكن طلب اقفال في مرحلة shrinking لبروتوكول 2pl",
+   "لا يمنع البروتوكول strict 2pl تحرير الاقفال exclusive  قبل الاكتمال بنجاح commite او الاجهاض Abort",
+   "يسمح البروتوكول Rigouros 2pl بتحرير اقفال القراءة قبل الاكتمال بنجاحcommite",
+   "b+c (يعني التاني والتالتة)"
+  ],
+  "correct_index": 1,
+  "explanation": "في 2PL لا يمكن طلب أقفال جديدة في مرحلة الانكماش. أما الاستعصاء فلا يحدث في Conservative 2PL.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 649,
+  "key": "y4:p97",
+  "subject_id": 23,
+  "question": "اي مما يلي يدخل في حساب كلفة التنفيذ",
+  "options": [
+   "حسابات",
+   "استخدام الذاكرة",
+   "تخزين ع القرص الصلب",
+   "تخزين ثانوي",
+   "كل ما سبق"
+  ],
+  "correct_index": 4,
+  "explanation": "كلفة التنفيذ تشمل الحسابات واستخدام الذاكرة والتخزين الثانوي/القرص.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 650,
+  "key": "y4:p98",
+  "subject_id": 23,
+  "question": "اي العبارات التالية صحيحة",
+  "options": [
+   "يعتبر منع الاستعصاء deadlock prevent خيارا عمليا",
+   "الحصول على كل الاقفال الطلوبة قبل بدء بتنفيذ المناقلة يمنع الاستعصاء",
+   "لا يوجد حالات انتظار عند استخدام بروتوكلات تجنب الاستعصاء",
+   "a+c",
+   "كل ما سبق خاظئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الحصول على كل الأقفال المطلوبة قبل بدء المناقلة (Conservative) يمنع الاستعصاء.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 651,
+  "key": "y4:p99",
+  "subject_id": 23,
+  "question": "ما هو دور Dirty bit في ادارة العمليات",
+  "options": [
+   "تحديد المناقلات التي يجب ايقافها مؤقتا",
+   "تحديد الbuffer في الذاكرة والتي يجب كتابتها على القرص الصلب",
+   "تحديد موقع سجل نقطة الكتابة checkpoint في ملف التسجيل system log",
+   "لا دور له",
+   "كل ما سبق خاظئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الـ Dirty bit يحدد صفحات الـ Buffer المعدّلة التي يجب كتابتها على القرص.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 652,
+  "key": "y4:p100",
+  "subject_id": 23,
+  "question": "اي مما يلي من اسباب ال spurios tuples",
+  "options": [
+   "عدم وضوح معنى الخصائص في الجدول",
+   "تخزين البيانات المكررة",
+   "القيام بعملياات ربط بين الجداول بالاعتماد على الخصائص غير مرتبطة كالمفاتيح",
+   "كثر القيم الفارغة null",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ Spurious tuples تنتج عن ربط جداول بخصائص غير مرتبطة بمفتاح أجنبي/مفتاح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 653,
+  "key": "y4:p102",
+  "subject_id": 23,
+  "question": "26- إذا علمت أنه يوجد 20 أستاذ في كل قسم ولدينا فهرس Clustered وبمستويين في الجدول Professor على الخاصية depID:\nما هي كلفة إيجاد السجلات التي تحقق الشرط 'DeptId= 'CS؟",
+  "options": [
+   "4",
+   "5",
+   "2",
+   "23"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 654,
+  "key": "y4:p103",
+  "subject_id": 23,
+  "question": "27- في حال وجود فهرس أساسي على المفتاح id في جدول Professor: لن يتم استخدامه أبداً في عملية الربط",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الفهرس الأساسي على id يمكن استخدامه في الربط، مثل index nested loop join، فالعبارة خاطئة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 655,
+  "key": "y4:p104",
+  "subject_id": 23,
+  "question": "28- أي العبارات التالية صحيحة:",
+  "options": [
+   "كلفة قراءة الجدول Professor كاملاً 204",
+   "نحتاج لـ 3 تكرارات لقراءة الجدول Professor كاملاً",
+   "كلفة قراءة الجدول Professor كاملاً 1000",
+   "a+b",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 656,
+  "key": "y4:p105",
+  "subject_id": 23,
+  "question": "29- من أجل الاستعلام السابق، أي العبارات التالية صحيحة مع إهمال كلفة كتابة الخرج/ناتج الربط:",
+  "options": [
+   "كلفة الربط 4200",
+   "سيتم مطابقة 10 سجلات من الجدول Teaching مع 250 سجل من الجدول Professor في التكرار الواحد",
+   "كلفة قراءة الجدول Teaching كاملاً 4",
+   "a+b",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 657,
+  "key": "y4:p107",
+  "subject_id": 23,
+  "question": "30 . في حال كانت الاستعادة من النمط Steal/No-Force strategy:",
+  "options": [
+   "يجب ان نقوم ب Undo للمناقلة T1 ثم Undo T3 مع تجاهل T2",
+   "يجب ان نقوم ب Undo للمناقلة T3 ثم Undo T1 مع تجاهل T2",
+   "يجب ان نقوم ب Undo للمناقلة T3 ثم Undo T1 مع Redo T2",
+   "يجب تجاهلT1,T3 و Redo T2",
+   "e. كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 658,
+  "key": "y4:p108",
+  "subject_id": 23,
+  "question": "31. اي العبارات التالية صحيحة :",
+  "options": [
+   "يجب ان نقوم ب Redo للمناقلة T2",
+   "يجب ان نقوم ب Undo للمناقلة T1",
+   "يجب ان نقوم ب Undo للمناقلة T3",
+   "b+c",
+   "e. a+b+c"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 659,
+  "key": "y4:p109",
+  "subject_id": 23,
+  "question": "32. اي القيم التالية صحيحة بعد عملية الاستعادة :",
+  "options": [
+   "B = 40",
+   "A = 20",
+   "C = 60",
+   "كل ما سيق صحيح",
+   "e. كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 660,
+  "key": "y4:p111",
+  "subject_id": 23,
+  "question": "33- بفرض تم تنفيذ كل من T2 + T3 بشكل متزامن، متى يمكن أن يحدث Deadlock؟",
+  "options": [
+   "عند الحصول على (IX(EMP سوياً.",
+   "عند الحصول على (S(row سوياً.",
+   "عند الحصول على (X(row بترتيب مختلف.",
+   "عند حصول T1 على (SIX(EMP و T2 على (IX(EMP.",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 661,
+  "key": "y4:p112",
+  "subject_id": 23,
+  "question": "34- أي العبارات التالية صحيحة؟",
+  "options": [
+   "لن تتمكن كل من T1+T2+T3 من قفل الجدول EMP معاً.",
+   "لن تتمكن كل من T2+T3 من قفل قاعدة البيانات معاً.",
+   "لن تتمكن كل من T2+T3 من قفل الجدول EMP معاً.",
+   "سيتم استخدام أقفال من النوع SIX في كل من T2+T3.",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 662,
+  "key": "y4:p113",
+  "subject_id": 23,
+  "question": "​35- في أي الحالات التالية يعتبر الحصول على القفل (SIX(EMP ضرورياً؟",
+  "options": [
+   "​a. T2",
+   "​b. T3",
+   "​c. T4",
+   "​d. T1",
+   "​e. a+b+c"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ }
+]

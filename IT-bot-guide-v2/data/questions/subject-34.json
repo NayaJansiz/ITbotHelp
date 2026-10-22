@@ -1,0 +1,746 @@
+[
+ {
+  "id": 1013,
+  "key": "y5:p138",
+  "subject_id": 34,
+  "question": "عند بيع منتج kit يظهر كسطر واحد في امر شراء sale order ويتفكك الى عناصره في delivery order",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "المنتج من نوع Kit يظهر كسطر واحد في أمر البيع، ويتفكك إلى مكوناته في أمر التسليم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1014,
+  "key": "y5:p139",
+  "subject_id": 34,
+  "question": "تأخر تسليم قطع الحاسوب من الشركة المصنعة أثر على الجدول الزمني للمشروع هذه المخاطر تصنف",
+  "options": [
+   "مخاطر ادارة المشروع",
+   "مخاطر خارجية",
+   "مخاطر المهارات الفنية",
+   "المخاطر التنظيمية"
+  ],
+  "correct_index": 1,
+  "explanation": "تأخر تسليم القطع من الشركة المصنعة خطر خارجي (خارج سيطرة فريق المشروع).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1015,
+  "key": "y5:p140",
+  "subject_id": 34,
+  "question": "عند تسجيل إجابات مرتفعة في «المنفعة» وإجابات منخفضة جداً في «الاستخدام الفعلي»، فإن التفسير الأرجح هو:",
+  "options": [
+   "جودة المعلومات سيئة جداً",
+   "وجود عوائق تقنية أو تعقيد في الواجهة قلّل من سهولة الاستخدام (PEOU)",
+   "البرنامج لا يحتاج إلى تحديث",
+   "الموظفون لا يحبون المدير"
+  ],
+  "correct_index": 1,
+  "explanation": "منفعة عالية مع استخدام فعلي ضعيف يدل على عائق تقني أو تعقيد في الواجهة يخفض سهولة الاستخدام (PEOU).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1016,
+  "key": "y5:p141",
+  "subject_id": 34,
+  "question": "BOM \nمن نوع \nKit  ينتج دائما عن أمر تصنيع",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "منتج Kit لا ينتج عن أمر تصنيع، فهو يتفكك عند التسليم، لذلك العبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1017,
+  "key": "y5:p142",
+  "subject_id": 34,
+  "question": "نظام مصرفي عالمي حيث الموثوقية والجودة أمر بالغ الاهمية، تحتاج لضمان اكتشاف مبكر للعيوب مع ربط دقيق بين كل متطلب واختبار قبول مقابل له أي النماذج أنسب:",
+  "options": [
+   "شلال",
+   "تكراري",
+   "v-model",
+   "DevOps"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ V-model يربط كل مرحلة تطوير بمرحلة اختبار مقابلة، ومناسب للأنظمة الحرجة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1018,
+  "key": "y5:p143",
+  "subject_id": 34,
+  "question": "باستخدام ال avco تم استلام ٦ وحدات بسعر ١٢ و٤ وحدات بسعر ٢٢ ما التكلفة النهائية للوحدة :",
+  "options": [
+   "12",
+   "16",
+   "17",
+   "22"
+  ],
+  "correct_index": 1,
+  "explanation": "متوسط التكلفة AVCO = (6×12 + 4×22) ÷ 10 = 160 ÷ 10 = 16.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1019,
+  "key": "y5:p144",
+  "subject_id": 34,
+  "question": "تابع لل سؤال ١٨ تم تسليم ٧ وحدات الكمية المتبقية في المستودع :",
+  "options": [
+   "112",
+   "84",
+   "48",
+   "160"
+  ],
+  "correct_index": 2,
+  "explanation": "بعد تسليم 7 من 10 وحدات يبقى 3 وحدات بقيمة 3 × 16 = 48.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1020,
+  "key": "y5:p145",
+  "subject_id": 34,
+  "question": "المقابل للاا unite testing بالمستوى الهابط\nبال v model",
+  "options": [
+   "تحليل المتطلبات والأعمال",
+   "تصميم النظام",
+   "التصميم البنيوي",
+   "تصميم الوحدات"
+  ],
+  "correct_index": 3,
+  "explanation": "الاختبار على مستوى الوحدة (Unit testing) يقابل تصميم الوحدات في الـ V-model.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1021,
+  "key": "y5:p146",
+  "subject_id": 34,
+  "question": "عند وجود عمليتين في pool مستقلتين مثل عملية الشراء و البيع يكون تبادل الرسائل عن طريق",
+  "options": [
+   "تدفق تسلسلي بين pool وpool",
+   "لا يمكن تبادل الرسائل الا عن طريق msaage  بين ,عملينين قي pool مختلفة",
+   "علاقة accossiation"
+  ],
+  "correct_index": 1,
+  "explanation": "العمليتان في Pool مستقلين تتبادلان الرسائل عبر Message Flow بين pool مختلفة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1022,
+  "key": "y5:p147",
+  "subject_id": 34,
+  "question": "شركة منتجات باهظة الثمن ومنتجات رخيصة توزع تكلفة تأمين الشحنة By current cost  اي منتجات تتحمل الحصة الاكبر من التكلفة",
+  "options": [
+   "الكل يتحملون تكلفة متساوية",
+   "المنتج ذو الحجم الاكبر",
+   "الوزن الاكبر",
+   "المنتج ذو الوحدة ذات السعر الأعلى"
+  ],
+  "correct_index": 3,
+  "explanation": "التوزيع بحسب التكلفة الحالية يحمّل المنتج ذو سعر الوحدة الأعلى الحصة الأكبر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1023,
+  "key": "y5:p148",
+  "subject_id": 34,
+  "question": "ما هو الفرق الجوهري بين Manufactured وKit من حيث قائمة المواد (BOM)؟",
+  "options": [
+   "المنتج المصنع لا يمكن تتبعه بالمخزون",
+   "Manufactured  يتطلب أمر تصنيع لإنتاج مخزون، بينما الـ Kit يفكك المكونات عند أمر البيع.",
+   "لا يوجد فرق بينهما في النظام.",
+   "الـ Kit لا يحتاج إلى قائمة مواد (BOM)"
+  ],
+  "correct_index": 1,
+  "explanation": "المنتج المصنّع يحتاج أمر تصنيع لإنتاج مخزون، بينما الـ Kit يفكك مكوناته عند أمر البيع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1024,
+  "key": "y5:p149",
+  "subject_id": 34,
+  "question": "أحد المؤشرات على فعالية تقنيات هندسة النظم؟",
+  "options": [
+   "زيادة تكاليف الإنتاج",
+   "تحسين واجهة المستخدم",
+   "تقليل المخاطر",
+   "جميع ما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "من مؤشرات فعالية هندسة النظم تقليل المخاطر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1025,
+  "key": "y5:p150",
+  "subject_id": 34,
+  "question": "الأنشطة التي تدعمها نظم المستوى التكتيكي:",
+  "options": [
+   "الأنشطة التشغيلية اليومية",
+   "القرارات الاستراتيجية طويلة الاجل",
+   "الأنشطة والقرارات التكتيكية شبه المهيكلة",
+   "جميع الاجابات خاطئة"
+  ],
+  "correct_index": 2,
+  "explanation": "نظم المستوى التكتيكي تدعم الأنشطة والقرارات التكتيكية شبه المهيكلة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1026,
+  "key": "y5:p151",
+  "subject_id": 34,
+  "question": "الميزة الواجب توافرها في products gategory  لتطبيق landed cost  في فاتورة امر شراء",
+  "options": [
+   "Type = service",
+   "Cost method of either AVCO or FIFO"
+  ],
+  "correct_index": 1,
+  "explanation": "لتطبيق Landed cost يجب أن تكون طريقة التكلفة في فئة المنتج AVCO أو FIFO.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1027,
+  "key": "y5:p152",
+  "subject_id": 34,
+  "question": "المخرجات المتوقعة من نظام TPS",
+  "options": [
+   "تقارير مفصلة وملخصات",
+   "تقارير لدعم اتخاذ القرارات",
+   "نماذج تحليلية",
+   "خطط تسويقية"
+  ],
+  "correct_index": 0,
+  "explanation": "مخرجات TPS هي تقارير مفصلة وملخصات عن المعاملات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1028,
+  "key": "y5:p153",
+  "subject_id": 34,
+  "question": "اذا كان لدينا عملية شحن بضاعة \nوكان هناك شركة خارجية تساعد في هذه العملية بالإضافة الى قسم ادارة المستودع \nكيف يتم تمثيل الشركة الخارجية في نموذج pbmn",
+  "options": [
+   "Pool منفصل",
+   "Lane",
+   "عملية فرعية"
+  ],
+  "correct_index": 0,
+  "explanation": "الشركة الخارجية جهة مستقلة، لذلك تُمثَّل بـ Pool منفصل في BPMN.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1029,
+  "key": "y5:p154",
+  "subject_id": 34,
+  "question": "نريد فتح حساس في بنك فيكون لدينا العميل وقسم (..) و قسم (...)  حيث اقسام جوا البنك \nفيمكن تمثيل العميل والاقسام في نموذج pbmn كالتالي",
+  "options": [
+   "العميل في pool والاقسام كل قسم ضمن lane في pool البنك",
+   "العميل والاقسام عبارة عن lanes ضمن pool البنك",
+   "العميل عبارة عن حدث"
+  ],
+  "correct_index": 0,
+  "explanation": "العميل يُمثَّل في Pool مستقل، والأقسام داخل البنك Lanes داخل Pool البنك.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1030,
+  "key": "y5:p155",
+  "subject_id": 34,
+  "question": "مسؤول ادارة الجودة يريد تقييم النظام و النظام (سرعة عالية ميزات و جوده)\nسهولة استخدام وغالباً تكيف المستخدمين و رضاهم",
+  "options": [
+   "D&M",
+   "TTF",
+   "Tam",
+   "كل ماسبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "نموذج DeLone & McLean (D&M) يقيّم جودة النظام والمعلومات والاستخدام ورضا المستخدم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1031,
+  "key": "y5:p156",
+  "subject_id": 34,
+  "question": "5)شو هوي وجه الشبه الاساسي بين نموذج الحلزوني والاجيال",
+  "options": [
+   "كلاهما يلغي دور محلل النظام",
+   "كلاهما يسمح بالتكرار",
+   "يسمح بتغيير المتطلبات دائما",
+   "لا يوجد فيهما إدارة للمخاطر"
+  ],
+  "correct_index": 1,
+  "explanation": "الحلزوني والأجيال (التزايدي) كلاهما يعتمد التكرار (Iteration).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1032,
+  "key": "y5:p157",
+  "subject_id": 34,
+  "question": "زحف النطاق هو عيب مرتبط بشكل أساسي ب نموذج :",
+  "options": [
+   "الشلال",
+   "التكراري",
+   "V model",
+   "DevOps"
+  ],
+  "correct_index": 1,
+  "explanation": "زحف النطاق (Scope creep) عيب مرتبط بالنموذج التكراري لقبوله التغييرات المستمرة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1033,
+  "key": "y5:p158",
+  "subject_id": 34,
+  "question": "واجهة المنصة معقدة ولكن الطلاب يعتقدونها مفيدة لانها ترفع معدلاتهم بشكل ملحفوظ \nما هو النموذج المناسب",
+  "options": [
+   "Tam",
+   "TTF",
+   "D&M",
+   "كل ما سبق"
+  ],
+  "correct_index": 0,
+  "explanation": "نموذج TAM يفسّر القبول بالاعتقاد بالمنفعة (PU) وسهولة الاستخدام (PEOU) رغم تعقيد الواجهة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1034,
+  "key": "y5:p159",
+  "subject_id": 34,
+  "question": "عند تنفيذ نظامerp اذا اختارت المنظمة التخصيص فهذا يعني \n \n11_تغييرات معدل الضريبة هي بيانات يستخدمها نظام الاسناد الاداري ess ومستمدة من  البيئة الخارجية",
+  "options": [
+   "تغيير النظام ليتطابق مع إجراءات المنظمة",
+   "تغيير اجراءات المنظمة لتطابق مع النظام"
+  ],
+  "correct_index": 0,
+  "explanation": "التخصيص (Customization) يعني تعديل النظام ليتطابق مع إجراءات المنظمة (عكس اعتماد الممارسات الجاهزة).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1035,
+  "key": "y5:p160",
+  "subject_id": 34,
+  "question": "عند تنفيذ نظامerp اذا اختارت المنظمة التخصيص فهذا يعني",
+  "options": [
+   "تغيير النظام ليتطابق مع إجراءات المنظمة",
+   "تغيير إجراءات المنظمة لتطابق مع النظام"
+  ],
+  "correct_index": 0,
+  "explanation": "التخصيص (Customization) يعني تغيير النظام ليتطابق مع إجراءات المنظمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1036,
+  "key": "y5:p161",
+  "subject_id": 34,
+  "question": "تغييرات معدل الضريبة هي بيانات يستخدمها نظام الاسناد الاداري ess ومستمدة من",
+  "options": [
+   "البيئة الخارجية"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1037,
+  "key": "y5:p162",
+  "subject_id": 34,
+  "question": "اراد الطالب استخدام النظام في العام القادم:",
+  "options": [
+   "نية سلوكية مستقبلية",
+   "سهولة استخدام",
+   "استخدام فعلي",
+   "الرابع مو متذكرة"
+  ],
+  "correct_index": 0,
+  "explanation": "رغبة الطالب باستخدام النظام العام القادم تمثل نية سلوكية مستقبلية (Behavioral intention).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1038,
+  "key": "y5:p163",
+  "subject_id": 34,
+  "question": "يمكننا إنشاء اكثر من By-product واحد على نفس BOM",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "في Odoo يمكن إضافة أكثر من منتج ثانوي (By-product) على نفس قائمة المواد BOM.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1039,
+  "key": "y5:p164",
+  "subject_id": 34,
+  "question": "Kit\n ينتج عن امر تصنيع دائما",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "منتج Kit لا ينتج عن أمر تصنيع، بل يتفكك إلى مكوناته عند البيع.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1040,
+  "key": "y5:p165",
+  "subject_id": 34,
+  "question": "تاخر تسليم قطع حاسوب من شركة مصنعة اثر على جدول زمني للمشروع، هذه المخاطر تصنف :",
+  "options": [
+   "مخاطر خارجية",
+   "مخاطر تنظيمية",
+   "مخاطر ادارة"
+  ],
+  "correct_index": 0,
+  "explanation": "تأخر تسليم القطع من الشركة المصنعة خطر خارجي (خارج سيطرة فريق المشروع).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1041,
+  "key": "y5:p166",
+  "subject_id": 34,
+  "question": "اي نموذج عرضة لمشكلة زحف النطاق:",
+  "options": [
+   "iterative",
+   "الحلزوني",
+   "Agile"
+  ],
+  "correct_index": 0,
+  "explanation": "زحف النطاق (Scope creep) يرتبط بالنموذج التكراري لقبوله التغييرات باستمرار.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1042,
+  "key": "y5:p167",
+  "subject_id": 34,
+  "question": "وضعنا في منظمة ورشة فنية او بما معناه (سؤال دورة)\nفشو ضمنا؟",
+  "options": [
+   "جودة الخدمة",
+   "جودة النظام"
+  ],
+  "correct_index": 0,
+  "explanation": "ورشة تدريب فنية تضمن جودة الخدمة (Service quality) في نموذج D&M.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1043,
+  "key": "y5:p168",
+  "subject_id": 34,
+  "question": "بالمعاملات البنكية رح يتعامل العميل اما قبول واما رفض شو البوابة المناسبة",
+  "options": [
+   "or",
+   "Xor",
+   "And"
+  ],
+  "correct_index": 1,
+  "explanation": "قبول أو رفض العميل خياران متنافيان، فنستخدم البوابة الحصرية XOR.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1044,
+  "key": "y5:p169",
+  "subject_id": 34,
+  "question": "شركة تريد تفعيل نظام الشحن العالمي او المحلي مع وجود اختلاف في تنفيذ كليهما هيك بنسبة ٩٠%، البوابة المناسبة",
+  "options": [
+   "Or",
+   "XOR",
+   "And"
+  ],
+  "correct_index": 1,
+  "explanation": "الاختيار بين شحن عالمي أو محلي (مسار واحد فقط) يتطلب بوابة XOR.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1045,
+  "key": "y5:p170",
+  "subject_id": 34,
+  "question": "عند تطبيق بوابة or على ٣ مسالك  مع تفعيل مسليكن \nو ربط المسالك مع بوابة or اخرى متى يتم تفعيل البوابة الثانية",
+  "options": [
+   "يحدث Deadlock لا يتم التنفيذ",
+   "يتم تفعيل البوابة فور وصول اول مسار او اول تنفيذ",
+   "لا يتم تفعيل البوابة إلا بعد وصول كل المسارات",
+   "يتم التفعيل عند وصول المسارين مع تجاهل المسار الثالث"
+  ],
+  "correct_index": 3,
+  "explanation": "بوابة OR الدامجة تنتظر المسارات التي فُعّلت فعلاً (اثنان هنا) ولا تنتظر المسار غير المفعّل.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1046,
+  "key": "y5:p171",
+  "subject_id": 34,
+  "question": "اذا كان النظام ذو فايدة كبيرة للطلاب وتمكنو من استخدامه بسهولة",
+  "options": [
+   "D&M",
+   "Tam",
+   "Ttf",
+   "كل ما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "نموذج TAM: فائدة النظام وسهولة استخدامه تحددان قبوله.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1047,
+  "key": "y5:p172",
+  "subject_id": 34,
+  "question": "100 قطعة صغيرة و5 قطع كبيرة باستخدام ، توزع تكلفة تأمين الشحنة\nBy quantity \nاي منتجات تتحمل الحصة الاكبر من التكلفة؟",
+  "options": [
+   "5 قطعة كبيرة",
+   "100 قطعة صغيرة",
+   "بشكل متساو"
+  ],
+  "correct_index": 1,
+  "explanation": "التوزيع حسب الكمية (By quantity): الـ 100 قطعة صغيرة تتحمل الحصة الأكبر لأن عددها أكبر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1048,
+  "key": "y5:p173",
+  "subject_id": 34,
+  "question": "عند تسجيل اجابات مرتفعة في منفعة واجابات منخفصة جدا في الاستخدام فعلي فان تفسير الارجح هو:",
+  "options": [
+   "وجود عوائق تقنية او تعقيد في الواجهة قلل من سهولة الاستخدام"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1049,
+  "key": "y5:p174",
+  "subject_id": 34,
+  "question": "تغير تدفق طلب  إذا كان محلي أو عالمي  شو البوابة؟",
+  "options": [
+   "XOR",
+   "And",
+   "OR"
+  ],
+  "correct_index": 0,
+  "explanation": "اختيار مسار واحد: محلي أو عالمي يتطلب بوابة XOR.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1050,
+  "key": "y5:p175",
+  "subject_id": 34,
+  "question": "نظام و شركة التوصيل الخارجية",
+  "options": [
+   "شركة التوصيل في pool مستقل"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 1051,
+  "key": "y5:p176",
+  "subject_id": 34,
+  "question": "Kit \nلها MOQ",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "المنتج Kit لا يُشترى أصلاً، فلا ينطبق عليه الحد الأدنى للطلب (MOQ).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

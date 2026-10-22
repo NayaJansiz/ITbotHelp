@@ -1,0 +1,53 @@
+# Builds the freshman page + packs and publishes them on GitHub Pages.
+# One-time setup by the repo owner: Settings -> Pages -> Source = "GitHub Actions".
+# Result: https://<owner>.github.io/<repo>/   (tools/set_repo.py <owner>/<repo> points the page's fork/upload links at your repo)
+name: pages
+on:
+  push:
+    branches: [main]
+    paths: ['data/**', 'tools/**', 'config/**', 'sources/**', 'intake/**', 'site/index.html', '.github/workflows/pages.yml']
+  schedule:
+    - cron: '0 5 * * 1'        # weekly: pick up lecture changes
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: homs-uni/lecture-site-engine
+          path: lectures
+          sparse-checkout: subjects
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-save --prefix "$RUNNER_TEMP/node" jsdom
+      - name: Build the page data (lecture lists, lecture files, questions, picture proposals)
+        run: python tools/build_site.py --data data --lectures lectures --intake intake
+      - name: Check the page matches merge_answers.py (validation, one-run packs, lecture picker in jsdom)
+        run: |
+          python tools/test_site.py --data data --lectures lectures
+          python tools/test_oneshot.py --data data --lectures lectures --node-modules "$RUNNER_TEMP/node"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

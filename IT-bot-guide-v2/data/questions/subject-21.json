@@ -1,0 +1,362 @@
+[
+ {
+  "id": 588,
+  "key": "y4:p31",
+  "subject_id": 21,
+  "question": "1- What type of compertion reduce file size without reduce quality",
+  "options": [
+   "loses",
+   "loseless",
+   "temporal",
+   "spetial"
+  ],
+  "correct_index": 1,
+  "explanation": "الضغط بلا فقد (lossless) يقلل حجم الملف دون خسارة بالجودة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 589,
+  "key": "y4:p32",
+  "subject_id": 21,
+  "question": "3- Which JPEG mode allows the transmission of low resolution image first, then refinementa at higher resolutions?",
+  "options": [
+   "hierarchical JPEG",
+   "progressive JPEG",
+   "sequential JPEG",
+   "lossless JPEG"
+  ],
+  "correct_index": 0,
+  "explanation": "JPEG الهرمي (Hierarchical) يرسل صورة منخفضة الدقة أولاً ثم تحسينات بدقة أعلى.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 590,
+  "key": "y4:p33",
+  "subject_id": 21,
+  "question": "4- In 8-bit gray, how many distinct bit-planes?",
+  "options": [
+   "4",
+   "7",
+   "8",
+   "16"
+  ],
+  "correct_index": 2,
+  "explanation": "الصورة الرمادية 8 بت لها 8 مستويات بت (bit-planes).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 591,
+  "key": "y4:p34",
+  "subject_id": 21,
+  "question": "5- What is macroblock in video compression?",
+  "options": [
+   "Group of audio signals",
+   "Set of pixels for motion estimation",
+   "Type of color filter",
+   "Compression algorithm"
+  ],
+  "correct_index": 1,
+  "explanation": "الماكروبلوك مجموعة بكسلات (16×16) تُستخدم لتقدير الحركة في ضغط الفيديو.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 592,
+  "key": "y4:p35",
+  "subject_id": 21,
+  "question": "7- When the luminance quantisation matrix is scaled by a factor of 2, what happens:",
+  "options": [
+   "DC coefficients are eliminated, bit rate decreases",
+   "DC coefficients are eliminated, bit rate increases",
+   "More coefficients become zero, bit rate decreases, quality decreases",
+   "More coefficients remain non-zero, bit rate increases, quality improves"
+  ],
+  "correct_index": 2,
+  "explanation": "مضاعفة مصفوفة التكميم تجعل معاملات أكثر تصبح صفراً، فينقص معدل البت وتنخفض الجودة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 593,
+  "key": "y4:p36",
+  "subject_id": 21,
+  "question": "8-Why We use chroma subsampling (e.g. 4:2:2, 4:2:0) in video compression:",
+  "options": [
+   "To increase luminance quantisation",
+   "Because the human visual system is more sensitive to luminance than chrominance",
+   "To decrease flicker arrising from interlacted scanning",
+   "To improve gamma correction"
+  ],
+  "correct_index": 1,
+  "explanation": "العين البشرية أكثر حساسية للإضاءة (Luminance) من اللون، فنقلل دقة اللون دون فرق ملحوظ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 594,
+  "key": "y4:p37",
+  "subject_id": 21,
+  "question": "9- What is lossless audio file format",
+  "options": [
+   ".mp3",
+   ".wav",
+   ".mp4",
+   "None"
+  ],
+  "correct_index": 1,
+  "explanation": "ملف WAV صيغة صوتية غير مضغوطة (lossless)، بينما mp3 يضيّع بعض المعلومات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 595,
+  "key": "y4:p38",
+  "subject_id": 21,
+  "question": "13- What is the purpose of motion compensation in video compression algorithm like MPEG or H261 ?",
+  "options": [
+   "to increase the color depth",
+   "reduce spatial resolution",
+   "to find the matching block of a reference frame",
+   "to convert the frames into audio signal"
+  ],
+  "correct_index": 2,
+  "explanation": "التعويض الحركي (Motion compensation) يبحث عن الكتلة المطابقة في إطار مرجعي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 596,
+  "key": "y4:p39",
+  "subject_id": 21,
+  "question": "22- If we want to Encoding word (DATA) by shannoun-fano :",
+  "options": [
+   "D=0, A=10, T=11",
+   "D=10, A=0, T=11",
+   "D=11, A=0, T=0",
+   "none of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "في DATA: A تكررت مرتين فتأخذ أقصر كود (0)، وD وT يأخذان 10 و11.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 597,
+  "key": "y4:p40",
+  "subject_id": 21,
+  "question": "In basic video compression\nWhat type of frames is used :",
+  "options": [
+   "I-frame only",
+   "I-frame and p-frame",
+   "frame only",
+   "None"
+  ],
+  "correct_index": 1,
+  "explanation": "ضغط الفيديو الأساسي يستخدم الإطارات I (داخلية) وP (متوقعة).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 598,
+  "key": "y4:p41",
+  "subject_id": 21,
+  "question": "We have a (video/audio) signal sampled at 20 samples per second, 2 bits per sample\nIf it was compressed to 10 bit per second\n What is the compression ratio:",
+  "options": [
+   "2:1",
+   "3:1",
+   "4:1",
+   "5:1"
+  ],
+  "correct_index": 2,
+  "explanation": "المعدل الأصلي = 20×2 = 40 بت/ث، بعد الضغط 10 بت/ث، فالنسبة 4:1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 599,
+  "key": "y4:p42",
+  "subject_id": 21,
+  "question": "We have the predictor F'=round(32+f/2), and values are : 2 4 6 8,the predicts output :",
+  "options": [
+   "33 34 35 36",
+   "38 39 40 41",
+   "17 18 19 20",
+   "none"
+  ],
+  "correct_index": 0,
+  "explanation": "F′ = round(32 + f/2): للقيم 2,4,6,8 تعطي 33,34,35,36.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 600,
+  "key": "y4:p43",
+  "subject_id": 21,
+  "question": "Arithmetic algorithm, Probabilities : P (A) = 0.5, P(B) = 0.3, P(C) =0.2, The \"AB\" final range is :",
+  "options": [
+   "[0.25,0.40)",
+   "[0,0.25)",
+   "[0.4,0.5)",
+   "[0.5,0.8)"
+  ],
+  "correct_index": 0,
+  "explanation": "A=[0,0.5) وB=[0.5,0.8)؛ نطاق \"AB\" = [0.25,0.4).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 601,
+  "key": "y4:p44",
+  "subject_id": 21,
+  "question": "Consider a signal that has been sampled and quantized within the range of [-V, V] with a quantization step size of 1 volts.\nThe number of quantization levels N is equal:",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "none of these"
+  ],
+  "correct_index": 3,
+  "explanation": "عدد مستويات التكميم N = 2V/1 = 2V، فيعتمد على V ولا يساوي 1 أو 2 أو 3 دائماً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 602,
+  "key": "y4:p45",
+  "subject_id": 21,
+  "question": "In multimedia document systems,\nthe presentation model primarily\naffects:",
+  "options": [
+   "File storage format",
+   "User interaction and visual experience",
+   "Network transmission speed",
+   "Encryption of media file"
+  ],
+  "correct_index": 1,
+  "explanation": "نموذج العرض (Presentation model) يؤثر على تفاعل المستخدم وتجربته البصرية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 603,
+  "key": "y4:p46",
+  "subject_id": 21,
+  "question": "When we apply Discrete Wavelet Transform (the one where we calculate averages and differences), which is true?",
+  "options": [
+   "1. The number of input data elements increases",
+   "2. The number of input data elements stays the same",
+   "3. The number of input data elements is reduced in half",
+   "4. ?"
+  ],
+  "correct_index": 1,
+  "explanation": "في تحويل Wavelet (متوسطات وفروق) يبقى عدد العناصر ثابتاً (متوسطات + تفاصيل).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 604,
+  "key": "y4:p47",
+  "subject_id": 21,
+  "question": "The main step for loss in JPEG Compression :",
+  "options": [
+   "DCT",
+   "Quantization",
+   "RLE",
+   "entopy coding"
+  ],
+  "correct_index": 1,
+  "explanation": "مرحلة التكميم (Quantization) هي الخطوة الأساسية للفقد في JPEG.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 605,
+  "key": "y4:p48",
+  "subject_id": 21,
+  "question": "2- Adaptive Differential pluse Code Modulation (ADPCM) vary the mapping of bits to difference :",
+  "options": [
+   "Dynamically",
+   "Logarithmic",
+   "Statically",
+   "None"
+  ],
+  "correct_index": 0,
+  "explanation": "ADPCM يغيّر ربط البتات بالفروق ديناميكياً (Adaptive).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

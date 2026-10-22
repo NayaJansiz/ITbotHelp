@@ -1,0 +1,670 @@
+[
+ {
+  "id": 1088,
+  "key": "y5:p213",
+  "subject_id": 36,
+  "question": "خوارزمية AES تعتمد على:",
+  "options": [
+   "طول مفتاح ثابت",
+   "طول كتلة ثابت",
+   "الخياران صح",
+   "الخياران خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "AES يعتمد طول كتلة ثابت (128 بت)، بينما يمكن أن يكون طول المفتاح 128 أو 192 أو 256.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1089,
+  "key": "y5:p214",
+  "subject_id": 36,
+  "question": "التشفير بالمفتاح الخاص يحقق:",
+  "options": [
+   "السرية",
+   "السلامة",
+   "التوقيع الرقمي",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "التشفير بالمفتاح الخاص يحقق التوقيع الرقمي (إثبات المصدر وعدم الإنكار).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1090,
+  "key": "y5:p215",
+  "subject_id": 36,
+  "question": "ما هي عناصر التحكم بالوصول:",
+  "options": [
+   "Owner, Subject, Group",
+   "Subject, Object, Access Right",
+   "Authentication, Authorization",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "عناصر التحكم بالوصول: الموضوع (Subject) والكائن (Object) وحق الوصول (Access Right).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1091,
+  "key": "y5:p216",
+  "subject_id": 36,
+  "question": "حسب مبدأ كيرشوف، يعتمد الأمان على:",
+  "options": [
+   "حماية خوارزمية التشفير",
+   "حماية المفتاح وأمانه",
+   "A+B",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "مبدأ كيرشوف: أمان النظام يعتمد على سرية المفتاح لا على سرية خوارزمية التشفير.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1092,
+  "key": "y5:p217",
+  "subject_id": 36,
+  "question": "يعتمد أمان Blockchain على:",
+  "options": [
+   "خوارزميات التشفير بالمفتاح العام",
+   "Hash function",
+   "A+B",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "أمان Blockchain يعتمد على التشفير بالمفتاح العام (التواقيع) وعلى دوال الهاش.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1093,
+  "key": "y5:p218",
+  "subject_id": 36,
+  "question": "تحتوي الـ Blockchain على:",
+  "options": [
+   "قاعدة البيانات",
+   "سجل حدث ما",
+   "الهاش السابق والحالي",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "الكتلة تحتوي على سجل الأحداث (العمليات) وهاش الكتلة السابقة والحالية، وسلسلة الكتل تمثل قاعدة بيانات موزعة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1094,
+  "key": "y5:p219",
+  "subject_id": 36,
+  "question": "التحدث مع موظفي الشركة لسرقة المعلومات يُعرف بـ",
+  "options": [
+   "الهندسة الاجتماعية",
+   "Phishing",
+   "سرقة المعلومات",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "الحديث مع موظفي الشركة لسرقة المعلومات هو هندسة اجتماعية (Social Engineering).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1095,
+  "key": "y5:p220",
+  "subject_id": 36,
+  "question": "عند التشفير بالمفتاح الخاص، يتم فك التشفير:",
+  "options": [
+   "بالمفتاح الخاص",
+   "بالمفتاح العام",
+   "بالمفتاح الخاص المرتبط به",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "ما شُفّر بالمفتاح الخاص يُفك بالمفتاح العام المرتبط به.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1096,
+  "key": "y5:p221",
+  "subject_id": 36,
+  "question": "النمط الذي يسمح بانتقال الخطأ إلى الكتلة التالية فقط",
+  "options": [
+   "CFB",
+   "OFB",
+   "CTR",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "في نمط CFB ينتقل خطأ بت مشفر إلى الكتلة التالية، أما OFB وCTR فلا ينتشر الخطأ فيهما.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1097,
+  "key": "y5:p222",
+  "subject_id": 36,
+  "question": "ما الذي يميز نمط CBC:",
+  "options": [
+   "تشفير تسلسلي",
+   "لا يحتاج إلى IV",
+   "إظهار التطابق للكتل المشفرة",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "نمط CBC تشفير تسلسلي: كل كتلة تُجمع (XOR) مع الكتلة المشفرة السابقة، ويحتاج IV.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1098,
+  "key": "y5:p223",
+  "subject_id": 36,
+  "question": "النمط الذي يسمح بالتشفير المتوازي هو:",
+  "options": [
+   "CFB",
+   "OFB",
+   "CTR",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "نمط CTR يسمح بالتشفير المتوازي لأن كل كتلة تعتمد على عدّاد مستقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1099,
+  "key": "y5:p224",
+  "subject_id": 36,
+  "question": "في الـ Stream cipher، طول المفتاح (Key stream) المولد:",
+  "options": [
+   "بطول المفتاح Key",
+   "بطول النص الذي نريد تشفيره",
+   "يعتمد على PRNG",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "مفتاح التدفق (Key stream) في Stream cipher يُولَّد بنفس طول النص المراد تشفيره.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1100,
+  "key": "y5:p225",
+  "subject_id": 36,
+  "question": "إذا كان لدينا الإرسالية [ M , hash(M,K)] علماً أن M الرسالة و K المفتاح و hash هو التابع، فإن الإرسال يضمن:",
+  "options": [
+   "السرية",
+   "السلامة",
+   "A+B",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "الإرسال [M, hash(M,K)] يضمن السلامة (Integrity) فقط، لأن M يُرسل بشكل واضح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1101,
+  "key": "y5:p226",
+  "subject_id": 36,
+  "question": "يُفضل أن تكون كلمة المرور:",
+  "options": [
+   "مكونة من 8 محارف",
+   "أن تكون طويلة (على الأقل 12 محرفاً)",
+   "أن تكون قصيرة",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "كلمة المرور الجيدة طويلة (12 محرفاً على الأقل) لأن الطول يرفع صعوبة التخمين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1102,
+  "key": "y5:p227",
+  "subject_id": 36,
+  "question": "كلمة المرور تضمن:",
+  "options": [
+   "User Identity",
+   "User authentication",
+   "A+B",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "كلمة المرور تضمن التحقق من الهوية (User authentication).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1103,
+  "key": "y5:p228",
+  "subject_id": 36,
+  "question": "إن الـ Stream cipher أسرع من Block cipher:",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ Stream cipher أسرع من الـ Block cipher لأنه يعالج البتات مباشرة بعمليات بسيطة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1104,
+  "key": "y5:p229",
+  "subject_id": 36,
+  "question": "يمكن أن تكون هجمات الـ DoS عن غير قصد:",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "هجمات DoS قد تحدث عن غير قصد، مثل ازدحام مفاجئ بسبب زيادة الطلب على الخدمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1105,
+  "key": "y5:p230",
+  "subject_id": 36,
+  "question": "تعتمد سلسلة الكتل (Blockchain) على معمارية:",
+  "options": [
+   "Client-Server",
+   "Peer-to-peer",
+   "مركزي",
+   "كل ما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "الـ Blockchain يعتمد على معمارية الند للند (Peer-to-peer) وغير المركزية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1106,
+  "key": "y5:p231",
+  "subject_id": 36,
+  "question": "في بروتوكول Needham-Schroeder يُولد المفتاح المشترك باستخدام:",
+  "options": [
+   "KDC",
+   "المرسل يولد المفتاح",
+   "المستقبل يولد المفتاح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "في بروتوكول Needham-Schroeder يولّد مركز توزيع المفاتيح KDC المفتاح المشترك.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1107,
+  "key": "y5:p232",
+  "subject_id": 36,
+  "question": "على ماذا تحتوي الشهادة الرقمية:",
+  "options": [
+   "المفتاح الخاص للمالك",
+   "المفتاح العام للمالك",
+   "المفتاح الخاص للـ CA",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "الشهادة الرقمية تحتوي المفتاح العام للمالك موقّعاً من الـ CA، ولا تحتوي مفاتيح خاصة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1108,
+  "key": "y5:p233",
+  "subject_id": 36,
+  "question": "في تطبيقات الويب، عدم وجود آلية للتحقق من صحة المدخلات يُعتبر:",
+  "options": [
+   "Threat",
+   "Vulnerability",
+   "Risk",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "غياب التحقق من المدخلات هو ثغرة (Vulnerability) في تطبيق الويب.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1109,
+  "key": "y5:p234",
+  "subject_id": 36,
+  "question": "هجمات Snooping تصنف كـ:",
+  "options": [
+   "Active",
+   "Passive",
+   "كل من A و B",
+   "كل ما سبق غير صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "هجمات Snooping (التنصت) سلبية (Passive) لأنها لا تغيّر البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1110,
+  "key": "y5:p235",
+  "subject_id": 36,
+  "question": "التوقيع الرقمي يحقق:",
+  "options": [
+   "Message authentication",
+   "السلامة",
+   "عدم الإنكار",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "التوقيع الرقمي يحقق مصادقة الرسالة والسلامة وعدم الإنكار.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1111,
+  "key": "y5:p236",
+  "subject_id": 36,
+  "question": "تابع أويلر للعدد 11:",
+  "options": [
+   "10",
+   "11",
+   "9"
+  ],
+  "correct_index": 0,
+  "explanation": "تابع أويلر للعدد الأولي 11 يساوي 11 - 1 = 10.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1112,
+  "key": "y5:p237",
+  "subject_id": 36,
+  "question": "يتم حساب MAC باستخدام",
+  "options": [
+   "Shared key",
+   "Private key",
+   "Public key"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ MAC يُحسب باستخدام مفتاح مشترك (Shared key) بين المرسل والمستقبل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1113,
+  "key": "y5:p238",
+  "subject_id": 36,
+  "question": "يشير مصطلح Cipher text إلى:",
+  "options": [
+   "خوارزمية تشفير",
+   "النص بعد التشفير",
+   "النص بعد فك التشفير",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "Cipher text هو النص بعد التشفير.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1114,
+  "key": "y5:p239",
+  "subject_id": 36,
+  "question": "في التحكم بالوصول السياسة الأفضل:",
+  "options": [
+   "المفتوحة",
+   "المغلقة"
+  ],
+  "correct_index": 1,
+  "explanation": "السياسة المغلقة (Closed) أفضل: يُمنع كل شيء ما لم يُسمح به صراحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1115,
+  "key": "y5:p240",
+  "subject_id": 36,
+  "question": "في التحكم بالوصول يتم أولاً:",
+  "options": [
+   "تحديد هوية المستخدم (Authentication)",
+   "تحديد صلاحيات المستخدم (Authorization)",
+   "تحديد نشاط المستخدم (Auditing)",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "أول خطوة بالتحكم بالوصول هي تحديد هوية المستخدم (Authentication) ثم الصلاحيات ثم التدقيق.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1116,
+  "key": "y5:p241",
+  "subject_id": 36,
+  "question": "من أمان قواعد البيانات استخدام View والتحكم بالوصول:",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "استخدام Views والتحكم بالوصول من وسائل أمان قواعد البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1117,
+  "key": "y5:p242",
+  "subject_id": 36,
+  "question": "الـ SQL injection يحدث في عبارات:",
+  "options": [
+   "Update",
+   "Insert",
+   "Select",
+   "كل ما سبق صح"
+  ],
+  "correct_index": 3,
+  "explanation": "SQL injection يمكن أن يحدث في عبارات Select وInsert وUpdate.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1118,
+  "key": "y5:p243",
+  "subject_id": 36,
+  "question": "تُحدد أهداف الحماية من خلال:",
+  "options": [
+   "CIA triad",
+   "Security service",
+   "Security policy",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "أهداف الحماية تُحدد من خلال ثالوث CIA (السرية والسلامة والتوفر).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1119,
+  "key": "y5:p244",
+  "subject_id": 36,
+  "question": "مصطلح CIA يشير إلى:",
+  "options": [
+   "Confidentiality, Integrity, Availability",
+   "خيارات أخرى خاطئة"
+  ],
+  "correct_index": 0,
+  "explanation": "CIA تعني Confidentiality, Integrity, Availability.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1120,
+  "key": "y5:p245",
+  "subject_id": 36,
+  "question": "هجمات XSS هي:",
+  "options": [
+   "ع تطبيقات الويب",
+   "تعليمة GET",
+   "تعليمة POST",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "هجمات XSS تستهدف تطبيقات الويب بحقن سكربتات خبيثة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1121,
+  "key": "y5:p246",
+  "subject_id": 36,
+  "question": "مصطلح RBAC يمنح الصلاحيات بناءً على:",
+  "options": [
+   "الأدوار",
+   "مستخدمين",
+   "مستويات",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "RBAC يمنح الصلاحيات بناءً على الأدوار (Roles).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

@@ -1,0 +1,431 @@
+[
+ {
+  "id": 606,
+  "key": "y4:p52",
+  "subject_id": 22,
+  "question": "1. The degree of Bezier curve is independent of number control points\nدرجة منحنى بيزيه مستقلة عن عدد نقاط التحكم",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "درجة منحنى بيزيه تساوي عدد نقاط التحكم ناقص واحد، فهي مرتبطة بعددها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 607,
+  "key": "y4:p53",
+  "subject_id": 22,
+  "question": "2. Which technique of color CRT is used for production of colored image?\nأي تقنية توليد الألوان تُستخدم في شاشات CRT؟",
+  "options": [
+   "Beam penetration",
+   "Shadow mask",
+   "both a & b",
+   "None of these"
+  ],
+  "correct_index": 2,
+  "explanation": "الشاشات الملوّنة تستخدم تقنيتي Beam penetration وShadow mask.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 608,
+  "key": "y4:p54",
+  "subject_id": 22,
+  "question": "3. The knot vector is a set of m+1 decreasing numbers\nشعاع العقد هو مجموعة من m+1 من الأعداد المتناقصة",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "شعاع العقد (Knot vector) متتالية غير متناقصة من الأعداد، وليس متناقصة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 609,
+  "key": "y4:p55",
+  "subject_id": 22,
+  "question": "4. All knots have knot span\nجميع العقد لها مدى (span)",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "ليس لكل العقد مدى (span) غير صفري، فالعقد المتكررة والأخيرة لا تعطي مدى.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 610,
+  "key": "y4:p56",
+  "subject_id": 22,
+  "question": "5. Which one is not valid outcode point in line clipping?\nأي من الترميزات التالية غير صحيح في خوارزمية قص الخطوط؟",
+  "options": [
+   "1101",
+   "101",
+   "0110",
+   "none of these"
+  ],
+  "correct_index": 1,
+  "explanation": "ترميز Outcode يتكون من 4 بتات، لذلك 101 غير صالح.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 611,
+  "key": "y4:p57",
+  "subject_id": 22,
+  "question": "6\nفي خوارزمية قص المضلعات، إذا كانت النقطة الحالية P خارج النافذة والنقطة السابقة S داخل النافذة، فماذا نفعل؟",
+  "options": [
+   "store intersection point of line PS(S′) only",
+   "store point P only",
+   "store points S′ and P",
+   "none of these"
+  ],
+  "correct_index": 0,
+  "explanation": "عندما S داخل النافذة وP خارجها نخزّن نقطة التقاطع S′ فقط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 612,
+  "key": "y4:p58",
+  "subject_id": 22,
+  "question": "7. The sum of all non-zero degree p B-spline basis function on span [ui, ui+1) is 1\nمجموع توابع الأساس B-spline من الدرجة p غير الصفرية على المجال [ui, ui+1) يساوي 1",
+  "options": [
+   "true",
+   "false"
+  ],
+  "correct_index": 0,
+  "explanation": "مجموع توابع الأساس B-spline غير الصفرية على أي مجال (span) يساوي 1 (partition of unity).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 613,
+  "key": "y4:p59",
+  "subject_id": 22,
+  "question": "8. Reflection of a point about y-axis, followed by a counter-clockwise rotation of 90°, is equivalent to reflection about the line?\nانعكاس نقطة حول محور y ثم تدويرها 90° عكس عقارب الساعة يكافئ انعكاسها حول أي خط؟",
+  "options": [
+   "x = −y",
+   "x = 0",
+   "x = y",
+   "none of these"
+  ],
+  "correct_index": 0,
+  "explanation": "انعكاس حول y ثم تدوير 90° يعطي (x,y)→(-y,-x) وهو انعكاس حول الخط x = -y.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 614,
+  "key": "y4:p60",
+  "subject_id": 22,
+  "question": "9. A transformation that slants the shape of an object is called __\nالتحويل الذي يُميل شكل الجسم يسمى",
+  "options": [
+   "Reflection",
+   "Shear",
+   "Distortion",
+   "Scaling"
+  ],
+  "correct_index": 1,
+  "explanation": "التحويل الذي يُميل شكل الجسم يسمى القص (Shear).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 615,
+  "key": "y4:p61",
+  "subject_id": 22,
+  "question": "10. At a knot of multiplicity k, basis function Ni,p(u) is C^(p−k) continuity\nعند عقدة بتكرار k، يكون تابع الأساس Ni,p(u) ذا استمرارية C^(p−k)",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "عند عقدة بتكرار k يكون تابع الأساس ذا استمرارية C^(p-k).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 616,
+  "key": "y4:p62",
+  "subject_id": 22,
+  "question": "11. Inside point tests of polygon are useful in __\nاختبارات النقاط الداخلية للمضلع مفيدة في:",
+  "options": [
+   "edge drawing",
+   "filling polygon",
+   "polygon transform",
+   "none of these"
+  ],
+  "correct_index": 1,
+  "explanation": "اختبارات النقطة الداخلية تُستخدم في تعبئة المضلعات (Polygon filling).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 617,
+  "key": "y4:p63",
+  "subject_id": 22,
+  "question": "12. If number of intersections is odd then point is __ of the polygon\nإذا كان عدد التقاطعات فرديًا فإن النقطة تكون __ بالنسبة للمضلع",
+  "options": [
+   "Inside",
+   "Outside",
+   "a and b",
+   "none of these"
+  ],
+  "correct_index": 0,
+  "explanation": "إذا كان عدد تقاطعات الشعاع مع المضلع فردياً فالنقطة داخله.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 618,
+  "key": "y4:p64",
+  "subject_id": 22,
+  "question": "13. How to transform a rectangle A having opposite corners (1, −3) and (3, 3) to a rectangle B having opposite corners (2, 0) and (10, 12)?\nكيف نحوّل المستطيل A ذو الرأسين المتقابلين (1, −3) و (3, 3) إلى المستطيل B ذوالرأسين المتقابلين (2, 0) و (10, 12)؟",
+  "options": [
+   "T(−1, 3) S(4, 2) T(2, 0)",
+   "T(6, 0) S(4, 2) T(−2, 0)",
+   "T(−1, 3) S(2, 4) T(2, 0)",
+   "none of these"
+  ],
+  "correct_index": 0,
+  "explanation": "نزيح A إلى الأصل T(-1,3)، نكبّر بالعرض 8/2=4 والارتفاع 12/6=2 S(4,2)، ثم نزيح T(2,0).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 619,
+  "key": "y4:p65",
+  "subject_id": 22,
+  "question": "14. Apply Bresenham’s Line Algorithm from point (2,3) to (11,8)\nطبّق خوارزمية Bresenham من (2,3) إلى (11,8)",
+  "options": [
+   "(2,3), (3,4), (4,5), (5,5), (6,6), (7,6), (8,7), (9,7), (10,8), (11,8)",
+   "(2,3), (3,4), (4,4), (5,5), (6,5), (7,6), (8,6), (9,7), (10,7), (11,8)",
+   "(2,3), (3,3), (4,4), (5,4), (6,5), (7,5), (8,6), (9,6), (10,7), (11,8)",
+   "(2,3), (3,4), (4,4), (5,5), (6,6), (7,6), (8,7), (9,7), (10,8), (11,8)"
+  ],
+  "correct_index": 1,
+  "explanation": "Bresenham مع dx=9 وdy=5: التسلسل الصحيح (2,3),(3,4),(4,4),(5,5),(6,5),(7,6),(8,6),(9,7),(10,7),(11,8).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 620,
+  "key": "y4:p66",
+  "subject_id": 22,
+  "question": "15. Apply DDA Line Algorithm from point (2,3) to (10,7)\nطبّق خوارزمية DDA من (2,3) إلى (10,7)",
+  "options": [
+   "(2,3), (3,4), (4,4), (5,5), (6,5), (7,6), (8,6), (9,7), (10,7)",
+   "(2,3), (3,4), (4,5), (5,5), (6,6), (7,6), (8,7), (9,7), (10,7)",
+   "(2,3), (3,4), (4,4), (5,4), (6,5), (7,5), (8,6), (9,6), (10,7)"
+  ],
+  "correct_index": 0,
+  "explanation": "DDA مع الميل 0.5: y تزيد 0.5 كل خطوة وتُقرَّب، فينتج (2,3),(3,4),(4,4),(5,5),... حتى (10,7).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 621,
+  "key": "y4:p67",
+  "subject_id": 22,
+  "question": "16) Identify the representation:\n\"If a region is uniform, stop. If a region is non-uniform, subdivide it and repeat the process.\"",
+  "options": [
+   "Octree",
+   "CSG",
+   "BSP",
+   "none of these"
+  ],
+  "correct_index": 0,
+  "explanation": "تقسيم المنطقة غير المنتظمة بشكل متكرر هو تمثيل Octree (Quadtree في 2D).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 622,
+  "key": "y4:p68",
+  "subject_id": 22,
+  "question": "17) A plane with the following equation is given:\n\nHow far away is the origin from the plane?",
+  "options": [
+   "1",
+   "3",
+   "9",
+   "None of these"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 623,
+  "key": "y4:p69",
+  "subject_id": 22,
+  "question": "18) We want to clip a line A(1,5) and B(4,4)\nusing the Cohen–Sutherland algorithm with window coordinates\nand  What is outcode(A)?",
+  "options": [
+   "0000",
+   "1000",
+   "1000",
+   "none of these"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 624,
+  "key": "y4:p70",
+  "subject_id": 22,
+  "question": "19) What is outcode(B)?",
+  "options": [
+   "0000",
+   "0100",
+   "0010",
+   "none of these"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 625,
+  "key": "y4:p71",
+  "subject_id": 22,
+  "question": "20) What is the state of the line AB?",
+  "options": [
+   "partially visible and intersection point is (3,4.2)",
+   "partially visible and intersection point is (3,4.3)",
+   "visible",
+   "none of these"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 626,
+  "key": "y4:p72",
+  "subject_id": 22,
+  "question": "21) The geometric continuity is ____ when the curvature of the last point of the first curve equals the curvature of the first point of the second curve",
+  "options": [
+   "C(0)",
+   "C(1)",
+   "C(2)",
+   "none of these"
+  ],
+  "correct_index": 2,
+  "explanation": "الاستمرارية C(2) تعني تساوي الانحناء عند نقطة اتصال المنحنيين.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 627,
+  "key": "y4:p73",
+  "subject_id": 22,
+  "question": "22) We can have many ____ functions representing one curve",
+  "options": [
+   "explicit",
+   "parametric",
+   "implicit",
+   "none of these"
+  ],
+  "correct_index": 1,
+  "explanation": "يمكن وجود عدة دوال بارامترية (parametric) تمثل المنحنى نفسه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

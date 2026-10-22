@@ -1,0 +1,481 @@
+[
+ {
+  "id": 725,
+  "key": "y4:p188",
+  "subject_id": 26,
+  "question": "عملية التقاطع في المنطق الضبابي تصب عادة باستخدام",
+  "options": [
+   "الجمع",
+   "الطرح",
+   "MIN",
+   "MAX"
+  ],
+  "correct_index": 2,
+  "explanation": "عملية التقاطع في المنطق الضبابي تُحسب عادةً بالعامل MIN.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 726,
+  "key": "y4:p189",
+  "subject_id": 26,
+  "question": "I(x,y) = x -> y",
+  "options": [
+   "I(0,0)",
+   "I(0,1)",
+   "I(1,0)",
+   "I(1,1)"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 727,
+  "key": "y4:p190",
+  "subject_id": 26,
+  "question": "ما المقصود بالmodifier في المنطق الضبابي",
+  "options": [
+   "عملية إزالة الضبابية",
+   "دالة تغيير درجة انتماء للمجموعة الضبابية",
+   "تحويل المتغيرات إلى قيم ثنائية",
+   "عملية جمع مجموعتين ضبابيتين"
+  ],
+  "correct_index": 1,
+  "explanation": "الـ modifier دالة تغيّر درجة الانتماء للمجموعة الضبابية (مثل very).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 728,
+  "key": "y4:p191",
+  "subject_id": 26,
+  "question": "8. إذا كان لديك مجموعة ضبابية A من مجموعة كلاسيكية X، إذا:",
+  "options": [
+   "1. (A اجتماع -A) (x) = X",
+   "2. (A تقاطع -A) (x) = فاي",
+   "3. A&B",
+   "4. كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "في المنطق الضبابي A∪¬A ≠ X وA∩¬A ≠ ∅ بشكل عام، فالعبارتان خاطئتان.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 729,
+  "key": "y4:p192",
+  "subject_id": 26,
+  "question": "اذا كانت درجة انتماء A)t( = 0.5 \nفإن \nvery(very(A(t))  تساوي",
+  "options": [
+   "0.625",
+   "0.0625",
+   "0.025",
+   "0.25"
+  ],
+  "correct_index": 1,
+  "explanation": "very(A) = A²، فـ very(very(0.5)) = (0.5²)² = 0.0625.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 730,
+  "key": "y4:p193",
+  "subject_id": 26,
+  "question": "9. اذا كان لدينا التابع T-norm، يمكن اشتقاق التابع T-conorm :",
+  "options": [
+   "1. S(a,b) = 1 - T(a, b)",
+   "2. S(a, b) = T(1-a,1-b)",
+   "3. S(a, b) = 1 - T(1-a,1-b)",
+   "4. S(a, b) = 1 + T(1-a,1-b)"
+  ],
+  "correct_index": 2,
+  "explanation": "المشتق من T-norm هو T-conorm: S(a,b) = 1 - T(1-a, 1-b) (قانون دي مورغان).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 731,
+  "key": "y4:p194",
+  "subject_id": 26,
+  "question": "ما هو الهدف الاساسي من استخدام المنطق الضبابي في الانظمة الذكية :",
+  "options": [
+   "1- استبدال المنكق التقليدي بل كامل",
+   "2- التعامل مع المعلومات الدقيقق فقط",
+   "3- معالجة عدم التأكيد والغموض في البيانات",
+   "4 -زيادة سرعة المعالجة الحسابية"
+  ],
+  "correct_index": 2,
+  "explanation": "الهدف من المنطق الضبابي معالجة عدم التأكد والغموض في البيانات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 732,
+  "key": "y4:p195",
+  "subject_id": 26,
+  "question": "بفرض لدينا متجه 'W(0.8,0.2,0.0)  يكون عندئذ :",
+  "options": [
+   "1-orness =0.8",
+   "2-orness =0.1",
+   "3-andness =0.1",
+   "4-andness =0.4"
+  ],
+  "correct_index": 2,
+  "explanation": "orness = 0.8×1 + 0.2×0.5 = 0.9، فـ andness = 1 - 0.9 = 0.1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 733,
+  "key": "y4:p196",
+  "subject_id": 26,
+  "question": "If pressure is big and volume is small \n\nالعبارة الضبابية هي :  Pressure is not big",
+  "options": [
+   "1- volume is not small",
+   "2- volume is small",
+   "3- unknown",
+   "4- volume is big"
+  ],
+  "correct_index": 2,
+  "explanation": "مع \"Pressure is not big\" لا يمكن استنتاج شيء عن الحجم باستخدام قاعدة الاستدلال المعمم، فهو unknown.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 734,
+  "key": "y4:p197",
+  "subject_id": 26,
+  "question": "If pressure is big and volume is small \n\nالعبارة الضبابية هي :  Pressure is very big",
+  "options": [
+   "1- volume is very small",
+   "2- volume is small",
+   "3- unknown",
+   "4- volume is big"
+  ],
+  "correct_index": 0,
+  "explanation": "الاستدلال الضبابي المعمم: very big للضغط يعطي very small للحجم.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 735,
+  "key": "y4:p198",
+  "subject_id": 26,
+  "question": "كان في سؤال من خواص الfuzzy logic",
+  "options": [
+   "1- كل عنصر يأخذ درجة انتماء 0 او 1",
+   "2- كل قيمة درجة انتمائها عدد بين ال0 وال1",
+   "3-",
+   "4-"
+  ],
+  "correct_index": 1,
+  "explanation": "المنطق الضبابي: درجة انتماء كل عنصر عدد بين 0 و1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 736,
+  "key": "y4:p199",
+  "subject_id": 26,
+  "question": "A(x) = 0.4/x1 + 0.6/x2 + 0.8/x3\nB(y) = 0.3/y1 + 0.5/y2\nعدد الانتماءات الأكبر من 0.4 في مصفوفة الجداء الديكارتي A*B:",
+  "options": [
+   "1.  2",
+   "2.  3",
+   "3.  4",
+   "4.  5"
+  ],
+  "correct_index": 0,
+  "explanation": "بأخذ min للجداء الديكارتي تصبح العناصر: 0.3,0.4,0.3,0.5,0.3,0.5، والأكبر من 0.4 اثنان فقط.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 737,
+  "key": "y4:p200",
+  "subject_id": 26,
+  "question": ". عنصر من مجموعة ضبابية u ينتمي للمجال [0,1] يحقق:",
+  "options": [
+   "𝑓𝑎𝑖𝑟𝑙𝑦 𝑡𝑟𝑢𝑒(𝑢) = √𝑢",
+   "𝑣𝑒𝑟𝑦 𝑡𝑟𝑢𝑒(𝑢) = (𝑢)²",
+   "𝑣𝑒𝑟𝑦 𝑓𝑎𝑙𝑠𝑒(𝑢) = (1 − 𝑢)²",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "fairly true = √u، very true = u²، very false = (1-u)²، فكلها صحيحة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 738,
+  "key": "y4:p201",
+  "subject_id": 26,
+  "question": "17 كان كتير طويل بس رح حاول اكتب اللي تذكرته\nC = 0.2/1 + 1/2 + 0.3/3\nالجداء الديكارتي ل {1,2,3} بكون R = 1    0.8  0.3      0.8    1   0.8       0.3   0.8   1 فبكون C o R",
+  "options": [
+   "C = 0.8/1 + 1/2 + 0.8/3",
+   "C = 0.2/1 + 1/2 + 0.8/3",
+   "C = 0.2/1 + 1/2 + 0.3/3",
+   "C = 0.8/1 = 1/2 + 0.2/3"
+  ],
+  "correct_index": 0,
+  "explanation": "التركيب max-min: C∘R = 0.8/1 + 1/2 + 0.8/3.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 739,
+  "key": "y4:p202",
+  "subject_id": 26,
+  "question": "ليس من خصائص T-norm",
+  "options": [
+   "1. Decreasing",
+   "2. Symmetricity",
+   "3. One identy",
+   "4. Associativity"
+  ],
+  "correct_index": 0,
+  "explanation": "T-norm يملك خاصية التزايد (monotonic) وليس التناقص (decreasing).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 740,
+  "key": "y4:p203",
+  "subject_id": 26,
+  "question": "نعبر عن a-cut",
+  "options": [
+   "1- مهما تكن x فإن u(x) = a",
+   "2- مهما تكن x فإن u(x) > a",
+   "3- مهما تكن x فإن u(x) <= a",
+   "4- مهما تكن x فإن u(x) >= a"
+  ],
+  "correct_index": 3,
+  "explanation": "المقطع a (a-cut) هو مجموعة العناصر التي درجة انتمائها ≥ a.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 741,
+  "key": "y4:p204",
+  "subject_id": 26,
+  "question": "ليس من خصائص averaging:",
+  "options": [
+   "1. Associativity",
+   "2. Commutativity",
+   "3. Idempotency",
+   "4. Monotonicity"
+  ],
+  "correct_index": 0,
+  "explanation": "عوامل المتوسط (averaging) ليست تجميعية (Associativity) بشكل عام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 742,
+  "key": "y4:p205",
+  "subject_id": 26,
+  "question": "في سؤال حساب OWA\nW = { 0.4, 0.3, 0.2, 0.1 }\na = { 0.7, 1, 0.2, 0.6 }",
+  "options": [
+   "1- 0.75",
+   "2- 0.50",
+   "3- 0.25",
+   "4- كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "OWA: ترتيب القيم تنازلياً (1,0.7,0.6,0.2): 0.4 + 0.21 + 0.12 + 0.02 = 0.75.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 743,
+  "key": "y4:p206",
+  "subject_id": 26,
+  "question": "وفي سؤال F(a, b)=a+b-ab:",
+  "options": [
+   "Tnom",
+   "Tconom",
+   "Complete",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "F(a,b)=a+b-ab هو المجموع الاحتمالي، وهو T-conorm.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 744,
+  "key": "y4:p207",
+  "subject_id": 26,
+  "question": "بالضبابي\nلدينا if A then B\nقيمة تحقق A بالمقدمة هيي 0.4 واذا كانت مصفوفة B (0.9, 0.5, 0.2) بتكون قيمة التحقق الممداني :",
+  "options": [
+   "0.9, 0.5, 0.2",
+   "0.4, 0.4, 0.2",
+   "0.4, 0.4, 0.4",
+   "0.36, 0.2, 0.08"
+  ],
+  "correct_index": 1,
+  "explanation": "استدلال Mamdani يأخذ min(0.4, B) = (0.4, 0.4, 0.2).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 745,
+  "key": "y4:p208",
+  "subject_id": 26,
+  "question": "جموع عناصر المصفوفة الناتجة عن الجداء الديكارتي \nA=0.2/x1 +0.4/x2\nB=0.7/x1 +0.9/x2",
+  "options": [
+   "1.0",
+   "1.2",
+   "1.4",
+   "1.6"
+  ],
+  "correct_index": 1,
+  "explanation": "الجداء الديكارتي بأخذ min يعطي 0.2,0.2,0.4,0.4 ومجموعها 1.2.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 746,
+  "key": "y4:p209",
+  "subject_id": 26,
+  "question": "ليس من خواص t-norm",
+  "options": [
+   "1- product",
+   "2- minimum",
+   "3- weak",
+   "4- probabilistic"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 747,
+  "key": "y4:p210",
+  "subject_id": 26,
+  "question": "للتعبير عن الmax",
+  "options": [
+   "1- W = [1, 0, 0, 0 0]",
+   "2- W = [0, 1, 0, 0 0]",
+   "2- W = [0, 0, 0, 0 1]"
+  ],
+  "correct_index": 0,
+  "explanation": "لتمثيل max في OWA نضع كل الوزن على أول عنصر بعد ترتيب القيم تنازلياً: [1,0,0,0,0].",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 748,
+  "key": "y4:p211",
+  "subject_id": 26,
+  "question": ".",
+  "options": [
+   "0 <= f <= max",
+   "min <= f <= max",
+   "min <= f <= 1",
+   "0 <= f <= 1"
+  ],
+  "correct_index": 1,
+  "explanation": "عامل المتوسط يحقق min ≤ f ≤ max.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

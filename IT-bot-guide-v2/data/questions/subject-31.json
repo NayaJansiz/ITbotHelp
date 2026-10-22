@@ -1,0 +1,562 @@
+[
+ {
+  "id": 910,
+  "key": "y4:net1",
+  "subject_id": 31,
+  "question": "1- What is the purpose of the HSRP \"preempt\" feature?",
+  "options": [
+   "To allow a router with a higher priority to take over as the active router.",
+   "To prevent any router from becoming the active router.",
+   "To ensure the HSRP on all routers in the group.",
+   "To disable the standby router never becomes active."
+  ],
+  "correct_index": 0,
+  "explanation": "ميزة preempt تسمح لموجّه ذي أولوية أعلى بأن يصبح الـ active router.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 911,
+  "key": "y4:net2",
+  "subject_id": 31,
+  "question": "2- Which of the following statements about VRRP is true?",
+  "options": [
+   "VRRP is a Cisco proprietary protocol that provides redundancy for IP networks.",
+   "VRRP elects an active router and a standby router, and all other routers are backup routers.",
+   "VRRP uses the multicast address 224.0.0.18 to communicate between routers.",
+   "VRRP requires all routers in the group to have the same priority value."
+  ],
+  "correct_index": 2,
+  "explanation": "VRRP يستخدم عنوان multicast 224.0.0.18 للتواصل بين الموجّهات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 912,
+  "key": "y4:net3",
+  "subject_id": 31,
+  "question": "3- Which VRRP state indicates that the router is currently forwarding packets for the virtual IP address?",
+  "options": [
+   "Initialize",
+   "Backup",
+   "Master",
+   "Standby"
+  ],
+  "correct_index": 2,
+  "explanation": "الحالة Master تعني أن الموجّه يمرر الحزم للعنوان الافتراضي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 913,
+  "key": "y4:net4",
+  "subject_id": 31,
+  "question": "4- What is the primary advantage of using GLBP over HSRP and VRRP?",
+  "options": [
+   "GLBP provides faster failover times.",
+   "GLBP supports load balancing across multiple routers.",
+   "GLBP is an open standard protocol.",
+   "GLBP uses fewer resources than HSRP and VRRP."
+  ],
+  "correct_index": 1,
+  "explanation": "ميزة GLBP الرئيسية أنه يدعم توزيع الحمل (load balancing) بين عدة موجّهات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 914,
+  "key": "y4:net5",
+  "subject_id": 31,
+  "question": "5- Which of the following is a key feature of GLBP?",
+  "options": [
+   "It uses a single virtual MAC address for all routers.",
+   "It provides redundancy but not load balancing.",
+   "It allows multiple routers to share the load of traffic using multiple virtual MAC addresses.",
+   "It is an open standard protocol."
+  ],
+  "correct_index": 2,
+  "explanation": "GLBP يسمح لعدة موجّهات بتقاسم الحمل عبر عدة عناوين MAC افتراضية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 915,
+  "key": "y4:net6",
+  "subject_id": 31,
+  "question": "6- Which VTP mode allows a switch to create, modify, and delete VLANs for the entire VTP domain?",
+  "options": [
+   "Server",
+   "Client",
+   "Transparent",
+   "Off"
+  ],
+  "correct_index": 0,
+  "explanation": "وضع Server في VTP يسمح بإنشاء وتعديل وحذف الـ VLANs لكامل نطاق VTP.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 916,
+  "key": "y4:net7",
+  "subject_id": 31,
+  "question": "7- Which of the following is a benefit of using VTP in a network?",
+  "options": [
+   "It reduces the need for manual VLAN configuration on each switch.",
+   "It increases the number of VLANs that can be created.",
+   "It allows for dynamic IP address assignment.",
+   "It simplifies the configuration of routing protocols."
+  ],
+  "correct_index": 0,
+  "explanation": "فائدة VTP تقليل الحاجة لإعداد VLAN يدوياً على كل سويتش.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 917,
+  "key": "y4:net8",
+  "subject_id": 31,
+  "question": "8- Which DTP switch port mode allows the port to create a trunk link if the neighboring port is in trunk mode or desirable mode?",
+  "options": [
+   "Access",
+   "Dynamic Desirable",
+   "Dynamic Auto",
+   "Trunk"
+  ],
+  "correct_index": 2,
+  "explanation": "منفذ Dynamic Auto يصبح trunk إذا كان الجار trunk أو desirable.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 918,
+  "key": "y4:net9",
+  "subject_id": 31,
+  "question": "9- What happens if both ends of a link are set to Dynamic Auto mode?",
+  "options": [
+   "The link becomes a trunk link.",
+   "The link becomes an access link.",
+   "The link remains in a non-trunking state.",
+   "The link becomes a hybrid link."
+  ],
+  "correct_index": 2,
+  "explanation": "عندما يكون الطرفان Dynamic Auto لا يتفاوضان ويبقى الرابط access (non-trunking).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 919,
+  "key": "y4:net10",
+  "subject_id": 31,
+  "question": "10- Which mode combination can be used to form an EtherChannel using LACP?",
+  "options": [
+   "Active/Active",
+   "Passive/Passive",
+   "Active/Passive",
+   "Auto/Desirable"
+  ],
+  "correct_index": 2,
+  "explanation": "يمكن تشكيل EtherChannel بـ LACP عند Active/Active أو Active/Passive، وأشهرها Active/Passive.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 920,
+  "key": "y4:net11",
+  "subject_id": 31,
+  "question": "11- Which port security violation mode allows traffic from known MAC addresses and drops traffic from unknown MAC addresses without generating a log message?",
+  "options": [
+   "Protect",
+   "Restrict",
+   "Shutdown",
+   "Monitor"
+  ],
+  "correct_index": 0,
+  "explanation": "الوضع Protect يسمح بالعناوين المعروفة ويحذف غير المعروفة دون إنشاء سجل (log).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 921,
+  "key": "y4:net12",
+  "subject_id": 31,
+  "question": "12- What is the effect of the switchport port-security violation restrict command?",
+  "options": [
+   "It disables the port and places it in the err-disabled state.",
+   "It drops packets from unknown MAC addresses and generates a log message.",
+   "It allows traffic from known MAC addresses and drops traffic from unknown MAC addresses without generating a log message.",
+   "It removes all secure MAC addresses from the port."
+  ],
+  "correct_index": 1,
+  "explanation": "الوضع restrict يحذف الحزم من MAC غير المعروفة ويولّد رسالة log وعداداً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 922,
+  "key": "y4:net13",
+  "subject_id": 31,
+  "question": "13- Which type of VLAN is used to carry user-generated traffic?",
+  "options": [
+   "Native VLAN",
+   "Voice VLAN",
+   "Management VLAN",
+   "Data VLAN"
+  ],
+  "correct_index": 3,
+  "explanation": "الـ Data VLAN تحمل حركة المستخدمين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 923,
+  "key": "y4:net14",
+  "subject_id": 31,
+  "question": "14- What is the role of a designated port in STP?",
+  "options": [
+   "To block traffic to prevent loops.",
+   "To forward traffic towards the root bridge.",
+   "To provide a backup path in case of failure.",
+   "To manage VLAN configurations."
+  ],
+  "correct_index": 1,
+  "explanation": "المنفذ المعيّن (Designated) يمرر الحركة في المقطع؛ والخيار B أقرب إجابة بين الخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 924,
+  "key": "y4:net15",
+  "subject_id": 31,
+  "question": "15- What is the purpose of the BPDU (Bridge Protocol Data Unit) in STP?",
+  "options": [
+   "To carry VLAN information.",
+   "To aggregate traffic from multiple switches.",
+   "To connect end devices to the network.",
+   "To enforce port security policies."
+  ],
+  "correct_index": 0,
+  "explanation": "الـ BPDU رسائل بروتوكول STP لتبادل معلومات الطوبولوجيا ومنع الحلقات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 925,
+  "key": "y4:net16",
+  "subject_id": 31,
+  "question": "16- What is the maximum age timer in STP?",
+  "options": [
+   "10 seconds",
+   "20 seconds",
+   "30 seconds",
+   "40 seconds"
+  ],
+  "correct_index": 1,
+  "explanation": "مؤقت Max Age في STP يساوي 20 ثانية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 926,
+  "key": "y4:net17",
+  "subject_id": 31,
+  "question": "17- What is the default state of an SVI when it is first created?",
+  "options": [
+   "Up and operational.",
+   "Down and administratively shut down.",
+   "Forwarding traffic.",
+   "Blocking traffic."
+  ],
+  "correct_index": 1,
+  "explanation": "الواجهة الافتراضية SVI عند إنشائها تكون مغلقة إدارياً (shutdown) حتى تُفعَّل بـ no shutdown.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 927,
+  "key": "y4:net18",
+  "subject_id": 31,
+  "question": "18- Which protocol is used to tag VLAN traffic on a trunk link?",
+  "options": [
+   "VTP",
+   "DTP",
+   "802.1Q",
+   "STP"
+  ],
+  "correct_index": 2,
+  "explanation": "البروتوكول المستخدم لوسم الـ VLAN على روابط trunk هو IEEE 802.1Q.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 928,
+  "key": "y4:net19",
+  "subject_id": 31,
+  "question": "19- Which command is used to delete a VLAN on a Cisco switch?",
+  "options": [
+   "no vlan [vlan-id]",
+   "delete vlan [vlan-id]",
+   "remove vlan [vlan-id]",
+   "vlan delete [vlan-id]"
+  ],
+  "correct_index": 0,
+  "explanation": "حذف VLAN يتم بالأمر no vlan [vlan-id].",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 929,
+  "key": "y4:net20",
+  "subject_id": 31,
+  "question": "20- Which command is used to enable VTP on a Cisco switch?",
+  "options": [
+   "vtp mode [mode]",
+   "vtp domain [domain-name]",
+   "vtp version [version-number]",
+   "All of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "أوامر vtp mode وvtp domain وvtp version كلها تُستخدم لتهيئة VTP.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 930,
+  "key": "y4:net21",
+  "subject_id": 31,
+  "question": "21- What is the primary function of the access layer in a hierarchical network design?",
+  "options": [
+   "To provide high-speed backbone connectivity.",
+   "vtp domain [domain-name]",
+   "vtp version [version-number]",
+   "All of the above"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 931,
+  "key": "y4:net22",
+  "subject_id": 31,
+  "question": "22- Which design principle helps to ensure that a network can continue to operate even if a device or link fails?",
+  "options": [
+   "Scalability",
+   "Modularity",
+   "Redundancy",
+   "Flexibility"
+  ],
+  "correct_index": 2,
+  "explanation": "التكرار (Redundancy) يضمن استمرار الشبكة عند فشل جهاز أو رابط.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 932,
+  "key": "y4:net23",
+  "subject_id": 31,
+  "question": "23- Which version of STP provides faster convergence by using an alternate port and a backup port?",
+  "options": [
+   "RSTP",
+   "MSTP",
+   "PVST+",
+   "CST"
+  ],
+  "correct_index": 0,
+  "explanation": "RSTP يعطي تقارباً أسرع باستخدام منفذين alternate وbackup.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 933,
+  "key": "y4:net24",
+  "subject_id": 31,
+  "question": "24- Which switching method forwards a frame as soon as the destination MAC address is read?",
+  "options": [
+   "Store-and-forward",
+   "Fragment-free",
+   "Cut-through",
+   "Adaptive switching"
+  ],
+  "correct_index": 2,
+  "explanation": "طريقة Cut-through تمرر الإطار بمجرد قراءة عنوان MAC الوجهة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 934,
+  "key": "y4:net25",
+  "subject_id": 31,
+  "question": "25- Which type of attack involves an attacker gaining access to a VLAN they are not authorized to access?",
+  "options": [
+   "MAC Flooding",
+   "VLAN Hopping",
+   "ARP Spoofing",
+   "DHCP Snooping"
+  ],
+  "correct_index": 1,
+  "explanation": "الـ VLAN Hopping هجوم يصل فيه المهاجم إلى VLAN غير مصرّح له.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 935,
+  "key": "y4:net26",
+  "subject_id": 31,
+  "question": "26- Which security feature can be used to protect against rogue DHCP servers?",
+  "options": [
+   "Port Security",
+   "BPDU Guard",
+   "DHCP Snooping",
+   "Dynamic ARP Inspection"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ DHCP Snooping يحمي من خوادم DHCP المزيفة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 936,
+  "key": "y4:net27",
+  "subject_id": 31,
+  "question": "27- A device detects two stations transmitting frames at the same time. This condition occurs after the first 64 bytes of the frame is received. Interface counter...",
+  "options": [
+   "Collision",
+   "Runt",
+   "CRC",
+   "Late collision"
+  ],
+  "correct_index": 3,
+  "explanation": "التصادم بعد أول 64 بايت يسمى Late collision.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 937,
+  "key": "y4:net28",
+  "subject_id": 31,
+  "question": "28- Which virtual MAC address is used by VRRP group 1?",
+  "options": [
+   "0050.0c05.ad81",
+   "0000.5E00.0101",
+   "0000.3976.6401",
+   "0500.0c05.ad81"
+  ],
+  "correct_index": 1,
+  "explanation": "عنوان MAC الافتراضي لـ VRRP المجموعة 1 هو 0000.5E00.0101.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

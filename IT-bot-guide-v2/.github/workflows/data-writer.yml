@@ -1,0 +1,56 @@
+# THE ONLY WRITER of data/ (Part 2C). Runs after a pull request is merged into main (or by hand), one run at a time.
+# It applies every new intake/ and replies/ file with the machine checks, rebuilds bot.db and commits data/ back to main.
+# Needs: Settings -> Actions -> General -> Workflow permissions = "Read and write". If main is protected so that even
+# github-actions cannot push, allow it there or switch the last step to open a PR (owner decision, see HANDOFF-BUILD.md).
+name: data-writer
+on:
+  push:
+    branches: [main]
+    paths: ['intake/**', 'replies/**', 'sources/**', 'media/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: homs-uni/lecture-site-engine
+          path: lectures
+          sparse-checkout: subjects
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow
+      - name: List lecture text files the quick page added (sources/<id>/*.md) in config/sources.json
+        run: python tools/register_sources.py --data data --sources sources --config config
+      - name: Apply the pending files
+        run: |
+          python tools/apply_pending.py --data data --lectures lectures --apply --report report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Re-check stored quotes against the current lecture text (marks stale answers for review)
+        run: python tools/reverify.py --data data --lectures lectures --mark || true
+      - name: Build bot.db from data/ and check it
+        run: |
+          python tools/bot_db_tool.py build data build/bot.db --force --media-dir media
+          python tools/check_bot.py build/bot.db --compare bot.db --media-json data/media.json | tee check.txt || true
+          ! grep -q "had a picture and now have none\|image-hash-mismatch" check.txt
+      - name: Commit data/ back to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data config
+          git diff --cached --quiet || git commit -m "data: apply pending intake/replies files" -m "$(head -n 12 report.md)"
+          git push
+      - name: Rebuild the freshman page (a push made with GITHUB_TOKEN does not trigger pages.yml by itself)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml

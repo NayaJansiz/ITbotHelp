@@ -1,0 +1,592 @@
+[
+ {
+  "id": 457,
+  "key": "y3:p175",
+  "subject_id": 16,
+  "question": "العملية الرئيسية التي يعتمد عليها LR Parsing",
+  "options": [
+   "الاشتقاق Derivation",
+   "التوسع Expansion",
+   "الاختزال Reduce"
+  ],
+  "correct_index": 2,
+  "explanation": "يعتمد المحلل LR على عمليتي الإزاحة والاختزال (Reduce).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 458,
+  "key": "y3:p176",
+  "subject_id": 16,
+  "question": "وظيفة المحلل اللفظي",
+  "options": [
+   "بناء شجرة الاعراب",
+   "تحويل كود المصدر الى وحدات صغرى tokens",
+   "توليد الكود النهائي"
+  ],
+  "correct_index": 1,
+  "explanation": "المحلل اللفظي يحوّل الكود المصدري إلى وحدات صغرى (tokens).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 459,
+  "key": "y3:p177",
+  "subject_id": 16,
+  "question": "لغات البرمجة (languageL)  تعرف بأنها مجموعة من الكلمات و الجمل المبنية من الأبجدية V حيث",
+  "options": [
+   "L=V",
+   "L€V",
+   "L€V*"
+  ],
+  "correct_index": 2,
+  "explanation": "اللغة L هي مجموعة جزئية من V* (مجموعة كل السلاسل على الأبجدية).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 460,
+  "key": "y3:p178",
+  "subject_id": 16,
+  "question": "مكونات تعريف اللغة",
+  "options": [
+   "رموز نهائية رموز لا نهائية رمز البداية قواعد الانتاج",
+   "رموز نهائية رموز لا نهائية دوال متغيرات",
+   "ابجدية كلمات جمل قواعد نحوية"
+  ],
+  "correct_index": 0,
+  "explanation": "مكونات تعريف اللغة: رموز نهائية، رموز لا نهائية، رمز بداية، قواعد إنتاج.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 461,
+  "key": "y3:p179",
+  "subject_id": 16,
+  "question": "يتم في عملية parsing",
+  "options": [
+   "جدول الرموز و شجرة Ast",
+   "تنفيذ البرنامج مباشرة",
+   "تحسين الكود"
+  ],
+  "correct_index": 0,
+  "explanation": "عملية parsing تنتج شجرة الاشتقاق AST وتستعين بجدول الرموز.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 462,
+  "key": "y3:p180",
+  "subject_id": 16,
+  "question": "shift k",
+  "options": [
+   "حذف عنصر من المكدس",
+   "قبول سلسلة الادخال مباشرة",
+   "ادخال رمز من السلسلة في المكدس والانتقال للحالة k"
+  ],
+  "correct_index": 2,
+  "explanation": "shift k تدخل رمزاً من سلسلة الدخل إلى المكدس وتنتقل للحالة k.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 463,
+  "key": "y3:p181",
+  "subject_id": 16,
+  "question": "ما هو الهدف الاساسي لدراسة المترجمات",
+  "options": [
+   "تعلم لغة برمجية جديدة",
+   "إتقان انظمة التشغيل",
+   "معرفة كيفية بناء البرامج وأدوات البرمجة"
+  ],
+  "correct_index": 2,
+  "explanation": "الهدف الأساسي من دراسة المترجمات فهم كيفية بناء البرامج وأدوات البرمجة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 464,
+  "key": "y3:p182",
+  "subject_id": 16,
+  "question": "المحلل الذي يبدأ من رمز البداية باتجاه الجملة",
+  "options": [
+   "Top down",
+   "Bottom up",
+   "المحلل اللفظي"
+  ],
+  "correct_index": 0,
+  "explanation": "المحلل التنازلي (Top-down) يبدأ من رمز البداية باتجاه الجملة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 465,
+  "key": "y3:p183",
+  "subject_id": 16,
+  "question": "ماهي مدخلات ومخرجات مرحلة توليد الكود\n(Code generation)",
+  "options": [
+   "مخرجات:VM File  مدخلات: شجرة AST",
+   "مخرجات: ;كود بلغة الالة   مدخلات : كود برمجي",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "مرحلة توليد الكود تأخذ شجرة AST وتنتج ملف VM/كوداً هدفاً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 466,
+  "key": "y3:p184",
+  "subject_id": 16,
+  "question": "ما هو ال intermediate representation",
+  "options": [
+   "برنامج نهائي القابل للتنفيذ",
+   "ملف يحوي تعليقات المبرمجين فقط",
+   "كود برمجي يتم توليده بالمحلل الدلالي"
+  ],
+  "correct_index": 2,
+  "explanation": "التمثيل الوسيط (IR) كود يولّده المحلل الدلالي ويُستخدم قبل التوليد النهائي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 467,
+  "key": "y3:p185",
+  "subject_id": 16,
+  "question": "يستخدم جدول الرموز في المحلل النحوي parser",
+  "options": [
+   "يقوم بتصحيح الاخطاء الاملائية فقط",
+   "يسرع عملية التشغيل بشكل عام",
+   "يستخدم لتخزين معلومات الرموز"
+  ],
+  "correct_index": 2,
+  "explanation": "جدول الرموز يخزن معلومات الرموز (الأسماء والأنواع...).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 468,
+  "key": "y3:p186",
+  "subject_id": 16,
+  "question": "عند تحليل الجمله if then else",
+  "options": [
+   "يتم تجاهل جزء ال else لتبسيط عملية الترجمه",
+   "التحقق من أجزاء الجمله (مقارنه -تحقق تنفيذ) لضمان التسلسل المنطقي",
+   "التنفيذ بواسطه المجمع دون كشف الاخطاء"
+  ],
+  "correct_index": 1,
+  "explanation": "عند تحليل if-then-else تُتحقق أجزاء الجملة لضمان التسلسل المنطقي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 469,
+  "key": "y3:p187",
+  "subject_id": 16,
+  "question": "S-->aCb \nC-->aCb\nC-->b",
+  "options": [
+   "abC",
+   "aba&a²ba²",
+   "a&b"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 470,
+  "key": "y3:p188",
+  "subject_id": 16,
+  "question": "اللغة الاكثر تعقيداً بين اللغات",
+  "options": [
+   "Regular expression",
+   "Context free grammar",
+   "Context sensitive grammar"
+  ],
+  "correct_index": 2,
+  "explanation": "اللغات الحساسة للسياق (Context sensitive) أعقد من السياقية الحرة والمنتظمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 471,
+  "key": "y3:p189",
+  "subject_id": 16,
+  "question": "بالمحلل التصاعدي\nS---->cAd\nA---->ab|a والادخال w=cabd",
+  "options": [
+   "cabd--->cad--->cabd-->S",
+   "cabd--->cAd---->S",
+   "جميع الاجوبه صحيحه"
+  ],
+  "correct_index": 1,
+  "explanation": "الاختزال الصحيح: cabd → cAd (A→ab) → S (S→cAd).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 472,
+  "key": "y3:p190",
+  "subject_id": 16,
+  "question": "المحلل الذي يتعلق ببنية الجمله",
+  "options": [
+   "Lexical analysis",
+   "Sentaxtic analysis",
+   "Semantic analaysis"
+  ],
+  "correct_index": 1,
+  "explanation": "التحليل النحوي (Syntactic) يتعلق ببنية الجملة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 473,
+  "key": "y3:p191",
+  "subject_id": 16,
+  "question": "المحلل الي يعرف الخطا type mismatch",
+  "options": [
+   "Semantic analaysis",
+   "Sentaxtic analysis",
+   "Lexical analysis"
+  ],
+  "correct_index": 0,
+  "explanation": "التحليل الدلالي (Semantic) يكتشف خطأ عدم تطابق الأنواع type mismatch.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 474,
+  "key": "y3:p192",
+  "subject_id": 16,
+  "question": "لماذا لا نستخدم التعابير المنتظمة لكل شيء",
+  "options": [
+   "_لانها قديمة",
+   "لانها غير قادرة على التعامل مع الاقواس المتداخة والكتل",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "التعابير المنتظمة لا تتعامل مع الأقواس المتداخلة والكتل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 475,
+  "key": "y3:p193",
+  "subject_id": 16,
+  "question": "load Ri x",
+  "options": [
+   "جلب القيمه من x ووضعها بالمكدس",
+   "جلب محتويات لمكدس و تخزينها في x",
+   "اضافة محتويات المكدس ل x"
+  ],
+  "correct_index": 0,
+  "explanation": "load Ri x تجلب قيمة x وتضعها في الذاكرة/المكدس حسب لغة المحاضرة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 476,
+  "key": "y3:p194",
+  "subject_id": 16,
+  "question": "Store a",
+  "options": [
+   "سحب القيمه من المكدس  ووضعها بال  a",
+   "تخزين a في المكدس",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "Store a تسحب القيمة من المكدس وتخزنها في a.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 477,
+  "key": "y3:p195",
+  "subject_id": 16,
+  "question": "شرط القواعد السياقية",
+  "options": [
+   "الفا اصغر من بيتا",
+   "الفا تساوي بيتا",
+   "الفا اكبر من بيتا"
+  ],
+  "correct_index": 0,
+  "explanation": "في القواعد الحساسة للسياق: طول α لا يزيد عن طول β (α أصغر من β).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 478,
+  "key": "y3:p196",
+  "subject_id": 16,
+  "question": "من اساليب الerror handling",
+  "options": [
+   "panic mode",
+   "debug",
+   "execution"
+  ],
+  "correct_index": 0,
+  "explanation": "من أساليب معالجة الأخطاء: وضع الذعر (panic mode).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 479,
+  "key": "y3:p197",
+  "subject_id": 16,
+  "question": "المحلل القواعدي اين يقف",
+  "options": [
+   "خطا نحوي",
+   "خطا دلالي",
+   "خطا منطقي"
+  ],
+  "correct_index": 0,
+  "explanation": "المحلل القواعدي (النحوي) يتوقف عند الخطأ النحوي.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 480,
+  "key": "y3:p198",
+  "subject_id": 16,
+  "question": "(A*B)+(C*D) التعبير",
+  "options": [
+   "يتم تمثيله بمصفوفة ثنائية",
+   "يتم تمثيله بشجرة قواعد",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "التعبير (A*B)+(C*D) يُمثَّل بشجرة قواعد/أشجار التعبير.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 481,
+  "key": "y3:p199",
+  "subject_id": 16,
+  "question": "المترجم هو",
+  "options": [
+   "برنامج يحول اللغات عاليه المستوى الى تعليمات تنفيذيه يفهمها الحاسوب",
+   "عدد تستخدم لبناء الخوارزميات",
+   "نظام تشغيل يدير الملفات على الحاسوب"
+  ],
+  "correct_index": 0,
+  "explanation": "المترجم برنامج يحول لغة عالية المستوى إلى تعليمات تنفيذية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 482,
+  "key": "y3:p200",
+  "subject_id": 16,
+  "question": "تحويل سلسلة الى رموز tokens نستخدم",
+  "options": [
+   "lexical analysis",
+   "syntaxical analysis",
+   "semantic analysis"
+  ],
+  "correct_index": 0,
+  "explanation": "تحويل السلسلة إلى tokens يتم بالتحليل اللفظي (Lexical).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 483,
+  "key": "y3:p201",
+  "subject_id": 16,
+  "question": "E1---->.E عند تطبيق closure (I0)",
+  "options": [
+   "استدعاء جميع القواعد التي تبدأ ب E شرط وضع نقطة في بدايتها",
+   "ازاحة النقطة خطوة لليمين",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "closure تستدعي جميع القواعد التي تبدأ بـ E وتضع نقطة في بدايتها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 484,
+  "key": "y3:p202",
+  "subject_id": 16,
+  "question": "ما هو الاختلاف بين الاشتقاق اليميني واليساري",
+  "options": [
+   "الاشتقاق اليساري يشتق الرمز الغير منتهي الذي في اليسار اولا  اما اليميني يشتق الرمز اليميني اولا",
+   "الاشتقاق اليساري معتمد في bottom up اما اليمني في top down",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "اليساري يشتق أقصى اليسار أولاً واليميني أقصى اليمين أولاً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 485,
+  "key": "y3:p203",
+  "subject_id": 16,
+  "question": "المحلل الذي يعرف الخطأ Sentence Structure",
+  "options": [
+   "lexical analysis",
+   "sentaxtic analysis",
+   "semantic analysis"
+  ],
+  "correct_index": 1,
+  "explanation": "التحليل النحوي (Syntactic) يكتشف أخطاء بنية الجملة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 486,
+  "key": "y3:p204",
+  "subject_id": 16,
+  "question": "اذا كان عدد الرموز التي تنشا عن قاعده  هوn \nفان عدد الرموز الواجب ان نحذفها من المكدس هو",
+  "options": [
+   "n",
+   "2n",
+   "عنصر واحد",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "عند اختزال قاعدة ذات n رمزاً يُحذف n عنصراً من المكدس.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 487,
+  "key": "y3:p205",
+  "subject_id": 16,
+  "question": "وظيفة loop unrolling",
+  "options": [
+   "كتابة التعليمات تعليمة تعليمة",
+   "حساب الثوابت و دمجها",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "فكّ الحلقات (Loop unrolling) يكرر جسم الحلقة لتقليل عدد التكرارات، لا يتعلق بالخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

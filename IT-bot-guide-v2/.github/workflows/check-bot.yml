@@ -1,0 +1,29 @@
+# Runs the pre-publish check on every change to bot.db / media / tools / data.
+# Added in v2 (proposal). Needs tools/check_bot.py (and tools/bot_db_tool.py if you adopt data/) in the repo.
+name: check-bot
+on:
+  pull_request:
+    paths: ['bot.db', 'media/**', 'data/**', 'tools/**']
+  push:
+    branches: [main]
+    paths: ['bot.db', 'media/**', 'data/**', 'tools/**']
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check bot.db (fails on any ERROR; picture files can only be checked when media/ holds them)
+        run: |
+          if [ -n "$(find media -type f ! -name .gitkeep 2>/dev/null | head -1)" ]; then
+            python tools/check_bot.py bot.db --strict
+          else
+            echo "::warning::media/ is empty in this repo, so picture files cannot be checked: running WITHOUT --strict"
+            python tools/check_bot.py bot.db
+          fi
+      - name: Verify data/ matches bot.db (only when data/ exists)
+        run: |
+          if [ -d data ]; then python tools/bot_db_tool.py verify bot.db data; fi

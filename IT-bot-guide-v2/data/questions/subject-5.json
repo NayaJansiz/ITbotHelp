@@ -1,0 +1,680 @@
+[
+ {
+  "id": 118,
+  "key": "y1:p155",
+  "subject_id": 5,
+  "question": "1) ما هو خرج البرنامج التالي :\nstruct Record { char name [20] ; int score };\nRecord arr[4]={ {\"A\",1},{\"B,2},{\"C\",3},{\"D\",4} }; Record *p=&arr[0]; Record *q=&arr[2]; cout << q - p <<\" \"; cout << (char *)q - (char *)p <<endl; return 0;",
+  "options": [
+   "24   48",
+   "2   24",
+   "0   48",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "sizeof(Record)=24 فالفرق بين المؤشرين 2 عنصر وبالبايتات 48، فالناتج \"2 48\" وليس من الخيارات.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 119,
+  "key": "y1:p156",
+  "subject_id": 5,
+  "question": "2)  ما هو خرج البرنامج التالي :",
+  "options": [
+   "B~BD~D",
+   "BD~D~B",
+   "BD~B~D",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 120,
+  "key": "y1:p157",
+  "subject_id": 5,
+  "question": "3) ما هو خرج البرنامج التالي :\nint main ()  { int a=7;\nint *aptr =&a; cout << &*aptr <<endl ; return 0; }",
+  "options": [
+   "عنوان aptr",
+   "عنوان a",
+   "قيمة a",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "العملية &*aptr تعيد عنوان المتحول a نفسه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 121,
+  "key": "y1:p158",
+  "subject_id": 5,
+  "question": "4) ما هو خرج  البرنامج التالي :\nint main ()  { \nint arr [5] = { 10 ,  42 , 50 , 10 ,12 }; cout << * ( arr + 3 ) ; return  0 ;}",
+  "options": [
+   "عنوان العنصر 3 من المصفوفة arr",
+   "50",
+   "10",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "*(arr+3) هو العنصر ذو الفهرس 3 وقيمته 10.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 122,
+  "key": "y1:p159",
+  "subject_id": 5,
+  "question": "5_ ما خرج الكود التالي \nint main() {\n    int arr[3] = {5, 15, 25};     int *p = arr;     cout << *p++ << \" \";     cout << (*p)++ << \" \";     cout << *p << \" \";     cout << ++(*p) << endl;     return 0; }",
+  "options": [
+   "5 15 16 17",
+   "5 15 15 16",
+   "5 15 16 16",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "يطبع 5 ثم 15 (وتصبح القيمة 16) ثم 16 ثم 17: الناتج 5 15 16 17.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 123,
+  "key": "y1:p160",
+  "subject_id": 5,
+  "question": "6_ ماهو خرج الكود التالي\nint main() {\n    int x = 10;     int *y = &x;     (*y)++;     cout << x << endl;     return 0;",
+  "options": [
+   "10",
+   "11",
+   "قيمة عشوائية",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "(*y)++ تزيد قيمة x فتصبح 11.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 124,
+  "key": "y1:p161",
+  "subject_id": 5,
+  "question": "7_ ما هو خرج الكود التالي\nmain() {\nint x, y; x = y; int *xptr = &x, *yptr = &y; if (xptr ==yptr) cout << \"equal\"; else cout << \"not equal\"; }",
+  "options": [
+   "equal",
+   "not equal",
+   "خطأ لا يمكن مقارنة المؤشرات",
+   "خطأ لا يمكن أخذ عنوان متحول لا يملك قيمة ابتدائية"
+  ],
+  "correct_index": 1,
+  "explanation": "xptr وyptr يشيران لمتحولين مختلفين، فالمقارنة تعطي not equal.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 125,
+  "key": "y1:p162",
+  "subject_id": 5,
+  "question": "8_ ماخرج الكود التاليstruct adder {char country;char* city;void update(adder& add) {add.country = \"Egypt\";add.city  \"Cairo\"; }};main() {adder add1={\"Syria\",\"Damascus\"};adder add2= {\"Lebanon\",\"Beirut\"};update(add2);cout<<add2.country << \" \" << add1.country",
+  "options": [
+   "Egypt Lebanon",
+   "Egypt Syria",
+   "Lebanon Egypt",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "التابع يحدّث add2 فقط، فيطبع Egypt Syria.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 126,
+  "key": "y1:p163",
+  "subject_id": 5,
+  "question": "9. خرج الكود التالي :\nint main (){\nint arr[2][3] = {{1,2,3},{4,5,6}}, int *p = arr[0]; Int *q= arr[1]; cout<<(q-p)<< \" \" <<*(p+3)<< endl; return 0;}",
+  "options": [
+   "34",
+   "24",
+   "35",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "q-p يساوي 3 (طول صف)، و*(p+3) هو arr[1][0] = 4، فالناتج 3 4.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 127,
+  "key": "y1:p164",
+  "subject_id": 5,
+  "question": "10.خرج الكود التالي:\nStruct point {int x , int y };\nint main () { Point p =(3,4); Point * ptr = & p; cout << ptr ->x << \" \" << (*ptr).y << \" \" ; Cout << ptr -> y++ << \" \" <<ptr -> y << endl ; return 0 ;}",
+  "options": [
+   "3 4 5 6",
+   "3 4 4 5",
+   "3 4 5 5",
+   "كل ماسبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "يطبع 3 4، ثم ptr->y++ تعيد 4 (قبل الزيادة) ثم 5.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 128,
+  "key": "y1:p165",
+  "subject_id": 5,
+  "question": "11. يجب حذف المؤسر بعد الانتهاء من استخدامه اذا تم بناؤه عن طريق العملية new",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "ما يُنشأ بـ new يجب حذفه بـ delete لتحرير الذاكرة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 129,
+  "key": "y1:p166",
+  "subject_id": 5,
+  "question": "12.في الملفات التسلسلية يمكن الوصول لاي جزء من الملف بسهولة وييسر",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الملفات التسلسلية تُقرأ بالترتيب، ولا يُوصل لأي جزء بسهولة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 130,
+  "key": "y1:p167",
+  "subject_id": 5,
+  "question": "13.محدد الوصول private يسمح لأي تابع في البرنامج بالوصول إلى الحقول الخاصة في الصف",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "private يسمح فقط لتوابع الصف (والأصدقاء) بالوصول للحقول الخاصة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 131,
+  "key": "y1:p168",
+  "subject_id": 5,
+  "question": "14.يمكن تعريف مؤشر على تابع function pointer في لغة ++C",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "يمكن في C++ تعريف مؤشر على تابع (function pointer).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 132,
+  "key": "y1:p169",
+  "subject_id": 5,
+  "question": "15.عند تعريف المؤشر int *const xptr=&x يمكن تغيير قيمة المؤشر نفسه( العنوان الذي يشير إليه)",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "المؤشر int *const ثابت العنوان: لا يمكن تغيير العنوان الذي يشير إليه.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 133,
+  "key": "y1:p170",
+  "subject_id": 5,
+  "question": "16. في الصفوف إذا كان الأب يحتوي على تابع virtual يمكن للابن أن يقوم بإعادة تعريفه override",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "التابع virtual في الأب يمكن للابن إعادة تعريفه (override).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 134,
+  "key": "y1:p171",
+  "subject_id": 5,
+  "question": "17) unique_ptr يسمح لعدة مؤشرات بامتلاك نفس الكائن في نفس الوقت",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "unique_ptr يملك الكائن لوحده، أما shared_ptr فيسمح بعدة مالكين.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 135,
+  "key": "y1:p172",
+  "subject_id": 5,
+  "question": "18) الحقول الساكنة (static) تكون مشتركة بين جميع أغراض الصف وتحتوي كل الاغراض على نفس القيمة في الحقل الساكن",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "الحقول الساكنة مشتركة بين كل أغراض الصف بقيمة واحدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 136,
+  "key": "y1:p173",
+  "subject_id": 5,
+  "question": "19) الصف المجرد (Abstract Class) هو صف يمكن إنشاء أغراض (objects) منه ويحتوي على تابع افتراضي صرف ( pure virtual)",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "الصف المجرد لا يمكن إنشاء أغراض منه لأنه يحتوي تابعاً افتراضياً صرفاً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 137,
+  "key": "y1:p174",
+  "subject_id": 5,
+  "question": "20) التابع الصديق ( friend function) هو تابع خارجي عن الصف ويمكنه الوصول إلى الحقول الخاصة",
+  "options": [
+   "صح",
+   "خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "التابع الصديق تابع خارجي يستطيع الوصول إلى الحقول الخاصة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 138,
+  "key": "y1:p175",
+  "subject_id": 5,
+  "question": "21 _ اي مما يأتي مؤشر ثابت على بيانات ثابتة",
+  "options": [
+   "const int * const p",
+   "const int * p",
+   "int * const p"
+  ],
+  "correct_index": 0,
+  "explanation": "const int * const p مؤشر ثابت على بيانات ثابتة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 139,
+  "key": "y1:p176",
+  "subject_id": 5,
+  "question": "22- تتميز الملفات التسلسلية عن الملفات العشوائية أنها:",
+  "options": [
+   "تكتب باللغة الإنجليزية",
+   "تخزن البيانات على شكل احرف",
+   "تصل لاي مكان ضمن الملف  بسهولة وسرعة",
+   "تخزن البيانات على شكل بايتات"
+  ],
+  "correct_index": 1,
+  "explanation": "الملفات التسلسلية (النصية) تخزّن البيانات على شكل أحرف.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 140,
+  "key": "y1:p177",
+  "subject_id": 5,
+  "question": "23 _ ما فائدة التحميل الزائد  للعمليات في C++",
+  "options": [
+   "تسريع البرنامج",
+   "تعريف العمليات على الانواع التي يكتبها المستخدم",
+   "توفير الذاكرة"
+  ],
+  "correct_index": 1,
+  "explanation": "التحميل الزائد يتيح تعريف العمليات على الأنواع التي يعرّفها المستخدم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 141,
+  "key": "y1:p178",
+  "subject_id": 5,
+  "question": "24-  نمرر بالمرجع بدل التمرير بالقيمة عند استخدام ( Arrylist ) :",
+  "options": [
+   "لسماح بالتعديل على القيمة",
+   "لمنع التعديل على القيمة",
+   "لاعطاء قيم أولية",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "التمرير بالمرجع يسمح بالتعديل على القيمة الأصلية بدل نسخة منها.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 142,
+  "key": "y1:p179",
+  "subject_id": 5,
+  "question": "25-\n عند استخدام العلم ios::app للكتابة في ملف ، أي من العبارات التالية  صحيحة ؟",
+  "options": [
+   "أ)  يتم إضافة البيانات الجديدة دائماً إلى نهاية الملف دون حذف المحتوى القديم",
+   "ب) يتم مسح محتويات الملف القديمة بالكامل عند فتحه للكتابة",
+   "ج) يقتصر مؤشر الكتابة على الانتقال لنهاية الملف عند الفتح فقط، ويمكن تعديل مكانه لاحقاً",
+   "د) يفتح الملف للقراءة فقط"
+  ],
+  "correct_index": 0,
+  "explanation": "ios::app تضيف البيانات دائماً لنهاية الملف دون حذف المحتوى القديم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 143,
+  "key": "y1:p180",
+  "subject_id": 5,
+  "question": "26- ماهية الطريقة الصحيحة للوصول إلى حقل id في سجل student باستخدام مؤشر ptr",
+  "options": [
+   "Ptr.id",
+   "&ptr.id",
+   "ptr->id",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "الوصول للحقل عبر مؤشر يتم بالعامل ->: ptr->id.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 144,
+  "key": "y1:p181",
+  "subject_id": 5,
+  "question": "27-\nst*s=new st[30]\n كيف يتم تحرير الذاكرة بشكل صحيح",
+  "options": [
+   "freest",
+   "delete",
+   "delete[ ] s",
+   "delete s[0]"
+  ],
+  "correct_index": 2,
+  "explanation": "المصفوفة المنشأة بـ new[] تُحرَّر بـ delete[] s.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 145,
+  "key": "y1:p182",
+  "subject_id": 5,
+  "question": "28-\nclass student\n{ private: int id;  public: student(int id) this->id=id; } نستخدم ال this->id لان :",
+  "options": [
+   "ـ id الوسيط يحجب id الحقل",
+   "لأن الحقل id هو private",
+   "لأن الباني لا يرى الحقول الا من خلال this",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "وسيط الباني id يحجب الحقل id، فنستخدم this->id للإشارة للحقل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 146,
+  "key": "y1:p183",
+  "subject_id": 5,
+  "question": "29-للكتابة في ملف نستخدم :",
+  "options": [
+   "stream",
+   "ofstream",
+   "iostraem",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 1,
+  "explanation": "للكتابة في ملف نستخدم ofstream.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 147,
+  "key": "y1:p184",
+  "subject_id": 5,
+  "question": "30-\nما هو الخطأ الممكن حدوثه بالكود \n Class Base { int x; Pubilc: Base(x): x ( y ) {} Class Div :: public Base  Div() : base (10)",
+  "options": [
+   "غرض الاب معرف private",
+   "يجب إعادة استدعاء باني الافتراضي للاب",
+   "تعريف تابع افتراضي بدون وسطاء",
+   "ولا يوجد خطأ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 148,
+  "key": "y1:p185",
+  "subject_id": 5,
+  "question": "31- استخدام this مع التوابع الساكنة static :",
+  "options": [
+   "نعم دوما",
+   "نعم، مع التوابع العامة فقط",
+   "لا، يمكن لانه لا يستخدم مع اغراض ساكنة",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 2,
+  "explanation": "لا يمكن استخدام this مع التوابع الساكنة لأنها لا ترتبط بغرض محدد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 149,
+  "key": "y1:p186",
+  "subject_id": 5,
+  "question": "32- عند تعريف عنصر بيانات data element او تابع على انه خاص في صف لا يمكن الوصول اليه الا من قبل توابع الصف و :",
+  "options": [
+   "ـa) تعريف توابع صديقة للصف",
+   "ـb)لا يمكن الوصول اليه من خارج الصف",
+   "ـc) عن طريق الصف الابن",
+   "ـd)لا يوجد اي نوع اخر من التوابع يمكنه الوصول اليه"
+  ],
+  "correct_index": 0,
+  "explanation": "الحقول الخاصة يصل إليها توابع الصف والتوابع الصديقة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 150,
+  "key": "y1:p187",
+  "subject_id": 5,
+  "question": "33-\nماهو المطلوب لتعريف التحميل الزائد للعامل ++(الزيادة بمقدار ١)لصف counter بحيث يزداد العداد ويعيد الكائن نفسه",
+  "options": [
+   "Counter& operator++() {     count++;     return *this; }",
+   "Counter operator++() {     count++;     return *this; }",
+   "Counter& operator++(int) {     count++;     return *this; }",
+   "int Counter= count++;"
+  ],
+  "correct_index": 0,
+  "explanation": "العامل ++ البادئ يزيد العداد ويعيد مرجعاً للكائن: Counter& operator++().",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 151,
+  "key": "y1:p188",
+  "subject_id": 5,
+  "question": "34-\nلحساب عدد السجلات من نوع ال student في ملف  أي الأكواد التالية صحيح:",
+  "options": [
+   "infile.seekg(0, ios::end); int size = infile.tellg(); int count = size / sizeof(Student);",
+   "infile.seekg(0, ios::beg); int size = infile.tellg(); int count = size / sizeof(Student);",
+   "infile.seekg(0, ios::end); int size = sizeof(infile); int count = size / sizeof(Student);",
+   "infile.seekg(0, ios::end); int size = infile.tellg(); int count = size * sizeof(Student);"
+  ],
+  "correct_index": 0,
+  "explanation": "ننتقل لنهاية الملف ونقرأ الموضع بـ tellg ثم نقسم على sizeof(Student).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 152,
+  "key": "y1:p189",
+  "subject_id": 5,
+  "question": "35- ماهو الخيار الصحيح للكتابة على ملف ثنائي\nstruct address\n{ char * county ; char * city; }  int main()  {  address add1={\"Syria\",\"damascus\"}; ofstrem out1,out2; out1.open(\"exam.txt\"); out2.open(\"bexam.txt\",ios::binary);  }",
+  "options": [
+   "out1.write((char*)&add,sizeof(add));",
+   "out2.write((char*)&add,sizeof(add));",
+   "out1.write((char*)&add,ios::out);",
+   "out1.write((char*)&add);"
+  ],
+  "correct_index": 1,
+  "explanation": "الكتابة الثنائية تتم بالملف المفتوح بـ ios::binary (out2) عبر write.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

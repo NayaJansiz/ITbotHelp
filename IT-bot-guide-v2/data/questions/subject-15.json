@@ -1,0 +1,239 @@
+[
+ {
+  "id": 445,
+  "key": "y3:p160",
+  "subject_id": 15,
+  "question": "Which sentence is a proposition",
+  "options": [
+   "what's the time",
+   "number 2 is odd",
+   "Close the door!",
+   "none of the above"
+  ],
+  "correct_index": 1,
+  "explanation": "القضية (proposition) جملة خبرية لها قيمة صدق، مثل \"العدد 2 زوجي\".",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 446,
+  "key": "y3:p161",
+  "subject_id": 15,
+  "question": "there existed positive integers and negative integers",
+  "options": [
+   "E x P(x) ^ E x N(x)",
+   "E x P(x) => E x N(x)",
+   "none"
+  ],
+  "correct_index": 0,
+  "explanation": "وجود أعداد موجبة وسالبة يُكتب ∃xP(x) ∧ ∃xN(x).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 447,
+  "key": "y3:p162",
+  "subject_id": 15,
+  "question": "In learning given rewards from sequence of actions",
+  "options": [
+   "supervise",
+   "semi-supervise",
+   "Reinforcement",
+   "none"
+  ],
+  "correct_index": 2,
+  "explanation": "التعلم من المكافآت الناتجة عن سلسلة أفعال هو التعلم المعزز.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 448,
+  "key": "y3:p163",
+  "subject_id": 15,
+  "question": "use resolution to prove __ given the following sentences :   ¬R(x) v L(x)   ¬D(y)v-L(y)   D(A)    I(A)",
+  "options": [
+   "∀z ¬I(z) v R(z)",
+   "∃z I(z) v R(z)",
+   "∃ z I(z) v ¬R(z)",
+   "none"
+  ],
+  "correct_index": 2,
+  "explanation": "من الجمل: D(A) يعطي ¬L(A) ثم ¬R(A)، مع I(A) نستنتج وجود z بحيث I(z) و¬R(z).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 449,
+  "key": "y3:p164",
+  "subject_id": 15,
+  "question": "a function of variable j() convex is twice different and its second derivation on is always negative",
+  "options": [
+   "false",
+   "true"
+  ],
+  "correct_index": 0,
+  "explanation": "الدالة المحدبة مشتقتها الثانية غير سالبة دائماً، فالعبارة (سالبة) خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 450,
+  "key": "y3:p165",
+  "subject_id": 15,
+  "question": "ML is used when",
+  "options": [
+   "Human expertise does not exist",
+   "Models must be customized",
+   "Humans can't explain their expertise",
+   "all of the above"
+  ],
+  "correct_index": 3,
+  "explanation": "يُستخدم تعلم الآلة عند غياب الخبرة وعند الحاجة لتخصيص النماذج وعندما يعجز البشر عن شرح خبرتهم.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 451,
+  "key": "y3:p166",
+  "subject_id": 15,
+  "question": "what is the MinMax",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "none"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 452,
+  "key": "y3:p168",
+  "subject_id": 15,
+  "question": "when applying the BFS algorithm the result is",
+  "options": [
+   "SABECDG",
+   "SABECCDG",
+   "SABG",
+   "none"
+  ],
+  "correct_index": 0,
+  "explanation": "BFS يزور المستويات بالترتيب: S ثم A,B ثم E,C,D ثم G، أي SABECDG.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": "media/y3_photo_4_02-10-2026_14-06-29.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 453,
+  "key": "y3:p169",
+  "subject_id": 15,
+  "question": "when applying the DFS algorithm the result is",
+  "options": [
+   "SAECG",
+   "SAEDG",
+   "SAECBDG",
+   "none"
+  ],
+  "correct_index": 2,
+  "explanation": "DFS: S→A→E ثم رجوع إلى C→B→D ثم رجوع إلى C→G، أي SAECBDG.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": "media/y3_photo_4_02-10-2026_14-06-29.jpg",
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 454,
+  "key": "y3:p170",
+  "subject_id": 15,
+  "question": "Decision trees function representation is",
+  "options": [
+   "numerical",
+   "symbolic",
+   "Instance-based",
+   "none"
+  ],
+  "correct_index": 1,
+  "explanation": "تمثيل شجرة القرار رمزي (Symbolic).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 455,
+  "key": "y3:p171",
+  "subject_id": 15,
+  "question": "A learning task is defined by",
+  "options": [
+   "Performance , Task , Experience",
+   "Representation , Optimization, Evaluation",
+   "PEAS",
+   "none"
+  ],
+  "correct_index": 0,
+  "explanation": "مهمة التعلم تُعرَّف بالأداء والمهمة والخبرة (P, T, E).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 456,
+  "key": "y3:p172",
+  "subject_id": 15,
+  "question": "Genetic Algorithms belong to",
+  "options": [
+   "Rule-Based Systems",
+   "Artificial Neural Networks",
+   "evolutionary computation",
+   "none"
+  ],
+  "correct_index": 2,
+  "explanation": "الخوارزميات الجينية (Genetic Algorithms) تنتمي للحوسبة التطورية (Evolutionary computation).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

@@ -1,0 +1,9 @@
+# built by the pages workflow / tools/build_site.py
+site/packs/
+__pycache__/
+*.pyc
+node_modules/
+build/
+bot.db.new
+.DS_Store
+Thumbs.db

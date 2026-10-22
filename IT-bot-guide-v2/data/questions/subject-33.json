@@ -1,0 +1,802 @@
+[
+ {
+  "id": 973,
+  "key": "y5:p41",
+  "subject_id": 33,
+  "question": "1-The time needed to save the context of a currently executing task and switching to another task is:\n.",
+  "options": [
+   "Interrupt latency.",
+   "Task Switching Latency",
+   "Interrupt dispatch latency.",
+   "All of above are not correct"
+  ],
+  "correct_index": 1,
+  "explanation": "زمن حفظ سياق المهمة الحالية والتحويل لمهمة أخرى يسمى Task Switching Latency.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 974,
+  "key": "y5:p42",
+  "subject_id": 33,
+  "question": "Which of the following is true about dispatcher's role in task execution in an RTOS?",
+  "options": [
+   "It determines which task to run based on priority.",
+   "It allocates memory to task based on system calls.",
+   "It performs the context switch and transfers CPU control to the selected task.",
+   "It handles interrupt service routine (ISRs) directly"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ Dispatcher ينفذ تبديل السياق (context switch) ويسلّم التحكم بالمعالج للمهمة التي اختارها المجدول.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 975,
+  "key": "y5:p43",
+  "subject_id": 33,
+  "question": "3- How can two tasks with equal urgency be distinguished?",
+  "options": [
+   "By their execution time.",
+   "By their importance (criticality) values.",
+   "By their deadline values,",
+   "All of the above are not correct."
+  ],
+  "correct_index": 1,
+  "explanation": "المهام المتساوية بالإلحاح تُميَّز بقيم الأهمية (criticality).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 976,
+  "key": "y5:p44",
+  "subject_id": 33,
+  "question": "4- Data must be processed at a regular and timely rate in:",
+  "options": [
+   "Distributed System.",
+   "Batch Processing System.",
+   "Time-Sharing System.",
+   "Real-Time System."
+  ],
+  "correct_index": 3,
+  "explanation": "المعالجة بمعدل منتظم وتوقيت محدد هي صفة أنظمة الزمن الحقيقي (Real-Time).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 977,
+  "key": "y5:p45",
+  "subject_id": 33,
+  "question": "5-The correctness of RTS depends on:",
+  "options": [
+   "The logical result of the computation only.",
+   "The speed of the hardware used.",
+   "Both the logical result and the time at which the result is produced.",
+   "The amount of data being processed."
+  ],
+  "correct_index": 2,
+  "explanation": "صحة نظام الزمن الحقيقي تعتمد على صحة النتيجة المنطقية ووقت إنتاجها معاً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 978,
+  "key": "y5:p46",
+  "subject_id": 33,
+  "question": "6- In a deterministic RTS, timing constraints are:",
+  "options": [
+   "Exact and fixed.",
+   "Random.",
+   "Approximate.",
+   "Ignored"
+  ],
+  "correct_index": 0,
+  "explanation": "في نظام الزمن الحقيقي الحتمي (Deterministic) قيود التوقيت محددة وثابتة بدقة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 979,
+  "key": "y5:p47",
+  "subject_id": 33,
+  "question": "7-In an aperiodic interaction between the controlled system and the controlling system, communication is:",
+  "options": [
+   "Initiated by the controlling system at fixed time intervals.",
+   "Independent of external events in the environment. .",
+   "Initiated by the controlled system and determined by random external events.",
+   "All of above are not correct"
+  ],
+  "correct_index": 2,
+  "explanation": "في التفاعل غير الدوري (Aperiodic) يبدأ الاتصال من النظام المُتحكَّم به وتحدده أحداث خارجية عشوائية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 980,
+  "key": "y5:p48",
+  "subject_id": 33,
+  "question": "8- Which statement about RTOS is incorrect?",
+  "options": [
+   "RTOS must be fast.",
+   "RTOS is designed for hard and soft real-time systems.",
+   "RTOS only requires 1% - 4% of CPU time.",
+   "RTOS behavior depends on determinism, not speed"
+  ],
+  "correct_index": 0,
+  "explanation": "العبارة الخاطئة: RTOS لا يجب أن يكون سريعاً بالضرورة، فسلوكه يعتمد على الحتمية (determinism) لا على السرعة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 981,
+  "key": "y5:p49",
+  "subject_id": 33,
+  "question": "9- In the given car real-time system example, which of the following is considered an actuator?",
+  "options": [
+   "Camera.",
+   "Brake pedal.",
+   "Infrared receiver.",
+   "Wheels."
+  ],
+  "correct_index": 3,
+  "explanation": "المنفّذ (Actuator) ينفّذ الفعل في العالم الحقيقي، والعجلات هي التي تتحرك، أما الكاميرا والمستقبل فحسّاسات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 982,
+  "key": "y5:p50",
+  "subject_id": 33,
+  "question": "10- Which of the following is true about a pipe?",
+  "options": [
+   "A pipe can store multiple messages at once.",
+   "Data flows in a pipe in a specific order, usually (FIFO).",
+   "A pipe is bidirectional, meaning data can flow in both directions.",
+   "A pipe is used for structured data exchange."
+  ],
+  "correct_index": 1,
+  "explanation": "الـ pipe يمرر البيانات بترتيب FIFO (الأول دخولاً أول خروجاً)، وهو أحادي الاتجاه عادةً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 983,
+  "key": "y5:p51",
+  "subject_id": 33,
+  "question": "11.What is the primary role of the scheduler in an RTOS?!",
+  "options": [
+   "To allocate memory to tasks based on priority.",
+   "To determine which task should execute and when",
+   "To handle interrupts and resource management.",
+   "All of above are not correct"
+  ],
+  "correct_index": 1,
+  "explanation": "دور المجدول (Scheduler) تحديد أي مهمة تُنفَّذ ومتى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 984,
+  "key": "y5:p52",
+  "subject_id": 33,
+  "question": "12.What problem does a semaphore object help resolve in an RTOS environment?!",
+  "options": [
+   "Task priority inversion",
+   "Task synchronization without resource sharing",
+   "Data Corruption when task access shared resources simultaneously",
+   "All of above are not correct"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ semaphore يمنع تلف البيانات (Data corruption) عند وصول عدة مهام لمورد مشترك بنفس الوقت.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 985,
+  "key": "y5:p53",
+  "subject_id": 33,
+  "question": "13- Event objects are used in RTOS to:",
+  "options": [
+   "Share resources between multiple tasks.",
+   "Synchronize tasks without sharing resources.",
+   "Increase CPU processing speed.",
+   "All of above are not correct."
+  ],
+  "correct_index": 1,
+  "explanation": "كائنات الأحداث (Event objects) تُستخدم لمزامنة المهام دون مشاركة موارد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 986,
+  "key": "y5:p54",
+  "subject_id": 33,
+  "question": "14- How many priority levels are typically supported by real-time kernels?",
+  "options": [
+   "10",
+   "256",
+   "1000",
+   "2025"
+  ],
+  "correct_index": 1,
+  "explanation": "نوى الزمن الحقيقي تدعم عادةً 256 مستوى أولوية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 987,
+  "key": "y5:p55",
+  "subject_id": 33,
+  "question": "15- What is release time in real-time systems?",
+  "options": [
+   "The Instant of time job becomes available for execution.",
+   "The maximum allowed execution time of a job.",
+   "The total time from release to completion.",
+   "The deadline by which a job must finish."
+  ],
+  "correct_index": 0,
+  "explanation": "وقت الإصدار (Release time) هو اللحظة التي تصبح فيها المهمة جاهزة للتنفيذ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 988,
+  "key": "y5:p56",
+  "subject_id": 33,
+  "question": "16- An example of a soft real-time system:",
+  "options": [
+   "Heart pacemaker.",
+   "Video streaming system.",
+   "Elevator control system.",
+   "Nuclear reactor controller."
+  ],
+  "correct_index": 1,
+  "explanation": "بث الفيديو نظام زمن حقيقي مرن (Soft): فوات بعض المواعيد يخفض الجودة فقط ولا يسبب كارثة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 989,
+  "key": "y5:p57",
+  "subject_id": 33,
+  "question": "17- According to the Priority Ceiling Protocol, when can a task acquire a resource?",
+  "options": [
+   "Whenever the task requests the resource.",
+   "If the resource is free.",
+   "If the task's priority is higher than the ceiling of any held resource by other tasks.",
+   "Only if B&C are satisfied."
+  ],
+  "correct_index": 2,
+  "explanation": "في بروتوكول Priority Ceiling تحصل المهمة على المورد إذا كانت أولويتها أعلى من سقف أي مورد تحجزه مهام أخرى.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 990,
+  "key": "y5:p58",
+  "subject_id": 33,
+  "question": "18- What does reliability measure in a system?",
+  "options": [
+   "Memory usage.",
+   "How fast the system executes.",
+   "How often the system fails.",
+   "Number of users."
+  ],
+  "correct_index": 2,
+  "explanation": "الموثوقية (Reliability) تقيس مدى تكرار فشل النظام.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 991,
+  "key": "y5:p59",
+  "subject_id": 33,
+  "question": "19- Which of the following is an example of a real-time operating system (RTOS)?\nA",
+  "options": [
+   "VxWorks",
+   "Linux (general-purpose).",
+   "Microsoft Windows",
+   "macOS"
+  ],
+  "correct_index": 0,
+  "explanation": "VxWorks نظام تشغيل زمن حقيقي (RTOS)، بينما Linux وWindows وmacOS أنظمة عامة الأغراض.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 992,
+  "key": "y5:p60",
+  "subject_id": 33,
+  "question": "20- What is a drawback of computing laxity at every time t in the LLF algorithm?",
+  "options": [
+   "It reduces task priorities.",
+   "It requires fewer resources.",
+   "It causes more context switching.",
+   "It ignores deadlines."
+  ],
+  "correct_index": 2,
+  "explanation": "حساب الـ laxity في كل لحظة بخوارزمية LLF يسبب تبديل سياق (context switching) أكثر.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 993,
+  "key": "y5:p61",
+  "subject_id": 33,
+  "question": "21-Characterizes independent tasks in resource sharing?",
+  "options": [
+   "They share critical resources and have precedence relationships.",
+   "They do not share critical resources and have no precedence relationships.",
+   "They share resources but have no dynamic relationships.",
+   "All of above are not correct."
+  ],
+  "correct_index": 1,
+  "explanation": "المهام المستقلة لا تتشارك موارد حرجة وليس بينها علاقات أسبقية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 994,
+  "key": "y5:p62",
+  "subject_id": 33,
+  "question": "22-We have two tasks t1 and t2 and two resources R1 and R2, which best explains the cause of the deadlock?",
+  "options": [
+   "Both tasks try to access the same resource at the same time without locking it.",
+   "Both tasks hold one resource and wait indefinitely for the other resource held by the other task",
+   "T1 has higher priority, so it should run without waiting",
+   "All of the above are not correct."
+  ],
+  "correct_index": 1,
+  "explanation": "الـ Deadlock: كل مهمة تحتجز مورداً وتنتظر إلى ما لا نهاية المورد المحجوز من المهمة الأخرى.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 995,
+  "key": "y5:p63",
+  "subject_id": 33,
+  "question": "-\n\n23.It is an algorithm used for Scheduling of independent and Hybrid (aperiodic and periodic) Task Sets:",
+  "options": [
+   "Background scheduling.",
+   "Task servers scheduling.",
+   "Joint scheduling.",
+   "All of the above are correct."
+  ],
+  "correct_index": 3,
+  "explanation": "الجدولة الخلفية وخوادم المهام (Task servers) والجدولة المشتركة كلها لجدولة المهام الدورية وغير الدورية معاً.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 996,
+  "key": "y5:p64",
+  "subject_id": 33,
+  "question": "24-Which timer uses calendar date and time?",
+  "options": [
+   "Relative timer.",
+   "Absolute timer.",
+   "Tick timer.",
+   "Delay timer."
+  ],
+  "correct_index": 1,
+  "explanation": "المؤقت المطلق (Absolute timer) يستخدم التاريخ والوقت الفعلي (calendar).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 997,
+  "key": "y5:p65",
+  "subject_id": 33,
+  "question": "25-Which of the following is NOT a function of interrupt and event handling in RTOS?",
+  "options": [
+   "Defining an interrupt handler.",
+   "Creation and deletion of ISR (Interrupt Service Routine).",
+   "Referencing the state of an ISR.",
+   "Scheduling tasks based on interrupt priorities."
+  ],
+  "correct_index": 3,
+  "explanation": "جدولة المهام حسب أولويات المقاطعات من وظائف المجدول وليست من وظائف معالجة المقاطعات والأحداث.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 998,
+  "key": "y5:p66",
+  "subject_id": 33,
+  "question": "26-If we impose a total ordering of the critical resource accesses, then we solved:",
+  "options": [
+   "Priority inversion phenomenon problem. .",
+   "Deadlock phenomenon problem.",
+   "Priority Ceiling problem.",
+   "All of the above are not correct"
+  ],
+  "correct_index": 1,
+  "explanation": "فرض ترتيب كلي على طلب الموارد الحرجة يحل مشكلة الجمود (Deadlock).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 999,
+  "key": "y5:p67",
+  "subject_id": 33,
+  "question": "27-Under what condition is EDF (Earliest Deadline First) algorithm schedulable for periodic tasks with deadlines equal to periods When?",
+  "options": [
+   "the processor utilization factor is greater than 1. .",
+   "the processor load factor is greater than 1.",
+   "the processor utilization factor is less than or equal to 1.",
+   "All of the above are not correct"
+  ],
+  "correct_index": 2,
+  "explanation": "خوارزمية EDF قابلة للجدولة للمهام الدورية (المهلة = الدور) إذا كان عامل استخدام المعالج ≤ 1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1000,
+  "key": "y5:p68",
+  "subject_id": 33,
+  "question": "28-What is true about priority ceiling protocol:",
+  "options": [
+   "used for avoiding deadlocks.",
+   "each resource is assigned a priority ceiling.",
+   "Initially designed for fixed-priority scheduling algorithms.",
+   "All of the above are correct."
+  ],
+  "correct_index": 3,
+  "explanation": "كل العبارات صحيحة: يتجنب الجمود، كل مورد له سقف أولوية، وصُمم أصلاً لخوارزميات الأولوية الثابتة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1001,
+  "key": "y5:p69",
+  "subject_id": 33,
+  "question": "29-What happens if no aperiodic requests are pending when a polling server is active?",
+  "options": [
+   "server's time is used by periodic tasks.",
+   "It increases its period to handle future requests.",
+   "It ignores periodic tasks and stays active.",
+   "All of the above are not correct"
+  ],
+  "correct_index": 0,
+  "explanation": "إن لم تكن هناك طلبات غير دورية عند تفعيل الـ polling server تُفقد سعته ويستخدم الوقت المهام الدورية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1002,
+  "key": "y5:p70",
+  "subject_id": 33,
+  "question": "30-When is a scheduling algorithm considered optimal?",
+  "options": [
+   "When it results in a schedule that meets all timing constraints for a given task set.",
+   "When it produces a feasible schedule for any schedulable task set.",
+   "When it works only for a specific task set.",
+   "All of the above are not correct."
+  ],
+  "correct_index": 1,
+  "explanation": "الخوارزمية المثلى هي التي تنتج جدولاً ممكناً (feasible) لأي مجموعة مهام قابلة للجدولة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1003,
+  "key": "y5:p71",
+  "subject_id": 33,
+  "question": "31-In (Priority Inheritance protocol) the task t1, which is using a critical resource inside a critical section, gets the priority of any task tj waiting for this resource if the priority of task tj is:",
+  "options": [
+   "higher than priority of task t1.",
+   "lower than priority of task t1.",
+   "equal to priority of task t1.",
+   "All of the above are not correct."
+  ],
+  "correct_index": 0,
+  "explanation": "في وراثة الأولوية ترث المهمة t1 أولوية المهمة المنتظرة tj إذا كانت أولويتها أعلى من أولوية t1.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1004,
+  "key": "y5:p72",
+  "subject_id": 33,
+  "question": "32-Which of the following states indicates that a task is created but not yet activated in an RTOS?",
+  "options": [
+   "Ready",
+   "Blocked",
+   "Running",
+   "Dormant"
+  ],
+  "correct_index": 3,
+  "explanation": "الحالة Dormant تعني أن المهمة أُنشئت لكنها لم تُفعَّل بعد.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1005,
+  "key": "y5:p73",
+  "subject_id": 33,
+  "question": "33-When a task is executed, its relative laxity is:",
+  "options": [
+   "constant.",
+   "zero.",
+   "increased.",
+   "decreased."
+  ],
+  "correct_index": 0,
+  "explanation": "أثناء تنفيذ المهمة يبقى الـ laxity النسبي ثابتاً، وينقص عند انتظارها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1006,
+  "key": "y5:p74",
+  "subject_id": 33,
+  "question": "34-Which describes an event-driven RTS?",
+  "options": [
+   "Reacts to events like a patient's high blood pressure.",
+   "Reacts at regular time intervals like temperature monitoring.",
+   "Ignores events and time.",
+   "Only records data."
+  ],
+  "correct_index": 0,
+  "explanation": "النظام المدفوع بالأحداث يستجيب لحدث (مثل ارتفاع ضغط المريض)، لا لفواصل زمنية منتظمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1007,
+  "key": "y5:p77",
+  "subject_id": 33,
+  "question": "35-At time t = 4, which task is executed:",
+  "options": [
+   "Tp1",
+   "Tp2",
+   "Ta3",
+   "Ta4"
+  ],
+  "correct_index": 2,
+  "explanation": "بالجدولة RM: Tp1 ثم Tp2 حتى t=4، وعند t=4 لا مهام دورية جاهزة فتعمل Ta3 في الخلفية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1008,
+  "key": "y5:p78",
+  "subject_id": 33,
+  "question": "36-At time t = 0, which tasks are ready to execute:",
+  "options": [
+   "Tp1 & Tp2",
+   "Tp2 & Ta3",
+   "Ta3 & Ta4",
+   "Ta3 & Ta4 & Ta5"
+  ],
+  "correct_index": 0,
+  "explanation": "عند t=0 المهام الجاهزة هي Tp1 وTp2 فقط، لأن Ta3 تصل عند t=3 وTa4 عند t=10 وTa5 عند t=11.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1009,
+  "key": "y5:p79",
+  "subject_id": 33,
+  "question": "37-The task Ta3 finishes the execution at time:",
+  "options": [
+   "t=6",
+   "t=7",
+   "t=8",
+   "t=9"
+  ],
+  "correct_index": 2,
+  "explanation": "Ta3 تعمل 4-5 ثم 7-8 (بعد Tp1 الثانية)، فتنتهي عند t=8.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1010,
+  "key": "y5:p80",
+  "subject_id": 33,
+  "question": "38-The task Ta5 finishes the execution at time:",
+  "options": [
+   "t=15",
+   "t=16",
+   "t=18",
+   "t=19"
+  ],
+  "correct_index": 3,
+  "explanation": "Ta4 تنتهي t=15، ثم تعمل Tp1 (15-17)، فتعمل Ta5 من 17 إلى 19.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1011,
+  "key": "y5:p81",
+  "subject_id": 33,
+  "question": "39-The task Ta4 begins execution at time:",
+  "options": [
+   "t=10",
+   "t=12",
+   "t=13",
+   "t=14"
+  ],
+  "correct_index": 3,
+  "explanation": "بعد وصول Ta4 عند 10 تعمل Tp1 (10-12) ثم Tp2 (12-14)، فتبدأ Ta4 عند t=14.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 1012,
+  "key": "y5:p82",
+  "subject_id": 33,
+  "question": "40-We can improve average response time of aperiodic tasks in this example through use of … Algorithm:",
+  "options": [
+   "Task Servers",
+   "Joint scheduling",
+   "Rate monotonic",
+   "Deadline monotonic"
+  ],
+  "correct_index": 0,
+  "explanation": "خوادم المهام (Task servers) تحسّن متوسط زمن استجابة المهام غير الدورية مقارنة بالجدولة الخلفية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

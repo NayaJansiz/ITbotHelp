@@ -1,0 +1,262 @@
+[
+ {
+  "id": 290,
+  "key": "y2:p70",
+  "subject_id": 10,
+  "question": "في اي توزيع يستخدم لنمذجة ارسال رسالة عبر الشبكة حيث تكون النتيجة اما نجاح او فشل",
+  "options": [
+   "بواسون",
+   "طبيعي",
+   "برنولي",
+   "اسي"
+  ],
+  "correct_index": 2,
+  "explanation": "توزيع برنولي يمثل تجربة بنتيجتين: نجاح أو فشل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 291,
+  "key": "y2:p71",
+  "subject_id": 10,
+  "question": "اذا كان احتمال حدث ما \nP(a)=0.65\nف ان احتمال الفشل",
+  "options": [
+   "0",
+   "0.10",
+   "0.35",
+   "غير ذلك"
+  ],
+  "correct_index": 2,
+  "explanation": "احتمال الفشل = 1 - 0.65 = 0.35.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 292,
+  "key": "y2:p72",
+  "subject_id": 10,
+  "question": "قانون الاحتمال المركب",
+  "options": [
+   "P(A|B)=P(A^B).P(B)",
+   "P(A|B)=P(A^B)/P(B)",
+   "غير ذلك",
+   "P(B)=P(A|B).P(A)"
+  ],
+  "correct_index": 1,
+  "explanation": "قانون الاحتمال الشرطي: P(A",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 293,
+  "key": "y2:p73",
+  "subject_id": 10,
+  "question": "اذا كان هنالك برنامج احتمال ان يحتوي ثغرة هو 0.2 و احتمال ان يفشل النظام في فحص الأمان 0.3\nو احتمال ان يحتوي ثغرة و يفشل في فحص الأمان معا هو 0.10 \nف ما هو احتمال ان يحتوي ثغرة بعد ان يفشل في فحص الأمان",
+  "options": [
+   "0.2",
+   "0.3",
+   "0.10",
+   "0.33"
+  ],
+  "correct_index": 3,
+  "explanation": "P(ثغرة",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 294,
+  "key": "y2:p74",
+  "subject_id": 10,
+  "question": "تباين العدد الثابت X=8 هو",
+  "options": [
+   "8",
+   "16",
+   "0",
+   "1"
+  ],
+  "correct_index": 2,
+  "explanation": "تباين عدد ثابت يساوي صفراً لأنه لا يتغير.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 295,
+  "key": "y2:p75",
+  "subject_id": 10,
+  "question": "اذا كان تباين عدد ما هو 16 ف الانحراف المعياري يكون",
+  "options": [
+   "16",
+   "8",
+   "4",
+   "2"
+  ],
+  "correct_index": 2,
+  "explanation": "الانحراف المعياري هو الجذر التربيعي للتباين: √16 = 4.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 296,
+  "key": "y2:p76",
+  "subject_id": 10,
+  "question": "اي من مقايس النزعة المركزية يتأثر ب القيم المتطرفة",
+  "options": [
+   "الوسيط",
+   "المتوسط الحسابي",
+   "المنوال",
+   "الربيعات"
+  ],
+  "correct_index": 1,
+  "explanation": "المتوسط الحسابي يتأثر بالقيم المتطرفة، بخلاف الوسيط والمنوال.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 297,
+  "key": "y2:p77",
+  "subject_id": 10,
+  "question": "ما هو التكرار النسبي  لفئة معينة ؟",
+  "options": [
+   "تكرار الفئة مقسوما على المجموع الكلي للتكرارات",
+   "مقلوب التكرار المتجمع الهابط",
+   "تكرار الفئة مضافا اليه تكرار الفئة السابقة",
+   "تكرار الفئة مضافا اليه المتوسط الحسابي"
+  ],
+  "correct_index": 0,
+  "explanation": "التكرار النسبي = تكرار الفئة ÷ مجموع التكرارات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 298,
+  "key": "y2:p78",
+  "subject_id": 10,
+  "question": "في مخطط الساق و الورقة ما مدى   البيانات التالية\n1 | 2 9\n2 | 5 3 | 4 9",
+  "options": [
+   "1",
+   "2",
+   "27",
+   "0"
+  ],
+  "correct_index": 2,
+  "explanation": "المدى = أكبر قيمة - أصغر قيمة = 39 - 12 = 27.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 299,
+  "key": "y2:p79",
+  "subject_id": 10,
+  "question": "اذا كان P(a) و P(b) مستقلان ف ان P(a|b) يساوي",
+  "options": [
+   "P(a)",
+   "P(b)",
+   "P(a^b)",
+   "-غير ذلك"
+  ],
+  "correct_index": 0,
+  "explanation": "عندما يكون الحدثان مستقلين فإن P(a",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 300,
+  "key": "y2:p80",
+  "subject_id": 10,
+  "question": "ليكن X متغيرا عشوائيا فان القيمة المتوقعة E(x) هي",
+  "options": [
+   "Σx . p(x)",
+   "Σ x² . p(x)",
+   "Σ x² . p(x)²",
+   "Σ x/p(x)"
+  ],
+  "correct_index": 0,
+  "explanation": "القيمة المتوقعة E(x) = Σ x · p(x).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 301,
+  "key": "y2:p81",
+  "subject_id": 10,
+  "question": "من اجل البيانات الغير مبوبة ما هو الوسيط \n10 15 20 30 40 50",
+  "options": [
+   "20",
+   "30",
+   "25",
+   "15"
+  ],
+  "correct_index": 2,
+  "explanation": "الوسيط لـ 6 قيم هو متوسط القيمتين الوسطيتين: (20+30)/2 = 25.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 302,
+  "key": "y2:p82",
+  "subject_id": 10,
+  "question": "من اجل البيانات الغير مبوبة ما هو المنوال \n2 , 3 , 5, 19 , 10",
+  "options": [
+   "0",
+   "3",
+   "19",
+   "غير ذلك"
+  ],
+  "correct_index": 3,
+  "explanation": "لا يوجد منوال لأن كل القيم تكررت مرة واحدة، فالجواب \"غير ذلك\".",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

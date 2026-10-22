@@ -1,0 +1,589 @@
+[
+ {
+  "id": 488,
+  "key": "y3:p208",
+  "subject_id": 17,
+  "question": "1)ان التوازي في معالجات متعددة النوى يكون على مستوى:",
+  "options": [
+   "التعليمات",
+   "العمليات",
+   "المراحل",
+   "threads"
+  ],
+  "correct_index": 3,
+  "explanation": "التوازي في المعالجات متعددة النوى يكون على مستوى الخيوط (threads).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 489,
+  "key": "y3:p209",
+  "subject_id": 17,
+  "question": "2)معالجات متعددة النوى تتكون بشكل اساسي من:",
+  "options": [
+   "Alu",
+   "Alu and cache",
+   "Alu and registers",
+   "Alu and Srq"
+  ],
+  "correct_index": 1,
+  "explanation": "المعالج متعدد النوى يتكون أساساً من وحدات ALU مع ذاكرة كاش.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 490,
+  "key": "y3:p210",
+  "subject_id": 17,
+  "question": "3)الزمن الازم لتنفيذ برنامج من 1000 تعليمة لا تتضمن تعليمات تفريع شرطي في خط توارد من 4 مراحل مع زمن  كل مرحلة 1ms :",
+  "options": [
+   "699ms",
+   "1003ms",
+   "500ms",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "الزمن = (k + n - 1) × t = (4 + 1000 - 1) × 1ms = 1003ms.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 491,
+  "key": "y3:p211",
+  "subject_id": 17,
+  "question": "4)في السؤال السابق يكون معامل التسريع :",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 0,
+  "explanation": "معامل التسريع = (1000 × 4) ÷ 1003 ≈ 4.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 492,
+  "key": "y3:p212",
+  "subject_id": 17,
+  "question": "5) زمن جمع 8 اعداد شعاعية باستخدام 4 وحدات alu متواردة حيث زمن المرحلة 1sp",
+  "options": [
+   "5",
+   "4",
+   "8",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "كل وحدة تعالج عنصرين في خط من 4 مراحل: 4 + 2 - 1 = 5 وحدات زمنية.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 493,
+  "key": "y3:p213",
+  "subject_id": 17,
+  "question": "6) اذا كانت الوحدات غير متواردة تسلسلية",
+  "options": [
+   "40",
+   "32",
+   "16",
+   "8"
+  ],
+  "correct_index": 1,
+  "explanation": "بدون توارد: 8 عناصر × 4 مراحل = 32.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 494,
+  "key": "y3:p214",
+  "subject_id": 17,
+  "question": "7) عند تقييم الاداء يدخل في حساب الزمنCPU time:",
+  "options": [
+   "تعدد منافذ i/o",
+   "وقت المستخدم",
+   "زمن النفاذ الى القرص الصلب",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "زمن CPU يشمل وقت المستخدم (user time) وليس زمن الوصول للقرص.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 495,
+  "key": "y3:p215",
+  "subject_id": 17,
+  "question": "8) يشير مصطلحsmp إلى",
+  "options": [
+   "معالجات متعددة بسيطة",
+   "معالجات متعددة فائقة",
+   "معالجات متعددة متناظرة",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 2,
+  "explanation": "SMP تعني معالجات متعددة متناظرة (Symmetric Multiprocessors).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 496,
+  "key": "y3:p216",
+  "subject_id": 17,
+  "question": "9) من مساؤى smp العدد المحدود للمعالجات التي يمكن اضافتها",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "من مساوئ SMP العدد المحدود للمعالجات التي يمكن إضافتها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 497,
+  "key": "y3:p217",
+  "subject_id": 17,
+  "question": "10 ) الحواسيب من نوع CISC  :",
+  "options": [
+   "مجموعة حواسيب ذات تعليمات معقدة",
+   "مجموعة حواسيب ذات تعليمات تقليدية",
+   "مجموعة حواسيب ذات تعليمات متكررة",
+   "اي مما ذكر غير صحيح"
+  ],
+  "correct_index": 0,
+  "explanation": "CISC هي حواسيب ذات مجموعة تعليمات معقدة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 498,
+  "key": "y3:p218",
+  "subject_id": 17,
+  "question": "11)للتعامل مع التعليمات ذات التفريع الشرطي :",
+  "options": [
+   "التنبؤ بالتفريع",
+   "الجلب القبلي لوجه التفريع",
+   "الدفقات المتعددة",
+   "جميع ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "للتعامل مع التفريع الشرطي: التنبؤ بالتفريع والجلب القبلي والدفقات المتعددة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 499,
+  "key": "y3:p219",
+  "subject_id": 17,
+  "question": "12) المعالجة الشعاعية",
+  "options": [
+   "paraller ALUs",
+   "ALU مركزية",
+   "Multitasking",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "المعالجة الشعاعية تعتمد وحدات ALU متوازية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 500,
+  "key": "y3:p220",
+  "subject_id": 17,
+  "question": "13)  لتسريع التنفيذ يكفي زيادة التردد",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 1,
+  "explanation": "زيادة التردد وحدها لا تكفي للتسريع (تحدّها الحرارة والتأخير بالذاكرة).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 501,
+  "key": "y3:p221",
+  "subject_id": 17,
+  "question": "14) يمكن زيادة سرعة المعالج بزيادة تردد الساعه",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 0,
+  "explanation": "يمكن زيادة سرعة المعالج بزيادة تردد الساعة ضمن حدود الحرارة والتصميم.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 502,
+  "key": "y3:p222",
+  "subject_id": 17,
+  "question": "15 ) من أجل تحسين الأداء تعمل RISC على تقليل عدد التعليمات وتعمل CISC على تقليل دورة الساعة لكل تعليمة:",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": 1,
+  "explanation": "العبارة معكوسة: RISC تقلل دورات الساعة لكل تعليمة، وCISC تقلل عدد التعليمات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 503,
+  "key": "y3:p223",
+  "subject_id": 17,
+  "question": "16 ) الحواسيب من نوع RISC :",
+  "options": [
+   "مجموعة حواسيب ذات تعليمات عودية",
+   "مجموعة حواسيب ذات تعليمات تكرارية",
+   "مجموعة حواسيب ذات تعليمات عشوائية",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 3,
+  "explanation": "RISC حواسيب بمجموعة تعليمات مخفضة، لا عودية ولا تكرارية ولا عشوائية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 504,
+  "key": "y3:p224",
+  "subject_id": 17,
+  "question": "17 ) الحل البرمجي لترابط الكاش يؤدي الى زيادة استخدام الذاكرة كاش cache",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 505,
+  "key": "y3:p225",
+  "subject_id": 17,
+  "question": "18 ) ينتمي إلى MIMD",
+  "options": [
+   "حواسيب متعددة المعالجات بذاكرة مشتركة",
+   "حواسب متعددة بذاكرة موزعة",
+   "معالجات متعددة النوى",
+   "كل ما سبق"
+  ],
+  "correct_index": 3,
+  "explanation": "MIMD تشمل متعددة المعالجات بذاكرة مشتركة والموزعة والنوى المتعددة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 506,
+  "key": "y3:p226",
+  "subject_id": 17,
+  "question": "19 ) تتصف المعالجات المصفوفية بأنها :",
+  "options": [
+   "معالجات أغراض عامة",
+   "تقوم بمعالجة الأجزاء السلميةsclar",
+   "تستخدم كأجهزة للحواسيب main frames"
+  ],
+  "correct_index": 2,
+  "explanation": "المعالجات المصفوفية (Array Processors) تُلحق كمعالج مساعد بالحواسيب الكبيرة Mainframes.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 507,
+  "key": "y3:p227",
+  "subject_id": 17,
+  "question": "20 ) ينتمي العنقود حسب تصنيفFLYNN",
+  "options": [
+   "SISD",
+   "MISD",
+   "SIMD",
+   "MIMD ذو الذاكرة الموزعة"
+  ],
+  "correct_index": 3,
+  "explanation": "العنقود (Cluster) حسب Flynn هو MIMD ذو الذاكرة الموزعة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 508,
+  "key": "y3:p228",
+  "subject_id": 17,
+  "question": "21 ) من عوامل سرعة الحاسوب التي لا تتاثر بلغة البرمجة",
+  "options": [
+   "عدد التعليمات",
+   "عدد ادوار الساعة للتعليمة CPI",
+   "تردد الساعة clock rate",
+   "A and C"
+  ],
+  "correct_index": 2,
+  "explanation": "تردد الساعة لا يتأثر بلغة البرمجة، أما عدد التعليمات وCPI فيتأثران بها.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 509,
+  "key": "y3:p229",
+  "subject_id": 17,
+  "question": "22 ) لديك حاسوبان A B لهما نفس بنية مجموعة التعليمات ولكن منظمان بطريقتين نختلفتين فاذا علمت ان زمن دور الساعة للحاسوب A هو 100ps وللحاسوب b هو 200ps وفي a وجدنا cpi=2 و في b وجدناه cpi=1 فان",
+  "options": [
+   "الحاسوب a اسرع",
+   "الحاسوب b اسرع",
+   "الحاسوبان نفس السرعة",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 2,
+  "explanation": "A: 100ps × 2 = 200ps لكل تعليمة، وB: 200ps × 1 = 200ps، فالسرعة متساوية.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 510,
+  "key": "y3:p230",
+  "subject_id": 17,
+  "question": "23 )  من السؤال السابق بفرض ان تنفيذ مهمة على الحاسوب a استغرق 90 ثانية وكان user cpu time = 50 seconds و system cpu time = 10 seconds فان النسبة المئوية لزمن المعالج يكون",
+  "options": [
+   "0.56",
+   "0.66",
+   "0.76",
+   "لا شيء مما سبق"
+  ],
+  "correct_index": 1,
+  "explanation": "نسبة زمن المعالج = (50 + 10) ÷ 90 ≈ 0.66.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 511,
+  "key": "y3:p231",
+  "subject_id": 17,
+  "question": "24) من نتائج تحليل تنفيذ البرامج المكتوبة ب hll",
+  "options": [
+   "البرمجة الميكروية",
+   "تحسين استدعاء call return",
+   "تقليل الحاجة الى السجلات",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "تحليل برامج HLL أظهر أهمية تحسين استدعاء الإجراءات (call/return).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 512,
+  "key": "y3:p232",
+  "subject_id": 17,
+  "question": "25) التقنية الافضل في الاداء",
+  "options": [
+   "SMP",
+   "SSP",
+   "RISC",
+   "Pipeline"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 513,
+  "key": "y3:p233",
+  "subject_id": 17,
+  "question": "26) كان في سؤال المعالج بمسلك واحد ومتعدد النوى  يؤدي الى تسريع الاداء",
+  "options": [
+   "صح",
+   "خطا"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 514,
+  "key": "y3:p234",
+  "subject_id": 17,
+  "question": "27) طريقة تنفيذ تعليمتين باستخدام F.p بنفس الوقت",
+  "options": [
+   "خط فائق",
+   "خطوط متعددة متزامنة",
+   "معالجات متعددة النوى",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 1,
+  "explanation": "تنفيذ تعليمتين بنفس الوقت يتم بخطوط متعددة متزامنة (superscalar).",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 515,
+  "key": "y3:p235",
+  "subject_id": 17,
+  "question": "28)تصنيفات وظيفية للcluster",
+  "options": [
+   "عناقيد حسابية",
+   "عناقيد التوافر الدائم",
+   "عناقيد توازن الحمولة",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": 3,
+  "explanation": "التصنيفات الوظيفية للعنقود: حسابية، توافر دائم، توازن حمولة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 516,
+  "key": "y3:p236",
+  "subject_id": 17,
+  "question": "29) ان استخدام تراكب الجلب لا تضاعف سؤعة التنفيذ لان",
+  "options": [
+   "زمن الجلب اكبر من زمن التنفيذ",
+   "جلب تعليمة تفريغ شرطي",
+   "مقاطعة",
+   "b+c"
+  ],
+  "correct_index": 3,
+  "explanation": "تراكب الجلب لا يضاعف السرعة بسبب التفريع الشرطي والمقاطعات.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 517,
+  "key": "y3:p237",
+  "subject_id": 17,
+  "question": "30) أنواع المعاملات في البرامج  المكتوبة فيHLL وتكرار استعمالها يحددان:",
+  "options": [
+   "تنظيم الذاكرة",
+   "تنظيم المتحكم",
+   "تنظيم التوارد",
+   "كل ما سبق خطأ"
+  ],
+  "correct_index": 0,
+  "explanation": "أنواع المعاملات (operands) وتكرار استعمالها تحدد تنظيم الذاكرة وأنماط العنونة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ }
+]

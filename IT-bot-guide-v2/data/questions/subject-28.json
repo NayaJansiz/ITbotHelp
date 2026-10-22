@@ -1,0 +1,698 @@
+[
+ {
+  "id": 806,
+  "key": "y4:p278",
+  "subject_id": 28,
+  "question": "1. يمكن أن تتداخل بنية finish.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "يمكن تداخل بنى finish (nested finish) في HJ.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 807,
+  "key": "y4:p279",
+  "subject_id": 28,
+  "question": "2. يتم تنفيذ intermediate operations في ال streams حتى لو لم يتم تنفيذ terminal operations.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "عمليات الـ intermediate في الـ streams كسولة، ولا تُنفَّذ بدون terminal operation.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 808,
+  "key": "y4:p280",
+  "subject_id": 28,
+  "question": "3. يمكن أن تتداخل ال Isolate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "يمكن تداخل الـ isolated blocks في Habanero Java.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 809,
+  "key": "y4:p281",
+  "subject_id": 28,
+  "question": "4. في إطار HJ تستخدم forallChunked لتحديد عدد المهام/المسالك التي سيتم انشاؤها عند التكرار.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "forallChunked تحدد حجم/عدد الأجزاء (المهام) التي تُنشأ عند التكرار في HJ.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 810,
+  "key": "y4:p282",
+  "subject_id": 28,
+  "question": "5. إن تنفيذ عملية wait على مسلك تجعله بحالة blocked وتضعه في المجموعة wait-set بعد تحريره للقفل.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "wait تُحرر القفل وتضع المسلك في الحالة blocked ضمن wait-set.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 811,
+  "key": "y4:p283",
+  "subject_id": 28,
+  "question": "6. تستخدم تقنية MPI في النموذج Distributed Memory.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "MPI يُستخدم في نموذج الذاكرة الموزعة (Distributed Memory).",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 812,
+  "key": "y4:p284",
+  "subject_id": 28,
+  "question": "7. لا يستطيع ال actor إنشاء actors.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "يستطيع الـ actor إنشاء actors جديدة، فالعبارة خاطئة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 813,
+  "key": "y4:p285",
+  "subject_id": 28,
+  "question": "8. يتم الحصول على القيمة المعادة من Future باستخدام put.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "يُحصل على القيمة من Future باستخدام get وليس put.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 814,
+  "key": "y4:p286",
+  "subject_id": 28,
+  "question": "9. يمكن ل Reentrant ان ينشىء طوابير إنتظار مستقلة مختلفة لكل قفل.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "الـ ReentrantLock يتيح إنشاء Conditions (طوابير انتظار) مستقلة لكل قفل.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 815,
+  "key": "y4:p287",
+  "subject_id": 28,
+  "question": "10. في مسألة المنتج والمستهلك بإستخدام الactors المستهلك هو المسؤول عن حذف العنصر فعليا من ال buffer.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "في المنتج/المستهلك بالـ actors الـ buffer actor هو من يحذف العنصر فعلياً، وليس المستهلك.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 816,
+  "key": "y4:p288",
+  "subject_id": 28,
+  "question": "11. بنية isolated تسمح لعدة مهام بتعديل نفس البيانات في نفس اللحظة دون أي إنتظار",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 1,
+  "explanation": "الـ isolated يضمن الاستثناء المتبادل، فلا يسمح لمهام بتعديل نفس البيانات في نفس اللحظة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 817,
+  "key": "y4:p289",
+  "subject_id": 28,
+  "question": "12. الخاصية Benign NonDeterminism تعني قبول برنامج تفرعي يعاني من مشكلة Datarace حيث تكون نتائج التنفيذ المختلفة مقبولة.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct_index": 0,
+  "explanation": "عدم الحتمية الحميد (Benign nondeterminism) يقبل بسباق بيانات إن كانت النتائج المختلفة مقبولة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 818,
+  "key": "y4:p290",
+  "subject_id": 28,
+  "question": "13. ماهي العمليات التي يمكن أن تعمل على التوازي وفقا للمقطع السابق :",
+  "options": [
+   "S1, S4",
+   "S3, S4",
+   "S2, S3",
+   "A + C"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 819,
+  "key": "y4:p291",
+  "subject_id": 28,
+  "question": "14. كم مهمة تم إنشاؤها بدون المهمة الأساسية؟",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 820,
+  "key": "y4:p292",
+  "subject_id": 28,
+  "question": "15. بفرض كلفة تعليمة الطباعة=1 وبإهمال كلفة باقي التعليمات يكون قيمة المسار الحرج CPL هي:",
+  "options": [
+   "10",
+   "11",
+   "5",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 821,
+  "key": "y4:p293",
+  "subject_id": 28,
+  "question": "16. أي من العبارات التالية صحيحة:",
+  "options": [
+   "تنفذ جميع الـ Threads نفس التعليمات ولكن على معطيات مختلفة في نمط البرمجة التفرعية MIMD.",
+   "كل برنامج لا يُعاني من Datarace، هو حكماً Deterministic (Structural + Functional).",
+   "يمكن إيجاد حل تفرعي لأي مسألة بغض النظر عن طبيعة أكوادها.",
+   "كل ماسبق صحيح",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 4,
+  "explanation": "كل العبارات خاطئة: MIMD تنفّذ تعليمات مختلفة، وغياب Datarace لا يضمن الحتمية دائماً، وليس كل مسألة قابلة للتفريع.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 822,
+  "key": "y4:p295",
+  "subject_id": 28,
+  "question": "17-لدينا أسفلاً حلين تفرعيين لمسألة 1D-Iterative Averaging، أي العبارات صحيحة:",
+  "options": [
+   "أدى استخدام Barrier لتجنب مشكلة Data Race الذي يعاني منها الحل الآخر",
+   "أدى استخدام Barrier لتسريع الحل",
+   "عدد المهام Tasks في الحل الذي يستخدم Barrier أقل مقارنة بالحل الآخر",
+   "a+b",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 823,
+  "key": "y4:p296",
+  "subject_id": 28,
+  "question": "أي العبارات التالية صحيحة",
+  "options": [
+   "استخدام structured Locks يضمن عدم حدوث Deadlock",
+   "تحقيق مفهوم Memorization في البرامج التفرعية يضمن استهلاكاً أقل للذاكرة",
+   "speedup=work/Span دائماً",
+   "زيادة عدد المعالجات يؤدي دائماً لتسريع البرامج التفرعية",
+   "كافة الإجابات خاطئة"
+  ],
+  "correct_index": 4,
+  "explanation": "الأقفال المهيكلة لا تمنع Deadlock، والتسريع لا يساوي work/span دائماً، وزيادة المعالجات لا تسرّع دائماً.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 824,
+  "key": "y4:p297",
+  "subject_id": 28,
+  "question": "19- أي العبارات التالية صحيحة:",
+  "options": [
+   "الصف RecursiveTask يعيد قيمة كناتج للعملية،  بينما الصف RecursiveAction لا يعيد أي قيمة",
+   "إذا كان المهمة التفرعية هي تصفح مصفوفة ضخمةوطباعة عناصرها دون إجراءحسابات ترث من الصفRecursiveAction",
+   "الطريقة التي يجب إعادة تحقيقها عند التعامل مع RecursiveAction and RecursiveTask هي run",
+   "a+b",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "RecursiveTask تعيد قيمة وRecursiveAction لا تعيد، والطريقة المطلوب تحقيقها هي compute وليست run.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 825,
+  "key": "y4:p298",
+  "subject_id": 28,
+  "question": "20- أي العبارات التالية صحيحة:",
+  "options": [
+   "في معمارية الذاكرة الموزعة Distributed Memory Architecture لكل معالج وصول لذاكرته الخاصة",
+   "في معمارية الذاكرة المشتركة shared Memory Architecture يوجد ذاكرة عامة مشتركة",
+   "لا يمكن تفريع اي حلقة loop بسبب احتمال وجود اعتمادية بين التكرارات",
+   "اعتمادية البيانات من النوع anti-dependence تعني أن هناك كتابة بعد قراءة على بيانات",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 826,
+  "key": "y4:p299",
+  "subject_id": 28,
+  "question": "21-أي العبارات التالية صحيحة:",
+  "options": [
+   "يمكن تفريع الحلقات باستخدام parallel streams في بعض الحالات",
+   "في إطار HJ العملية next() تتضمن عمليتين ضمنيتين هما WAIT +SIG",
+   "في إطار HJ يمكن استخدام العملية next() في الحلقات من النوع forallPhased فقط",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 827,
+  "key": "y4:p300",
+  "subject_id": 28,
+  "question": "24- من أجل خط أنبوب Pipeline فرعي مكون من 6 مراحل ويعمل على معطيات بحجم 100، أي العبارات صحيحة إذا علمت أن كلفة المرحلة الواحدة من أجل عنصر واحد تساوي 1:",
+  "options": [
+   "التسريع سيكون حتماً اكبر تماماً من 5",
+   "زمن التنفيذ المتوازي لن يتجاوز 16",
+   "لن يكون من المجدي استخدام اكثر من 4 كائنات phaser لتحقيق التوازي",
+   "كل ما سبق صحيح",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "التسلسلي 600، والتوازي = 6 + 100 - 1 = 105، فالتسريع ≈ 5.7 > 5.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 828,
+  "key": "y4:p301",
+  "subject_id": 28,
+  "question": "25- في حال تنفيذ مسلكين بشكل متزامن للطريقة work بحيث يقوم احدهما بتنفيذ work(L1,L2) والاخر work(L2,L1) :",
+  "options": [
+   "سيدخل المسلكان في حالة Deadlock",
+   "سيدخل المسلكان في حالة Livelock",
+   "سيكون التنفيذ كما لو كان تسلسلياً",
+   "سيكون هناك مجاعة حكماً",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 4,
+  "explanation": "الجمود ممكن وليس حتمياً بين المسلكين، فعبارة \"سيدخلان حتماً\" غير دقيقة.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 829,
+  "key": "y4:p303",
+  "subject_id": 28,
+  "question": "26- اي العبارات التالية صحيحة ؟",
+  "options": [
+   "كل مقطع برمجي مصمم كـ Synchronized  يملك اكثر من wait-set وهذا من ايجابيات هذا النهج",
+   "من ايجابيات استخدام الاقفال بدلاً من     Synchronized التحرير الضمني والتلقائي لها بعد الانتهاء منها",
+   "تقنية القفل Hand-Over-Hand تسمح بزيادة التوازي في بداية ونهاية القائمة فقط",
+   "في تقنية القفل Hand-Over-Hand لا حاجة لاستخدام المقطع finally لضمان تحرير الاقفال",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 4,
+  "explanation": "كل العبارات خاطئة: لـ synchronized wait-set واحد، وتحرير القفل يدوي بـ finally، وHand-Over-Hand يزيد التوازي على طول القائمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 830,
+  "key": "y4:p304",
+  "subject_id": 28,
+  "question": "30- عند تحقيق خط أنبوب Pipeline باستخدام نموذج Actor:",
+  "options": [
+   "لا يمكن أن يعاني هذا التحقيق من أي مشكلة في الإنتاجية مهما كانت عدة مراحل الأنبوب.",
+   "إذا كان يوجد مشكلة في الإنتاجية بسبب أحد المراحل، يمكن حلها بزيادة حجم mailbox.",
+   "يعاني هذا التحقيق من عدم إمكانية تحقيق التوازي في أي من مراحل خط الأنبوب.",
+   "يمكن تحقيق التوازي في المرحلة الأخيرة من خط الانبوب فقط",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 4,
+  "explanation": "في Pipeline بالـ Actors تُحل مشكلة الإنتاجية بتوزيع/تكرار المرحلة البطيئة وليس بزيادة mailbox.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 831,
+  "key": "y4:p305",
+  "subject_id": 28,
+  "question": "32- أي مما يلي يستخدم لإنشاء مهمة (Task):",
+  "options": [
+   "وراثة الصف Thread",
+   "تحقيق الواجهة Runnable",
+   "التعليمة async في إطار HJ",
+   "التعليمة finish في إطار HJ",
+   "كل ما سبق صحيح"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 832,
+  "key": "y4:p306",
+  "subject_id": 28,
+  "question": "34- اي مما يلي هو الانسب لتحقيق حل تفرعي في حالة البرمجية التابعية funcational programming",
+  "options": [
+   "thread",
+   "future",
+   "async",
+   "barrier",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 1,
+  "explanation": "البرمجة التابعية (functional) تناسبها الـ Future لأنها تُرجع قيمة.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 833,
+  "key": "y4:p307",
+  "subject_id": 28,
+  "question": "22. أي العبارات التالية صحيحة عن المقطع أعلاه :",
+  "options": [
+   "تنفيذ S3 يعتمد على انتهاء تنفيذ S1",
+   "تنفيذ S2 يعتمد على انتهاء تنفيذ S4",
+   "تنفيذ S1 يعتمد على انتهاء تنفيذ S3",
+   "تنفيذ S4 يعتمد على انتهاء تنفيذ S2",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 834,
+  "key": "y4:p308",
+  "subject_id": 28,
+  "question": "23- ما هو الخرج المحتمل للمقطع جانباً:",
+  "options": [
+   "A0-M0-B1-N1",
+   "M0-A0-B1-N1",
+   "A0-B1-M0-N1",
+   "A0-M0-B0-N1",
+   "A + B"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 835,
+  "key": "y4:p309",
+  "subject_id": 28,
+  "question": "28. ما هو الهدف الأساسي من استخدام isolated(obj1, obj2) بدلاً من كتلة isolated العامة (Global Isolation)؟",
+  "options": [
+   "إجبار جميع المهام المتوازية في البرنامج على التنفيذ بشكل تسلسلي.",
+   "تقليل احتمال حدوث مشكلة Deadlock",
+   "زيادة درجة التوازي",
+   "B + C",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 2,
+  "explanation": "الـ object-based isolation يزيد درجة التوازي لأنه يقفل الكائنات المعنية فقط بدل كل البرنامج.",
+  "needs_review": 1,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 836,
+  "key": "y4:p310",
+  "subject_id": 28,
+  "question": "29. من أجل مخزن محدود Bounded Buffer بسعة b وعدد منتجين p وعدد مستهلكين c، أي العبارات صحيحة إذا تم حل هذه المسألة باستخدام نموذج Actor:",
+  "options": [
+   "نحتاج عدد من الـ actors للمنتجين يساوي p.",
+   "نحتاج عدد من الـ actors للمستهلكين يساوي c.",
+   "نحتاج actor واحد لإدارة المخزن.",
+   "A + B + C",
+   "كل ما سبق خاطئ"
+  ],
+  "correct_index": 3,
+  "explanation": "نحتاج actor لكل منتج (p) وactor لكل مستهلك (c) وactor واحد لإدارة المخزن.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 837,
+  "key": "y4:p311",
+  "subject_id": 28,
+  "question": "31. في مسألة توليد الأعداد الأولية ضمن المجال [1,n] باستخدام خوارزمية Sieve of Eratosthenes المحققة بواسطة ال Actors، وفي حال كانت n=11:",
+  "options": [
+   "سيكون عدد الـ Actors الكلي المستعمل يساوي 11.",
+   "عدد الـ Actors التي ستفحص القيمة 7 يساوي 3.",
+   "يتم إنشاء two actors في بداية عمل الخوارزمية.",
+   "A + B",
+   "كل ماسبق خاطئ."
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 838,
+  "key": "y4:p312",
+  "subject_id": 28,
+  "question": "33. ماهو الهدف من قانون Amdahl :",
+  "options": [
+   "حساب التسريع الذي يمكن ان نحصل عليه من اجل n معالج الاخذ بعين الاعتبار الجزء القابل للتفريع في الكود",
+   "حساب التسريع الذي يمكن ان نحصل عليه من اجل حجم محدد للذاكرة",
+   "حساب عدد المسالك المثالي",
+   "b+c",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": 0,
+  "explanation": "قانون Amdahl يحسب التسريع الممكن لـ n معالج مع مراعاة الجزء القابل للتفريع من الكود.",
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 0,
+  "pre_text": null
+ },
+ {
+  "id": 839,
+  "key": "y4:p313",
+  "subject_id": 28,
+  "question": "35. أي العبارات التالية صحيحة من أجل تحقيق تفرعي للبيان أعلاه :",
+  "options": [
+   "يمكن حله بإستخدام 4 كائنات future.",
+   "لا يمكن تحقيقه باستخدام finish , async.",
+   "بإستخدام asyncwait and async نحتاج 4 مهام من النوع asyncwait",
+   "A + C",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ },
+ {
+  "id": 840,
+  "key": "y4:p314",
+  "subject_id": 28,
+  "question": "27. أي العبارات التالية صحيحة عن المقطع أعلاه :",
+  "options": [
+   "المقطع خالي من Data Race والنتيجة حتمية",
+   "قد يعاني المقطع من مشكلة Deadlock",
+   "المقطع يعاني من مشكلة Data Race",
+   "B + C",
+   "كل ماسبق خاطئ"
+  ],
+  "correct_index": null,
+  "explanation": null,
+  "needs_review": 0,
+  "answer_source": 0,
+  "image": null,
+  "long_question": 0,
+  "excluded": 1,
+  "pre_text": null
+ }
+]
