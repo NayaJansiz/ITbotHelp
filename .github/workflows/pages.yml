@@ -1,0 +1,73 @@
+
+name: pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'IT-bot-guide-v2/data/**'
+      - 'IT-bot-guide-v2/tools/**'
+      - 'IT-bot-guide-v2/config/**'
+      - 'IT-bot-guide-v2/sources/**'
+      - 'IT-bot-guide-v2/intake/**'
+      - 'IT-bot-guide-v2/site/**'
+      - 'IT-bot-guide-v2/.github/workflows/pages.yml'
+      - '.github/workflows/pages.yml'
+  schedule:
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: homs-uni/lecture-site-engine
+          path: lectures
+          sparse-checkout: subjects
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install --no-save --prefix "$RUNNER_TEMP/node" jsdom
+
+      - name: Build site data
+        working-directory: IT-bot-guide-v2
+        run: python tools/build_site.py --data data --lectures ../lectures --intake intake
+
+      - name: Test site
+        working-directory: IT-bot-guide-v2
+        run: |
+          python tools/test_site.py --data data --lectures ../lectures
+          python tools/test_oneshot.py --data data --lectures ../lectures --node-modules "$RUNNER_TEMP/node"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: IT-bot-guide-v2/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
