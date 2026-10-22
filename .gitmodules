@@ -1,0 +1,3 @@
+[submodule "lecture-site-engine"]
+    path = lecture-site-engine
+    url = https://github.com/homs-uni/lecture-site-engine.git
