@@ -892,8 +892,8 @@ function refreshLinks() {
   setBtn($('btnUpload'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + (quick ? '' : '/' + dir) : '#', on);
   setBtn($('btnPdf'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + '/inbox/' + subj.id : '#', on);
   setBtn($('btnPr'), on ? GH + '/compare/' + BRANCH + '...' + u + ':' + BRANCH + '?expand=1' : '#', on);
-  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى Fork، ثم اضغط Commit changes وافتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
-  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/، ثم اضغط Commit changes وافتح Pull Request. لا ترفع المحاضرات مرة أخرى.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
+  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى Fork. الرابط يفتح main مباشرة؛ لا تنشئ فرعاً جديداً. اضغط Commit changes ثم افتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
+  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/ على main في Fork. لا تنشئ فرعاً جديداً ولا ترفع المحاضرات مرة أخرى. اضغط Commit changes ثم افتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
 }
 try { var su = localStorage.getItem('bot-gh-user'); if (su) $('ghUser').value = cleanUser(su); } catch (e) {}
 $('ghUser').oninput = function () {
