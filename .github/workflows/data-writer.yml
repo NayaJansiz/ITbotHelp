@@ -1,0 +1,63 @@
+# Active root-level workflow. Only processes approved files after they reach main.
+# Writes data/config in ITbotHelp only; does not deploy or change the separate Render-hosted bot database.
+name: data-writer
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'IT-bot-guide-v2/intake/**'
+      - 'IT-bot-guide-v2/replies/**'
+      - 'IT-bot-guide-v2/sources/**'
+      - 'IT-bot-guide-v2/media/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: IT-bot-guide-v2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: homs-uni/lecture-site-engine
+          path: IT-bot-guide-v2/lectures
+          sparse-checkout: subjects
+          submodules: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow
+      - name: Register newly added lecture text
+        run: python tools/register_sources.py --data data --sources sources --config config
+      - name: Apply pending approved intake/reply files
+        run: |
+          python tools/apply_pending.py --data data --root . --lectures lectures --apply --report report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Re-check stored quotes against current lecture text
+        run: python tools/reverify.py --data data --lectures lectures --mark || true
+      - name: Build and sanity-check a generated database (not deployed to Render)
+        run: |
+          mkdir -p build
+          python tools/bot_db_tool.py build data build/bot.db --force --media-dir media
+          python tools/check_bot.py build/bot.db --compare bot.db --media-json data/media.json | tee check.txt || true
+          ! grep -q "had a picture and now have none\\|image-hash-mismatch" check.txt
+      - name: Commit applied data/config changes back to this repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data config
+          git diff --cached --quiet || git commit -m "data: apply approved intake/replies files" -m "$(head -n 12 report.md)"
+          git push
+      - name: Rebuild the GitHub Pages site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml
