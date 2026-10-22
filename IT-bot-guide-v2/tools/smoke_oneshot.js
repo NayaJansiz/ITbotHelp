@@ -14,7 +14,8 @@ const dom = new JSDOM(html, { runScripts: 'dangerously', url: 'http://localhost/
   w.HTMLAnchorElement.prototype.click = function () { saved.push({ name: this.download, text: (blobs.get(this.href) || {}).text }); }; } });
 const w = dom.window, d = w.document, $ = id => d.getElementById(id), sleep = ms => new Promise(r => setTimeout(r, ms));
 let bad = 0; const ok = (n, c, x) => { console.log((c ? 'PASS  ' : 'FAIL  ') + n + (!c && x !== undefined ? '  ' + x : '')); if (!c) bad++; };
-const pick = (y, s) => { $('yearSel').value = String(y); $('yearSel').onchange(); $('subjSel').value = String(s); $('subjSel').onchange(); };
+const fire = (el, type) => el.dispatchEvent(new w.Event(type, { bubbles: true }));
+const pick = (y, s) => { $('yearSel').value = String(y); fire($('yearSel'), 'change'); $('subjSel').value = String(s); fire($('subjSel'), 'change'); };
 const boxes = () => [...$('lecList').querySelectorAll('input')], btns = () => [...$('dlBox').children];
 (async () => {
   await sleep(300);
@@ -28,18 +29,18 @@ const boxes = () => [...$('lecList').querySelectorAll('input')], btns = () => [.
   if (pk11 && saved.length) ok('page-built part 1 is IDENTICAL to make_packs.py --mode all all-1.md', saved[0].text === fs.readFileSync(path.join(pk11, 'all-1.md'), 'utf8'));
   btns()[1].click(); await sleep(400);
   if (pk11 && saved.length > 1) ok('page-built part 2 is IDENTICAL to make_packs.py --mode all all-2.md', saved[1].text === fs.readFileSync(path.join(pk11, 'all-2.md'), 'utf8'));
-  $('ghUser').value = 'tester'; $('ghUser').oninput();
+  $('ghUser').value = 'tester'; fire($('ghUser'), 'input');
   ok('PDF upload button points at the student\'s fork, inbox/<subject id>/', /github\.com\/tester\/IT-bot\/upload\/main\/inbox\/11$/.test($('btnPdf').href) && !$('btnPdf').classList.contains('is-disabled'), $('btnPdf').href);
   // untick -> fewer lectures, one pack
   const keep = ['par5.md', 'par6.md'];
-  boxes().forEach(c => { c.checked = keep.includes(c.value); }); boxes()[0].onchange(); await sleep(100);
+  boxes().forEach(c => { c.checked = keep.includes(c.value); }); fire(boxes()[0], 'change'); await sleep(100);
   ok('2 lectures ticked -> one download button', btns().length === 1 && /ملف واحد/.test($('lecSum').textContent), btns().map(b => b.textContent));
   saved.length = 0; btns()[0].click(); await sleep(400);
   const t = saved[0] ? saved[0].text : '';
   ok('one-run pack has exactly the ticked lectures and ALL questions', (t.match(/\n# LECTURE \(/g) || []).length === 2 && t.includes('# LECTURE (par5.md)') && t.includes('# LECTURE (par6.md)') && !t.includes('# LECTURE (par1.md)') && (t.match(/\n### y3:/g) || []).length === Object.keys(sj.t).length, (t.match(/\n### y3:/g) || []).length + ' vs ' + Object.keys(sj.t).length);
-  boxes().forEach(c => { c.checked = false; }); boxes()[0].onchange(); await sleep(100);
+  boxes().forEach(c => { c.checked = false; }); fire(boxes()[0], 'change'); await sleep(100);
   ok('nothing ticked -> cards hidden', !$('packCard').classList.contains('is-visible') && /واحدة/.test($('lecSum').textContent));
-  boxes().forEach(c => { c.checked = true; }); boxes()[0].onchange(); await sleep(100);
+  boxes().forEach(c => { c.checked = true; }); fire(boxes()[0], 'change'); await sleep(100);
   // reply: real quotes from two lectures (one with a WRONG "lec" hint, one with none), a NOT-FOUND, a fabricated quote
   const quote = f => { const s = fs.readFileSync(lecDir + f, 'utf8').split('\n').filter(l => !l.startsWith('<!--') && l.split(/\s+/).length > 9)[3]; return s.replace(/[*#|>_`]/g, ' ').split(/\s+/).filter(Boolean).slice(0, 14).join(' '); };
   const K = sj.keys;
