@@ -14,7 +14,11 @@ ALLOWED_MODIFY = ('sources/manifest.json',)
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--base', required=True); ap.add_argument('--head', default='HEAD'); a = ap.parse_args()
-    r = subprocess.run(['git', 'diff', '--name-status', '--no-renames', f'{a.base}...{a.head}'], capture_output=True, text=True)
+    top = subprocess.run(['git', 'rev-parse', '--show-toplevel'], capture_output=True, text=True)
+    if top.returncode: sys.exit('git rev-parse failed: ' + top.stderr[-300:])
+    repo_root = top.stdout.strip()
+    # Always compare from the repository root, so names include IT-bot-guide-v2/ even if called from that subfolder.
+    r = subprocess.run(['git', 'diff', '--name-status', '--no-renames', f'{a.base}...{a.head}'], cwd=repo_root, capture_output=True, text=True)
     if r.returncode: sys.exit('git diff failed: ' + r.stderr[-300:])
     bad = []
     for ln in r.stdout.strip().split('\\n'):
