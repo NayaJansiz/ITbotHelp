@@ -1,0 +1,95 @@
+# Active root-level workflow. The application itself lives under IT-bot-guide-v2/.
+name: pr-check
+on:
+  pull_request:
+    paths:
+      - 'IT-bot-guide-v2/intake/**'
+      - 'IT-bot-guide-v2/replies/**'
+      - 'IT-bot-guide-v2/sources/**'
+      - 'IT-bot-guide-v2/media/**'
+      - 'IT-bot-guide-v2/inbox/**'
+      - 'IT-bot-guide-v2/data/**'
+      - 'IT-bot-guide-v2/tools/**'
+      - 'IT-bot-guide-v2/config/**'
+      - 'IT-bot-guide-v2/site/**'
+      - '.github/workflows/pr-check.yml'
+      - '.github/workflows/data-writer.yml'
+      - '.github/workflows/ingest-pdf.yml'
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: IT-bot-guide-v2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: homs-uni/lecture-site-engine
+          path: IT-bot-guide-v2/lectures
+          sparse-checkout: subjects
+          submodules: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: pip install pymupdf pillow beautifulsoup4
+      - name: jsdom for the page tests
+        run: npm install --no-save --prefix "$RUNNER_TEMP/node" jsdom pdfjs-dist@3.11.174
+      - name: A student PR may only add files in intake/replies/sources/media/inbox
+        if: ${{ !contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.pull_request.author_association) }}
+        run: |
+          git show "origin/${{ github.base_ref }}:IT-bot-guide-v2/tools/check_pr_paths.py" > "$RUNNER_TEMP/check_pr_paths.py"
+          python "$RUNNER_TEMP/check_pr_paths.py" --base "origin/${{ github.base_ref }}"
+      - name: Lecture text present?
+        id: lec
+        run: |
+          if compgen -G "lectures/subjects/*/*/lectures/*.md" > /dev/null; then
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::The lecture repo has no par*.md, so the lecture tests were skipped."
+          fi
+      - name: Tests that need no lecture repo (PDF sources, PDF inbox)
+        run: |
+          python tools/test_sources.py --data data
+          python tools/test_inbox.py --data data
+      - name: Tests that need the lecture repo (merge rules, single writer, lecture picker)
+        if: steps.lec.outputs.found == 'true'
+        run: |
+          python tools/selftest.py --data data --lectures lectures
+          python tools/test_apply.py --data data --lectures lectures
+          python tools/test_site.py --data data --lectures lectures
+          python tools/test_oneshot.py --data data --lectures lectures --node-modules "$RUNNER_TEMP/node"
+          python tools/test_quick.py --data data --lectures lectures --node-modules "$RUNNER_TEMP/node"
+      - name: Register student lecture text in this checkout only, for the dry run
+        run: python tools/register_sources.py --data data --sources sources --config config
+      - name: Dry-run merge_answers.py on replies/
+        run: python tools/merge_answers.py --data data --lectures lectures --sources sources --replies replies > merge_report.txt 2>&1 || true
+      - name: bot_db_tool verify + check_bot --strict (reports are informational)
+        run: |
+          python tools/bot_db_tool.py verify bot.db data --no-media > verify_report.txt 2>&1 || true
+          python tools/check_bot.py bot.db --strict > checkbot_report.txt 2>&1 || true
+      - name: Combined report
+        run: |
+          {
+            echo "## PR check report"; echo
+            echo "### merge_answers.py (dry run on replies/)"; echo '---'; cat merge_report.txt; echo
+            echo "### bot_db_tool.py verify"; echo '---'; cat verify_report.txt; echo
+            echo "### check_bot.py --strict"; echo '---'; tail -n 60 checkbot_report.txt; echo
+          } > combined_report.md
+          cat combined_report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Post the report as a PR comment (same-repo PRs only)
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            await github.rest.issues.createComment({ issue_number: context.issue.number, owner: context.repo.owner, repo: context.repo.repo, body: fs.readFileSync('IT-bot-guide-v2/combined_report.md', 'utf8') });
