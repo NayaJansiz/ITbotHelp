@@ -124,6 +124,7 @@ def apply_reply(ctx, rel, root):
         d = os.path.join(td, 'replies', str(sid)); os.makedirs(d); shutil.copy(os.path.join(root, rel), d)
         cmd = [sys.executable, os.path.join(HERE, 'merge_answers.py'), '--data', ctx.work, '--replies', os.path.join(td, 'replies'), '--root', root,
                '--sources', os.path.join(root, 'sources'), '--apply']
+        if a.approved_lecture_overwrites: cmd += ['--approved-lecture-overwrites']
         if a.lectures: cmd += ['--lectures', a.lectures]
         if a.packs and os.path.isdir(a.packs): cmd += ['--packs', a.packs]
         if a.config: cmd += ['--config', a.config]
@@ -153,6 +154,8 @@ def main():
     ap.add_argument('--lectures'); ap.add_argument('--packs', default=os.path.join('site', 'packs'))
     ap.add_argument('--config', default=os.path.join(HERE, '..', 'config', 'subjects.json'))
     ap.add_argument('--apply', action='store_true', help='write data/ (default: dry run, report only)')
+    ap.add_argument('--approved-lecture-overwrites', action='store_true',
+                    help='After a reviewed PR is merged, allow verified lecture answers to replace existing answers; inferred answers remain protected.')
     ap.add_argument('--report', help='write the Markdown report here')
     ap.add_argument('--only', help='apply only this one pending file (relative path)')
     a = ap.parse_args()

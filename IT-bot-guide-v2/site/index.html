@@ -164,37 +164,41 @@
   </article>
 
   <article class="card" id="sendCard">
-    <h2 class="card__title">④ أرسل الملف للمراجعة</h2>
-    <div class="actions"><button class="btn btn--primary" id="btnZip" type="button" disabled hidden>⬇ تنزيل حزمة الـ Pull Request (zip: الرد + المحاضرة + الأسئلة)</button>
-      <button class="btn btn--primary" id="btnReplyFile" type="button" disabled>⬇ تنزيل ملف الرد</button>
-      <button class="btn" id="btnSummary" type="button" disabled>⬇ تنزيل ملخص التغييرات (.md)</button>
+    <h2 class="card__title">④ أرسل للمراجعة (3 خطوات فقط)</h2>
+    <div class="note--warn">
+      <strong>هل تستخدم محاضرات الموقع؟</strong> نزّل ملف الرد وملخص التغييرات أدناه وارفعهما معاً. لا تحتاج إلى رفع المحاضرات مرة أخرى.
+      <br><strong>هل استخدمت بطاقة ⚡ ورفعت PDF وتصدير تيليجرام؟</strong> نزّل حزمة ZIP وفك ضغطها، ثم ارفع كل محتوياتها مع الحفاظ على المجلدات.
+    </div>
+    <div class="actions"><button class="btn btn--primary" id="btnZip" type="button" disabled hidden>⬇ تنزيل حزمة التقديم (ZIP: الرد + الملخص + الملفات الجديدة)</button>
+      <button class="btn btn--primary" id="btnReplyFile" type="button" disabled>١) تنزيل ملف الرد (.jsonl)</button>
+      <button class="btn" id="btnSummary" type="button" disabled>٢) تنزيل ملخص التغييرات (.summary.md)</button>
       <button class="btn" id="btnSummaryCopy" type="button" disabled>نسخ الملخص كنص</button></div>
     <div class="field" style="margin-top:1rem">
       <label for="ghUser">اسمك على GitHub (username)</label>
       <input type="text" id="ghUser" dir="ltr" inputmode="latin" placeholder="ahmad-dev" autocomplete="username" spellcheck="false" autocapitalize="off" autocorrect="off">
-      <p class="hint">حروف إنجليزية وأرقام فقط، من رابط صفحتك: github.com/<strong>USERNAME</strong></p>
+      <p class="hint">اكتب اسم المستخدم فقط كما يظهر في github.com/USERNAME.</p>
     </div>
     <div class="actions">
-      <a class="btn is-disabled" id="btnFork" href="#" target="_blank" rel="noopener">أ) Fork للمستودع (مرة واحدة)</a>
-      <a class="btn is-disabled" id="btnUpload" href="#" target="_blank" rel="noopener">ب) رفع الملف إلى نسختك</a>
-      <a class="btn is-disabled" id="btnPr" href="#" target="_blank" rel="noopener">ج) فتح Pull Request</a>
+      <a class="btn is-disabled" id="btnFork" href="#" target="_blank" rel="noopener">أ) إنشاء Fork (مرة واحدة فقط)</a>
+      <a class="btn is-disabled" id="btnUpload" href="#" target="_blank" rel="noopener">ب) رفع الملفات إلى Fork</a>
+      <a class="btn is-disabled" id="btnPr" href="#" target="_blank" rel="noopener">ج) فتح Pull Request للمشرف</a>
     </div>
     <p class="hint" id="uploadHint"></p>
     <details style="margin-top:1rem">
-      <summary><strong>عندك محاضرة PDF جديدة لهذه المادة؟</strong></summary>
-      <p class="hint">ارفع الملف إلى مجلد <code dir="ltr">inbox/رقم المادة/</code> في نسختك (بعد الـ Fork) ثم افتح Pull Request. بعد أن يدمجه المشرف يتحوّل الملف تلقائياً إلى نص وتظهر المحاضرة في هذه الصفحة.</p>
-      <div class="actions"><a class="btn is-disabled" id="btnPdf" href="#" target="_blank" rel="noopener">رفع ملف PDF إلى نسختك</a></div>
+      <summary><strong>عندك محاضرة PDF غير موجودة في الموقع؟</strong></summary>
+      <p class="hint">استخدم بطاقة ⚡ إن أمكن. أو ارفع PDF إلى مجلد <code dir="ltr">inbox/رقم المادة/</code> في Fork ثم افتح Pull Request. لن تظهر المحاضرة الجديدة في الموقع إلا بعد دمج المشرف للطلب.</p>
+      <div class="actions"><a class="btn is-disabled" id="btnPdf" href="#" target="_blank" rel="noopener">رفع PDF إلى Fork</a></div>
     </details>
   </article>
 
   <div class="steps">
-    <strong>الخطوات بإيجاز:</strong>
+    <strong>بعد أن تتحقق الصفحة من الرد:</strong>
     <ol>
-      <li><strong>الأسرع:</strong> اختر المادة ثم ارفع PDF المحاضرة وتصدير تيليجرام في بطاقة ⚡، ونزّل الملف وأعطه لـ Claude. (أو اختر محاضرات الموقع الجاهزة.)</li>
-      <li>الصق الرد واضغط «تحقّق»: ✓ يعني الاقتباس موجود في المحاضرة.</li>
-      <li>نزّل الـ zip (أو ملف الرد في الطريقة العادية) وارفعه إلى نسختك (Fork).</li>
-      <li>افتح Pull Request. المشرف يراجع ويدمج.</li>
-      <li><strong>لا تعدّل ملفاً موجوداً:</strong> أضف ملفك الجديد فقط (الرد والملخص، أو ملف PDF في <code dir="ltr">inbox/</code>).</li>
+      <li><strong>الطريقة العادية:</strong> نزّل ملف الرد (.jsonl) وملخص التغييرات (.summary.md). ارفع الملفين معاً إلى المسار الذي يفتحه زر «رفع الملفات إلى Fork».</li>
+      <li><strong>بطاقة ⚡:</strong> نزّل ZIP وفك ضغطه، ثم ارفع مجلدات <code dir="ltr">replies</code> و<code dir="ltr">sources</code> و<code dir="ltr">intake</code> الموجودة بداخله كما هي.</li>
+      <li>اضغط «فتح Pull Request للمشرف». لا تحتاج إلى تعديل الكود أو قاعدة البيانات أو إضافة المحاضرات يدوياً عند استخدام محاضرات الموقع.</li>
+      <li>انتظر فحص GitHub. الأخضر يعني نجاح الفحوصات؛ الأحمر يعني أن المشرف لا ينبغي أن يدمج الطلب بعد.</li>
+      <li><strong>مهم:</strong> أضف ملفات جديدة فقط، ولا تعدّل ملفات سبق إرسالها. الأسئلة التي لم توجد في المحاضرات أو التي تخالف جواباً محفوظاً ستظهر للمشرف للمراجعة.</li>
     </ol>
   </div>
 
@@ -888,8 +892,8 @@ function refreshLinks() {
   setBtn($('btnUpload'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + (quick ? '' : '/' + dir) : '#', on);
   setBtn($('btnPdf'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + '/inbox/' + subj.id : '#', on);
   setBtn($('btnPr'), on ? GH + '/compare/' + BRANCH + '...' + u + ':' + BRANCH + '?expand=1' : '#', on);
-  if (quick) { $('uploadHint').textContent = on ? 'فُكّ ضغط الـ zip، ثم اسحب المجلدات التي بداخله (replies وsources وintake) كلها إلى صفحة الرفع في نسختك (Commit ثم افتح Pull Request).' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
-  $('uploadHint').textContent = on ? 'ارفع ملف الرد (اسمه يبدأ بـ ' + packName + '- وينتهي بـ .jsonl) وملف الملخص (.summary.md) إلى المجلد ' + dir + '/ (Commit ثم افتح Pull Request).' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
+  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى Fork. الرابط يفتح main مباشرة؛ لا تنشئ فرعاً جديداً. اضغط Commit changes ثم افتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
+  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/ على main في Fork. لا تنشئ فرعاً جديداً ولا ترفع المحاضرات مرة أخرى. اضغط Commit changes ثم افتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
 }
 try { var su = localStorage.getItem('bot-gh-user'); if (su) $('ghUser').value = cleanUser(su); } catch (e) {}
 $('ghUser').oninput = function () {
