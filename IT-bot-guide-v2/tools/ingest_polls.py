@@ -68,8 +68,12 @@ def main():
         if not r and len(by_opts.get(fo, [])) == 1: r, how = by_opts[fo][0], 'text-changed'
         elif not r and len(by_q.get(fq, [])) == 1: r, how = by_q[fq][0], 'options-changed'
         rec = {'fingerprint': h, 'question': strip_num(it['q']), 'options': it['options'], 'batch': it['batch'], 'msg': it['msg']}
-        if h in seen_fp: rec['duplicate_of_msg'] = seen_fp[h]; rep['ambiguous'] += 1
-        seen_fp.setdefault(h, it['msg'])
+        if h in seen_fp:
+            # The same poll can appear more than once in a single Telegram export.
+            # Keep the first occurrence only; do not emit a second action/row for it.
+            rep['ambiguous'] += 1
+            continue
+        seen_fp[h] = it['msg']
         if r:
             rec['key'] = r['key']; rec['match'] = how
             if how == 'exact': rec['action'] = 'unchanged'
