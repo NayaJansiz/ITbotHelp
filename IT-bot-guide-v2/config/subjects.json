@@ -1,5 +1,6 @@
 {
   "_note": "subject_id -> folder in lecture-site-engine (subjects/<folder>/lectures/par*.md). Only mappings CONFIRMED in the guide (section 11, 2026-10-16) are listed. Subjects not listed have no lecture folder configured: their questions can only go through the INFERRED pack. marker_map = parN.md -> lecture number printed in explanations as (م<N>); files not listed use the number in the file name. \"sources\": [slugs] = PDF lectures ingested by tools/ingest_pdf.py (sources/<id>/<slug>.md) that belong to this subject; added by hand, never guessed (a subject may have both folder and sources, or only sources).",
+  "1": {"folder": "year-1/programming-2"},
   "8":  {"folder": "year-2/algorithms-data-structures"},
   "9":  {"folder": "year-2/web-applications", "sources": ["wp-lecture-3"]},
   "10": {"folder": "year-2/statistics-probability"},
