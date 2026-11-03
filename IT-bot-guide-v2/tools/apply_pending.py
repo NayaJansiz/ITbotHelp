@@ -45,7 +45,7 @@ def git_added_time(root, rel):
         return None
 
 def find_pending(root, applied):
-    """-> (pending [(rel path, sha)], errors). A listed file whose content changed is an ERROR (files are immutable)."""
+    """-> (pending [(rel path, sha)], errors). A changed answer file is reprocessed as a revision; changed intake files remain errors."""
     files = []
     for kind, pats in (('intake', ('.json',)), ('replies', ('.jsonl', '.txt'))):
         base = os.path.join(root, kind)
@@ -59,7 +59,14 @@ def find_pending(root, applied):
     for rel in files:
         h = sha_file(os.path.join(root, rel))
         if rel in applied:
-            if applied[rel] != h: errs.append(f'{rel}: already applied but its content changed (files are immutable: add a NEW file instead)')
+            if applied[rel] != h:
+                # Allow a student to revise an existing answer file. The PR is
+                # re-validated against the current database; only a merged,
+                # reviewed PR can replace a conflicting verified lecture answer.
+                if rel.startswith('replies/'):
+                    pend.append((rel, h))
+                else:
+                    errs.append(f'{rel}: an already-applied intake file cannot be edited; submit a new intake file instead')
         else: pend.append((rel, h))
     pend.sort(key=lambda x: (git_added_time(root, x[0]) or 0, x[0]))
     return pend, errs
