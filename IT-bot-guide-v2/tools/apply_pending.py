@@ -141,7 +141,7 @@ def apply_reply(ctx, rel, root):
     out = [l for l in r.stdout.split('\n') if l.strip() and 'dry run' not in l]
     ctx.lines.append(f'- `{rel}`'); ctx.lines += ['  ' + l for l in out]
     for l in out:                                                    # items that need a human decision
-        if re.search(r'CONFLICT|STUDENT edit|FIGURE|picture binding|lecture packs disagree|NO REPLY|unreadable|quote not found|letter .* outside', l): ctx.decide.append(f'{rel}: {l.strip()}')
+        if re.search(r'CONFLICT|LECTURE_PARAPHRASE|NEEDS SOURCE DETAILS|STUDENT edit|FIGURE|picture binding|lecture packs disagree|NO REPLY|unreadable|quote not found|letter .* outside', l): ctx.decide.append(f'{rel}: {l.strip()}')
     # picture bindings the student confirmed on the review screen
     items, _ = parse_reply(os.path.join(root, rel)); rows = {r['key'] for r in ctx.rows(sid)}; nb = 0
     for it in items:

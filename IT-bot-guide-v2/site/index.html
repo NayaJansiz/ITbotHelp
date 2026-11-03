@@ -315,10 +315,17 @@ function validateReply(text, ctx) {
     if (!L || LET.slice(0, info[0]).indexOf(L) < 0) { bump('INVALID letter'); row.why = 'الحرف ' + JSON.stringify(it.a) + ' خارج الخيارات (' + info[0] + ' خيارات)'; return; }
     row.letterIdx = LET.indexOf(L);
     if (it.src === 'LECTURE') {
-      if (!lc.order.length) { bump('INVALID no lecture file'); row.why = 'هذا الملف ليس ملف محاضرة'; return; }
-      var hit = findQuote(it.q, it.lec, lc);
-      if (hit === null) { bump('QUOTE-FAIL'); row.why = quoteState(it.q, lc.lectures[lc.order[0]].flat) === 'short' ? 'الاقتباس قصير جداً أو غير موجود' : 'الاقتباس غير موجود حرفياً في المحاضرات'; return; }
+      if (!lc.order.length) { bump('INVALID no lecture file'); row.why = 'لا توجد محاضرة متاحة للتحقق؛ استخدم LECTURE_PARAPHRASE مع lec وref للمراجعة'; return; }
+      var hit = it.q ? findQuote(it.q, it.lec, lc) : null;
+      if (hit === null) { bump('QUOTE-FAIL'); row.why = 'الاقتباس غير موجود حرفياً؛ إذا كانت الفكرة مدعومة بصياغة مختلفة استخدم LECTURE_PARAPHRASE مع مرجع'; return; }
       bump('LECTURE ok'); row.kind = 'ok'; row.lec = hit;
+    } else if (it.src === 'LECTURE_PARAPHRASE') {
+      var hinted = normLec(it.lec || it.lecture, lc.order);
+      if (!(it.lec || it.lecture) || !(it.ref || it.citation)) {
+        bump('NEEDS SOURCE DETAILS'); row.why = 'أضف اسم المحاضرة ورقم الصفحة أو عنوان الفقرة؛ اختلاف الصياغة ليس سبباً للرفض'; return;
+      }
+      bump('LECTURE_PARAPHRASE (needs review)'); row.kind = 'par'; row.lec = hinted;
+      row.why = 'إجابة مستندة إلى المحاضرة بصياغة مختلفة — تُقبل للمراجعة البشرية';
     } else if (it.src === 'STUDENT') {
       var sh = it.q && lc.order.length ? findQuote(it.q, it.lec, lc) : null;
       if (sh !== null) { bump('STUDENT+quote verified'); row.kind = 'ok'; row.lec = sh; row.why = 'اختيار الطالب + اقتباس موثّق'; }
@@ -333,7 +340,7 @@ function validateReply(text, ctx) {
   });
   // two LECTURE answers with different letters for one question = conflict (nothing applied)
   var byId = {};
-  rows.forEach(function (r) { if (r.kind === 'ok') (byId[r.id] = byId[r.id] || []).push(r); });
+  rows.forEach(function (r) { if (r.kind === 'ok' || r.kind === 'par') (byId[r.id] = byId[r.id] || []).push(r); });
   Object.keys(byId).forEach(function (k) {
     var rs = byId[k];
     if (rs.some(function (r) { return r.letterIdx !== rs[0].letterIdx; })) rs.forEach(function (r) { r.kind = 'bad'; r.why = 'السؤال مكرر بجوابين مختلفين'; });
@@ -544,10 +551,10 @@ function sha8(text) {
   if (window.crypto && crypto.subtle && window.TextEncoder) return crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)).then(function (b) { return Array.prototype.map.call(new Uint8Array(b), function (v) { return ('0' + v.toString(16)).slice(-2); }).join('').slice(0, 8); });
   return Promise.resolve((hash32(text) + '00000000').slice(0, 8));
 }
-var KIND = { ok: 'موثّق', inf: 'استنتاج', nf: 'لم يوجد', stu: 'جواب طالب', fig: 'من شكل', bad: 'مرفوض' };
+var KIND = { ok: 'موثّق حرفياً', par: 'من المحاضرة — للمراجعة', inf: 'استنتاج', nf: 'لم يوجد', stu: 'جواب طالب', fig: 'من شكل', bad: 'مرفوض' };
 function origL(o) { return o.a ? String(o.a).trim().toUpperCase().slice(0, 1) : ''; }
 function evalItem(it) { return validateReply(JSON.stringify(it), vctx).rows[0] || { kind: 'bad' }; }
-function mkOf(it, kind, r) { if (kind === 'ok' && it.src !== 'INFERRED') { var l = r && r.lec != null ? siteData.lectures[r.lec] : null; return l ? l.marker : ''; } return kind === 'inf' ? '(استنتاج)' : ''; }
+function mkOf(it, kind, r) { if ((kind === 'ok' || kind === 'par') && it.src !== 'INFERRED') { var l = r && r.lec != null ? siteData.lectures[r.lec] : null; return l ? (kind === 'par' ? l.marker + '، مراجعة' : l.marker) : (kind === 'par' ? '(مراجعة مرجع محاضرة)' : ''); } return kind === 'inf' ? '(استنتاج)' : ''; }
 function renderReview(res) {
   rvKey = 'bot-edits:' + subj.id + ':' + packName + ':' + hash32($('reply').value);
   var saved = {}; try { saved = JSON.parse(localStorage.getItem(rvKey) || '{}'); } catch (e) {}
@@ -564,7 +571,7 @@ function renderReview(res) {
     root.appendChild(mk('label', null, 'الشرح'));
     cd.ta = mk('textarea'); cd.ta.value = o.e || ''; cd.cnt = mk('div', 'cnt'); root.appendChild(cd.ta); root.appendChild(cd.cnt);
     var vr = evalItem(o);
-    if ((vr.kind === 'ok' || vr.kind === 'fig') && vr.lec != null) {
+    if ((vr.kind === 'ok' || vr.kind === 'par' || vr.kind === 'fig') && vr.lec != null) {
       var sourceMeta = siteData.lectures[vr.lec];
       var sourceLabel = 'المحاضرة: ' + vr.lec.replace(/\.md$/, '') +
         (sourceMeta && sourceMeta.marker ? ' ' + sourceMeta.marker : '');
@@ -585,8 +592,9 @@ function renderReview(res) {
       root.appendChild(mk('label', null, 'مصدر الشرح'));
       root.appendChild(mk('div', 'why', sourceLabel));
     }
-    if (o.src === 'LECTURE' && o.q) { root.appendChild(mk('label', null, 'الاقتباس من المحاضرة (للقراءة)')); var ro = mk('div', 'why', o.q); ro.dir = 'auto'; root.appendChild(ro); }
-    cd.qlab = mk('label', null, 'اقتباس حرفي من المحاضرة يدعم الجواب (اختياري، يحوّل جوابك إلى موثّق إن وُجد)'); cd.qt = mk('textarea', 'q'); cd.qt.value = o.src === 'STUDENT' ? (o.q || '') : '';
+    if (o.src === 'LECTURE' && o.q) { root.appendChild(mk('label', null, 'اقتباس حرفي من المحاضرة (للقراءة)')); var ro = mk('div', 'why', o.q); ro.dir = 'auto'; root.appendChild(ro); }
+    if (o.src === 'LECTURE_PARAPHRASE') { root.appendChild(mk('label', null, 'مرجع المحاضرة')); root.appendChild(mk('div', 'why', String(o.lec || o.lecture || '؟') + ' · ' + String(o.ref || o.citation || '؟') + ' — صياغة غير حرفية، للمراجعة')); }
+    cd.qlab = mk('label', null, 'اقتباس حرفي من المحاضرة يدعم الجواب (اختياري، يحوّل جوابك إلى موثّق إن وُجد)'); cd.qt = mk('textarea', 'q'); cd.qt.value = (o.src === 'STUDENT' || o.src === 'LECTURE_PARAPHRASE') ? (o.q || '') : '';
     cd.rlab = mk('label', null, 'سبب التعديل (يُنصح به)'); cd.rs = mk('input'); cd.rs.type = 'text'; cd.rs.value = o.reason || '';
     cd.prop = (siteData.p || {})[cd.id]; cd.def = o.uses_image === true;
     if (cd.prop) {
