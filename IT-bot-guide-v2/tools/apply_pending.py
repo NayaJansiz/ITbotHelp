@@ -60,13 +60,14 @@ def find_pending(root, applied):
         h = sha_file(os.path.join(root, rel))
         if rel in applied:
             if applied[rel] != h:
-                # Allow a student to revise an existing answer file. The PR is
-                # re-validated against the current database; only a merged,
-                # reviewed PR can replace a conflicting verified lecture answer.
-                if rel.startswith('replies/'):
+                # Reprocess a revised intake or answer file. Intake poll actions
+                # are idempotent: unchanged rows do nothing, updates target stable
+                # question keys, and new questions are deduplicated by fingerprint.
+                # Replies are revalidated by merge_answers; the PR still requires review.
+                if rel.startswith(('intake/', 'replies/')):
                     pend.append((rel, h))
                 else:
-                    errs.append(f'{rel}: an already-applied intake file cannot be edited; submit a new intake file instead')
+                    errs.append(f'{rel}: this already-applied file type cannot be edited')
         else: pend.append((rel, h))
     pend.sort(key=lambda x: (git_added_time(root, x[0]) or 0, x[0]))
     return pend, errs
