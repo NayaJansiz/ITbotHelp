@@ -314,18 +314,18 @@ function validateReply(text, ctx) {
     var L = String(it.a).trim().toUpperCase().slice(0, 1);
     if (!L || LET.slice(0, info[0]).indexOf(L) < 0) { bump('INVALID letter'); row.why = 'الحرف ' + JSON.stringify(it.a) + ' خارج الخيارات (' + info[0] + ' خيارات)'; return; }
     row.letterIdx = LET.indexOf(L);
-    if (it.src === 'LECTURE' || it.src === 'LECTURE_PARAPHRASE') {
-      var hit = lc.order.length && it.q ? findQuote(it.q, it.lec, lc) : null;
-      if (it.src === 'LECTURE' && hit !== null) {
-        bump('LECTURE verified'); row.kind = 'ok'; row.lec = hit;
-      } else {
-        var hinted = normLec(it.lec || it.lecture, lc.order);
-        if (!(it.lec || it.lecture) || !(it.ref || it.citation)) {
-          bump('NEEDS SOURCE DETAILS'); row.why = 'أضف اسم المحاضرة ورقم الصفحة أو عنوان الفقرة؛ لا نرفض الصياغة المختلفة بحد ذاتها'; return;
-        }
-        bump('LECTURE_PARAPHRASE (needs review)'); row.kind = 'par'; row.lec = hinted;
-        row.why = 'إجابة مستندة إلى المحاضرة بصياغة مختلفة — تُقبل للمراجعة البشرية';
+    if (it.src === 'LECTURE') {
+      if (!lc.order.length) { bump('INVALID no lecture file'); row.why = 'لا توجد محاضرة متاحة للتحقق؛ استخدم LECTURE_PARAPHRASE مع lec وref للمراجعة'; return; }
+      var hit = it.q ? findQuote(it.q, it.lec, lc) : null;
+      if (hit === null) { bump('QUOTE-FAIL'); row.why = 'الاقتباس غير موجود حرفياً؛ إذا كانت الفكرة مدعومة بصياغة مختلفة استخدم LECTURE_PARAPHRASE مع مرجع'; return; }
+      bump('LECTURE verified'); row.kind = 'ok'; row.lec = hit;
+    } else if (it.src === 'LECTURE_PARAPHRASE') {
+      var hinted = normLec(it.lec || it.lecture, lc.order);
+      if (!(it.lec || it.lecture) || !(it.ref || it.citation)) {
+        bump('NEEDS SOURCE DETAILS'); row.why = 'أضف اسم المحاضرة ورقم الصفحة أو عنوان الفقرة؛ اختلاف الصياغة ليس سبباً للرفض'; return;
       }
+      bump('LECTURE_PARAPHRASE (needs review)'); row.kind = 'par'; row.lec = hinted;
+      row.why = 'إجابة مستندة إلى المحاضرة بصياغة مختلفة — تُقبل للمراجعة البشرية';
     } else if (it.src === 'STUDENT') {
       var sh = it.q && lc.order.length ? findQuote(it.q, it.lec, lc) : null;
       if (sh !== null) { bump('STUDENT+quote verified'); row.kind = 'ok'; row.lec = sh; row.why = 'اختيار الطالب + اقتباس موثّق'; }
