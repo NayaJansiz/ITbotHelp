@@ -91,26 +91,37 @@ def main():
                     continue
                 L = str(it['a']).strip().upper()[:1]
                 if L not in LET[:len(q['options'])]: rep['INVALID letter'] += 1; notes.append(f"{k}: letter {it.get('a')!r} outside options"); continue
-                if src in ('LECTURE', 'LECTURE_PARAPHRASE'):
+                if src == 'LECTURE':
                     hint = it.get('lec') or it.get('lecture')
                     ref = it.get('ref') or it.get('citation')
-                    hit = find_quote(it.get('q'), hint, scope, lflat) if scope and it.get('q') else None
-                    if src == 'LECTURE' and hit:
-                        if hint and norm_lec(hint, scope) not in (None, hit):
-                            notes.append(f"{k}: reply said lec={hint} but the quote is in {hit} (used {hit})")
-                        cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['LECTURE verified'] += 1
-                    elif hint and ref:
-                        # Paraphrases are valid lecture-based answers even when wording differs.
-                        # Keep the cited lecture/page, accept for review, and never pretend the quote was verified.
-                        resolved = norm_lec(hint, scope) if scope else None
-                        fname = resolved or str(hint)
-                        cand[k].append(('LECTURE_PARAPHRASE', LET.index(L), it, fname))
-                        rep['LECTURE_PARAPHRASE (needs review)'] += 1
-                        notes.append(f"{k}: paraphrased lecture answer retained for human review ({hint}, {ref}); wording not checked verbatim")
-                    else:
-                        rep['NEEDS SOURCE DETAILS'] += 1
-                        notes.append(f"{k}: lecture-based answer retained for correction only if lec/lecture and ref/citation are supplied; got lec={hint!r}, ref={ref!r}")
+                    if not scope:
+                        if hint and ref:
+                            fname = str(hint)
+                            cand[k].append(('LECTURE_PARAPHRASE', LET.index(L), it, fname))
+                            rep['LECTURE_PARAPHRASE (needs review)'] += 1
+                            notes.append(f"{k}: lecture file unavailable for automatic verification; retained with reference ({hint}, {ref}) for human review")
+                        else:
+                            rep['INVALID no lecture file'] += 1; notes.append(f"{k}: pack {pack} has no lecture file and no complete lec/ref citation")
                         continue
+                    hit = find_quote(it.get('q'), hint, scope, lflat)
+                    if not hit:
+                        rep['QUOTE-FAIL'] += 1
+                        notes.append(f"{k}: quote not found word-for-word in {', '.join(scope) if len(scope) < 4 else str(len(scope)) + ' lectures'}: {str(it.get('q'))[:70]!r}; use src=LECTURE_PARAPHRASE with lec and ref if this is a paraphrase")
+                        continue
+                    if hint and norm_lec(hint, scope) not in (None, hit): notes.append(f"{k}: reply said lec={hint} but the quote is in {hit} (used {hit})")
+                    cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['LECTURE verified'] += 1
+                elif src == 'LECTURE_PARAPHRASE':
+                    hint = it.get('lec') or it.get('lecture')
+                    ref = it.get('ref') or it.get('citation')
+                    if not hint or not ref:
+                        rep['NEEDS SOURCE DETAILS'] += 1
+                        notes.append(f"{k}: paraphrased lecture answer needs both lec/lecture and ref/citation; got lec={hint!r}, ref={ref!r}")
+                        continue
+                    resolved = norm_lec(hint, scope) if scope else None
+                    fname = resolved or str(hint)
+                    cand[k].append(('LECTURE_PARAPHRASE', LET.index(L), it, fname))
+                    rep['LECTURE_PARAPHRASE (needs review)'] += 1
+                    notes.append(f"{k}: paraphrased lecture answer retained for human review ({hint}, {ref}); wording not checked verbatim")
                 elif src == 'STUDENT':      # Part 2D: a human picked/edited the answer; a pasted quote that is found upgrades it to LECTURE
                     hit = find_quote(it.get('q'), it.get('lec'), scope, lflat) if it.get('q') and scope else None
                     if hit: cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['STUDENT+quote verified'] += 1
