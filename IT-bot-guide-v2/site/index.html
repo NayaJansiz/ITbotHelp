@@ -440,6 +440,13 @@ function makeCtx() {                                          // validation cont
 }
 function showPackCard() {
   var box = $('dlBox'); box.innerHTML = ''; $('cardTitle').textContent = subj.name;
+  if (subj.inferred && subj.nq === 0) {
+    $('cardMeta').textContent = 'لا توجد أسئلة غير محلولة حالياً. يمكنك استخدام بطاقة الرفع السريع لإضافة أسئلة جديدة من تيليجرام أو ملفات PDF.';
+    $('imgBox').hidden = true;
+    $('packCard').classList.add('is-visible');
+    $('replyCard').classList.remove('is-visible'); $('sendCard').classList.remove('is-visible');
+    return;
+  }
   if (subj.inferred) {
     $('cardMeta').textContent = subj.nq + ' سؤال خارج المحاضرات (لا توجد محاضرات لهذه المادة بعد)';
     addDl(box, '⬇ تنزيل ملف الأسئلة', function () { return fetchText('packs/' + subj.id + '/INFERRED.md').then(function (t) { save(subj.id + '-INFERRED.md', t, 'text/markdown;charset=utf-8'); }); });
