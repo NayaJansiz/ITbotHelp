@@ -30,7 +30,7 @@ const boxes = () => [...$('lecList').querySelectorAll('input')], btns = () => [.
   btns()[1].click(); await sleep(400);
   if (pk11 && saved.length > 1) ok('page-built part 2 is IDENTICAL to make_packs.py --mode all all-2.md', saved[1].text === fs.readFileSync(path.join(pk11, 'all-2.md'), 'utf8'));
   $('ghUser').value = 'tester'; fire($('ghUser'), 'input');
-  ok('PDF upload button points at the student\'s fork, inbox/<subject id>/', /github\.com\/tester\/IT-bot\/upload\/main\/inbox\/11$/.test($('btnPdf').href) && !$('btnPdf').classList.contains('is-disabled'), $('btnPdf').href);
+  ok('PDF upload button points at the student\'s fork, inbox/<subject id>/', /github\.com\/tester\/IT-bot\/upload\/student-submission\/next-upload\/inbox\/11$/.test($('btnPdf').href) && !$('btnPdf').classList.contains('is-disabled'), $('btnPdf').href);
   // untick -> fewer lectures, one pack
   const keep = ['par5.md', 'par6.md'];
   boxes().forEach(c => { c.checked = keep.includes(c.value); }); fire(boxes()[0], 'change'); await sleep(100);
