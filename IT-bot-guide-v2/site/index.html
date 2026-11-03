@@ -318,7 +318,7 @@ function validateReply(text, ctx) {
       if (!lc.order.length) { bump('INVALID no lecture file'); row.why = 'لا توجد محاضرة متاحة للتحقق؛ استخدم LECTURE_PARAPHRASE مع lec وref للمراجعة'; return; }
       var hit = it.q ? findQuote(it.q, it.lec, lc) : null;
       if (hit === null) { bump('QUOTE-FAIL'); row.why = 'الاقتباس غير موجود حرفياً؛ إذا كانت الفكرة مدعومة بصياغة مختلفة استخدم LECTURE_PARAPHRASE مع مرجع'; return; }
-      bump('LECTURE verified'); row.kind = 'ok'; row.lec = hit;
+      bump('LECTURE ok'); row.kind = 'ok'; row.lec = hit;
     } else if (it.src === 'LECTURE_PARAPHRASE') {
       var hinted = normLec(it.lec || it.lecture, lc.order);
       if (!(it.lec || it.lecture) || !(it.ref || it.citation)) {
