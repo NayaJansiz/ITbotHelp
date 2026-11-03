@@ -2,11 +2,11 @@
 """
 apply_pending.py - the SINGLE WRITER of data/ (Part 2C/3). Python 3.8+, no packages.
 
-Students only ADD uniquely named files in a pull request:
+Students may ADD new files and revise previously applied intake/reply files in a pull request:
   intake/<subject>/<date>-<sha8>.json      polls from a Telegram export (tools/ingest_polls.py)
   replies/<subject>/<pack>-<sha8>.jsonl    Claude's answers after the student's review (+ <pack>-<sha8>.summary.md)
   sources/ , media/                        lecture text, figure pages and pictures (content-hash names)
-This tool applies every file that is not yet listed in data/applied.json, ONE AT A TIME, in the order the files were
+This tool applies every new or changed intake/reply file, ONE AT A TIME, in the order the files were
 added to git (fallback: path), with the same machine checks as merge_answers.py, and writes a report.
 
   python tools/apply_pending.py --data data --lectures ../lecture-site-engine            # dry run: report only, nothing written
@@ -22,7 +22,7 @@ What it does per file
            Proposed pictures (proposed_media) are only proposals and change nothing here.
   replies: merge_answers.py logic (LECTURE / STUDENT / FIGURE / INFERRED, CONFLICT-EXISTING keeps the stored answer), then
            picture bindings the student CONFIRMED (reply field `img`, `img_edited`) are written to data/media.json used_by.
-Exit code 1 = structural ERROR (changed/immutable file, missing or altered picture, unknown subject, merge failure).
+Exit code 1 = structural ERROR (missing or altered picture, unknown subject, merge failure).
 The report also lists NEEDS DECISION items (conflicts, STUDENT edits, FIGURE answers, rejected lines): approvers decide, no error.
 """
 import argparse, collections, hashlib, json, os, re, shutil, subprocess, sys, tempfile
@@ -45,7 +45,7 @@ def git_added_time(root, rel):
         return None
 
 def find_pending(root, applied):
-    """-> (pending [(rel path, sha)], errors). A listed file whose content changed is an ERROR (files are immutable)."""
+    """-> (pending [(rel path, sha)], errors). Changed intake and answer files are reprocessed as revisions."""
     files = []
     for kind, pats in (('intake', ('.json',)), ('replies', ('.jsonl', '.txt'))):
         base = os.path.join(root, kind)
@@ -59,7 +59,15 @@ def find_pending(root, applied):
     for rel in files:
         h = sha_file(os.path.join(root, rel))
         if rel in applied:
-            if applied[rel] != h: errs.append(f'{rel}: already applied but its content changed (files are immutable: add a NEW file instead)')
+            if applied[rel] != h:
+                # Reprocess a revised intake or answer file. Intake poll actions
+                # are idempotent: unchanged rows do nothing, updates target stable
+                # question keys, and new questions are deduplicated by fingerprint.
+                # Replies are revalidated by merge_answers; the PR still requires review.
+                if rel.startswith(('intake/', 'replies/')):
+                    pend.append((rel, h))
+                else:
+                    errs.append(f'{rel}: this already-applied file type cannot be edited')
         else: pend.append((rel, h))
     pend.sort(key=lambda x: (git_added_time(root, x[0]) or 0, x[0]))
     return pend, errs
