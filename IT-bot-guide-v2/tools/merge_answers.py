@@ -91,12 +91,26 @@ def main():
                     continue
                 L = str(it['a']).strip().upper()[:1]
                 if L not in LET[:len(q['options'])]: rep['INVALID letter'] += 1; notes.append(f"{k}: letter {it.get('a')!r} outside options"); continue
-                if src == 'LECTURE':
-                    if not scope: rep['INVALID no lecture file'] += 1; notes.append(f"{k}: pack {pack} has no lecture file"); continue
-                    hit = find_quote(it.get('q'), it.get('lec'), scope, lflat)
-                    if not hit: rep['QUOTE-FAIL'] += 1; notes.append(f"{k}: quote not found word-for-word in {', '.join(scope) if len(scope) < 4 else str(len(scope)) + ' lectures'}: {str(it.get('q'))[:70]!r}"); continue
-                    if it.get('lec') and norm_lec(it.get('lec'), scope) not in (None, hit): notes.append(f"{k}: reply said lec={it.get('lec')} but the quote is in {hit} (used {hit})")
-                    cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['LECTURE ok'] += 1
+                if src in ('LECTURE', 'LECTURE_PARAPHRASE'):
+                    hint = it.get('lec') or it.get('lecture')
+                    ref = it.get('ref') or it.get('citation')
+                    hit = find_quote(it.get('q'), hint, scope, lflat) if scope and it.get('q') else None
+                    if src == 'LECTURE' and hit:
+                        if hint and norm_lec(hint, scope) not in (None, hit):
+                            notes.append(f"{k}: reply said lec={hint} but the quote is in {hit} (used {hit})")
+                        cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['LECTURE verified'] += 1
+                    elif hint and ref:
+                        # Paraphrases are valid lecture-based answers even when wording differs.
+                        # Keep the cited lecture/page, accept for review, and never pretend the quote was verified.
+                        resolved = norm_lec(hint, scope) if scope else None
+                        fname = resolved or str(hint)
+                        cand[k].append(('LECTURE_PARAPHRASE', LET.index(L), it, fname))
+                        rep['LECTURE_PARAPHRASE (needs review)'] += 1
+                        notes.append(f"{k}: paraphrased lecture answer retained for human review ({hint}, {ref}); wording not checked verbatim")
+                    else:
+                        rep['NEEDS SOURCE DETAILS'] += 1
+                        notes.append(f"{k}: lecture-based answer retained for correction only if lec/lecture and ref/citation are supplied; got lec={hint!r}, ref={ref!r}")
+                        continue
                 elif src == 'STUDENT':      # Part 2D: a human picked/edited the answer; a pasted quote that is found upgrades it to LECTURE
                     hit = find_quote(it.get('q'), it.get('lec'), scope, lflat) if it.get('q') and scope else None
                     if hit: cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['STUDENT+quote verified'] += 1
@@ -113,8 +127,8 @@ def main():
         res = collections.Counter(); prov_path = os.path.join(a.data, 'provenance', f'subject-{sid}.json')
         prov = json.load(open(prov_path, encoding='utf-8')) if os.path.exists(prov_path) else {}
         for k, cs in cand.items():
-            q = byid[k]; lc = [x for x in cs if x[0] == 'LECTURE']
-            if len({x[1] for x in lc}) > 1: res['CONFLICT between lecture packs'] += 1; notes.append(f"{k}: lecture packs disagree {[LET[x[1]] for x in lc]} -> nothing applied"); continue
+            q = byid[k]; lc = [x for x in cs if x[0] in ('LECTURE', 'LECTURE_PARAPHRASE')]
+            if len({x[1] for x in lc}) > 1: res['CONFLICT between lecture packs'] += 1; notes.append(f"{k}: lecture-based answers disagree {[LET[x[1]] for x in lc]} -> nothing applied"); continue
             kind, idx, it, fname = lc[0] if lc else cs[0]
             if q['correct_index'] is not None and q['correct_index'] != idx and not a.overwrite:
                 if a.approved_lecture_overwrites and kind == 'LECTURE':
@@ -149,6 +163,7 @@ def main():
                 prov[k] = entry
                 continue
             if kind == 'LECTURE': e = fit(it.get('e'), marker(c, fname)); nr = 0
+            elif kind == 'LECTURE_PARAPHRASE': e = fit(it.get('e'), '(مراجعة مرجع محاضرة)'); nr = 1
             elif kind == 'STUDENT': e = fit(it.get('e'), ''); nr = 0      # owner decision: approval = merge, so visible once merged
             elif kind == 'FIGURE': e = fit(it.get('e'), ''); nr = 1
             else: e = fit(it.get('e'), '(استنتاج)'); nr = 1
@@ -157,7 +172,7 @@ def main():
             if not img_ok: notes.append(f"{k}: image file missing ({q['image']}) -> answered but stays hidden")
             res[f'{kind} applied' + ('' if vis else ' (kept hidden)')] += 1
             q['correct_index'] = idx; q['explanation'] = e; q['needs_review'] = nr; q['excluded'] = 0 if vis else 1
-            prov[k] = {'src': kind, 'ref': it.get('ref') if kind in ('LECTURE', 'FIGURE') else None, 'file': fname, 'quote': it.get('q') if kind == 'LECTURE' else None, 'date': today}
+            prov[k] = {'src': kind, 'ref': it.get('ref') or it.get('citation') if kind in ('LECTURE', 'LECTURE_PARAPHRASE', 'FIGURE') else None, 'file': fname, 'lecture': it.get('lec') or it.get('lecture') if kind == 'LECTURE_PARAPHRASE' else None, 'quote': it.get('q') if kind == 'LECTURE' else None, 'date': today}
             if it.get('img') or it.get('uses_image') is not None:   # picture binding PROPOSED by the student/Claude; the single-writer Action applies it after approval (Part 2C)
                 prov[k]['img'] = it.get('img') or None; prov[k]['uses_image'] = it.get('uses_image'); prov[k]['img_edited'] = bool(it.get('img_edited'))
                 if it.get('img_edited'): notes.append(f"{k}: student changed the picture binding (img={it.get('img') or 'removed'}) -> approver please check")
