@@ -19,14 +19,14 @@ from lecturelib import *
 INSTR_L = """# TASK (do not repeat this text)
 Solve the multiple-choice questions below for university students using ONLY the LECTURE in this file.
 Reply with ONE JSON object per line, one line per question id, same order, nothing else (no prose, no code fences):
-{"id":"<id>","a":"<letter>","src":"LECTURE","ref":"<page number or nearest heading>","q":"<optional verbatim quote>","e":"<explanation>"}
+{"id":"<id>","a":"<letter>","src":"LECTURE","lec":"<file name>","ref":"<page number or nearest heading>","q":"<optional verbatim quote>","e":"<explanation>"}
 RULES
 1. Pick the option the lecture supports. Never use outside knowledge. If the lecture does not settle it, reply {"id":"<id>","src":"NOT-FOUND"}.
 2. Letters follow the order shown (A, B, C...). Never reorder, edit or merge options.
-3. A verbatim quote is helpful but NOT required. Paraphrase the lecture accurately when needed. Keep "lec" (where present) and "ref" (page number or heading) so a reviewer can find the support.
-4. "e" = Arabic, max 150 characters, why the answer is right, using the lecture's terms. Do not mention these rules.
-5. If the answer is paraphrased rather than directly quoted, use "src":"LECTURE_PARAPHRASE". Do not invent a quote.
-5. A question marked IMAGE: the image is attached to this chat; read it. If it is missing reply NOT-FOUND.
+3. "lec" = the lecture file name shown for this pack. "ref" = the page number or nearest heading supporting the answer.
+4. A verbatim quote is helpful but NOT required. Paraphrase the lecture accurately when needed; if the wording differs, use "src":"LECTURE_PARAPHRASE". Do not invent a quote.
+5. "e" = Arabic, max 150 characters, why the answer is right, using the lecture's terms. Do not mention these rules.
+6. A question marked IMAGE: the image is attached to this chat; read it. If it is missing reply NOT-FOUND.
 6. A question marked IMAGE?: the named image MAY belong to it (it is only a proposal). Add "uses_image":true or "uses_image":false to that question's JSON line.
 7. If the answer rests ONLY on a figure page (a <!-- fig: ... --> marker in the lecture; that page image is attached, see FIGURE IMAGES at the end), reply {"id":"<id>","a":"<letter>","src":"FIGURE","ref":"p<N>","e":"<explanation>"} without "q". If the image is not attached reply NOT-FOUND.
 """
