@@ -104,6 +104,25 @@ def main():
         pymiss = re.search(r'NO REPLY for (\d+) of', r.stdout); pymiss = int(pymiss.group(1)) if pymiss else 0
         check(f'subject {sid} {pk}: counters equal {dict(sorted(jr["counts"].items()))}', pyc == jr['counts'], f'py={pyc} js={jr["counts"]}')
         check(f'subject {sid} {pk}: unreadable lines ({pybad}) and missing ({pymiss}) equal', (pybad, pymiss) == (len(jr['bad']), len(jr['missing'])), f'js bad={jr["bad"]} missing={len(jr["missing"])}')
+    # Regression: fully answered subjects without lecture files must remain selectable.
+    with tempfile.TemporaryDirectory() as td:
+        cmd = [sys.executable, os.path.join(HERE, 'build_site.py'), '--data', a.data, '--sources', a.sources,
+               '--out', td, '--config', os.path.join(ROOT, 'config', 'subjects.json')]
+        if a.lectures: cmd += ['--lectures', a.lectures]
+        built = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8')
+        check('build_site succeeds for catalogue regression', built.returncode == 0, built.stdout + built.stderr)
+        if built.returncode == 0:
+            generated = json.load(open(os.path.join(td, 'index.json'), encoding='utf-8'))['subjects']
+            by_sid = {s['id']: s for s in generated}
+            for s in json.load(open(os.path.join(a.data, 'subjects.json'), encoding='utf-8')):
+                rows = load_subject(a.data, s['id'])
+                if rows and all(r['correct_index'] is not None for r in rows) and not subject_lectures(cfg, a.lectures, a.sources, s['id']):
+                    entry = by_sid.get(s['id'])
+                    ok = entry is not None and entry['nq'] == 0 and entry['inferred']
+                    if ok:
+                        site = json.load(open(os.path.join(td, str(s['id']), 'site.json'), encoding='utf-8'))
+                        ok = site['keys'] == []
+                    check(f"fully answered subject {s['id']} remains in site catalogue", ok)
     print('\ntest_site ' + ('FAILED' if fails else 'OK')); sys.exit(1 if fails else 0)
 
 def extractLecture_py(pack):     # reference: the lecture is what make_packs wrote between its two headers
