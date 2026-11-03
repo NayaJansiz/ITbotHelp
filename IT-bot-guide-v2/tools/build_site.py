@@ -64,8 +64,14 @@ def main():
             r = subprocess.run(cmd, capture_output=True, text=True)
             if r.returncode != 0: sys.exit(f'make_packs failed for subject {sid}:\n{r.stdout}{r.stderr}')
             mp = os.path.join(sdir, 'manifest.json')
-            if not os.path.exists(mp): shutil.rmtree(sdir); continue                      # nothing to pack
-            man = json.load(open(mp, encoding='utf-8')); keys = man['INFERRED']['keys']; images = man['INFERRED']['images']
+            if not os.path.exists(mp):
+                # Keep fully answered subjects in the catalogue for future quick uploads.
+                man = {'INFERRED': {'lecture': None, 'keys': [], 'images': []}}
+                with open(os.path.join(sdir, 'INFERRED.md'), 'w', encoding='utf-8', newline='\n') as f:
+                    f.write('لا توجد أسئلة غير محلولة حالياً لهذه المادة.\n')
+            else:
+                man = json.load(open(mp, encoding='utf-8'))
+            keys = man['INFERRED']['keys']; images = man['INFERRED']['images']
             lecs = {}; lec_index = []; inferred = True; npacks = 1
         wjson(os.path.join(sdir, 'manifest.json'), man, indent=1)
         pm = {}; media = {}
