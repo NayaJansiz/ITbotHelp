@@ -175,7 +175,10 @@ def main():
                 continue
             if kind == 'LECTURE': e = fit(it.get('e'), marker(c, fname)); nr = 0
             elif kind == 'LECTURE_PARAPHRASE':
-                mk = (marker(c, fname) + '، مراجعة') if fname in lec else '(مراجعة مرجع محاضرة)'
+                # The lecture file may be named in the submission even when it is not
+                # present in this checkout. Its filename still carries the lecture number.
+                mk = marker(c, fname) if fname else '(مراجعة مرجع محاضرة)'
+                if mk == '(م?)': mk = '(مراجعة مرجع محاضرة)'
                 e = fit(it.get('e'), mk); nr = 1
             elif kind == 'STUDENT': e = fit(it.get('e'), ''); nr = 0      # owner decision: approval = merge, so visible once merged
             elif kind == 'FIGURE': e = fit(it.get('e'), ''); nr = 1

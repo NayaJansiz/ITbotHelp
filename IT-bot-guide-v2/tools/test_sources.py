@@ -77,8 +77,8 @@ def main():
         lk = keys[0]
         check('span-page LECTURE applied with marker (م3)', rr[lk]['explanation'].endswith('(م3)') and pv[lk]['file'] == 'wp-lecture-3.md', rr[lk]['explanation'])
         pk = keys[5]
-        check('paraphrase accepted, visible, marked for review, and keeps its lecture/page reference',
-              rr[pk]['needs_review'] == 1 and rr[pk]['excluded'] == 0 and pv[pk]['src'] == 'LECTURE_PARAPHRASE' and pv[pk]['file'] == 'wp-lecture-3.md' and pv[pk]['ref'] == 'p13',
+        check('paraphrase accepted, visible, marked for review, keeps its lecture/page reference, and shows (م3)',
+              rr[pk]['needs_review'] == 1 and rr[pk]['excluded'] == 0 and rr[pk]['explanation'].endswith('(م3)') and pv[pk]['src'] == 'LECTURE_PARAPHRASE' and pv[pk]['file'] == 'wp-lecture-3.md' and pv[pk]['ref'] == 'p13',
               (rr[pk], pv.get(pk)))
         # reverify: quote still found; change the source -> stale
         rv = lambda: subprocess.run([sys.executable, os.path.join(HERE, 'reverify.py'), '--data', data, '--sources', os.path.join(td, 'sources'), '--config', cfgp], capture_output=True, text=True)
