@@ -109,7 +109,7 @@ def main():
                         notes.append(f"{k}: quote not found word-for-word in {', '.join(scope) if len(scope) < 4 else str(len(scope)) + ' lectures'}: {str(it.get('q'))[:70]!r}; use src=LECTURE_PARAPHRASE with lec and ref if this is a paraphrase")
                         continue
                     if hint and norm_lec(hint, scope) not in (None, hit): notes.append(f"{k}: reply said lec={hint} but the quote is in {hit} (used {hit})")
-                    cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['LECTURE verified'] += 1
+                    cand[k].append(('LECTURE', LET.index(L), it, hit)); rep['LECTURE ok'] += 1
                 elif src == 'LECTURE_PARAPHRASE':
                     hint = it.get('lec') or it.get('lecture')
                     ref = it.get('ref') or it.get('citation')
