@@ -356,7 +356,7 @@ function validateReply(text, ctx) {
 // </validate>
 
 /* ===== page ===== */
-var REPO = 'nadeembrijawy/IT-bot', BRANCH = 'main', GH = 'https://github.com/' + REPO;
+var REPO = 'nadeembrijawy/IT-bot', DATA_BRANCH = 'main', UPLOAD_BRANCH = 'student-submission/next-upload', GH = 'https://github.com/' + REPO;
 var $ = function (id) { return document.getElementById(id); };
 var index = null, subj = null, siteData = null, qblock = '', selected = [], parts = [], lastOk = [], packName = 'all', lecCache = {}, vctx = null, quick = null;
 
@@ -466,7 +466,7 @@ function showPackCard() {
     ib.hidden = false; ib.innerHTML = '';
     ib.appendChild(document.createTextNode('🖼 بعض الأسئلة والمحاضرات فيها صور. نزّلها وأرفقها بنفس المحادثة (' + imgs.length + '): '));
     imgs.forEach(function (n, i) {
-      var a = document.createElement('a'); a.href = 'https://raw.githubusercontent.com/' + REPO + '/' + BRANCH + '/' + (n.indexOf('/') >= 0 ? n.split('/').map(encodeURIComponent).join('/') : 'media/' + encodeURIComponent(n));   // figure pages are repo paths (sources/<id>/figs/..), question pictures are bare media names
+      var a = document.createElement('a'); a.href = 'https://raw.githubusercontent.com/' + REPO + '/' + DATA_BRANCH + '/' + (n.indexOf('/') >= 0 ? n.split('/').map(encodeURIComponent).join('/') : 'media/' + encodeURIComponent(n));   // figure pages are repo paths (sources/<id>/figs/..), question pictures are bare media names
       a.target = '_blank'; a.rel = 'noopener'; a.textContent = n.split('/').pop(); ib.appendChild(a);
       if (i < imgs.length - 1) ib.appendChild(document.createTextNode(' · '));
     });
@@ -606,7 +606,7 @@ function renderReview(res) {
     cd.prop = (siteData.p || {})[cd.id]; cd.def = o.uses_image === true;
     if (cd.prop) {
       var mi = (siteData.m || {})[cd.prop] || { f: '', c: '' }; cd.pic = mk('div', 'pic');
-      var im = mk('img'); im.alt = mi.c || mi.f; im.loading = 'lazy'; im.src = 'https://raw.githubusercontent.com/' + REPO + '/' + BRANCH + '/media/' + encodeURIComponent(mi.f); cd.pic.appendChild(im);
+      var im = mk('img'); im.alt = mi.c || mi.f; im.loading = 'lazy'; im.src = 'https://raw.githubusercontent.com/' + REPO + '/' + DATA_BRANCH + '/media/' + encodeURIComponent(mi.f); cd.pic.appendChild(im);
       var lb = mk('label'); cd.chk = mk('input'); cd.chk.type = 'checkbox'; cd.chk.checked = cd.def; lb.appendChild(cd.chk);
       lb.appendChild(document.createTextNode('هذه الصورة تخصّ هذا السؤال' + (mi.c ? ' (' + mi.c + ')' : '') + (typeof o.uses_image === 'boolean' ? ' — اقتراح Claude: ' + (o.uses_image ? 'نعم' : 'لا') : ' — Claude لم يحدّد: قرّر أنت')));
       cd.pic.appendChild(lb); root.appendChild(cd.pic);
@@ -904,11 +904,11 @@ function refreshLinks() {
   var u = cleanUser($('ghUser').value).replace(/^-+|-+$/g, ''), on = !!(u && subj);
   var repoName = REPO.split('/')[1], dir = subj ? 'replies/' + subj.id : '';
   setBtn($('btnFork'), GH + '/fork', true);
-  setBtn($('btnUpload'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + (quick ? '' : '/' + dir) : '#', on);
-  setBtn($('btnPdf'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + BRANCH + '/inbox/' + subj.id : '#', on);
-  setBtn($('btnPr'), on ? GH + '/compare/' + BRANCH + '...' + u + ':' + BRANCH + '?expand=1' : '#', on);
-  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى Fork. الرابط يفتح main مباشرة؛ لا تنشئ فرعاً جديداً. اضغط Commit changes ثم افتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
-  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/ على main في Fork. لا تنشئ فرعاً جديداً ولا ترفع المحاضرات مرة أخرى. اضغط Commit changes ثم افتح Pull Request.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
+  setBtn($('btnUpload'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + UPLOAD_BRANCH + (quick ? '' : '/' + dir) : '#', on);
+  setBtn($('btnPdf'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + UPLOAD_BRANCH + '/inbox/' + subj.id : '#', on);
+  setBtn($('btnPr'), on ? GH + '/compare/main...' + u + ':' + UPLOAD_BRANCH + '?expand=1' : '#', on);
+  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى الفرع student-submission/next-upload في Fork. هذا الفرع مبني على آخر main الأساسي. لا ترفع إلى main ولا تغيّر الفرع. اضغط Commit changes ثم افتح Pull Request من الزر ج.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
+  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/ على الفرع student-submission/next-upload في Fork. لا ترفع إلى main ولا تغيّر الفرع، ولا ترفع المحاضرات مرة أخرى. اضغط Commit changes ثم افتح Pull Request من الزر ج.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
 }
 try { var su = localStorage.getItem('bot-gh-user'); if (su) $('ghUser').value = cleanUser(su); } catch (e) {}
 $('ghUser').oninput = function () {
