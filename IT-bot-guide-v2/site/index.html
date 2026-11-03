@@ -554,7 +554,7 @@ function sha8(text) {
 var KIND = { ok: 'موثّق حرفياً', par: 'من المحاضرة — للمراجعة', inf: 'استنتاج', nf: 'لم يوجد', stu: 'جواب طالب', fig: 'من شكل', bad: 'مرفوض' };
 function origL(o) { return o.a ? String(o.a).trim().toUpperCase().slice(0, 1) : ''; }
 function evalItem(it) { return validateReply(JSON.stringify(it), vctx).rows[0] || { kind: 'bad' }; }
-function mkOf(it, kind, r) { if ((kind === 'ok' || kind === 'par') && it.src !== 'INFERRED') { var l = r && r.lec != null ? siteData.lectures[r.lec] : null; return l ? l.marker : (kind === 'par' ? '(مراجعة)' : ''); } return kind === 'inf' ? '(استنتاج)' : ''; }
+function mkOf(it, kind, r) { if ((kind === 'ok' || kind === 'par') && it.src !== 'INFERRED') { var l = r && r.lec != null ? siteData.lectures[r.lec] : null; return l ? (kind === 'par' ? l.marker + '، مراجعة' : l.marker) : (kind === 'par' ? '(مراجعة مرجع محاضرة)' : ''); } return kind === 'inf' ? '(استنتاج)' : ''; }
 function renderReview(res) {
   rvKey = 'bot-edits:' + subj.id + ':' + packName + ':' + hash32($('reply').value);
   var saved = {}; try { saved = JSON.parse(localStorage.getItem(rvKey) || '{}'); } catch (e) {}
