@@ -30,9 +30,9 @@ def main():
         after = json.load(open(os.path.join(data, 'questions', 'subject-2.json'), encoding='utf-8'))
         check('31 unchanged polls change no row', before == after)
         r = run('--apply'); check('second run: nothing pending, data untouched', 'files pending: 0' in r.stdout and r.returncode == 0)
-        # 3. immutable
+        # 3. revise an already-applied intake file
         t = json.load(open(os.path.join(td, 'intake', '2', 'a.json'))); t['date'] = 'x'; json.dump(t, open(os.path.join(td, 'intake', '2', 'a.json'), 'w'))
-        r = run(); check('changed already-applied file -> ERROR', r.returncode == 1 and 'content changed' in r.stdout, r.stdout[-300:])
+        r = run(); check('changed already-applied intake file -> reprocessed as revision', r.returncode == 0 and 'files pending: 1 | applied: 1 | errors: 0' in r.stdout and 'intake/2/a.json' in r.stdout, r.stdout[-300:])
         shutil.copy(src_int, os.path.join(td, 'intake', '2', 'a.json'))
         # 4. update / hide / new / alias in a second intake file
         j = json.load(open(src_int)); polls = j['polls']; byk = {r_['key']: r_ for r_ in after}
