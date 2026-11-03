@@ -356,7 +356,7 @@ function validateReply(text, ctx) {
 // </validate>
 
 /* ===== page ===== */
-var REPO = 'nadeembrijawy/IT-bot', DATA_BRANCH = 'main', UPLOAD_BRANCH = 'student-submission/next-upload', GH = 'https://github.com/' + REPO;
+var REPO = 'nadeembrijawy/IT-bot', DATA_BRANCH = 'main', UPLOAD_BRANCH = 'student-submission/next-upload-2026-11-03', GH = 'https://github.com/' + REPO;
 var $ = function (id) { return document.getElementById(id); };
 var index = null, subj = null, siteData = null, qblock = '', selected = [], parts = [], lastOk = [], packName = 'all', lecCache = {}, vctx = null, quick = null;
 
@@ -907,8 +907,8 @@ function refreshLinks() {
   setBtn($('btnUpload'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + UPLOAD_BRANCH + (quick ? '' : '/' + dir) : '#', on);
   setBtn($('btnPdf'), on ? 'https://github.com/' + u + '/' + repoName + '/upload/' + UPLOAD_BRANCH + '/inbox/' + subj.id : '#', on);
   setBtn($('btnPr'), on ? GH + '/compare/main...' + u + ':' + UPLOAD_BRANCH + '?expand=1' : '#', on);
-  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى الفرع student-submission/next-upload في Fork. هذا الفرع مبني على آخر main الأساسي. لا ترفع إلى main ولا تغيّر الفرع. اضغط Commit changes ثم افتح Pull Request من الزر ج.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
-  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/ على الفرع student-submission/next-upload في Fork. لا ترفع إلى main ولا تغيّر الفرع، ولا ترفع المحاضرات مرة أخرى. اضغط Commit changes ثم افتح Pull Request من الزر ج.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
+  if (quick) { $('uploadHint').textContent = on ? 'بعد فك الضغط، ارفع مجلدات replies وsources وintake من داخل ZIP إلى الفرع student-submission/next-upload-2026-11-03 في Fork. هذا الفرع مبني على آخر main الأساسي. لا ترفع إلى main ولا تغيّر الفرع. اضغط Commit changes ثم افتح Pull Request من الزر ج.' : '↑ اكتب اسمك على GitHub بعد الـ Fork'; return; }
+  $('uploadHint').textContent = on ? 'ارفع ملف الرد ' + packName + '-… .jsonl وملف الملخص المطابق .summary.md معاً إلى المجلد ' + dir + '/ على الفرع student-submission/next-upload-2026-11-03 في Fork. لا ترفع إلى main ولا تغيّر الفرع، ولا ترفع المحاضرات مرة أخرى. اضغط Commit changes ثم افتح Pull Request من الزر ج.' : '↑ اكتب اسمك على GitHub بعد الـ Fork';
 }
 try { var su = localStorage.getItem('bot-gh-user'); if (su) $('ghUser').value = cleanUser(su); } catch (e) {}
 $('ghUser').oninput = function () {
