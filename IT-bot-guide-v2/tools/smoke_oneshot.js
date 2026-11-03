@@ -56,12 +56,20 @@ const boxes = () => [...$('lecList').querySelectorAll('input')], btns = () => [.
   ok('reply file name is all-<sha8>.jsonl and keeps the "lec" field', saved.length === 1 && /^all-[0-9a-f]{8}\.jsonl$/.test(saved[0].name) && saved[0].text.split('\n').filter(Boolean).every(l => JSON.parse(l)) && saved[0].text.includes('"lec":"par5.md"'), saved.map(s => s.name));
   saved.length = 0; $('btnSummary').click(); await sleep(400);
   ok('summary file named all-<sha8>.summary.md and lists the ticked lectures', saved.length === 1 && /^all-[0-9a-f]{8}\.summary\.md$/.test(saved[0].name) && saved[0].text.includes('- المحاضرات: par1.md'), saved.map(s => s.name));
-  // a subject WITHOUT lectures keeps one INFERRED file
+  // A subject WITHOUT lectures: unresolved questions get an INFERRED pack;
+  // fully answered subjects stay selectable with quick-upload and no empty download.
   const inf = JSON.parse(fs.readFileSync(root + '/packs/index.json', 'utf8')).subjects.find(s => s.inferred); if (inf) pick(inf.year, inf.id);
   if (inf) { await sleep(500); saved.length = 0;
-    ok('subject without lectures: no checklist, one INFERRED download', $('lecField').hidden && btns().length === 1 && /ملف الأسئلة/.test(btns()[0].textContent), btns().map(b => b.textContent));
-    btns()[0].click(); await sleep(400);
-    ok('INFERRED file is the packs/<id>/INFERRED.md', saved.length === 1 && saved[0].text === fs.readFileSync(root + '/packs/' + inf.id + '/INFERRED.md', 'utf8'), saved.map(s => s.name)); }
+    if (inf.nq === 0) {
+      ok('fully answered subject without lectures: no checklist or empty download', $('lecField').hidden && btns().length === 0 && $('packCard').classList.contains('is-visible'), btns().map(b => b.textContent));
+      ok('fully answered subject without lectures: quick-upload remains visible', $('quickCard').classList.contains('is-visible'));
+      ok('fully answered subject without lectures: clear no-unanswered message', /لا توجد أسئلة غير محلولة/.test($('cardMeta').textContent));
+    } else {
+      ok('subject without lectures: no checklist, one INFERRED download', $('lecField').hidden && btns().length === 1 && /ملف الأسئلة/.test(btns()[0].textContent), btns().map(b => b.textContent));
+      btns()[0].click(); await sleep(400);
+      ok('INFERRED file is the packs/<id>/INFERRED.md', saved.length === 1 && saved[0].text === fs.readFileSync(root + '/packs/' + inf.id + '/INFERRED.md', 'utf8'), saved.map(s => s.name));
+    }
+  }
   ok('no script errors in the page', errs.length === 0, errs);
   process.exit(bad ? 1 : 0);
 })().catch(e => { console.error('ERR', e); process.exit(1); });
