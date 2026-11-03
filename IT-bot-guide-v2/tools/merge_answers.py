@@ -163,7 +163,9 @@ def main():
                 prov[k] = entry
                 continue
             if kind == 'LECTURE': e = fit(it.get('e'), marker(c, fname)); nr = 0
-            elif kind == 'LECTURE_PARAPHRASE': e = fit(it.get('e'), '(مراجعة مرجع محاضرة)'); nr = 1
+            elif kind == 'LECTURE_PARAPHRASE':
+                mk = (marker(c, fname) + '، مراجعة') if fname in lec else '(مراجعة مرجع محاضرة)'
+                e = fit(it.get('e'), mk); nr = 1
             elif kind == 'STUDENT': e = fit(it.get('e'), ''); nr = 0      # owner decision: approval = merge, so visible once merged
             elif kind == 'FIGURE': e = fit(it.get('e'), ''); nr = 1
             else: e = fit(it.get('e'), '(استنتاج)'); nr = 1
