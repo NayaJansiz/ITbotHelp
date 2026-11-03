@@ -4,7 +4,7 @@ test_sources.py - Part 2A item 7: PDFs ingested by ingest_pdf.py (sources/<id>/*
   python tools/test_sources.py --data data            (needs node; uses sources/9/wp-lecture-3.md, no lecture repo)
 Runs in a temp folder with its own config: subject 12 gets "sources": ["wp-lecture-3"] (an arbitrary subject, test only).
 Checks: pack built from the PDF text; figure pages attached only when routed; a quote spanning a page marker is accepted;
-FIGURE replies (valid ref / invalid ref) in merge_answers.py; page JS counters == Python counters.
+FIGURE replies (valid ref / invalid ref), exact quote failures, and reviewable lecture paraphrases in merge_answers.py; page JS counters == Python counters.
 """
 import argparse, json, os, re, shutil, subprocess, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, '..')
@@ -50,16 +50,17 @@ def main():
             elif i == 1: replies.append({'id': k, 'a': 'A', 'src': 'FIGURE', 'ref': 'p6', 'e': 'figure ok'})
             elif i == 2: replies.append({'id': k, 'a': 'A', 'src': 'FIGURE', 'ref': 'p7', 'e': 'not a figure page'})
             elif i == 3: replies.append({'id': k, 'a': 'A', 'src': 'FIGURE', 'e': 'no ref'})
-            elif i == 4: replies.append({'id': k, 'a': 'A', 'src': 'LECTURE', 'ref': 'x', 'q': 'fabricated quote that is not in the pdf at all', 'e': 'x'})
+            elif i == 4: replies.append({'id': k, 'a': 'A', 'src': 'LECTURE', 'lec': 'wp-lecture-3.md', 'ref': 'p13', 'q': 'fabricated quote that is not in the pdf at all', 'e': 'x'})
+            elif i == 5: replies.append({'id': k, 'a': 'A', 'src': 'LECTURE_PARAPHRASE', 'lec': 'wp-lecture-3.md', 'ref': 'p13', 'e': 'paraphrased lecture support'})
         fr = load_subject(data, SID)
         for q in fr:
-            if q['key'] == keys[1]: q['correct_index'] = None      # the FIGURE answer is applied only to an unsolved row (a stored answer would give CONFLICT-EXISTING)
+            if q['key'] in (keys[1], keys[5]): q['correct_index'] = None      # figure and paraphrase cases must be applied to unsolved rows
         save_subject(data, SID, fr); byid = {q['key']: q for q in fr}
         body = '\n'.join(json.dumps(x, ensure_ascii=False) for x in replies) + '\n'
         os.makedirs(os.path.join(td, 'replies', str(SID))); open(os.path.join(td, 'replies', str(SID), 'wp-lecture-3.jsonl'), 'w', encoding='utf-8').write(body)
         cp = lambda ap_: subprocess.run([sys.executable, os.path.join(HERE, 'merge_answers.py'), '--data', data, '--sources', os.path.join(td, 'sources'), '--config', cfgp, '--replies', os.path.join(td, 'replies'), '--packs', out] + ap_, capture_output=True, text=True)
         r = cp([]); m = re.search(r'replies -> (\{.*?\})\n', r.stdout); pyc = eval(m.group(1)) if m else {}
-        check('python: span-page quote accepted, 1 FIGURE ok, 2 invalid figure refs, 1 quote fail', pyc.get('LECTURE ok') == 1 and pyc.get('FIGURE') == 1 and pyc.get('INVALID figure ref') == 2 and pyc.get('QUOTE-FAIL') == 1, pyc)
+        check('python: exact quote, paraphrase, FIGURE and invalid refs handled separately', pyc.get('LECTURE ok') == 1 and pyc.get('LECTURE_PARAPHRASE (needs review)') == 1 and pyc.get('FIGURE') == 1 and pyc.get('INVALID figure ref') == 2 and pyc.get('QUOTE-FAIL') == 1, pyc)
         # the harness wants the page numbers found in the lecture text: compute like the page does
         figp = []; page = 0
         for ln in test_site.extractLecture_py(pk).split('\n'):
@@ -75,6 +76,10 @@ def main():
         check('FIGURE applied: needs_review=1, visible, provenance ref p6', rr[fk]['needs_review'] == 1 and rr[fk]['excluded'] == 0 and pv[fk]['src'] == 'FIGURE' and pv[fk]['ref'] == 'p6', (rr[fk], pv.get(fk)))
         lk = keys[0]
         check('span-page LECTURE applied with marker (م3)', rr[lk]['explanation'].endswith('(م3)') and pv[lk]['file'] == 'wp-lecture-3.md', rr[lk]['explanation'])
+        pk = keys[5]
+        check('paraphrase accepted, visible, marked for review, and keeps its lecture/page reference',
+              rr[pk]['needs_review'] == 1 and rr[pk]['excluded'] == 0 and pv[pk]['src'] == 'LECTURE_PARAPHRASE' and pv[pk]['file'] == 'wp-lecture-3.md' and pv[pk]['ref'] == 'p13',
+              (rr[pk], pv.get(pk)))
         # reverify: quote still found; change the source -> stale
         rv = lambda: subprocess.run([sys.executable, os.path.join(HERE, 'reverify.py'), '--data', data, '--sources', os.path.join(td, 'sources'), '--config', cfgp], capture_output=True, text=True)
         check('reverify ok on unchanged source', rv().returncode == 0)
