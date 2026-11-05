@@ -184,7 +184,13 @@ def main():
             elif kind == 'FIGURE': e = fit(it.get('e'), ''); nr = 1
             else: e = fit(it.get('e'), '(استنتاج)'); nr = 1
             img_ok = (not q.get('image')) or os.path.exists(os.path.join(a.root, q['image'])) or os.path.exists(os.path.join(a.root, os.path.basename(q['image'])))
-            vis = img_ok and not (kind == 'INFERRED' and a.hide_inferred)
+            # Telegram quiz polls require 2–10 options. Keep answers recorded,
+            # but never expose a malformed question until its options are repaired.
+            sent_option_count = min(len(q.get('options') or []), 10)
+            poll_options_ok = 2 <= sent_option_count and idx < sent_option_count
+            vis = img_ok and poll_options_ok and not (kind == 'INFERRED' and a.hide_inferred)
+            if not poll_options_ok:
+                notes.append(f"{k}: answer recorded but kept hidden; Telegram poll needs 2–10 options (found {len(q.get('options') or [])})")
             if not img_ok: notes.append(f"{k}: image file missing ({q['image']}) -> answered but stays hidden")
             res[f'{kind} applied' + ('' if vis else ' (kept hidden)')] += 1
             q['correct_index'] = idx; q['explanation'] = e; q['needs_review'] = nr; q['excluded'] = 0 if vis else 1
