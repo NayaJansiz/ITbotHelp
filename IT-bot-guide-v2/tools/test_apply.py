@@ -66,9 +66,15 @@ def main():
         check('confirmed picture bindings written to media.json used_by', sorted(mj[mid]['used_by']) == sorted([k1, k2]), mj[mid]['used_by'])
         check('missing .summary.md is flagged for the approvers', 'no .summary.md' in r.stdout)
         # 6. a student removes a binding
-        open(os.path.join(td, 'replies', '11', 'par5-bbbbbbbb.jsonl'), 'w', encoding='utf-8').write(json.dumps({'id': k2, 'src': 'NOT-FOUND', 'img_edited': True}) + '\n')
+        later_items = [{'id': k2, 'src': 'NOT-FOUND', 'img_edited': True},
+                        {'id': k1, 'a': 'B', 'src': 'INFERRED', 'e': 'إجابة أحدث'}]
+        open(os.path.join(td, 'replies', '11', 'par5-bbbbbbbb.jsonl'), 'w', encoding='utf-8').write('\n'.join(json.dumps(x, ensure_ascii=False) for x in later_items) + '\n')
         r = run('--apply'); mj = json.load(open(os.path.join(data, 'media.json')))
         check('binding removed when the student unticks it (img_edited without img)', mj[mid]['used_by'] == [k1], mj[mid]['used_by'])
+        # The later file is first recorded without overwrite permission, then an approved replay must reprocess both files in order.
+        r = run('--approved-answer-overwrites', '--apply')
+        rows_after_replay = {x['key']: x for x in json.load(open(os.path.join(data, 'questions', 'subject-11.json'), encoding='utf-8'))}
+        check('approved replay reprocesses every prior reply and newest file wins', r.returncode == 0 and 'files pending: 2 | applied: 2 | errors: 0' in r.stdout and 'approved answer overwrite' in r.stdout and rows_after_replay[k1]['correct_index'] == 1 and rows_after_replay[k1]['needs_review'] == 1, r.stdout[-700:])
         # 7. build the bot db with the confirmed binding
         db = os.path.join(td, 'bot.db'); os.makedirs(os.path.join(td, 'media'), exist_ok=True)
         rr = subprocess.run([sys.executable, os.path.join(HERE, 'bot_db_tool.py'), 'build', data, db, '--force', '--media-dir', os.path.join(td, 'media')], capture_output=True, text=True)
