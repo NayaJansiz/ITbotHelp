@@ -90,8 +90,25 @@ def main():
     rr = {r['key']: r for r in load_subject(d2, sid)}; pv = json.load(open(os.path.join(d2, 'provenance', f'subject-{sid}.json'), encoding='utf-8'))
     checks.update({'student+valid quote -> LECTURE verified with marker': pv.get(kq, {}).get('src') == 'LECTURE' and rr[kq]['explanation'].endswith(marker(cfg[str(sid)], f)) and pv[kq].get('e_edited') is True,
                    'student without quote -> STUDENT, visible, no marker': pv.get(kn, {}).get('src') == 'STUDENT' and rr[kn]['needs_review'] == 0 and rr[kn]['excluded'] == 0,
-                   'student edit vs stored answer -> CONFLICT-EXISTING, unchanged': 'CONFLICT-EXISTING' in rep2 and rr[kc]['correct_index'] == cur,
+                   'student edit vs stored answer -> CONFLICT-EXISTING, unchanged by default': 'CONFLICT-EXISTING' in rep2 and rr[kc]['correct_index'] == cur,
                    'reply file name suffix -sha8 accepted': 'no lecture file' not in rep2 and 'LECTURE applied' in rep2})
+    # Owner-approved precedence: a newer paraphrase or inference replaces an old answer; NOT-FOUND is a no-op.
+    d3 = os.path.join(tmp, 'data3'); shutil.copytree(data, d3)
+    solved = [r for r in load_subject(d3, sid) if r['correct_index'] is not None and not r.get('image') and len(r.get('options') or []) >= 2][:3]
+    kpar, kinf, knf = [r['key'] for r in solved]
+    old_par, old_inf, old_nf = [r['correct_index'] for r in solved]
+    new_par = (old_par + 1) % len(solved[0]['options']); new_inf = (old_inf + 1) % len(solved[1]['options'])
+    approved_items = [{'id': kpar, 'a': LET[new_par], 'src': 'LECTURE_PARAPHRASE', 'lec': f, 'ref': 'p4', 'e': 'صياغة أحدث مدعومة بالمحاضرة'},
+                      {'id': kinf, 'a': LET[new_inf], 'src': 'INFERRED', 'e': 'استنتاج أحدث'},
+                      {'id': knf, 'src': 'NOT-FOUND'}]
+    rd3 = os.path.join(tmp, 'replies3', str(sid)); os.makedirs(rd3)
+    open(os.path.join(rd3, 'all-newer.jsonl'), 'w', encoding='utf-8').write('\\n'.join(json.dumps(i, ensure_ascii=False) for i in approved_items) + '\\n')
+    rep3 = run(os.path.join(HERE, 'merge_answers.py'), '--data', d3, '--lectures', a.lectures, '--replies', os.path.join(tmp, 'replies3'), '--packs', os.path.join(tmp, 'packs'), '--root', '/nonexistent', '--approved-answer-overwrites', '--apply')
+    after3 = {r['key']: r for r in load_subject(d3, sid)}
+    checks.update({'newer LECTURE_PARAPHRASE replaces stored answer after approval': after3[kpar]['correct_index'] == new_par and after3[kpar]['needs_review'] == 1,
+                   'newer INFERRED replaces stored answer after approval': after3[kinf]['correct_index'] == new_inf and after3[kinf]['needs_review'] == 1,
+                   'NOT-FOUND preserves the previously stored answer': after3[knf]['correct_index'] == old_nf,
+                   'approved replacement report is explicit': 'approved answer overwrite' in rep3})
     for k, v in checks.items(): print(('PASS  ' if v else 'FAIL  ') + k)
     if not all(checks.values()): print(rep); print(rep9); print(locals().get('rep2', '')); sys.exit(1)
     print('selftest OK (mechanical checks only)'); shutil.rmtree(tmp)
