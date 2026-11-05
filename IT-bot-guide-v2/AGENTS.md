@@ -24,7 +24,7 @@ The docs and the code can disagree. If they do, **the code and the data are righ
 - Any commit on the live bot repo redeploys the bot for students. Do not touch the live repo.
 - Do not edit `bot.db` by hand. Change `data/` through the tools, then rebuild and verify.
 - Never invent lecture quotes or sources. If the lecture does not cover a question, mark it NOT-FOUND / INFERRED, as `HANDOFF-BUILD.md` describes.
-- Never overwrite an existing verified answer. Report it as a conflict.
+- Preserve existing answers by default. Only after an owner-approved PR is merged may the pipeline replay all reply files chronologically and let each newer valid answer replace the stored one (including LECTURE_PARAPHRASE, INFERRED, FIGURE, and approved STUDENT answers). NOT-FOUND is always a no-op. Invalid answers never replace anything; contradictory answers within one reply file remain a review conflict.
 - Explanations are at most 200 characters, including the lecture marker `(م#)`.
 - Do not delete questions or pictures. A question that had a picture must still have one.
 - Student-facing text stays simple and in Arabic. Reply to the owner in the language she writes in.

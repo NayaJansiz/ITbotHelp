@@ -13,7 +13,7 @@ looked up in every lecture of the subject, the named one first), and a NOT-FOUND
 
 What is checked (machine, 0 tokens):  valid JSON, known id, letter inside the options, explanation <= 200 chars with the
 lecture marker (م#) added, and for src=LECTURE the quote must exist WORD FOR WORD in the lecture file of that pack.
-Rules: never overwrites an existing different answer (reported as CONFLICT-EXISTING) unless --overwrite;
+Rules: existing answers are preserved by default. After an owner-approved merged PR, --approved-answer-overwrites lets the newest valid reply replace them; NOT-FOUND is always ignored.
 STUDENT answers (src=STUDENT, optional a0/src0/e_edited/reason/q) are applied like LECTURE if their quote is found, else tagged STUDENT (visible after merge, listed for approvers).
 two LECTURE answers with different letters for one question = CONFLICT (nothing applied).
 Image questions are made visible only if the image file exists under --root/media.
@@ -58,8 +58,8 @@ def main():
     ap.add_argument('--data', default='data'); ap.add_argument('--lectures'); ap.add_argument('--sources', default='sources')
     ap.add_argument('--replies', default='replies'); ap.add_argument('--packs', default='packs'); ap.add_argument('--root', default='.')
     ap.add_argument('--apply', action='store_true'); ap.add_argument('--overwrite', action='store_true')
-    ap.add_argument('--approved-lecture-overwrites', action='store_true',
-                    help='After a reviewed PR is merged, allow verified LECTURE answers to replace a different stored answer; inferred answers are never covered by this flag.')
+    ap.add_argument('--approved-answer-overwrites', '--approved-lecture-overwrites', dest='approved_answer_overwrites', action='store_true',
+                    help='After a reviewed PR is merged, allow any newer valid answer source to replace a different stored answer; NOT-FOUND never changes stored answers.')
     ap.add_argument('--hide-inferred', action='store_true'); ap.add_argument('--leftover')
     ap.add_argument('--config', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config', 'subjects.json'))
     a = ap.parse_args()
@@ -140,13 +140,18 @@ def main():
         for k, cs in cand.items():
             q = byid[k]; lc = [x for x in cs if x[0] in ('LECTURE', 'LECTURE_PARAPHRASE')]
             if len({x[1] for x in lc}) > 1: res['CONFLICT between lecture packs'] += 1; notes.append(f"{k}: lecture-based answers disagree {[LET[x[1]] for x in lc]} -> nothing applied"); continue
+            if len({x[1] for x in cs}) > 1: res['CONFLICT within reply file'] += 1; notes.append(f"{k}: this reply file contains different proposed answers {[LET[x[1]] for x in cs]} -> nothing applied; review the file"); continue
             kind, idx, it, fname = lc[0] if lc else cs[0]
             if q['correct_index'] is not None and q['correct_index'] != idx and not a.overwrite:
-                if a.approved_lecture_overwrites and kind == 'LECTURE':
-                    res['approved LECTURE overwrite'] += 1
-                    notes.append(f"{k}: verified lecture answer {LET[idx]} replaces existing {LET[q['correct_index']]} after PR approval ({fname})")
+                if a.approved_answer_overwrites:
+                    res['approved answer overwrite'] += 1
+                    notes.append(f"{k}: newer valid {kind} answer {LET[idx]} replaces existing {LET[q['correct_index']]} after merged-PR approval ({fname or 'no lecture file'})")
                 else:
                     res['CONFLICT-EXISTING (needs review)'] += 1; notes.append(f"{k}: existing answer {LET[q['correct_index']]} but {kind} says {LET[idx]} ({fname or 'general knowledge'}) -> kept existing"); continue
+            if q['correct_index'] == idx and not a.overwrite and q.get('needs_review') == 0 and kind != 'LECTURE':
+                res['already same'] += 1
+                notes.append(f"{k}: newer {kind} answer agrees with the stored verified answer -> kept the existing verified answer")
+                continue
             if kind == 'FIGURE': notes.append(f"{k}: FIGURE answer {LET[idx]} from {fname} {it.get('ref')} (not machine-verified, needs_review=1) -> approver please look at the picture")
             if q['correct_index'] == idx and not a.overwrite and kind == 'LECTURE' and q.get('needs_review') == 0:
                 # The answer is already correct, but still record its verified

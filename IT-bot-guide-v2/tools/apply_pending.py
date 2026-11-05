@@ -20,7 +20,7 @@ What it does per file
                              key is recorded in data/aliases.json instead of creating a duplicate;
            'unchanged'    -> nothing. Existing pictures are never replaced; rows absent from an export are never deleted.
            Proposed pictures (proposed_media) are only proposals and change nothing here.
-  replies: merge_answers.py logic (LECTURE / STUDENT / FIGURE / INFERRED, CONFLICT-EXISTING keeps the stored answer), then
+  replies: merge_answers.py validates each answer; after an owner-approved merged PR, all reply files are replayed chronologically and each newer valid answer replaces the previous one. NOT-FOUND is a no-op; then
            picture bindings the student CONFIRMED (reply field `img`, `img_edited`) are written to data/media.json used_by.
 Exit code 1 = structural ERROR (missing or altered picture, unknown subject, merge failure).
 The report also lists NEEDS DECISION items (conflicts, STUDENT edits, FIGURE answers, rejected lines): approvers decide, no error.
@@ -36,15 +36,16 @@ def jload(p, default):
 def jsave(p, obj):
     json.dump(obj, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
 
-def git_added_time(root, rel):
+def git_last_changed_time(root, rel):
+    """Commit time on main's first-parent history when this reply file last changed."""
     try:
-        r = subprocess.run(['git', '-C', root, 'log', '--diff-filter=A', '--format=%ct', '--', rel], capture_output=True, text=True)
-        ts = [int(x) for x in r.stdout.split() if x.strip().isdigit()]
-        return min(ts) if ts else None
+        r = subprocess.run(['git', '-C', root, 'log', '-1', '--first-parent', '--format=%ct', '--', rel], capture_output=True, text=True)
+        value = r.stdout.strip()
+        return int(value) if value.isdigit() else None
     except Exception:
         return None
 
-def find_pending(root, applied):
+def find_pending(root, applied, replay_replies=False):
     """-> (pending [(rel path, sha)], errors). Changed intake and answer files are reprocessed as revisions."""
     files = []
     for kind, pats in (('intake', ('.json',)), ('replies', ('.jsonl', '.txt'))):
@@ -55,11 +56,27 @@ def find_pending(root, applied):
             if not os.path.isdir(d) or not sdir.isdigit(): continue
             for fn in sorted(os.listdir(d)):
                 if fn.endswith(pats): files.append(f'{kind}/{sdir}/{fn}')
+    if replay_replies:
+        # Historical reply files may also be nested one level too deep from old uploads.
+        # Re-scan replies recursively only during an owner-approved replay.
+        replies_root = os.path.join(root, 'replies')
+        for current, dirs, names in os.walk(replies_root):
+            dirs.sort()
+            for fn in sorted(names):
+                if fn.endswith(('.jsonl', '.txt')):
+                    rel = os.path.relpath(os.path.join(current, fn), root).replace(os.sep, '/')
+                    if rel not in files: files.append(rel)
+        # Legacy uploads that were merged into the repository root before the path guard was fixed.
+        # They are considered only during an owner-approved historical replay.
+        for fn in sorted(os.listdir(root)):
+            if re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', fn): files.append(fn)
     pend, errs = [], []
     for rel in files:
         h = sha_file(os.path.join(root, rel))
         if rel in applied:
-            if applied[rel] != h:
+            if replay_replies and (rel.startswith('replies/') or re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel)):
+                pend.append((rel, h))
+            elif applied[rel] != h:
                 # Reprocess a revised intake or answer file. Intake poll actions
                 # are idempotent: unchanged rows do nothing, updates target stable
                 # question keys, and new questions are deduplicated by fingerprint.
@@ -69,7 +86,9 @@ def find_pending(root, applied):
                 else:
                     errs.append(f'{rel}: this already-applied file type cannot be edited')
         else: pend.append((rel, h))
-    pend.sort(key=lambda x: (git_added_time(root, x[0]) or 0, x[0]))
+    # The latest main-branch change time makes the newest submitted file win.
+    # Files changed in the same merge commit have no intrinsic ordering; path is a stable tie-break.
+    pend.sort(key=lambda x: (git_last_changed_time(root, x[0]) or 0, x[0]))
     return pend, errs
 
 class Ctx:
@@ -80,6 +99,7 @@ class Ctx:
         self.subs = {s['id']: s for s in json.load(open(os.path.join(work, 'subjects.json'), encoding='utf-8'))}
         self.next_id = 1 + max([r['id'] for f in os.listdir(os.path.join(work, 'questions')) for r in json.load(open(os.path.join(work, 'questions', f), encoding='utf-8'))] or [0])
         self.errors, self.decide, self.lines = [], [], []
+        self.skipped = set()
     def rows(self, sid): return load_subject(self.work, sid)
 
 def apply_intake(ctx, rel, root):
@@ -125,14 +145,39 @@ def apply_intake(ctx, rel, root):
     save_subject(ctx.work, sid, rows)
     ctx.lines.append(f'- `{rel}`: ' + ', '.join(f'{k} {v}' for k, v in c.items()))
 
+def resolve_reply_subject(ctx, rel, root):
+    if rel.startswith('replies/'):
+        parts = rel.split('/')
+        return int(parts[1]) if len(parts) >= 3 and parts[1].isdigit() else None
+    # A legacy root-level quick file has no subject folder. Prefer its summary metadata,
+    # then accept only a unique subject containing every question key in the file.
+    if not re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel): return None
+    path = os.path.join(root, rel)
+    items, _ = parse_reply(path)
+    keys = {str(it.get('id')) for it in items if it.get('id')}
+    if not keys: return None
+    summary = os.path.splitext(path)[0] + '.summary.md'
+    if os.path.isfile(summary):
+        body = open(summary, encoding='utf-8', errors='ignore').read()
+        m = re.search(r'المادة\s*:\s*.*?\((\d+)\)', body)
+        if m:
+            sid = int(m.group(1))
+            if sid in ctx.subs and keys.issubset({r['key'] for r in ctx.rows(sid)}): return sid
+    matches = [sid for sid in ctx.subs if keys.issubset({r['key'] for r in ctx.rows(sid)})]
+    return matches[0] if len(matches) == 1 else None
+
 def apply_reply(ctx, rel, root):
-    sid = int(os.path.basename(os.path.dirname(rel))); a = ctx.a
+    sid = resolve_reply_subject(ctx, rel, root); a = ctx.a
+    if sid is None:
+        ctx.decide.append(f'{rel}: legacy root-level reply subject could not be resolved uniquely -> skipped for owner decision')
+        ctx.skipped.add(rel)
+        return
     if sid not in ctx.subs: ctx.errors.append(f'{rel}: unknown subject {sid}'); return
     with tempfile.TemporaryDirectory() as td:
         d = os.path.join(td, 'replies', str(sid)); os.makedirs(d); shutil.copy(os.path.join(root, rel), d)
         cmd = [sys.executable, os.path.join(HERE, 'merge_answers.py'), '--data', ctx.work, '--replies', os.path.join(td, 'replies'), '--root', root,
                '--sources', os.path.join(root, 'sources'), '--apply']
-        if a.approved_lecture_overwrites: cmd += ['--approved-lecture-overwrites']
+        if a.approved_answer_overwrites: cmd += ['--approved-answer-overwrites']
         if a.lectures: cmd += ['--lectures', a.lectures]
         if a.packs and os.path.isdir(a.packs): cmd += ['--packs', a.packs]
         if a.config: cmd += ['--config', a.config]
@@ -162,28 +207,34 @@ def main():
     ap.add_argument('--lectures'); ap.add_argument('--packs', default=os.path.join('site', 'packs'))
     ap.add_argument('--config', default=os.path.join(HERE, '..', 'config', 'subjects.json'))
     ap.add_argument('--apply', action='store_true', help='write data/ (default: dry run, report only)')
-    ap.add_argument('--approved-lecture-overwrites', action='store_true',
-                    help='After a reviewed PR is merged, allow verified lecture answers to replace existing answers; inferred answers remain protected.')
+    ap.add_argument('--approved-answer-overwrites', '--approved-lecture-overwrites', dest='approved_answer_overwrites', action='store_true',
+                    help='After a reviewed PR is merged, replay every reply file chronologically; each newer valid answer may replace the stored answer. NOT-FOUND never changes stored answers.')
     ap.add_argument('--report', help='write the Markdown report here')
     ap.add_argument('--only', help='apply only this one pending file (relative path)')
     a = ap.parse_args()
     root = a.root; applied = jload(os.path.join(a.data, 'applied.json'), {})
-    pend, errs = find_pending(root, applied)
+    pend, errs = find_pending(root, applied, replay_replies=a.approved_answer_overwrites)
     if a.only: pend = [p for p in pend if p[0] == a.only]
     with tempfile.TemporaryDirectory() as td:
         work = os.path.join(td, 'data'); shutil.copytree(a.data, work)       # all changes happen on a copy
         ctx = Ctx(a, work); ctx.errors += errs; done = {}
+        if a.approved_answer_overwrites:
+            ctx.lines.append('Approved replay: all existing reply files are reprocessed chronologically; NOT-FOUND entries do not change stored answers.')
         for rel, h in pend:
             n_err = len(ctx.errors)
             try:
                 (apply_intake if rel.startswith('intake/') else apply_reply)(ctx, rel, root)
             except Exception as e:                                          # a broken file must not stop the others
                 ctx.errors.append(f'{rel}: could not be processed ({type(e).__name__}: {e})')
-            if len(ctx.errors) == n_err: done[rel] = h
-            else: ctx.lines.append(f'  !! `{rel}` NOT applied (see errors)')
+            if len(ctx.errors) != n_err:
+                ctx.lines.append(f'  !! `{rel}` NOT applied (see errors)')
+            elif rel in ctx.skipped:
+                ctx.lines.append(f'  !! `{rel}` SKIPPED (see owner decision)')
+            else: done[rel] = h
         # note replies without their summary file (approvers rely on it)
         for rel in done:
-            if rel.startswith('replies/') and not os.path.exists(os.path.join(root, os.path.splitext(rel)[0] + '.summary.md')):
+            is_reply_file = rel.startswith('replies/') or bool(re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel))
+            if is_reply_file and not os.path.exists(os.path.join(root, os.path.splitext(rel)[0] + '.summary.md')):
                 ctx.decide.append(f'{rel}: no .summary.md next to the reply file')
         md = ['# Pending changes report', '', f'- files pending: {len(pend)} | applied: {len(done)} | errors: {len(ctx.errors)} | needs decision: {len(ctx.decide)}', '']
         md += ['## ERRORS (block the merge)'] + (['- ' + e for e in ctx.errors] or ['none']) + ['', '## NEEDS DECISION (approvers)'] + (['- ' + d for d in ctx.decide] or ['none']) + ['', '## Applied files'] + (ctx.lines or ['nothing pending'])
