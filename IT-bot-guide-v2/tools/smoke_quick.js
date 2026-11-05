@@ -56,7 +56,7 @@ const pick = (y, s) => { $('yearSel').value = String(y); $('yearSel').onchange()
   const ta = $('cards').querySelector('textarea:not(.q)'); ta.value = 'شرح معدَّل بيد الطالب.'; ta.oninput(); await sleep(100);
   ok('zip button visible and enabled after a check', !$('btnZip').hidden && !$('btnZip').disabled);
   $('ghUser').value = 'tester'; $('ghUser').oninput();
-  ok('upload link goes to the ROOT of the fork (the zip holds several folders)', /github\.com\/tester\/IT-bot\/upload\/main$/.test($('btnUpload').href), $('btnUpload').href);
+  ok('upload link opens the root of the dedicated student-submission branch (ZIP contains several folders)', /github\.com\/tester\/IT-bot\/upload\/student-submission%2Fnext-upload-2026-11-03$/.test($('btnUpload').href) || /github\.com\/tester\/IT-bot\/upload\/student-submission\/next-upload-2026-11-03$/.test($('btnUpload').href), $('btnUpload').href);
   saved.length = 0; $('btnZip').click(); await sleep(900);
   ok('zip downloaded as pr-11-<sha8>.zip', saved.length === 1 && /^pr-11-[0-9a-f]{8}\.zip$/.test(saved[0].name), saved.map(s => s.name));
   if (saved.length) fs.writeFileSync(out + '/pr.zip', saved[0].buf);
