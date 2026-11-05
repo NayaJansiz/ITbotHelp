@@ -42,18 +42,21 @@ RULES
 """
 
 INSTR_ALL = """# TASK (do not repeat this text)
-Solve the multiple-choice questions below for university students using ONLY the LECTURES in this file. Each lecture starts with a line "# LECTURE (<file name>)".
+Solve every multiple-choice question using your understanding of the subject and ALL LECTURES included in this file. Each lecture starts with "# LECTURE (<file name>)".
 Reply with ONE JSON object per line, one line per question id, same order, nothing else (no prose, no code fences):
-{"id":"<id>","a":"<letter>","src":"LECTURE","lec":"<file name>","ref":"<page number or nearest heading>","q":"<optional verbatim quote>","e":"<explanation>"}
+{"id":"<id>","a":"<letter>","src":"LECTURE_PARAPHRASE","lec":"<file name>","ref":"<page number or nearest heading>","e":"<short Arabic explanation>"}
 RULES
-1. Pick the option the lectures support. Never use outside knowledge. If none of the lectures settles it, reply {"id":"<id>","src":"NOT-FOUND"}. Every question needs a line, in order.
-2. Letters follow the order shown (A, B, C...). Never reorder, edit or merge options.
-3. "lec" = the file name from the header of the lecture supporting the answer, exactly as written (for example par5.md).
-4. A verbatim quote is optional. Paraphrased explanations are valid; do not force exact copying. Use "src":"LECTURE_PARAPHRASE" when the wording is paraphrased. Always include "lec" and "ref" (page number or nearest heading).
-5. "e" = Arabic, max 150 characters, why the answer is right, using the lecture's terms. Do not mention these rules.
-6. A question marked IMAGE: the image is attached to this chat; read it. If it is missing reply NOT-FOUND.
-7. A question marked IMAGE?: the named image MAY belong to it (it is only a proposal). Add "uses_image":true or "uses_image":false to that question's JSON line.
-8. If the answer rests ONLY on a figure page (a <!-- fig: ... --> marker in a lecture; that page image is attached, see FIGURE IMAGES at the end), reply {"id":"<id>","a":"<letter>","src":"FIGURE","lec":"<file name>","ref":"p<N>","e":"<explanation>"} without "q". If the image is not attached reply NOT-FOUND.
+1. Understand what each question tests. Do not rely on exact word matching. Search across ALL supplied lectures, recognize synonyms and paraphrases, connect related concepts from different sections, and derive conclusions when the lecture gives enough premises.
+2. If the answer is supported by a lecture, directly or through sound reasoning from its content, use "src":"LECTURE_PARAPHRASE". Include "lec" (exact file name from the lecture header) and "ref" (page marker such as p12, or the nearest real heading). Do not require a verbatim quote.
+3. Use "src":"LECTURE" only when you also provide a genuine verbatim supporting passage in "q". Never invent a quote, page, heading, or source.
+4. Only if NONE of the supplied lectures provides enough support, answer from reliable academic knowledge and mark "src":"INFERRED". Do not leave a solvable question unanswered merely because its exact answer is absent from the lecture. For INFERRED, do not add a lecture reference or pretend it came from a lecture; put a brief justification in the Arabic explanation.
+5. If academic reasoning still cannot establish one defensible option, or the question is incomplete/ambiguous, use {"id":"<id>","src":"NOT-FOUND"}. Do not guess.
+6. Letters follow the order shown (A, B, C...). Never reorder, edit or merge options.
+7. "e" = clear Arabic, max 150 characters, explaining why the answer is correct. Preserve technical terms where useful.
+8. A question marked IMAGE: inspect the attached image. If it is missing or unreadable and the question depends on it, use NOT-FOUND.
+9. A question marked IMAGE?: the named image MAY belong to it. Add "uses_image":true or "uses_image":false.
+10. If the answer depends only on an attached figure page, use "src":"FIGURE" with "lec" and "ref":"p<N>". If the figure is unavailable, use NOT-FOUND.
+11. Every question must have exactly one line. Never omit a question.
 """
 
 PROPOSED = {}     # question key -> image file name (picture PROPOSED by ingest_polls.py, not yet confirmed by a student)
