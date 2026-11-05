@@ -98,11 +98,11 @@ def main():
     kpar, kinf, knf = [r['key'] for r in solved]
     old_par, old_inf, old_nf = [r['correct_index'] for r in solved]
     new_par = (old_par + 1) % len(solved[0]['options']); new_inf = (old_inf + 1) % len(solved[1]['options'])
-    approved_items = [{'id': kpar, 'a': LET[new_par], 'src': 'LECTURE_PARAPHRASE', 'lec': f, 'ref': 'p4', 'e': 'صياغة أحدث مدعومة بالمحاضرة'},
-                      {'id': kinf, 'a': LET[new_inf], 'src': 'INFERRED', 'e': 'استنتاج أحدث'},
+    approved_items = [{'id': kpar, 'a': "ABCDEFGHIJ"[new_par], 'src': 'LECTURE_PARAPHRASE', 'lec': f, 'ref': 'p4', 'e': 'صياغة أحدث مدعومة بالمحاضرة'},
+                      {'id': kinf, 'a': "ABCDEFGHIJ"[new_inf], 'src': 'INFERRED', 'e': 'استنتاج أحدث'},
                       {'id': knf, 'src': 'NOT-FOUND'}]
     rd3 = os.path.join(tmp, 'replies3', str(sid)); os.makedirs(rd3)
-    open(os.path.join(rd3, 'all-newer.jsonl'), 'w', encoding='utf-8').write('\\n'.join(json.dumps(i, ensure_ascii=False) for i in approved_items) + '\\n')
+    open(os.path.join(rd3, 'all-newer.jsonl'), 'w', encoding='utf-8').write('\n'.join(json.dumps(i, ensure_ascii=False) for i in approved_items) + '\n')
     rep3 = run(os.path.join(HERE, 'merge_answers.py'), '--data', d3, '--lectures', a.lectures, '--replies', os.path.join(tmp, 'replies3'), '--packs', os.path.join(tmp, 'packs'), '--root', '/nonexistent', '--approved-answer-overwrites', '--apply')
     after3 = {r['key']: r for r in load_subject(d3, sid)}
     checks.update({'newer LECTURE_PARAPHRASE replaces stored answer after approval': after3[kpar]['correct_index'] == new_par and after3[kpar]['needs_review'] == 1,
