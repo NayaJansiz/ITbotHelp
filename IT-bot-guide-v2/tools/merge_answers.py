@@ -147,6 +147,10 @@ def main():
                     notes.append(f"{k}: newer valid {kind} answer {LET[idx]} replaces existing {LET[q['correct_index']]} after merged-PR approval ({fname or 'no lecture file'})")
                 else:
                     res['CONFLICT-EXISTING (needs review)'] += 1; notes.append(f"{k}: existing answer {LET[q['correct_index']]} but {kind} says {LET[idx]} ({fname or 'general knowledge'}) -> kept existing"); continue
+            if q['correct_index'] == idx and not a.overwrite and q.get('needs_review') == 0 and kind != 'LECTURE':
+                res['already same'] += 1
+                notes.append(f"{k}: newer {kind} answer agrees with the stored verified answer -> kept the existing verified answer")
+                continue
             if kind == 'FIGURE': notes.append(f"{k}: FIGURE answer {LET[idx]} from {fname} {it.get('ref')} (not machine-verified, needs_review=1) -> approver please look at the picture")
             if q['correct_index'] == idx and not a.overwrite and kind == 'LECTURE' and q.get('needs_review') == 0:
                 # The answer is already correct, but still record its verified
