@@ -77,10 +77,13 @@ def main():
         open(os.path.join(td, 'quick-cccccccc.summary.md'), 'w', encoding='utf-8').write('- المادة: مادة اختبار (11)\n')
         # A root file without a summary must resolve only when all its IDs belong to exactly one subject.
         open(os.path.join(td, 'quick-dddddddd.jsonl'), 'w', encoding='utf-8').write(json.dumps({'id': k2, 'src': 'NOT-FOUND'}) + '\n')
-        # The later file is first recorded without overwrite permission, then an approved replay must reprocess all four files.
+        nested = os.path.join(td, 'replies', '11', 'replies', '11')
+        os.makedirs(nested, exist_ok=True)
+        open(os.path.join(nested, 'quick-eeeeeeee.jsonl'), 'w', encoding='utf-8').write(json.dumps({'id': k2, 'src': 'NOT-FOUND'}) + '\n')
+        # The later file is first recorded without overwrite permission, then an approved replay must reprocess all five files.
         r = run('--approved-answer-overwrites', '--apply')
         rows_after_replay = {x['key']: x for x in json.load(open(os.path.join(data, 'questions', 'subject-11.json'), encoding='utf-8'))}
-        check('approved replay includes legacy root files and all prior replies; newest valid reply wins', r.returncode == 0 and 'files pending: 4 | applied: 4 | errors: 0' in r.stdout and 'quick-cccccccc.jsonl' in r.stdout and 'quick-dddddddd.jsonl' in r.stdout and 'approved answer overwrite' in r.stdout and rows_after_replay[k1]['correct_index'] == 1 and rows_after_replay[k1]['needs_review'] == 1, r.stdout[-900:])
+        check('approved replay includes legacy root files and all prior replies; newest valid reply wins', r.returncode == 0 and 'files pending: 5 | applied: 5 | errors: 0' in r.stdout and 'replies/11/replies/11/quick-eeeeeeee.jsonl' in r.stdout and 'quick-cccccccc.jsonl' in r.stdout and 'quick-dddddddd.jsonl' in r.stdout and 'approved answer overwrite' in r.stdout and rows_after_replay[k1]['correct_index'] == 1 and rows_after_replay[k1]['needs_review'] == 1, r.stdout[-900:])
         # 7. build the bot db with the confirmed binding
         db = os.path.join(td, 'bot.db'); os.makedirs(os.path.join(td, 'media'), exist_ok=True)
         rr = subprocess.run([sys.executable, os.path.join(HERE, 'bot_db_tool.py'), 'build', data, db, '--force', '--media-dir', os.path.join(td, 'media')], capture_output=True, text=True)
