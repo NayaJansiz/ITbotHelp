@@ -57,6 +57,15 @@ def find_pending(root, applied, replay_replies=False):
             for fn in sorted(os.listdir(d)):
                 if fn.endswith(pats): files.append(f'{kind}/{sdir}/{fn}')
     if replay_replies:
+        # Historical reply files may also be nested one level too deep from old uploads.
+        # Re-scan replies recursively only during an owner-approved replay.
+        replies_root = os.path.join(root, 'replies')
+        for current, dirs, names in os.walk(replies_root):
+            dirs.sort()
+            for fn in sorted(names):
+                if fn.endswith(('.jsonl', '.txt')):
+                    rel = os.path.relpath(os.path.join(current, fn), root).replace(os.sep, '/')
+                    if rel not in files: files.append(rel)
         # Legacy uploads that were merged into the repository root before the path guard was fixed.
         # They are considered only during an owner-approved historical replay.
         for fn in sorted(os.listdir(root)):
@@ -138,8 +147,8 @@ def apply_intake(ctx, rel, root):
 
 def resolve_reply_subject(ctx, rel, root):
     if rel.startswith('replies/'):
-        try: return int(os.path.basename(os.path.dirname(rel)))
-        except ValueError: return None
+        parts = rel.split('/')
+        return int(parts[1]) if len(parts) >= 3 and parts[1].isdigit() else None
     # A legacy root-level quick file has no subject folder. Prefer its summary metadata,
     # then accept only a unique subject containing every question key in the file.
     if not re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel): return None
