@@ -178,6 +178,8 @@ def main():
     with tempfile.TemporaryDirectory() as td:
         work = os.path.join(td, 'data'); shutil.copytree(a.data, work)       # all changes happen on a copy
         ctx = Ctx(a, work); ctx.errors += errs; done = {}
+        if a.approved_answer_overwrites:
+            ctx.lines.append('Approved replay: all existing reply files are reprocessed chronologically; NOT-FOUND entries do not change stored answers.')
         for rel, h in pend:
             n_err = len(ctx.errors)
             try:
