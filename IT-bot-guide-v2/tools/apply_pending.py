@@ -20,7 +20,7 @@ What it does per file
                              key is recorded in data/aliases.json instead of creating a duplicate;
            'unchanged'    -> nothing. Existing pictures are never replaced; rows absent from an export are never deleted.
            Proposed pictures (proposed_media) are only proposals and change nothing here.
-  replies: merge_answers.py logic (LECTURE / STUDENT / FIGURE / INFERRED, CONFLICT-EXISTING keeps the stored answer), then
+  replies: merge_answers.py validates each answer; after an owner-approved merged PR, all reply files are replayed chronologically and each newer valid answer replaces the previous one. NOT-FOUND is a no-op; then
            picture bindings the student CONFIRMED (reply field `img`, `img_edited`) are written to data/media.json used_by.
 Exit code 1 = structural ERROR (missing or altered picture, unknown subject, merge failure).
 The report also lists NEEDS DECISION items (conflicts, STUDENT edits, FIGURE answers, rejected lines): approvers decide, no error.
@@ -36,15 +36,16 @@ def jload(p, default):
 def jsave(p, obj):
     json.dump(obj, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
 
-def git_added_time(root, rel):
+def git_last_changed_time(root, rel):
+    """Commit time on main's first-parent history when this reply file last changed."""
     try:
-        r = subprocess.run(['git', '-C', root, 'log', '--diff-filter=A', '--format=%ct', '--', rel], capture_output=True, text=True)
-        ts = [int(x) for x in r.stdout.split() if x.strip().isdigit()]
-        return min(ts) if ts else None
+        r = subprocess.run(['git', '-C', root, 'log', '-1', '--first-parent', '--format=%ct', '--', rel], capture_output=True, text=True)
+        value = r.stdout.strip()
+        return int(value) if value.isdigit() else None
     except Exception:
         return None
 
-def find_pending(root, applied):
+def find_pending(root, applied, replay_replies=False):
     """-> (pending [(rel path, sha)], errors). Changed intake and answer files are reprocessed as revisions."""
     files = []
     for kind, pats in (('intake', ('.json',)), ('replies', ('.jsonl', '.txt'))):
@@ -59,7 +60,9 @@ def find_pending(root, applied):
     for rel in files:
         h = sha_file(os.path.join(root, rel))
         if rel in applied:
-            if applied[rel] != h:
+            if replay_replies and rel.startswith('replies/'):
+                pend.append((rel, h))
+            elif applied[rel] != h:
                 # Reprocess a revised intake or answer file. Intake poll actions
                 # are idempotent: unchanged rows do nothing, updates target stable
                 # question keys, and new questions are deduplicated by fingerprint.
@@ -69,7 +72,9 @@ def find_pending(root, applied):
                 else:
                     errs.append(f'{rel}: this already-applied file type cannot be edited')
         else: pend.append((rel, h))
-    pend.sort(key=lambda x: (git_added_time(root, x[0]) or 0, x[0]))
+    # The latest main-branch change time makes the newest submitted file win.
+    # Files changed in the same merge commit have no intrinsic ordering; path is a stable tie-break.
+    pend.sort(key=lambda x: (git_last_changed_time(root, x[0]) or 0, x[0]))
     return pend, errs
 
 class Ctx:
@@ -132,7 +137,7 @@ def apply_reply(ctx, rel, root):
         d = os.path.join(td, 'replies', str(sid)); os.makedirs(d); shutil.copy(os.path.join(root, rel), d)
         cmd = [sys.executable, os.path.join(HERE, 'merge_answers.py'), '--data', ctx.work, '--replies', os.path.join(td, 'replies'), '--root', root,
                '--sources', os.path.join(root, 'sources'), '--apply']
-        if a.approved_lecture_overwrites: cmd += ['--approved-lecture-overwrites']
+        if a.approved_answer_overwrites: cmd += ['--approved-answer-overwrites']
         if a.lectures: cmd += ['--lectures', a.lectures]
         if a.packs and os.path.isdir(a.packs): cmd += ['--packs', a.packs]
         if a.config: cmd += ['--config', a.config]
@@ -162,13 +167,13 @@ def main():
     ap.add_argument('--lectures'); ap.add_argument('--packs', default=os.path.join('site', 'packs'))
     ap.add_argument('--config', default=os.path.join(HERE, '..', 'config', 'subjects.json'))
     ap.add_argument('--apply', action='store_true', help='write data/ (default: dry run, report only)')
-    ap.add_argument('--approved-lecture-overwrites', action='store_true',
-                    help='After a reviewed PR is merged, allow verified lecture answers to replace existing answers; inferred answers remain protected.')
+    ap.add_argument('--approved-answer-overwrites', '--approved-lecture-overwrites', dest='approved_answer_overwrites', action='store_true',
+                    help='After a reviewed PR is merged, replay every reply file chronologically; each newer valid answer may replace the stored answer. NOT-FOUND never changes stored answers.')
     ap.add_argument('--report', help='write the Markdown report here')
     ap.add_argument('--only', help='apply only this one pending file (relative path)')
     a = ap.parse_args()
     root = a.root; applied = jload(os.path.join(a.data, 'applied.json'), {})
-    pend, errs = find_pending(root, applied)
+    pend, errs = find_pending(root, applied, replay_replies=a.approved_answer_overwrites)
     if a.only: pend = [p for p in pend if p[0] == a.only]
     with tempfile.TemporaryDirectory() as td:
         work = os.path.join(td, 'data'); shutil.copytree(a.data, work)       # all changes happen on a copy
