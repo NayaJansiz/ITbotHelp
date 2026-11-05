@@ -74,8 +74,8 @@
   <p class="lead">اختر المادة، نزّل ملفاً واحداً فيه كل محاضراتها وكل أسئلتها، أعطه لـ Claude، ثم الصق الرد هنا. الصفحة تتحقق من كل جواب تلقائياً قبل أن ترسله.</p>
 
   <div class="note--warn">
-    <strong>قاعدة واحدة:</strong> الجواب يُقبل فقط إذا وُجد اقتباسه <strong>حرفياً</strong> في المحاضرة. إن لم يجد Claude الجواب في المحاضرة يكتب «لم يوجد» وهذا طبيعي.<br>
-    افتح <strong>محادثة جديدة</strong> لكل ملف (Claude لا يتذكر المحادثات السابقة). إن ظهر أكثر من جزء فالصق ردود كل الأجزاء معاً في الخطوة ③.
+    <strong>افهم الفكرة، لا تطابق الكلمات فقط:</strong> إذا كانت الإجابة مدعومة بالمحاضرة حتى بصياغة مختلفة أو بربط الأفكار، يذكر Claude مرجعها. وإذا لم تدعمها أي محاضرة، يحاول حلّها باستنتاج علمي ويعلّمها «استنتاج». لا يستخدم «لم يوجد» إلا عندما لا يستطيع الحسم بثقة.<br>
+    افتح <strong>محادثة جديدة</strong> لكل ملف. إن ظهر أكثر من جزء فالصق ردود كل الأجزاء معاً في الخطوة ③.
   </div>
 
   <div class="panel">
@@ -126,9 +126,9 @@
     <div class="imgs" id="imgBox" hidden></div>
 
     <p style="margin:1rem 0 .25rem"><strong>② افتح Claude</strong> (محادثة جديدة)، أرفق الملف، والصق هذه الرسالة:</p>
-    <div class="msgbox" id="msgText">اقرأ الملف المرفق كاملاً، ثم نفّذ تعليمات المهمة المكتوبة في أوّله.
-أجب بأسطر JSON فقط: سطر واحد لكل سؤال، بنفس ترتيب الأسئلة، بلا أي كلام آخر وبلا صناديق كود.
-لا تحذف أي سؤال: إن لم تجد جوابه في المحاضرات فاكتب له NOT-FOUND.</div>
+    <div class="msgbox" id="msgText">اقرأ الملف المرفق كاملاً وافهم جميع المحاضرات.
+أجب عن كل سؤال بسطر JSON واحد وبنفس الترتيب، بلا أي كلام آخر.
+ابحث عن المعنى واربط الأفكار، ولا تشترط تطابق الكلمات. إذا لم تدعم أي محاضرة الإجابة، حاول حلّها باستنتاج علمي موثوق ووسمها INFERRED. استخدم NOT-FOUND فقط إذا لم تستطع حسمها بثقة. لا تحذف أي سؤال.</div>
     <div class="actions">
       <button class="btn" id="btnCopyMsg" type="button">نسخ الرسالة</button>
       <a class="btn btn--primary" href="https://claude.ai/new" target="_blank" rel="noopener">فتح Claude ↗</a>
@@ -148,7 +148,7 @@
       <table class="res"><tbody id="rows"></tbody></table>
       <div id="missing" class="note--warn" style="margin-top:.75rem" hidden></div>
       <div id="inferredBox" class="note--warn" style="margin-top:.75rem" hidden>
-        <p id="inferredHelp">بعض الأسئلة لم تجد جواباً في المحاضرات. نزّل ملف الاستنتاجات وأرسله إلى Claude، ثم أضف أسطر INFERRED إلى الرد الأصلي قبل التحقق والتنزيل.</p>
+        <p id="inferredHelp">هذا الملف للأسئلة التي بقيت غير محسومة حتى بعد محاولة الاستنتاج. لا تستخدمه لمجرد أن صياغة الإجابة غير موجودة حرفياً في المحاضرة.</p>
         <div class="actions"><button class="btn btn--primary" id="btnInferred" type="button">⬇ تنزيل أسئلة بلا جواب كملف INFERRED</button></div>
       </div>
       <div id="review" hidden>
@@ -309,7 +309,7 @@ function validateReply(text, ctx) {
     row.cur = info[1];
     if (it.src === 'NOT-FOUND' || falsy(it.a)) {
       if (answered[k] || seenNf[k]) { rows.pop(); return; }
-      seenNf[k] = 1; bump('NOT-FOUND'); row.kind = 'nf'; row.why = 'Claude لم يجد الجواب في المحاضرات'; return;
+      seenNf[k] = 1; bump('NOT-FOUND'); row.kind = 'nf'; row.why = 'لم يتمكن Claude من حسم الإجابة حتى بالاستنتاج'; return;
     }
     var L = String(it.a).trim().toUpperCase().slice(0, 1);
     if (!L || LET.slice(0, info[0]).indexOf(L) < 0) { bump('INVALID letter'); row.why = 'الحرف ' + JSON.stringify(it.a) + ' خارج الخيارات (' + info[0] + ' خيارات)'; return; }
@@ -526,7 +526,7 @@ function show(res) {
     if (!unresolved.length) return;
     var lines = [
       '# TASK (do not repeat this text)',
-      'These questions were NOT answered from the supplied lectures. Solve them from general knowledge of the subject.',
+      'These questions remain unresolved after checking the supplied lectures and attempting a reasoned academic inference. Try to solve them from reliable subject knowledge; do not guess.',
       'Reply with ONE JSON object per line, one line per question id, same order, nothing else:',
       '{"id":"<id>","a":"<letter>","src":"INFERRED","e":"<short Arabic explanation>"}',
       'RULES',
