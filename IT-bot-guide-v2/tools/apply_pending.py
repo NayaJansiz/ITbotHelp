@@ -60,12 +60,12 @@ def find_pending(root, applied, replay_replies=False):
         # Legacy uploads that were merged into the repository root before the path guard was fixed.
         # They are considered only during an owner-approved historical replay.
         for fn in sorted(os.listdir(root)):
-            if re.fullmatch(r'quick-[0-9a-f]{8}\\.jsonl', fn): files.append(fn)
+            if re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', fn): files.append(fn)
     pend, errs = [], []
     for rel in files:
         h = sha_file(os.path.join(root, rel))
         if rel in applied:
-            if replay_replies and (rel.startswith('replies/') or re.fullmatch(r'quick-[0-9a-f]{8}\\.jsonl', rel)):
+            if replay_replies and (rel.startswith('replies/') or re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel)):
                 pend.append((rel, h))
             elif applied[rel] != h:
                 # Reprocess a revised intake or answer file. Intake poll actions
@@ -141,7 +141,7 @@ def resolve_reply_subject(ctx, rel, root):
         except ValueError: return None
     # A legacy root-level quick file has no subject folder. Prefer its summary metadata,
     # then accept only a unique subject containing every question key in the file.
-    if not re.fullmatch(r'quick-[0-9a-f]{8}\\.jsonl', rel): return None
+    if not re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel): return None
     path = os.path.join(root, rel)
     items, _ = parse_reply(path)
     keys = {str(it.get('id')) for it in items if it.get('id')}
@@ -149,7 +149,7 @@ def resolve_reply_subject(ctx, rel, root):
     summary = os.path.splitext(path)[0] + '.summary.md'
     if os.path.isfile(summary):
         body = open(summary, encoding='utf-8', errors='ignore').read()
-        m = re.search(r'المادة\\s*:\\s*.*?\\((\\d+)\\)', body)
+        m = re.search(r'المادة\s*:\s*.*?\((\d+)\)', body)
         if m:
             sid = int(m.group(1))
             if sid in ctx.subs and keys.issubset({r['key'] for r in ctx.rows(sid)}): return sid
@@ -219,7 +219,7 @@ def main():
             else: ctx.lines.append(f'  !! `{rel}` NOT applied (see errors)')
         # note replies without their summary file (approvers rely on it)
         for rel in done:
-            is_reply_file = rel.startswith('replies/') or bool(re.fullmatch(r'quick-[0-9a-f]{8}\\.jsonl', rel))
+            is_reply_file = rel.startswith('replies/') or bool(re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel))
             if is_reply_file and not os.path.exists(os.path.join(root, os.path.splitext(rel)[0] + '.summary.md')):
                 ctx.decide.append(f'{rel}: no .summary.md next to the reply file')
         md = ['# Pending changes report', '', f'- files pending: {len(pend)} | applied: {len(done)} | errors: {len(ctx.errors)} | needs decision: {len(ctx.decide)}', '']
