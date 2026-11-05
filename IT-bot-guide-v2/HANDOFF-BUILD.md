@@ -25,7 +25,7 @@ A workflow where freshmen get **all current and future** exam questions of a sub
 - `NOT-FOUND` never clears or changes a stored answer. Invalid letters, unknown IDs, failed exact-quote checks, missing paraphrase references, and invalid figure references are not candidates and cannot replace stored answers.
 - `LECTURE_PARAPHRASE`, `INFERRED`, `FIGURE`, and unquoted `STUDENT` answers retain their review/provenance flags; replacing an answer does not falsely mark them as verbatim-verified.
 - If one reply file contains contradictory valid answers for the same question, neither is applied from that file; it remains a review item. Files changed in the same merge commit have no intrinsic chronology, so their stable path order is only a deterministic tie-break.
-- During this approved replay only, legacy root-level `quick-<sha8>.jsonl` uploads are also included. Their subject is taken from the adjacent summary (`المادة: ... (ID)`) or, if absent, from a unique full match of their question IDs against one subject. Ambiguous/unmatched files are skipped for owner decision rather than guessed.
+- During this approved replay only, legacy root-level `quick-<sha8>.jsonl` uploads are also included. Their subject is taken from the adjacent summary (`المادة: ... (ID)`) or, if absent, from a unique full match of their question IDs against one subject. Ambiguous/unmatched files are skipped for owner decision rather than guessed. Historical nested files under `replies/<ID>/.../*.jsonl` are also found recursively; the first numeric subject folder determines their subject.
 
 ## What is DONE (Part 1 — core, tested)
 | File | Purpose |
