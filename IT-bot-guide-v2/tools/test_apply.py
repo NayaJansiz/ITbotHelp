@@ -73,10 +73,10 @@ def main():
         check('binding removed when the student unticks it (img_edited without img)', mj[mid]['used_by'] == [k1], mj[mid]['used_by'])
         # Legacy root-level quick files are included only in an approved replay.
         legacy_items = [{'id': k1, 'a': 'A', 'src': 'INFERRED', 'e': 'legacy root reply'}]
-        open(os.path.join(td, 'quick-cccccccc.jsonl'), 'w', encoding='utf-8').write(json.dumps(legacy_items[0], ensure_ascii=False) + '\\n')
-        open(os.path.join(td, 'quick-cccccccc.summary.md'), 'w', encoding='utf-8').write('- المادة: مادة اختبار (11)\\n')
+        open(os.path.join(td, 'quick-cccccccc.jsonl'), 'w', encoding='utf-8').write(json.dumps(legacy_items[0], ensure_ascii=False) + '\n')
+        open(os.path.join(td, 'quick-cccccccc.summary.md'), 'w', encoding='utf-8').write('- المادة: مادة اختبار (11)\n')
         # A root file without a summary must resolve only when all its IDs belong to exactly one subject.
-        open(os.path.join(td, 'quick-dddddddd.jsonl'), 'w', encoding='utf-8').write(json.dumps({'id': k2, 'src': 'NOT-FOUND'}) + '\\n')
+        open(os.path.join(td, 'quick-dddddddd.jsonl'), 'w', encoding='utf-8').write(json.dumps({'id': k2, 'src': 'NOT-FOUND'}) + '\n')
         # The later file is first recorded without overwrite permission, then an approved replay must reprocess all four files.
         r = run('--approved-answer-overwrites', '--apply')
         rows_after_replay = {x['key']: x for x in json.load(open(os.path.join(data, 'questions', 'subject-11.json'), encoding='utf-8'))}
