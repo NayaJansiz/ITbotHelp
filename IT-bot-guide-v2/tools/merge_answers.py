@@ -139,6 +139,7 @@ def main():
         prov = json.load(open(prov_path, encoding='utf-8')) if os.path.exists(prov_path) else {}
         for k, cs in cand.items():
             q = byid[k]; lc = [x for x in cs if x[0] in ('LECTURE', 'LECTURE_PARAPHRASE')]
+            if len({x[1] for x in lc}) > 1: res['CONFLICT between lecture packs'] += 1; notes.append(f"{k}: lecture-based answers disagree {[LET[x[1]] for x in lc]} -> nothing applied"); continue
             if len({x[1] for x in cs}) > 1: res['CONFLICT within reply file'] += 1; notes.append(f"{k}: this reply file contains different proposed answers {[LET[x[1]] for x in cs]} -> nothing applied; review the file"); continue
             kind, idx, it, fname = lc[0] if lc else cs[0]
             if q['correct_index'] is not None and q['correct_index'] != idx and not a.overwrite:
