@@ -95,6 +95,7 @@ def main():
     # Owner-approved precedence: a newer paraphrase or inference replaces an old answer; NOT-FOUND is a no-op.
     d3 = os.path.join(tmp, 'data3'); shutil.copytree(data, d3)
     solved = [r for r in load_subject(d3, sid) if r['correct_index'] is not None and not r.get('image') and len(r.get('options') or []) >= 2][:3]
+    if len(solved) < 3: raise AssertionError('subject 11 needs three solved, non-image questions for precedence tests')
     kpar, kinf, knf = [r['key'] for r in solved]
     old_par, old_inf, old_nf = [r['correct_index'] for r in solved]
     new_par = (old_par + 1) % len(solved[0]['options']); new_inf = (old_inf + 1) % len(solved[1]['options'])
