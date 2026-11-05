@@ -1,6 +1,6 @@
 # IT-bot — question bank pipeline (v2.1)
 
-Students answer the exam questions **from the lectures**, with Claude, and an answer is accepted only if its **quote exists word for word** in the lecture text. Everything is checked by scripts (no tokens, no secrets). Accepted answers become text files in `data/`, and `bot.db` is built from them.
+Students answer exam questions with Claude using conceptual understanding of the supplied lectures. A lecture-supported answer may be paraphrased or derived by connecting concepts; a verbatim quote is not required. If no supplied lecture supports an answer, Claude may solve it through reliable academic inference, clearly marked `INFERRED`. Uncertain or incomplete questions remain `NOT-FOUND`. The workflow validates structure and source labels, flags non-verbatim/inferred answers for human review, and builds `bot.db` from approved text data.
 
 بالعربية: الطالب يفتح الصفحة، يختار المادة، ينزّل ملفاً واحداً فيه كل محاضراتها وأسئلتها، يعطيه لـ Claude، يلصق الرد، تتحقق الصفحة من كل اقتباس، ثم يرسل النتيجة في Pull Request. المشرف يدمج، وGitHub Actions تكتب `data/`.
 
