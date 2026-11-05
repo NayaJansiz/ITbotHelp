@@ -90,6 +90,7 @@ class Ctx:
         self.subs = {s['id']: s for s in json.load(open(os.path.join(work, 'subjects.json'), encoding='utf-8'))}
         self.next_id = 1 + max([r['id'] for f in os.listdir(os.path.join(work, 'questions')) for r in json.load(open(os.path.join(work, 'questions', f), encoding='utf-8'))] or [0])
         self.errors, self.decide, self.lines = [], [], []
+        self.skipped = set()
     def rows(self, sid): return load_subject(self.work, sid)
 
 def apply_intake(ctx, rel, root):
@@ -160,6 +161,7 @@ def apply_reply(ctx, rel, root):
     sid = resolve_reply_subject(ctx, rel, root); a = ctx.a
     if sid is None:
         ctx.decide.append(f'{rel}: legacy root-level reply subject could not be resolved uniquely -> skipped for owner decision')
+        ctx.skipped.add(rel)
         return
     if sid not in ctx.subs: ctx.errors.append(f'{rel}: unknown subject {sid}'); return
     with tempfile.TemporaryDirectory() as td:
@@ -215,8 +217,11 @@ def main():
                 (apply_intake if rel.startswith('intake/') else apply_reply)(ctx, rel, root)
             except Exception as e:                                          # a broken file must not stop the others
                 ctx.errors.append(f'{rel}: could not be processed ({type(e).__name__}: {e})')
-            if len(ctx.errors) == n_err: done[rel] = h
-            else: ctx.lines.append(f'  !! `{rel}` NOT applied (see errors)')
+            if len(ctx.errors) != n_err:
+                ctx.lines.append(f'  !! `{rel}` NOT applied (see errors)')
+            elif rel in ctx.skipped:
+                ctx.lines.append(f'  !! `{rel}` SKIPPED (see owner decision)')
+            else: done[rel] = h
         # note replies without their summary file (approvers rely on it)
         for rel in done:
             is_reply_file = rel.startswith('replies/') or bool(re.fullmatch(r'quick-[0-9a-f]{8}\.jsonl', rel))
